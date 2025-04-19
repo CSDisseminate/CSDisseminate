@@ -1,0 +1,140 @@
+---
+listing:
+  - id: recent-announcements
+    contents: Announcements
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 3
+  - id: featured-scientists
+    contents: FeaturedScientists
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 2
+page-layout: article
+title-block-banner: false
+---
+
+:::: {style="text-align: center; padding-top: 2em; padding-bottom: 2em;"}
+<img src="Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" alt="CSDisseminate Logo" style="width: 400px;"/>
+
+::: {style="font-size: 2em; font-weight: 700; margin-top: 1em;"}
+CSDisseminate
+:::
+
+<p style="max-width: 600px; margin: 1em auto; font-size: 1.1em;">
+
+Disseminating knowledge and resources about open science practices to researchers and clinicians in the field of Communication Sciences and Disorders (CSD).
+
+</p>
+::::
+
+\
+\
+\
+
+## Learn about...
+
+### ☂️ Open Science
+
+Open science is an umbrella term for a set of practices aimed at making scientific research, data, and dissemination accessible to all.
+
+::::: columns
+::: {.column width="10%"}
+:::
+
+::: {.column width="90%"}
+### ✅ Preregistration
+
+Preregistration is the practice of documenting and publicly sharing the research plan and hypotheses before conducting a study to increase transparency and reduce bias.
+
+### 📐 Open Methods
+
+Open methods involve the transparent sharing of research methodologies, protocols, and processes, allowing others to replicate, verify, and build upon the original research.
+
+### 💽 Open Data
+
+Open data refers to data that is freely available for anyone to use, modify, and share without restrictions, promoting transparency, innovation, and collaboration.
+
+### 🔓 Open Access
+
+Open access is the practice of providing unrestricted online access to scholarly research, allowing anyone to read, download, and share it freely.
+
+### 🍎 Open Educational Resources
+
+Open educational resources are freely accessible, openly licensed materials used for teaching and learning, allowing users to legally use, modify, and distribute them.
+:::
+:::::
+
+\
+\
+\
+
+## Announcements
+
+::: {#recent-announcements}
+:::
+
+\
+\
+\
+
+## Our Mission
+
+**What:** We are a working group of researchers and clinicians dedicated to disseminating knowledge about open science practices to clinicians and researchers in Communication Sciences and Disorders (CSD) and beyond.
+
+**Who:** We aim to educate a diverse group of partners—researchers, speech-language pathologists, audiologists, students, administrators, policymakers, publishers, and community members—on resources and strategies that enhance the reproducibility, transparency, and accessibility of science in our discipline.
+
+**Why:** When researchers and clinicians embrace open science practices, it:
+
+1.  Increases transparency and reproducibility of research methods;
+
+2.  Fosters interdisciplinary clinical research collaboration;
+
+3.  Bridges the clinical and research gap in the CSD community by reducing barriers to accessing and understanding research.
+
+**How:** Our organization promotes open science practices through various initiatives, including:
+
+-   Sharing resources that aid in discovering openly available research materials and products;
+
+-   Educating on methods for the management and sustainability of open science practices, including self-archiving, pre-registration, open data, and sharing materials;
+
+-   Conducting research to explore the use and sustainability of various open science practices in our discipline;
+
+-   Hosting initiatives such as ambassador programs, learning labs, podcasts, journal clubs, and workshops that empower researchers and clinicians to integrate open science practices into their work.
+
+**Vision:** To advance the worldwide accessibility, reproducibility, and transparency of research, aiming to enhance speech, language, hearing, and swallowing for all people.\
+\
+\
+
+## Leading by Example
+
+Check out the websites of these rockstar researchers to see what self-archiving and open science looks like in action! For more examples, check out our [Featured Scientists page](FeaturedScientists.qmd).
+
+::: {#featured-scientists}
+:::
+
+## Contact
+
+::::: {style="background-color: #e4e4e4; border-radius: 20px; padding: 2em; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;"}
+::: {style="flex: 1; min-width: 300px; padding-right: 2em; font-size: 1em;"}
+We'd love your feedback as we continue to develop this site.
+
+After all, it is a site to help *you*!
+
+Connect with us on social media or reach out to us here:
+
+[CSDisseminate\@gmail.com](mailto:CSDisseminate@gmail.com)
+:::
+
+::: {style="flex: 1; min-width: 300px;"}
+<img src="Images/Typing on Laptop.jpg" alt="Typing on laptop" style="width: 100%; border-radius: 15px;"/>
+:::
+:::::
+
+\
