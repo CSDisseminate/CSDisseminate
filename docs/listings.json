@@ -1,8 +1,7 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/FeaturedScientists.html",
     "items": [
-      "/Announcements/2025_04_18_CSDisseminate & OpenCSD/2025_04_18.html",
       "/FeaturedScientists/Audibility, Perception, and Cognition Lab/Audibility, Perception, and Cognition Lab.html",
       "/FeaturedScientists/CLaSS Lab/CLaSS Lab.html"
     ]
@@ -14,8 +13,9 @@
     ]
   },
   {
-    "listing": "/FeaturedScientists.html",
+    "listing": "/index.html",
     "items": [
+      "/Announcements/2025_04_18_CSDisseminate & OpenCSD/2025_04_18.html",
       "/FeaturedScientists/Audibility, Perception, and Cognition Lab/Audibility, Perception, and Cognition Lab.html",
       "/FeaturedScientists/CLaSS Lab/CLaSS Lab.html"
     ]
