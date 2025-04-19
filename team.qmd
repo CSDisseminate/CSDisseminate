@@ -1,0 +1,24 @@
+---
+title: "Team"
+# define three listing blocks, each with a filter on `category`
+listing:
+  - id: collaborators
+    contents: Team
+    type: grid
+    include:
+      categories: "Collaborator"
+    sort-ui: false
+    filter-ui: false
+title-block-banner: false
+lightbox: true
+---
+
+We are a volunteer-based group of clinicians and scientists who aim to promote the culture of self-archiving legal versions of research manuscripts in communication sciences and disorders (CSD).
+
+## Collaborators
+::: {#collaborators}
+:::
+
+## Ambassadors
+
+## Past Collaborators
