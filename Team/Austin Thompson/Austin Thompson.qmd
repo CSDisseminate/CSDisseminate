@@ -2,9 +2,16 @@
 title: "Austin Thompson"
 categories:
  - "Collaborator"
+credentials: "PhD, CCC-SLP"
+position: "Assistant Professor"
 affiliation: "University of Houston"
 pronouns: "he/they"
 orcid: "0000-0002-4224-4850"
+description-research: "Austin Thompson, Ph.D., CCC-SLP, is a speech-language pathologist and assistant professor in the Communication Sciences and Disorders department at the University of Houston. His research investigates the perceptual, acoustic, and kinematic speech characteristics of individuals with dysarthria secondary to progressive neurogenic disorders (e.g., Parkinson’s disease, amyotrophic lateral sclerosis)."
+description-os: "Austin is passionate about supporting researchers to embrace open-science practices to improve their work’s scientific rigor, reproducibility, and accessibility."
+website: https://speak-lab.com
+website-button: "Visit the SPEAK Lab Website!"
+headshot: "Thompson Headshot - Austin Thompson.jpeg"
 lightbox: true
 draft: false
 layout: article
@@ -12,19 +19,18 @@ layout: article
 
 :::::: columns
 ::: {.column width="30%"}
-![Austin Thompson](Thompson Headshot - Austin Thompson.jpeg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="65%"}
-Austin Thompson, Ph.D., CCC-SLP, is a speech-language pathologist and assistant professor in the Communication Sciences and Disorders department at the University of Houston. His research investigates the perceptual, acoustic, and kinematic speech characteristics of individuals with dysarthria secondary to progressive neurogenic disorders (e.g., Parkinson’s disease, amyotrophic lateral sclerosis).
+{{< meta description-research >}}
 
-Austin is passionate about supporting researchers to embrace open-science practices to improve their work’s scientific rigor, reproducibility, and accessibility.
+{{< meta description-os >}}
 
-[Visit the Lab Website!](https://www.speak-lab.com/){.btn .btn-outline-primary .btn role="button" data-toggle="button" title="Visit the Lab Website"}\
+[{{< meta website-button>}}]({{< meta website >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}\
 \
 :::
 ::::::
-

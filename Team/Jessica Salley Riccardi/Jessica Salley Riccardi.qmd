@@ -1,0 +1,36 @@
+---
+title: "Jessica Salley Riccardi"
+categories:
+ - "Collaborator"
+credentials: "PhD, CCC-SLP"
+position: "Assistant Professor"
+affiliation: "University of Maine"
+pronouns: "she/her/hers"
+orcid: ""
+description-research: "Dr. Riccardi is interested in long-term outcomes after childhood brain injury, particularly in the area of cognitive-communication and in high-risk groups."
+description-os: "Dr. Riccardi is passionate about getting research in clinicians' hands to change practice and improve outcomes for our clients."
+website: "https://umaine.edu/bearlab/"
+website-button: "Visit the BEaR Lab Website!"
+headshot: "Jessica Riccardi.jpg"
+lightbox: true
+draft: false
+layout: article
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}**,** {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+{{< meta description-os >}}
+
+[{{< meta website-button>}}]({{< meta website >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button" title="Visit the Lab Website"}\
+\
+:::
+::::::

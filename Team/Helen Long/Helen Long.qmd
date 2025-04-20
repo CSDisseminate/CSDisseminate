@@ -1,0 +1,36 @@
+---
+title: "Helen Long"
+categories:
+ - "Collaborator"
+credentials: "PhD, CCC-SLP"
+position: "Assistant Professor"
+affiliation: "Case Western Reserve University"
+pronouns: "she/her"
+orcid: "0000-0001-6406-1222"
+description-research: "Dr. Helen Long's programmatic research examines early communication development in children with cerebral palsy to advance early identification and intervention of speech, language and communication impairments in this population."
+description-os: "Dr. Long is an advocate of free and public access to scientific manuscripts for clinicians and scientists, and is dedicated to advancing knowledge on how to share and access research."
+website: "https://www.helen-long.com"
+website-button: "Visit the Dr. Long's Website!"
+headshot: "Helen Long.jpg"
+lightbox: true
+draft: false
+layout: article
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+{{< meta description-os >}}
+
+[{{< meta website-button>}}]({{< meta website >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}\
+\
+:::
+::::::
