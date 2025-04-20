@@ -53,6 +53,7 @@ listing:
     filter-ui: false
 title-block-banner: false
 lightbox: true
+freeze: true
 ---
 
 We are a volunteer-based group of clinicians and scientists who aim to promote the culture of self-archiving legal versions of research manuscripts in communication sciences and disorders (CSD).
