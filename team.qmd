@@ -5,8 +5,50 @@ listing:
   - id: collaborators
     contents: Team
     type: grid
+    fields:
+      - image
+      - title
+      - credentials
+      - position
+      - affiliation
+    field-display-names: 
+      image: "Headshot"
+      title: "Name"
+      pronouns: "Pronouns"
+      credentials: "Credentials"
+      position: "Position"
+      affiliation: "Affiliation"
     include:
       categories: "Collaborator"
+    sort-ui: false
+    filter-ui: false
+  - id: ambassadors
+    contents: Team
+    type: grid
+    fields:
+      - image
+      - title
+      - credentials
+      - position
+      - affiliation
+    field-display-names: 
+      image: "Headshot"
+      title: "Name"
+      pronouns: "Pronouns"
+      credentials: "Credentials"
+      position: "Position"
+      affiliation: "Affiliation"
+    include:
+      categories: "Ambassador"
+    sort-ui: false
+    filter-ui: false
+  - id: past-collaborators
+    contents:
+      - Meredith Harold, PhD, CCC-SLP
+      - Meredith Spratford, AuD, CCC-A
+      - Lee Drown, MA, CCC-SLP
+      - Mary Alice Keller, PhD, CCC-SLP
+    type: table
     sort-ui: false
     filter-ui: false
 title-block-banner: false
@@ -16,9 +58,20 @@ lightbox: true
 We are a volunteer-based group of clinicians and scientists who aim to promote the culture of self-archiving legal versions of research manuscripts in communication sciences and disorders (CSD).
 
 ## Collaborators
+
 ::: {#collaborators}
 :::
 
 ## Ambassadors
 
+Meet our University Ambassadors who are currently working to increase capacity for open access and other open science practices within their CSD and affiliated departments!
+
+::: {#ambassadors}
+:::
+
 ## Past Collaborators
+
+We are forever grateful for all of our past and present collaborators who have supported our initiatives! Below are a list of past collaborating members of CSDisseminate.
+
+::: {#past-collaborators}
+:::

@@ -1,0 +1,39 @@
+---
+title: "James Borders"
+first-name: "James"
+last-name: "Borders"
+categories:
+ - "Collaborator"
+credentials: "PhD, CCC-SLP"
+position: "Assistant Professor"
+affiliation: "Boston University"
+pronouns: "he/him"
+orcid: "0000-0002-0291-4266"
+description-research: "James Borders, PhD, CCC-SLP is a speech pathologist and Postdoctoral Research Fellow in the Upper Airway Dysfunction Lab at Teachers College, Columbia University. His clinical research focuses on the rehabilitation of voice and swallowing dysfunction in neurodegenerative disease. James is also passionate about meta-science, statistics, and how these practices affect the transparency, rigor, and replicability of science."
+description-os:
+link: "https://jborders.netlify.app/"
+website-button: "Visit Dr. Borders' Website"
+headshot: "James Borders.png"
+lightbox: true
+draft: false
+layout: article
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+{{< meta description-os >}}
+
+[{{< meta website-button>}}]({{< meta link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}\
+\
+:::
+::::::

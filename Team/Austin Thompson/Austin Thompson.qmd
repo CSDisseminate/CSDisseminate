@@ -1,5 +1,7 @@
 ---
 title: "Austin Thompson"
+first-name: "Austin"
+last-name: "Thompson"
 categories:
  - "Collaborator"
 credentials: "PhD, CCC-SLP"
@@ -9,12 +11,13 @@ pronouns: "he/they"
 orcid: "0000-0002-4224-4850"
 description-research: "Austin Thompson, Ph.D., CCC-SLP, is a speech-language pathologist and assistant professor in the Communication Sciences and Disorders department at the University of Houston. His research investigates the perceptual, acoustic, and kinematic speech characteristics of individuals with dysarthria secondary to progressive neurogenic disorders (e.g., Parkinson’s disease, amyotrophic lateral sclerosis)."
 description-os: "Austin is passionate about supporting researchers to embrace open-science practices to improve their work’s scientific rigor, reproducibility, and accessibility."
-website: https://speak-lab.com
-website-button: "Visit the SPEAK Lab Website!"
+link: "https://speak-lab.com"
+website-button: "Visit the SPEAK Lab Website"
 headshot: "Thompson Headshot - Austin Thompson.jpeg"
 lightbox: true
 draft: false
 layout: article
+editor: source
 ---
 
 :::::: columns
@@ -30,7 +33,7 @@ layout: article
 
 {{< meta description-os >}}
 
-[{{< meta website-button>}}]({{< meta website >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}\
+[{{< meta website-button>}}]({{< meta link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}\
 \
 :::
 ::::::

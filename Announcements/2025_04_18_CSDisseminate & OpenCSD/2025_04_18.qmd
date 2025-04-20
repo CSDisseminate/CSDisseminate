@@ -6,6 +6,7 @@ categories:
  - Announcement
 lightbox: true
 draft: false
+title-block-banner: true
 ---
 
 Hello, world!

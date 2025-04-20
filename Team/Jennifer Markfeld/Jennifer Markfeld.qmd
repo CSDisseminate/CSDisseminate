@@ -1,0 +1,36 @@
+---
+title: "Jennifer Markfeld"
+first-name: "Jennifer"
+last-name: "Markfeld"
+categories:
+ - "Ambassador"
+credentials: "MS, CF-SLP"
+position: "PhD Candidate"
+affiliation: "Vanderbilt University"
+pronouns: "she/her"
+orcid: "0000-0002-7995-6077"
+description-research: "Jennifer is a clinical fellow in speech-language pathologiy and PhD candidate at Vanderbilt University in the Biobehavioral Approaches to NeuroDevelopment Lab. Her broad interests include language development, early language experiences, caregiver-infant interactions, implementation science, and interventions to support infants who are at increased likelihood for neurodevelopmental conditions. Jennifer is passionate about increasing awareness of open science practices and is thrilled to be on the CSDisseminate team!"
+description-os:
+link:
+website-button: 
+headshot: "Jennifer Markfeld.jpg"
+lightbox: true
+draft: false
+layout: article
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+{{< meta description-os >}}
+:::
+::::::

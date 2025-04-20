@@ -13,14 +13,16 @@ website:
     right:
       - text: "Home"
         href: index.qmd
-      - text: "Team"
-        href: team.qmd
-      - text: "Research"
+      - text: "People"
         menu:
-          - text: "Our Research"
-            href: research.qmd
+          - text: "Meet the Team"
+            href: team.qmd
+          - text: "Join Us"
+            href: joinUs.qmd
           - text: "Featured Scientists"
             href: FeaturedScientists.qmd
+      - text: "Research"
+        href: research.qmd
       - text: "Resources"
         href: resources.qmd
       - text: "Events"
@@ -32,6 +34,7 @@ website:
         href: https://github.com/
       - icon: instagram 
         href: https://www.instagram.com/csdisseminate
+  
         
         
 # Define a collection named "Posts"
@@ -57,6 +60,8 @@ format:
     metadata:
       pagetitle: "CSDisseminate"
     include-after-body: custom-footer.html
+    resources:
+      - cards/custom-card.ejs
 
 editor: visual
 

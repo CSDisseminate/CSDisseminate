@@ -1,0 +1,39 @@
+---
+title: "Micah Hirsch"
+first-name: "Micah"
+last-name: "Hirsch"
+categories:
+ - "Collaborator"
+credentials: "PhD"
+position: "Postdoctoral Research Associate"
+affiliation: "Boston University"
+pronouns: "they/them/theirs"
+orcid: "0000-0001-6406-1222"
+description-research: "Micah's research interests are in motor speech disorders, speech science, and metascience. Specifically, their interests are focused on better understanding the various perceptual and acoustic factors that impact speech perception and production for people with dysarthria. Their research interest also aims to increase the methodological rigor of measuring these factors in dysarthria research."
+description-os: "Micah believes that open science practices help increase the rigor of research in CSD by making the process and findings from more accessible, reproducible, and transparent."
+link: "https://www.micah-hirsch.com/"
+website-button: "Visit the Dr. Hirsch's Website!"
+headshot: "Micah Hirsch.jpeg"
+lightbox: true
+draft: false
+layout: article
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+{{< meta description-os >}}
+
+[{{< meta website-button>}}]({{< meta link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}\
+\
+:::
+::::::

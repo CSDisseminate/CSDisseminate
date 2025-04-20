@@ -1,7 +1,32 @@
 ---
 title: "Research"
+# define three listing blocks, each with a filter on `category`
+listing:
+  - id: publications
+    contents: Research
+    type: table
+    fields:
+      - date
+      - title
+      - author
+      - journal-name
+    field-display-names: 
+      title: "Title"
+      date: "Publication Date"
+      author: "Author(s)"
+      journal-name: "Journal"
+    include:
+      categories: "Publication"
+    sort-ui: false
+    filter-ui: false
+title-block-banner: false
+lightbox: true
 ---
 
 ::: {.callout-warning appearance="minimal"}
 ## This page is under construction! Thank you for your patience.
+:::
+
+## Peer-Reviewed Publications
+::: {#publications}
 :::

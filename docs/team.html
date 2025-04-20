@@ -79,13 +79,69 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-credentials','listing-position','listing-affiliation',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-collaborators'] = new List('listing-collaborators', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-ambassadors .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-credentials','listing-position','listing-affiliation',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-ambassadors'] = new List('listing-ambassadors', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-past-collaborators .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-past-collaborators'] = new List('listing-past-collaborators', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -153,18 +209,18 @@ window.Quarto = {
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./team.html" aria-current="page"> 
-<span class="menu-text">Team</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">People</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-research">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-people">    
         <li>
-    <a class="dropdown-item" href="./research.html">
- <span class="dropdown-text">Our Research</span></a>
+    <a class="dropdown-item" href="./team.html">
+ <span class="dropdown-text">Meet the Team</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./joinUs.html">
+ <span class="dropdown-text">Join Us</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./FeaturedScientists.html">
@@ -172,6 +228,10 @@ window.Quarto = {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./resources.html"> 
 <span class="menu-text">Resources</span></a>
@@ -229,7 +289,83 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
 <div id="listing-collaborators" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Collaborator" data-listing-file-modified-sort="1745164462784" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="g-col-1" data-index="0" data-categories="Collaborator" data-listing-file-modified-sort="1745182798346" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<a href="./Team/Alisa Baron/Alisa Baron.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="Team/Alisa Baron/Alisa Baron.png" alt="Alisa Baron, PhD, CCC-SLP Assistant Professor University of Rhode Island" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Alisa Baron
+</h5>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Credentials
+</td>
+<td class="credentials">
+PhD, CCC-SLP
+</td>
+</tr>
+<tr>
+<td>
+Position
+</td>
+<td class="position">
+Assistant Professor
+</td>
+</tr>
+<tr>
+<td>
+Affiliation
+</td>
+<td class="affiliation">
+University of Rhode Island
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Collaborator" data-listing-file-modified-sort="1745182812643" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<a href="./Team/Andrea Ford/Andrea Ford.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="Team/Andrea Ford/Andrea Ford.jpg" alt="Andrea Ford, PhD, CCC-SLP Assistant Professor University of Cincinnati" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Andrea Ford
+</h5>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Credentials
+</td>
+<td class="credentials">
+PhD, CCC-SLP
+</td>
+</tr>
+<tr>
+<td>
+Position
+</td>
+<td class="position">
+Assistant Professor
+</td>
+</tr>
+<tr>
+<td>
+Affiliation
+</td>
+<td class="affiliation">
+University of Cincinnati
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Collaborator" data-listing-file-modified-sort="1745181027824" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./Team/Austin Thompson/Austin Thompson.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Austin Thompson/Thompson Headshot - Austin Thompson.jpeg" alt="Austin Thompson, PhD, CCC-SLP Assistant Professor University of Houston" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -237,19 +373,75 @@ window.Quarto = {
 <h5 class="no-anchor card-title listing-title">
 Austin Thompson
 </h5>
-<div class="card-text listing-description">
-Austin Thompson, Ph.D., CCC-SLP, is a speech-language pathologist and assistant professor in the Communication Sciences and Disorders department at the University of…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Credentials
+</td>
+<td class="credentials">
+PhD, CCC-SLP
+</td>
+</tr>
+<tr>
+<td>
+Position
+</td>
+<td class="position">
+Assistant Professor
+</td>
+</tr>
+<tr>
+<td>
+Affiliation
+</td>
+<td class="affiliation">
+University of Houston
+</td>
+</tr>
+</tbody></table>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Collaborator" data-listing-file-modified-sort="1745164633901" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="g-col-1" data-index="3" data-categories="Collaborator" data-listing-file-modified-sort="1745182848724" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<a href="./Team/Brittany Ciullo/Brittany Ciullo.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="Team/Brittany Ciullo/Brittany Ciullo.png" alt="Brittany Ciullo, MA, CCC-SLP PhD Student UMass Amherst" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Brittany Ciullo
+</h5>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Credentials
+</td>
+<td class="credentials">
+MA, CCC-SLP
+</td>
+</tr>
+<tr>
+<td>
+Position
+</td>
+<td class="position">
+PhD Student
+</td>
+</tr>
+<tr>
+<td>
+Affiliation
+</td>
+<td class="affiliation">
+UMass Amherst
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="Collaborator" data-listing-file-modified-sort="1745182859186" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./Team/Helen Long/Helen Long.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Helen Long/Helen Long.jpg" alt="Helen Long, PhD, CCC-SLP Assistant Professor Case Western Reserve University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -257,19 +449,75 @@ Austin Thompson, Ph.D., CCC-SLP, is a speech-language pathologist and assistant 
 <h5 class="no-anchor card-title listing-title">
 Helen Long
 </h5>
-<div class="card-text listing-description">
-Dr.&nbsp;Helen Long’s programmatic research examines early communication development in children with cerebral palsy to advance early identification and intervention of speech…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Credentials
+</td>
+<td class="credentials">
+PhD, CCC-SLP
+</td>
+</tr>
+<tr>
+<td>
+Position
+</td>
+<td class="position">
+Assistant Professor
+</td>
+</tr>
+<tr>
+<td>
+Affiliation
+</td>
+<td class="affiliation">
+Case Western Reserve University
+</td>
+</tr>
+</tbody></table>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Collaborator" data-listing-file-modified-sort="1745164182698" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
+<div class="g-col-1" data-index="5" data-categories="Collaborator" data-listing-file-modified-sort="1745182867505" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<a href="./Team/James Borders/James Borders.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="Team/James Borders/James Borders.png" alt="James Borders, PhD, CCC-SLP Assistant Professor Boston University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+James Borders
+</h5>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Credentials
+</td>
+<td class="credentials">
+PhD, CCC-SLP
+</td>
+</tr>
+<tr>
+<td>
+Position
+</td>
+<td class="position">
+Assistant Professor
+</td>
+</tr>
+<tr>
+<td>
+Affiliation
+</td>
+<td class="affiliation">
+Boston University
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="Collaborator" data-listing-file-modified-sort="1745182884439" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
 <a href="./Team/Jessica Salley Riccardi/Jessica Salley Riccardi.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Jessica Salley Riccardi/Jessica Riccardi.jpg" alt="Jessica Salley Riccardi, PhD, CCC-SLP Assistant Professor University of Maine" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -277,14 +525,108 @@ Dr.&nbsp;Helen Long’s programmatic research examines early communication devel
 <h5 class="no-anchor card-title listing-title">
 Jessica Salley Riccardi
 </h5>
-<div class="card-text listing-description">
-Dr.&nbsp;Riccardi is interested in long-term outcomes after childhood brain injury, particularly in the area of cognitive-communication and in high-risk groups.
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Credentials
+</td>
+<td class="credentials">
+PhD, CCC-SLP
+</td>
+</tr>
+<tr>
+<td>
+Position
+</td>
+<td class="position">
+Assistant Professor
+</td>
+</tr>
+<tr>
+<td>
+Affiliation
+</td>
+<td class="affiliation">
+University of Maine
+</td>
+</tr>
+</tbody></table>
 </div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="Collaborator" data-listing-file-modified-sort="1745182894991" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<a href="./Team/Mariam El Amin/Mariam El Amin.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="Team/Mariam El Amin/Mariam El Amin.jpg" alt="Mariam El Amin, PhD Postdoctoral Research Associate University of South Carolina" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Mariam El Amin
+</h5>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Credentials
+</td>
+<td class="credentials">
+PhD
+</td>
+</tr>
+<tr>
+<td>
+Position
+</td>
+<td class="position">
+Postdoctoral Research Associate
+</td>
+</tr>
+<tr>
+<td>
+Affiliation
+</td>
+<td class="affiliation">
+University of South Carolina
+</td>
+</tr>
+</tbody></table>
 </div>
 </div>
+</a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="Collaborator" data-listing-file-modified-sort="1745182904836" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<a href="./Team/Micah Hirsch/Micah Hirsch.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="Team/Micah Hirsch/Micah Hirsch.jpeg" alt="Micah Hirsch, PhD Postdoctoral Research Associate Boston University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Micah Hirsch
+</h5>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Credentials
+</td>
+<td class="credentials">
+PhD
+</td>
+</tr>
+<tr>
+<td>
+Position
+</td>
+<td class="position">
+Postdoctoral Research Associate
+</td>
+</tr>
+<tr>
+<td>
+Affiliation
+</td>
+<td class="affiliation">
+Boston University
+</td>
+</tr>
+</tbody></table>
 </div>
 </div>
 </a>
@@ -297,9 +639,107 @@ No matching items
 </section>
 <section id="ambassadors" class="level2">
 <h2 class="anchored" data-anchor-id="ambassadors">Ambassadors</h2>
+<p>Meet our University Ambassadors who are currently working to increase capacity for open access and other open science practices within their CSD and affiliated departments!</p>
+<div id="listing-ambassadors" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Ambassador" data-listing-file-modified-sort="1745181559727" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<a href="./Team/Anne C. Reed/Anne C. Reed.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="Team/Anne C. Reed/Anne C. Reed.jpg" alt="Anne C. Reed, EdS, CCC-SLP Doctoral Candidate Florida State University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Anne C. Reed
+</h5>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Credentials
+</td>
+<td class="credentials">
+EdS, CCC-SLP
+</td>
+</tr>
+<tr>
+<td>
+Position
+</td>
+<td class="position">
+Doctoral Candidate
+</td>
+</tr>
+<tr>
+<td>
+Affiliation
+</td>
+<td class="affiliation">
+Florida State University
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Ambassador" data-listing-file-modified-sort="1745182780144" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<a href="./Team/Jennifer Markfeld/Jennifer Markfeld.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="Team/Jennifer Markfeld/Jennifer Markfeld.jpg" alt="Jennifer Markfeld, MS, CF-SLP PhD Candidate Vanderbilt University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jennifer Markfeld
+</h5>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Credentials
+</td>
+<td class="credentials">
+MS, CF-SLP
+</td>
+</tr>
+<tr>
+<td>
+Position
+</td>
+<td class="position">
+PhD Candidate
+</td>
+</tr>
+<tr>
+<td>
+Affiliation
+</td>
+<td class="affiliation">
+Vanderbilt University
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 </section>
 <section id="past-collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="past-collaborators">Past Collaborators</h2>
+<p>We are forever grateful for all of our past and present collaborators who have supported our initiatives! Below are a list of past collaborating members of CSDisseminate.</p>
+<div id="listing-past-collaborators" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+</tr>
+</thead>
+<tbody class="list">
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 
 
 

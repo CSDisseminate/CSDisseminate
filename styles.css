@@ -75,6 +75,81 @@ div.#quarto-back-to-top {
   z-index: 1;                                 /* keep it above neighbors */
 }
 
+/* —— TEAM LISTING CARD STYLES —— */
+
+/* make team images square and cover */
+[data-categories="Collaborator"] .card-img-top > img {
+  height: auto         !important;
+  aspect-ratio: 1/1    !important;
+  width: 100%          !important;
+  object-fit: cover    !important;
+  display: block;
+}
+
+/* card background & rounding */
+[data-categories="Collaborator"] .card.quarto-grid-item {
+  background: #fff !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border: none !important;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* tighten up team card body padding */
+[data-categories="Collaborator"] .card-body {
+  padding: 1em;
+}
+
+/* image corner rounding */
+[data-categories="Collaborator"] .card-img-top > img {
+  border-radius: 1rem 1rem 0 0 !important;
+}
+
+/* hover effect */
+[data-categories="Collaborator"] .card.quarto-grid-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
+  z-index: 1;
+}
+
+/* make team images square and cover */
+[data-categories="Ambassador"] .card-img-top > img {
+  height: auto         !important;
+  aspect-ratio: 1/1    !important;
+  width: 100%          !important;
+  object-fit: cover    !important;
+  display: block;
+}
+
+/* card background & rounding */
+[data-categories="Ambassador"] .card.quarto-grid-item {
+  background: #fff !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border: none !important;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* tighten up team card body padding */
+[data-categories="Ambassador"] .card-body {
+  padding: 1em;
+}
+
+/* image corner rounding */
+[data-categories="Ambassador"] .card-img-top > img {
+  border-radius: 1rem 1rem 0 0 !important;
+}
+
+/* hover effect */
+[data-categories="Ambassador"] .card.quarto-grid-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
+  z-index: 1;
+}
+
+
 
 .person-card {
   display: block;
@@ -110,3 +185,12 @@ div.#quarto-back-to-top {
   font-size: 0.9em;
 }
 
+/* Hide the first <td> (the “pronouns”, “credentials”, etc. labels) */
+.card-other-values td:first-child {
+  display: none;
+}
+
+/* Optional: collapse the leftover empty column spacing */
+.card-other-values tr {
+  grid-template-columns: 1fr;
+}

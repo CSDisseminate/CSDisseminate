@@ -3,7 +3,12 @@ listing:
   - id: recent-announcements
     contents: Announcements
     sort: "date desc"
-    type: grid
+    type: default
+    fields: 
+      - image
+      - title
+      - date
+      - author
     categories: false
     sort-ui: false
     filter-ui: false
@@ -61,7 +66,7 @@ Open methods involve the transparent sharing of research methodologies, protocol
 
 Open data refers to data that is freely available for anyone to use, modify, and share without restrictions, promoting transparency, innovation, and collaboration.
 
-### 🔓 Open Access
+### 🔓 Open Access & Self-Archiving
 
 Open access is the practice of providing unrestricted online access to scholarly research, allowing anyone to read, download, and share it freely.
 
