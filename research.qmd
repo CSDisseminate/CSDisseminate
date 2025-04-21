@@ -17,16 +17,18 @@ listing:
       journal-name: "Journal"
     include:
       categories: "Publication"
+    sort: "date desc"
     sort-ui: false
     filter-ui: false
 title-block-banner: false
 lightbox: true
 ---
 
-::: {.callout-warning appearance="minimal"}
-## This page is under construction! Thank you for your patience.
-:::
+Research produced by the CSDisseminate team and collaborators.
+\
+\
 
 ## Peer-Reviewed Publications
+
 ::: {#publications}
 :::

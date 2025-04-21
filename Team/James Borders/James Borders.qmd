@@ -2,6 +2,7 @@
 title: "James Borders"
 first-name: "James"
 last-name: "Borders"
+date-joined: "2021-02-01"
 categories:
  - "Collaborator"
 credentials: "PhD, CCC-SLP"

@@ -2,6 +2,7 @@
 title: "Micah Hirsch"
 first-name: "Micah"
 last-name: "Hirsch"
+date-joined: "2022-02-01"
 categories:
  - "Collaborator"
 credentials: "PhD"

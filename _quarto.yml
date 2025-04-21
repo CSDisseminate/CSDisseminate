@@ -4,7 +4,7 @@ project:
 
 website:
   title: "CSDisseminate"
-  favicon: /Images/favicon/favicon-96x96.png
+  favicon: /Images/favicon-96x96.png
   navbar:
     title: " 
   ![](/Images/CSDisseminate Logo_White Logo_Purple Background Circle.png){width=45}
@@ -14,7 +14,6 @@ website:
       - text: "Home"
         href: index.qmd
       - text: "People"
-        href: team.qmd
         menu:
           - text: "Meet the Team"
             href: team.qmd
@@ -24,10 +23,10 @@ website:
             href: FeaturedScientists.qmd
       - text: "Research"
         href: research.qmd
-      - text: "Resources"
-        href: resources.qmd
-      - text: "Events"
-        href: events.qmd
+      #- text: "Resources"
+      #  href: resources.qmd
+      #- text: "Events"
+      #  href: events.qmd
   back-to-top-navigation: true
   page-footer:
     left: 

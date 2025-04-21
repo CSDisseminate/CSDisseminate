@@ -3,5 +3,5 @@ title: "Resources"
 ---
 
 ::: {.callout-warning appearance="minimal"}
-## This page is under construction! Thank you for your patience.
+This page is under construction! Thank you for your patience.
 :::

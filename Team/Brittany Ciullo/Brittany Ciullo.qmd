@@ -2,6 +2,7 @@
 title: "Brittany Ciullo"
 first-name: "Brittany"
 last-name: "Ciullo"
+date-joined: "2023-12-01"
 categories:
  - "Collaborator"
 credentials: "MA, CCC-SLP"

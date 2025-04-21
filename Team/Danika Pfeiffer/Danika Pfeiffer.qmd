@@ -1,0 +1,40 @@
+---
+title: "Danika Pfeiffer"
+first-name: "Danika"
+last-name: "Pfeiffer"
+date-joined: "2020-06-01"
+categories:
+ - "Collaborator"
+credentials: "PhD, CCC-SLP"
+position: "Assistant Professor"
+affiliation: "Old Dominion University"
+pronouns: "she/her"
+orcid: "0000-0003-1080-4961"
+description-research: "Danika’s primary research interest is in enhancing young children's early language and literacy skills through collaborative school-based partnerships. This includes providing educators with interprofessional training at the preservice and in-service levels."
+description-os: "Danika is passionate about improving accessibility of research and using open science as a means to promote collaborations that enhance the research process."
+link: "https://www.danikapfeiffer.com"
+website-button: "Visit the Dr. Pfeiffer's Website"
+headshot: "Danika Pfeiffer.jpeg"
+lightbox: true
+layout: article
+editor: source
+draft: false
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+{{< meta description-os >}}
+
+[{{< meta website-button>}}]({{< meta link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}\
+\
+:::
+::::::

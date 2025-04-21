@@ -20,6 +20,8 @@ listing:
       affiliation: "Affiliation"
     include:
       categories: "Collaborator"
+    sort:
+      - date-joined
     sort-ui: false
     filter-ui: false
   - id: ambassadors

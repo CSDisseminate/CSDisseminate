@@ -9,15 +9,16 @@
   {
     "listing": "/team.html",
     "items": [
-      "/Team/Alisa Baron/Alisa Baron.html",
-      "/Team/Andrea Ford/Andrea Ford.html",
-      "/Team/Austin Thompson/Austin Thompson.html",
-      "/Team/Brittany Ciullo/Brittany Ciullo.html",
-      "/Team/Helen Long/Helen Long.html",
-      "/Team/James Borders/James Borders.html",
-      "/Team/Jessica Salley Riccardi/Jessica Salley Riccardi.html",
       "/Team/Mariam El Amin/Mariam El Amin.html",
+      "/Team/Helen Long/Helen Long.html",
+      "/Team/Danika Pfeiffer/Danika Pfeiffer.html",
+      "/Team/Jessica Salley Riccardi/Jessica Salley Riccardi.html",
+      "/Team/James Borders/James Borders.html",
+      "/Team/Austin Thompson/Austin Thompson.html",
       "/Team/Micah Hirsch/Micah Hirsch.html",
+      "/Team/Brittany Ciullo/Brittany Ciullo.html",
+      "/Team/Andrea Ford/Andrea Ford.html",
+      "/Team/Alisa Baron/Alisa Baron.html",
       "/Team/Anne C. Reed/Anne C. Reed.html",
       "/Team/Jennifer Markfeld/Jennifer Markfeld.html"
     ]
@@ -33,7 +34,9 @@
   {
     "listing": "/research.html",
     "items": [
-      "/Research/Long, Drown, & El Amin (2023)/Long, Drown, & El Amin (2023).html"
+      "/Research/Pfeiffer et al (2025)/Pfeiffer et al (2025).html",
+      "/Research/Long, Drown, & El Amin (2023)/Long, Drown, & El Amin (2023).html",
+      "/Research/El Amin, Borders, Long, Keller, & Kearney (2023)/El Amin, Borders, Long, Keller, & Kearney (2023).html"
     ]
   }
 ]

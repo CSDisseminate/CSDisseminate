@@ -2,7 +2,6 @@
 title: "Austin Thompson"
 first-name: "Austin"
 last-name: "Thompson"
-date-joined: "2022-02-01"
 categories:
  - "Collaborator"
 credentials: "PhD, CCC-SLP"
@@ -16,9 +15,9 @@ link: "https://speak-lab.com"
 website-button: "Visit the SPEAK Lab Website"
 headshot: "Thompson Headshot - Austin Thompson.jpeg"
 lightbox: true
-draft: false
 layout: article
 editor: source
+draft: true
 ---
 
 :::::: columns
