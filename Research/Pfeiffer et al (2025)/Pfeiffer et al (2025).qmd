@@ -55,7 +55,7 @@ editor: source
 
 -   [Read on JSLHR]({{< meta doi>}})
 
--   [Read the self-archived postprint](Postprint OS Manuscript Jan 24 2025.pdf)
+-   [Read the self-archived postprint on OSF](https://osf.io/preprints/osf/9kxa7_v1)
 
 -   [Get the data and code from OSF](https://osf.io/tprzu/)
 
