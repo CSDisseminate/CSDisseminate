@@ -1,0 +1,38 @@
+---
+title: "Collin Brice"
+first-name: "Collin"
+last-name: "Brice"
+date-joined: "2025-02-01"
+categories:
+ - "Collaborator"
+credentials: "MS, CCC-SLP"
+position: "PhD Candidate"
+affiliation: "University of Cincinnati"
+pronouns: "he/him"
+orcid:
+description-research: "Collin (he/him) is a researcher in speech-language pathology with interests in mixed methods, gender perception in voice, and neuroimaging using fNIRS. His work explores how listeners experience individuals' speech. He is also passionate about pedagogy and advancing diversity, equity, and inclusion (DE&I) practices in education and research, with a strong commitment to open science and inclusive methodologies."
+description-os:
+link:
+website-button:
+headshot: "Collin Brice.JPEG"
+lightbox: true
+draft: false
+layout: article
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+{{< meta description-os >}}
+
+:::
+::::::
