@@ -18,7 +18,7 @@ website:
           - text: "Meet the Team"
             href: team.qmd
           - text: "Join Us"
-            href: joinUs.qmd
+            href: join-us.qmd
           - text: "Featured Scientists"
             href: FeaturedScientists.qmd
       - text: "Research"
