@@ -1,5 +1,8 @@
 ---
 title: "Team"
+alias:
+  - meet-us.html
+
 # define three listing blocks, each with a filter on `category`
 listing:
   - id: collaborators
