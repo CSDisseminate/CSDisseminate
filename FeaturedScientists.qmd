@@ -1,5 +1,7 @@
 ---
 title: "Featured Scientists"
+aliases: 
+  - featured-scientists.html
 listing:
   contents: FeaturedScientists
   type: grid
