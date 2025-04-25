@@ -125,6 +125,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-past-collaborators .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-past-collaborators'] = new List('listing-past-collaborators', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -253,7 +281,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
 <div id="listing-collaborators" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Collaborator" data-listing-file-modified-sort="1745198668000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="g-col-1" data-index="0" data-categories="Collaborator" data-listing-file-modified-sort="1745198668873" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./Team/Mariam El Amin/Mariam El Amin.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Mariam El Amin/Mariam El Amin.jpg" alt="Mariam El Amin, PhD Postdoctoral Research Associate University of South Carolina" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -291,7 +319,7 @@ University of South Carolina
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Collaborator" data-listing-file-modified-sort="1745199772000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="g-col-1" data-index="1" data-categories="Collaborator" data-listing-file-modified-sort="1745199772125" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./Team/Helen Long/Helen Long.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Helen Long/Helen Long.jpg" alt="Helen Long, PhD, CCC-SLP Assistant Professor Case Western Reserve University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -329,7 +357,7 @@ Case Western Reserve University
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Collaborator" data-listing-file-modified-sort="1745198430000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="g-col-1" data-index="2" data-categories="Collaborator" data-listing-file-modified-sort="1745198430809" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./Team/Danika Pfeiffer/Danika Pfeiffer.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Danika Pfeiffer/Danika Pfeiffer.jpeg" alt="Danika Pfeiffer, PhD, CCC-SLP Assistant Professor Old Dominion University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -367,7 +395,7 @@ Old Dominion University
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Collaborator" data-listing-file-modified-sort="1745198656000" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
+<div class="g-col-1" data-index="3" data-categories="Collaborator" data-listing-file-modified-sort="1745198656336" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
 <a href="./Team/Jessica Salley Riccardi/Jessica Salley Riccardi.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Jessica Salley Riccardi/Jessica Riccardi.jpg" alt="Jessica Salley Riccardi, PhD, CCC-SLP Assistant Professor University of Maine" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -405,7 +433,7 @@ University of Maine
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Collaborator" data-listing-file-modified-sort="1745198626000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="g-col-1" data-index="4" data-categories="Collaborator" data-listing-file-modified-sort="1745198626682" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./Team/James Borders/James Borders.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/James Borders/James Borders.png" alt="James Borders, PhD, CCC-SLP Assistant Professor Boston University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -443,7 +471,7 @@ Boston University
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="Collaborator" data-listing-file-modified-sort="1745198570000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="g-col-1" data-index="5" data-categories="Collaborator" data-listing-file-modified-sort="1745198570518" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./Team/Austin Thompson/Austin Thompson.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Austin Thompson/Thompson Headshot - Austin Thompson.jpeg" alt="Austin Thompson, PhD, CCC-SLP Assistant Professor University of Houston" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -481,7 +509,7 @@ University of Houston
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Collaborator" data-listing-file-modified-sort="1745198713000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="g-col-1" data-index="6" data-categories="Collaborator" data-listing-file-modified-sort="1745198713046" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./Team/Micah Hirsch/Micah Hirsch.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Micah Hirsch/Micah Hirsch.jpeg" alt="Micah Hirsch, PhD Postdoctoral Research Associate Boston University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -519,7 +547,7 @@ Boston University
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="Collaborator" data-listing-file-modified-sort="1745198596000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="g-col-1" data-index="7" data-categories="Collaborator" data-listing-file-modified-sort="1745198596537" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <a href="./Team/Brittany Ciullo/Brittany Ciullo.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Brittany Ciullo/Brittany Ciullo.png" alt="Brittany Ciullo, MA, CCC-SLP PhD Student UMass Amherst" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -557,7 +585,7 @@ UMass Amherst
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Collaborator" data-listing-file-modified-sort="1745198528000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="g-col-1" data-index="8" data-categories="Collaborator" data-listing-file-modified-sort="1745198528534" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <a href="./Team/Andrea Ford/Andrea Ford.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Andrea Ford/Andrea Ford.jpg" alt="Andrea Ford, PhD, CCC-SLP Assistant Professor University of Cincinnati" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -595,7 +623,7 @@ University of Cincinnati
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="Collaborator" data-listing-file-modified-sort="1745198451000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="g-col-1" data-index="9" data-categories="Collaborator" data-listing-file-modified-sort="1745198451288" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <a href="./Team/Alisa Baron/Alisa Baron.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Alisa Baron/Alisa Baron.png" alt="Alisa Baron, PhD, CCC-SLP Assistant Professor University of Rhode Island" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -633,7 +661,7 @@ University of Rhode Island
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Collaborator" data-listing-file-modified-sort="1745290563000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="g-col-1" data-index="10" data-categories="Collaborator" data-listing-file-modified-sort="1745290563021" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <a href="./Team/Collin Brice/Collin Brice.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Collin Brice/Collin Brice.JPEG" alt="Collin Brice, MS, CCC-SLP PhD Candidate University of Cincinnati" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -682,7 +710,7 @@ No matching items
 <p>Meet our University Ambassadors who are currently working to increase capacity for open access and other open science practices within their CSD and affiliated departments!</p>
 <div id="listing-ambassadors" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Ambassador" data-listing-file-modified-sort="1745198548000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="g-col-1" data-index="0" data-categories="Ambassador" data-listing-file-modified-sort="1745198548370" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./Team/Anne C. Reed/Anne C. Reed.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Anne C. Reed/Anne C. Reed.jpg" alt="Anne C. Reed, EdS, CCC-SLP Doctoral Candidate Florida State University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -720,7 +748,7 @@ Florida State University
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Ambassador" data-listing-file-modified-sort="1745198647000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="g-col-1" data-index="1" data-categories="Ambassador" data-listing-file-modified-sort="1745198647489" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <a href="./Team/Jennifer Markfeld/Jennifer Markfeld.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="Team/Jennifer Markfeld/Jennifer Markfeld.jpg" alt="Jennifer Markfeld, MS, CF-SLP PhD Candidate Vanderbilt University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -778,7 +806,19 @@ No matching items
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-table" id="listing-past-collaborators">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+</tr>
+</thead>
+<tbody class="list">
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <footer class="custom-footer">
   <p>
     CSDisseminate is a community site, powered by the labor of volunteers. We do have some associated expenses, and are currently sponsored by The Informed SLP. If you’d like to become a sponsor as well, please reach out! This website is licensed under the Creative Commons License Attribution 4.0 International (CC BY 4.0). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator.

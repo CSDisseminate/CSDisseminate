@@ -44,6 +44,15 @@ listing:
       categories: "Ambassador"
     sort-ui: false
     filter-ui: false
+  - id: past-collaborators
+    contents:
+      - Meredith Harold, PhD, CCC-SLP
+      - Meredith Spratford, AuD, CCC-A
+      - Lee Drown, MA, CCC-SLP
+      - Mary Alice Keller, PhD, CCC-SLP
+    type: table
+    sort-ui: false
+    filter-ui: false
 title-block-banner: false
 lightbox: true
 freeze: true

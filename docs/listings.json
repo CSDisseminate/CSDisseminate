@@ -7,14 +7,6 @@
     ]
   },
   {
-    "listing": "/research.html",
-    "items": [
-      "/Research/Pfeiffer et al (2025)/Pfeiffer et al (2025).html",
-      "/Research/Long, Drown, & El Amin (2023)/Long, Drown, & El Amin (2023).html",
-      "/Research/El Amin, Borders, Long, Keller, & Kearney (2023)/El Amin, Borders, Long, Keller, & Kearney (2023).html"
-    ]
-  },
-  {
     "listing": "/team.html",
     "items": [
       "/Team/Mariam El Amin/Mariam El Amin.html",
@@ -38,6 +30,14 @@
       "/Announcements/2025_04_18_CSDisseminate & OpenCSD/2025_04_18.html",
       "/FeaturedScientists/Audibility, Perception, and Cognition Lab/Audibility, Perception, and Cognition Lab.html",
       "/FeaturedScientists/CLaSS Lab/CLaSS Lab.html"
+    ]
+  },
+  {
+    "listing": "/research.html",
+    "items": [
+      "/Research/Pfeiffer et al (2025)/Pfeiffer et al (2025).html",
+      "/Research/Long, Drown, & El Amin (2023)/Long, Drown, & El Amin (2023).html",
+      "/Research/El Amin, Borders, Long, Keller, & Kearney (2023)/El Amin, Borders, Long, Keller, & Kearney (2023).html"
     ]
   }
 ]
