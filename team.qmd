@@ -1,6 +1,6 @@
 ---
 title: "Team"
-alias:
+aliases:
   - meet-us.html
 
 # define three listing blocks, each with a filter on `category`
