@@ -1,5 +1,7 @@
 ---
 title: "Research"
+aliases: 
+  - in-press.html
 # define three listing blocks, each with a filter on `category`
 listing:
   - id: publications
@@ -24,8 +26,7 @@ title-block-banner: false
 lightbox: true
 ---
 
-Research produced by the CSDisseminate team and collaborators.
-\
+Research produced by the CSDisseminate team and collaborators.\
 \
 
 ## Peer-Reviewed Publications
