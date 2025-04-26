@@ -5,7 +5,7 @@ aliases:
 # define three listing blocks, each with a filter on `category`
 listing:
   - id: publications
-    contents: Research
+    contents: Publications
     type: table
     fields:
       - date
