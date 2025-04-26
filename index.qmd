@@ -14,7 +14,7 @@ listing:
     filter-ui: false
     max-items: 3
   - id: featured-scientists
-    contents: FeaturedScientists
+    contents: Featured-Scientists
     sort: "date desc"
     type: grid
     categories: false
@@ -119,7 +119,7 @@ Open educational resources are freely accessible, openly licensed materials used
 
 ## Leading by Example
 
-Check out the websites of these rockstar researchers to see what self-archiving and open science looks like in action! For more examples, check out our [Featured Scientists page](FeaturedScientists.qmd).
+Check out the websites of these rockstar researchers to see what self-archiving and open science looks like in action! For more examples, check out our [Featured Scientists page](featured-scientists.qmd).
 
 ::: {#featured-scientists}
 :::

@@ -1,43 +1,43 @@
 [
   {
-    "listing": "/FeaturedScientists.html",
+    "listing": "/index.html",
     "items": [
-      "/FeaturedScientists/Audibility, Perception, and Cognition Lab/Audibility, Perception, and Cognition Lab.html",
-      "/FeaturedScientists/CLaSS Lab/CLaSS Lab.html"
-    ]
-  },
-  {
-    "listing": "/research.html",
-    "items": [
-      "/Research/Pfeiffer et al (2025)/Pfeiffer et al (2025).html",
-      "/Research/Long, Drown, & El Amin (2023)/Long, Drown, & El Amin (2023).html",
-      "/Research/El Amin, Borders, Long, Keller, & Kearney (2023)/El Amin, Borders, Long, Keller, & Kearney (2023).html"
+      "/Announcements/2025_04_18_CSDisseminate & OpenCSD/index.html",
+      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
+      "/Featured-Scientists/CLaSS-Lab/index.html"
     ]
   },
   {
     "listing": "/team.html",
     "items": [
-      "/Team/Mariam El Amin/Mariam El Amin.html",
-      "/Team/Helen Long/Helen Long.html",
-      "/Team/Danika Pfeiffer/Danika Pfeiffer.html",
-      "/Team/Jessica Salley Riccardi/Jessica Salley Riccardi.html",
-      "/Team/James Borders/James Borders.html",
-      "/Team/Austin Thompson/Austin Thompson.html",
-      "/Team/Micah Hirsch/Micah Hirsch.html",
-      "/Team/Brittany Ciullo/Brittany Ciullo.html",
-      "/Team/Andrea Ford/Andrea Ford.html",
-      "/Team/Alisa Baron/Alisa Baron.html",
-      "/Team/Collin Brice/Collin Brice.html",
-      "/Team/Anne C. Reed/Anne C. Reed.html",
-      "/Team/Jennifer Markfeld/Jennifer Markfeld.html"
+      "/Team/Helen-Long/index.html",
+      "/Team/Mariam-El-Amin/index.html",
+      "/Team/Danika-Pfeiffer/index.html",
+      "/Team/Jessica-Salley-Riccardi/index.html",
+      "/Team/James-Borders/index.html",
+      "/Team/Micah-Hirsch/index.html",
+      "/Team/Austin-Thompson/index.html",
+      "/Team/Brittany-Ciullo/index.html",
+      "/Team/Andrea-Ford/index.html",
+      "/Team/Alisa-Baron/index.html",
+      "/Team/Collin-Brice/index.html",
+      "/Team/Anne-Reed/index.html",
+      "/Team/Jennifer-Markfeld/index.html"
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/research.html",
     "items": [
-      "/Announcements/2025_04_18_CSDisseminate & OpenCSD/index.html",
-      "/FeaturedScientists/Audibility, Perception, and Cognition Lab/Audibility, Perception, and Cognition Lab.html",
-      "/FeaturedScientists/CLaSS Lab/CLaSS Lab.html"
+      "/Research/Pfeiffer-et-al-2025/index.html",
+      "/Research/Long-Drown-El-Amin-2023/index.html",
+      "/Research/El-Amin-et-al-2023/index.html"
+    ]
+  },
+  {
+    "listing": "/featured-scientists.html",
+    "items": [
+      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
+      "/Featured-Scientists/CLaSS-Lab/index.html"
     ]
   }
 ]

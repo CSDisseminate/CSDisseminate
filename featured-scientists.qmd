@@ -1,0 +1,20 @@
+---
+title: "Featured Scientists"
+aliases: 
+  - FeaturedScientists.html
+listing:
+  contents: Featured-Scientists
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+page-layout: article
+title-block-banner: false
+lightbox: true
+---
+
+Check out the websites of these rockstar researchers to see what self-archiving and open science looks like in action!\
+\
+
+::: {collections="featured-scientists"}
+:::
