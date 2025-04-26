@@ -4,10 +4,10 @@ project:
 
 website:
   title: "CSDisseminate"
-  favicon: /images/favicon-96x96.png
+  favicon: /Images/favicon-96x96.png
   navbar:
     title: " 
-  ![](/images/CSDisseminate Logo_White Logo_Purple Background Circle.png){width=45}
+  ![](/Images/CSDisseminate Logo_White Logo_Purple Background Circle.png){width=45}
   \\ \\
   CSDisseminate"
     right:
