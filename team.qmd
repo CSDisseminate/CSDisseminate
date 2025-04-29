@@ -52,7 +52,7 @@ lightbox: true
 freeze: true
 ---
 
-We are a volunteer-based group of clinicians and scientists who aim to promote the culture of self-archiving legal versions of research manuscripts in communication sciences and disorders (CSD).
+We are a working group of researchers and clinicians dedicated to disseminating knowledge about open science practices to clinicians and researchers in Communication Sciences and Disorders (CSD) and beyond.
 
 ## Collaborators
 
@@ -61,7 +61,7 @@ We are a volunteer-based group of clinicians and scientists who aim to promote t
 
 ## Ambassadors
 
-Meet our University Ambassadors who are currently working to increase capacity for open access and other open science practices within their CSD and affiliated departments!
+Meet our University Ambassadors who are currently working to increase the use of open science practices within their CSD and affiliated departments!
 
 ::: {#ambassadors}
 :::
