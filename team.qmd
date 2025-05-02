@@ -54,10 +54,14 @@ freeze: true
 
 We are a working group of researchers and clinicians dedicated to disseminating knowledge about open science practices to clinicians and researchers in Communication Sciences and Disorders (CSD) and beyond.
 
+------------------------------------------------------------------------
+
 ## Collaborators
 
 ::: {#collaborators}
 :::
+
+------------------------------------------------------------------------
 
 ## Ambassadors
 
@@ -65,6 +69,8 @@ Meet our University Ambassadors who are currently working to increase the use of
 
 ::: {#ambassadors}
 :::
+
+------------------------------------------------------------------------
 
 ## Past Collaborators
 

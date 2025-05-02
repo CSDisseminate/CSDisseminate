@@ -3,8 +3,70 @@ title: "Resources"
 aliases: 
   - for-clinicians.html
   - for-scientists.html
+  
+listing:
+  - id: resources-all
+    contents: Resources
+    type: table
+    fields:
+      - title
+      - short-description
+    field-display-names: 
+      title: "Title"
+      short-description: "Description"
+    categories: unnumbered
+    sort-ui: true
+    filter-ui: true
+  - id: resources-scientists
+    contents: Resources
+    type: table
+    fields:
+      - title
+      - short-description
+    field-display-names: 
+      title: "Title"
+      short-description: "Description"
+    categories: unnumbered
+    include:
+      categories: "For Scientists"
+    sort-ui: true
+    filter-ui: true
+  - id: resources-clinicians
+    contents: Resources
+    type: table
+    fields:
+      - title
+      - short-description
+    field-display-names: 
+      title: "Title"
+      short-description: "Description"
+    categories: unnumbered
+    include:
+      categories: "For Clinicians"
+    sort-ui: true
+    filter-ui: true
+editor: source
 ---
 
-::: {.callout-warning appearance="minimal"}
-This page is under construction! Thank you for your patience.
+Explore our curated database of resources designed to help scientists and clinicians embrace open science practices in Communication Sciences and Disorders.
+
+<!--# ::: {.callout-tip appearance="minimal"}
+See a resource missing? Let us know!
+::: -->
+----
+:::::: panel-tabset
+## For All
+
+::: {#resources-all}
 :::
+
+## For Scientists
+
+::: {#resources-scientists}
+:::
+
+## For Clinicians
+
+::: {#resources-clinicians}
+:::
+::::::

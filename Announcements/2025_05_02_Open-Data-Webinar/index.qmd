@@ -1,0 +1,22 @@
+---
+title: "Attend our upcoming webinar: Open Data 101 - A Guide for Researchers"
+date: "2025-05-02"
+author:
+  - Danika Pfieffer
+  - Helen
+categories:
+ - Announcement
+lightbox: true
+draft: false
+title-block-banner: true
+---
+
+On Tuesday, June 3, CSDisseminate will host a webinar: **Open Data 101: A Guide for Researchers**! This free 1-hour webinar is your go-to resource for understanding the world of open data. Whether you're a seasoned researcher or just starting out, this online session will equip you with the knowledge and tools needed to navigate the vast landscape of open data.
+
+Join CSDisseminate Collaborators **James Borders, PhD, CCC-SLP** and **Micah Hirsch, PhD** to learn about the benefits of data sharing, different ways to share your data, and common barriers, concerns, and licensing information.
+
+To register, please visit the Eventbrite page:
+
+[Register on Eventbrite!](https://www.eventbrite.com/e/open-data-101-a-guide-for-researchers-tickets-1344670558839?aff=oddtdtcreator){.btn .btn-outline-primary .btn role="button" data-toggle="button"}\
+
+[![The flyer for the upcoming Open Data webinar.](open-data-webinar-flyer.png){fig-alt="Flyer for a webinar titled “Open Data 101: A Guide for Researchers,” hosted by CSDisseminate. The design features a large black circle with white text and a bar graph icon, and the event is scheduled for Tuesday, June 3, 2025, at 4:00 PM EST. Wavy black lines border the image, with purple accents and a lightbulb logo representing CSDisseminate at the top." fig-align="left" width="400"}](https://www.eventbrite.com/e/open-data-101-a-guide-for-researchers-tickets-1344670558839?aff=oddtdtcreator)

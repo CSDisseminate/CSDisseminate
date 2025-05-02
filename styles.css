@@ -194,3 +194,20 @@ div.#quarto-back-to-top {
 .card-other-values tr {
   grid-template-columns: 1fr;
 }
+
+hr {
+  border: none;         /* Remove the horizontal line */
+  height: 2em;          /* Adds vertical spacing */
+  margin: 2em 0;        /* Extra spacing above and below */
+}
+
+/* Limit image size in the recent-announcements listing */
+[data-categories="Announcement"] img {
+  max-width: 150px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+

@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/Announcements/2025_05_02_Open-Data-Webinar/index.html",
       "/Announcements/2025_04_18_CSDisseminate & OpenCSD/index.html",
       "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
       "/Featured-Scientists/CLaSS-Lab/index.html"
@@ -38,6 +39,29 @@
     "items": [
       "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
       "/Featured-Scientists/CLaSS-Lab/index.html"
+    ]
+  },
+  {
+    "listing": "/Resources/index.html",
+    "items": [
+      "/Resources/resources.html",
+      "/Resources/Zotero/index.html"
+    ]
+  },
+  {
+    "listing": "/Resources/resources.html",
+    "items": [
+      "/Resources/index.html",
+      "/Resources/Zotero/index.html"
+    ]
+  },
+  {
+    "listing": "/resources.html",
+    "items": [
+      "/Resources/Github/index.html",
+      "/Resources/OS-Coursera/index.html",
+      "/Resources/Python/index.html",
+      "/Resources/Zotero/index.html"
     ]
   }
 ]

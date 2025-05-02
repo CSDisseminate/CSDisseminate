@@ -25,6 +25,7 @@ page-layout: article
 title-block-banner: false
 ---
 
+
 :::: {style="text-align: center; padding-top: 2em; padding-bottom: 2em;"}
 <img src="Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" alt="CSDisseminate Logo" style="width: 400px;"/>
 
@@ -39,9 +40,7 @@ Disseminating knowledge and resources about open science practices to researcher
 </p>
 ::::
 
-\
-\
-\
+------------------------------------------------------------------------
 
 ## Learn about...
 
@@ -76,18 +75,14 @@ Open educational resources are freely accessible, openly licensed materials used
 :::
 :::::
 
-\
-\
-\
+------------------------------------------------------------------------
 
 ## Announcements
 
 ::: {#recent-announcements}
 :::
 
-\
-\
-\
+------------------------------------------------------------------------
 
 ## Our Mission
 
@@ -113,9 +108,9 @@ Open educational resources are freely accessible, openly licensed materials used
 
 -   Hosting initiatives such as ambassador programs, learning labs, podcasts, journal clubs, and workshops that empower researchers and clinicians to integrate open science practices into their work.
 
-**Vision:** To advance the worldwide accessibility, reproducibility, and transparency of research, aiming to enhance speech, language, hearing, and swallowing for all people.\
-\
-\
+**Vision:** To advance the worldwide accessibility, reproducibility, and transparency of research, aiming to enhance speech, language, hearing, and swallowing for all people.
+
+------------------------------------------------------------------------
 
 ## Leading by Example
 
@@ -123,6 +118,8 @@ Check out the websites of these rockstar researchers to see what self-archiving 
 
 ::: {#featured-scientists}
 :::
+
+------------------------------------------------------------------------
 
 ## Contact
 

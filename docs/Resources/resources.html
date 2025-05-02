@@ -6,8 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Austin Thompson">
-<meta name="dcterms.date" content="2025-04-18">
 
 <title>CSDisseminate</title>
 <style>
@@ -25,26 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../..//Images/favicon-96x96.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//Images/favicon-96x96.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,20 +69,78 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-resources .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-resources'] = new List('listing-resources', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title"><img src="../../Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title"><img src="../Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -95,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -104,26 +159,22 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-people">    
         <li>
-    <a class="dropdown-item" href="../../team.html">
+    <a class="dropdown-item" href="../team.html">
  <span class="dropdown-text">Meet the Team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../join-us.html">
+    <a class="dropdown-item" href="../join-us.html">
  <span class="dropdown-text">Join Us</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../featured-scientists.html">
+    <a class="dropdown-item" href="../featured-scientists.html">
  <span class="dropdown-text">Featured Scientists</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../Research/index.html"> 
+    <a class="nav-link" href="../Research/index.html"> 
 <span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../resources.html"> 
-<span class="menu-text">Resources</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -133,73 +184,75 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">OpenCSD and CSDissemiante join forces!</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">Announcement</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Austin Thompson </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">April 18, 2025</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#why-the-merge" id="toc-why-the-merge" class="nav-link active" data-scroll-target="#why-the-merge">Why the merge?</a></li>
-  <li><a href="#so-whats-new" id="toc-so-whats-new" class="nav-link" data-scroll-target="#so-whats-new">So what’s new?</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Resources</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<p>Hello, world!</p>
-<p>We’ve got some exciting news: OpenCSD and CSDisseminate are joining forces and becoming one working group! Our mission is still the same: to spread the word about open science in communication sciences and disorders (CSD). But now we’re doing it together.</p>
-<section id="why-the-merge" class="level3">
-<h3 class="anchored" data-anchor-id="why-the-merge">Why the merge?</h3>
-<p>CSDisseminate started during the pandemic as a way to raise awareness about self-archiving. Over time, we felt proud of that work but also wanted to branch out and talk about other open science practices like sharing open data, preregistration, registered reports, open educational resources, and more. That’s what led to the creation of <strong>OpenCSD</strong>.</p>
-<p>But, the truth is we’re all volunteers, doing this work as a side passion project. And in the past few years, life has been <em>busy</em>. Many of us have gone through big transitions—finishing PhDs, starting postdocs or faculty roles, having babies—and we realized that trying to run two separate projects just didn’t make sense anymore.</p>
-<p>We’re more effective (and have more fun) when we work together.</p>
-</section>
-<section id="so-whats-new" class="level3">
-<h3 class="anchored" data-anchor-id="so-whats-new">So what’s new?</h3>
-<p>We’re merging under the name <strong>CSDisseminate</strong>, with a fresh coat of purple paint and a renewed commitment to making open science more accessible in our field. We’ll be tackling a broader range of topics moving forward—and first up is one we’re especially excited about: sharing open data.</p>
-<p>Stay tuned!</p>
-<p><a href="merger-image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="merger-image.png" class="img-fluid" alt="Graphic featuring the phrase “TOGETHER IS BETTER” with the old CSDisseminate logo (a document with an unlocked padlock) and the OpenCSD LOGO (a lightbulb with a waveform inside) merging visually. The background uses overlapping pastel shapes in pink, blue, and purple, with a white “X” in the center suggesting collaboration. The CSDisseminate logo appears at the bottom." width="400"></a></p>
+</header>
 
 
-</section>
+<p>Explore our curated database of resources designed to help scientists and clinicians embrace open science practices in Communication Sciences and Disorders.<br>
+<br>
+</p>
+<div id="listing-resources" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Title
+</th>
+<th>
+Author
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-file-modified-sort="1746151543066" data-listing-reading-time-sort="1" data-listing-word-count-sort="22" data-listing-title-sort="Resources" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../Resources/index.html" class="title listing-title">Resources</a>
+</td>
+<td>
+<span class="listing-author">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="OS Tools" data-listing-file-modified-sort="1746151038927" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Zotero" data-listing-filename-sort="index.qmd">
+<td>
+<a href="../Resources/Zotero/index.html" class="title listing-title">Zotero</a>
+</td>
+<td>
+<span class="listing-author">&nbsp;</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
+
+
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <footer class="custom-footer">
@@ -654,38 +707,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 

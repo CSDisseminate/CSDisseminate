@@ -29,3 +29,5 @@ We’re more effective (and have more fun) when we work together.
 We’re merging under the name **CSDisseminate**, with a fresh coat of purple paint and a renewed commitment to making open science more accessible in our field. We’ll be tackling a broader range of topics moving forward—and first up is one we’re especially excited about: sharing open data.
 
 Stay tuned!
+
+![](merger-image.png){fig-alt="Graphic featuring the phrase “TOGETHER IS BETTER” with the old CSDisseminate logo (a document with an unlocked padlock) and the OpenCSD LOGO (a lightbulb with a waveform inside) merging visually. The background uses overlapping pastel shapes in pink, blue, and purple, with a white “X” in the center suggesting collaboration. The CSDisseminate logo appears at the bottom." width="400"}

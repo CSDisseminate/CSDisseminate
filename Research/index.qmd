@@ -26,8 +26,9 @@ title-block-banner: false
 lightbox: true
 ---
 
-Research produced by the CSDisseminate team and collaborators.\
-\
+Research produced by the CSDisseminate team and collaborators.
+
+------------------------------------------------------------------------
 
 ## Peer-Reviewed Publications
 
