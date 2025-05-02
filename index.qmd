@@ -23,6 +23,7 @@ listing:
     max-items: 2
 page-layout: article
 title-block-banner: false
+embed-resource: true
 ---
 
 
