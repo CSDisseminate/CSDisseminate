@@ -8,7 +8,7 @@ website:
   announcement: 
     icon: info-circle
     dismissable: true
-    content: "Register today for CSDissemiante's Open Data Workshop on June 3rd, 2025! [Click here to learn more!](Announcements/2025_05_02_Open-Data-Webinar/index.qmd)"
+    content: "Register today for CSDissemiante's Open Data Workshop on June 3rd, 2025! [Click here to learn more!](https://www.csdisseminate.com/Announcements/2025_05_02_Open-Data-Webinar/)"
     type: info
     position: below-navbar
   navbar:
