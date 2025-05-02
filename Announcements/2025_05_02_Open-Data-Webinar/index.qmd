@@ -1,5 +1,5 @@
 ---
-title: "Attend our upcoming webinar: Open Data 101 - A Guide for Researchers"
+title: "Attend our upcoming webinar: Open Data 101 - A Guide for Researchers!"
 date: "2025-05-02"
 author:
   - Danika Pfieffer
