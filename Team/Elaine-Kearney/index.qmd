@@ -1,0 +1,40 @@
+---
+title: "Elaine Kearney"
+first-name: "Elaine"
+last-name: "Kearney"
+date-joined: "2020-05-01"
+categories:
+ - "Collaborator"
+credentials: "PhD"
+position: "Conjoint Research Fellow in Speech Pathology"
+affiliation: "University of Queensland, Princess Alexandra Hospital"
+pronouns: "she/her"
+orcid: "0000-0003-4456-1291"
+description-research: "Elaine Kearney, Ph.D., is a Conjoint Research Fellow in Speech Pathology at the University of Queensland and Princess Alexandra Hospital in Brisbane, Australia. Her research interests are in investigating the brain mechanisms underlying acquired motor speech disorders, and developing and evaluating evidence-based speech therapy options for those living with neurological disorders."
+description-os: "Elaine is committed to conducting rigorous, transparent, and accessible science that can sustainably bridge the research to practice gap in the field of CSD."
+link: "https://elaine-kearney.com"
+website-button: "Visit the Dr. Kearney's Website"
+headshot: "kearney - Elaine Kearney.jpg"
+lightbox: true
+draft: false
+layout: article
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+{{< meta description-os >}}
+
+[{{< meta website-button>}}]({{< meta link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}\
+\
+:::
+::::::
