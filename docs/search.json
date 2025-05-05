@@ -98,6 +98,83 @@
     "text": "Past Collaborators\nWe are forever grateful for all of our past and present collaborators who have supported our initiatives! Below are a list of past collaborating members of CSDisseminate.\n\nMeredith Harold, PhD, CCC-SLP\nMeredith Spratford, AuD, CCC-A\nLee Drown, MA, CCC-SLP\nMary Alice Keller, PhD, CCC-SLP"
   },
   {
+    "objectID": "Resources/Self-Archiving-101/index.html",
+    "href": "Resources/Self-Archiving-101/index.html",
+    "title": "Self Archiving 101",
+    "section": "",
+    "text": "This tutorial teaches you how to self-archive your work. Use the table of contents to navigate to specific steps in the process."
+  },
+  {
+    "objectID": "Resources/Self-Archiving-101/index.html#shades-of-open-access",
+    "href": "Resources/Self-Archiving-101/index.html#shades-of-open-access",
+    "title": "Self Archiving 101",
+    "section": "Shades of Open Access",
+    "text": "Shades of Open Access\nDid you know you can make your article open-access without paying a fee to the publisher? Sharing your postprint is also a way to make it open access!\n\n\n\nGreen Open Access ✅\nYour article is green open access if you have taken the time to self-archive your manuscript on an institutional repository, laboratory website, or personal website at any stage of the publication process.\nSharing your paper (per journal policies) can be a legal way to disseminate the peer-reviewed version of your article without having to pay a fee to make it accessible.\n\n\n\n\n\nGold Open Access ⭐️\nYour article is gold open access if you paid a fee to the publisher to make the published version open access. This fee can be up to $2-10K!\nWhile this method can increase the accessibility of your article, it is not affordable for many scientists.\nConsider the things we could do with grant monies if we didn’t have to use it to pay for gold open access!\n\n\n\n\n\n\nDiamond Open Access 💎\nYour article is diamond open access if you published your article in a journal that did not charge processing fees AND made the published version open access. Though this is an exemplar for open-science, it requires systemic change among journals and publishers.\n\n\n\n\n\nBlack Open Access 🏴‍☠️\nYour article is black open access when it is shared online (e.g., via Sci-Hub) but does not have reuse/open-access rights from the publisher."
+  },
+  {
+    "objectID": "Resources/Self-Archiving-101/index.html#versions-of-your-manuscript",
+    "href": "Resources/Self-Archiving-101/index.html#versions-of-your-manuscript",
+    "title": "Self Archiving 101",
+    "section": "Versions of Your Manuscript…",
+    "text": "Versions of Your Manuscript…\n…throughout the publication process\n\n\nSubmitted Version → Preprints\nOnce you’ve finished writing up a study into an article, you submit it for publication to a journal. This submitted version of your manuscript is called a preprint.\nPreprints are usually the version of the document with line numbers and double spacing that has not yet been peer-reviewed.\nMany journals allow authors to post this version of their manuscripts to a preprint server.\n\n\n\nAccepted Version → Postprints\nAfter your article has been peer-reviewed and your final edits are approved by the editor, your article is then accepted for publication (congratulations!).\nThis accepted version of your article is called a postprint. Postprints are the final version of your manuscript that haven’t yet received the fancy journal formatting treatment seen in the publisher version of your PDF.\nMost journals allow you to self-archive postprints in a university repository, lab website, or personal website, which means you can legally share this version of your peer-reviewed article!\n\n\nPublished Version → Offprint\nOnce your paper has been accepted, publishers apply special formatting to your manuscript for readability and accessibility. This version of your article is called the published version, publisher PDF, or sometimes called an offprint.\nThe published version of your article typically has strict restrictions on how and where you can share it, so some authors pay to make this version gold open access to increase its accessibility."
+  },
+  {
+    "objectID": "Resources/Self-Archiving-101/index.html#which-version-can-you-self-archive",
+    "href": "Resources/Self-Archiving-101/index.html#which-version-can-you-self-archive",
+    "title": "Self Archiving 101",
+    "section": "Which version can you self-archive?",
+    "text": "Which version can you self-archive?\nThe version of a manuscript you can self-archive will vary by publisher. The information for your publisher will be in the copyright policy and may be one or more of the following:\n\nSubmitted version (“preprint”)\nAccepted version (“postprint”)\nPublished or final version (“offprint”)"
+  },
+  {
+    "objectID": "Resources/Self-Archiving-101/index.html#when-can-you-self-archive",
+    "href": "Resources/Self-Archiving-101/index.html#when-can-you-self-archive",
+    "title": "Self Archiving 101",
+    "section": "When can you self-archive?",
+    "text": "When can you self-archive?\nSome journals may place the accepted or published version of your manuscript under an embargo.\n\n\n\n\n\n\nAn embargo is a period of time (most often 6-12 months post-publication date) when sharing a version of the article is not allowed. Thus, you may not be able to self-archive your manuscript while it is under embargo.\n\n\n\nEmbargoes are usually used by journals with high impact factors or with a large reader base who are likely to pay to read a recently published article.\nIt’s basically like putting the cookie jar on top of the fridge to keep the kids from digging in too soon. Crazy, we know.\nIf your article is embargoed, mark the date on your calendar for when you can self-archive!\n\nFor preprints, can you archive before/after journal submission, after revising-resubmitting, or after acceptance?\nIs there an embargo period that you have to wait before archiving?"
+  },
+  {
+    "objectID": "Resources/Self-Archiving-101/index.html#host-on-your-own-professional-website.",
+    "href": "Resources/Self-Archiving-101/index.html#host-on-your-own-professional-website.",
+    "title": "Self Archiving 101",
+    "section": "Host on your own professional website.",
+    "text": "Host on your own professional website.\nFree options for archiving published manuscripts in CSD\nHaving your own professional or lab website allows you to provide free, legal access to almost all of your published manuscripts at the click of a button. Further, once manuscripts are linked on your website, they will also be indexed by Google, where others are more likely to discover your work.\nHere are 4 simple steps for creating a website that will get you started on your self-archiving journey. This approach is free and assumes no prior experience in website design/development.\n\n1. Choose a website builder\nWebsite builders make it possible to create and publish a website in minutes. They provide you with a bunch of templates that can be customized to fit your needs. Some free and easy-to-use options include Wix, Owlstown, Squarespace, Weebly, and Google Sites.\nIf you have some experience in coding, there are also some Advanced Options for website creation. For example, this website is created with R and Quarto and hosted via GitHub Pages.\n\n\n\n2. Add your information\nCreate an ‘About Me’ section where you include a short bio (name, affiliation, research interests) so that your audience knows they have found the right website.\nCreate a ‘Publications’ section where you list all of your publications.\nOptional extras: Recent and upcoming talks, courses taught, projects, blogposts, ‘in the news’, links to other sites (e.g., Google Scholar, ORCID), and social media accounts.\n\n\n3. Add your publications\nFor each publication, follow our self-archiving steps to determine what version can be linked.\n\n\n4. Publish your website\nPublish your website!\nThen, rinse and repeat steps 2-4 as your new publications come out."
+  },
+  {
+    "objectID": "Resources/Self-Archiving-101/index.html#host-on-institution-based-options.",
+    "href": "Resources/Self-Archiving-101/index.html#host-on-institution-based-options.",
+    "title": "Self Archiving 101",
+    "section": "Host on institution-based options.",
+    "text": "Host on institution-based options.\n\nAre you required to use your institution’s laboratory website?\nIn most cases, as long as you link directly to your laboratory website somewhere from your personal professional page, you can self-archive your publications elsewhere.\nIf you do, in fact, prefer to use your institution-based laboratory website to self-archive your manuscripts, you can follow similar steps as those posted above. You would just add a link following the DOI to direct readers to the posted version (such as an open source repository like the OSF, or uploaded directly to your lab page). Check out how some of our featured scientists have done this!\n\n\nInstitution-based digital repositories\nDid you know?\nYour institution’s library may have its own digital repository or services that can assist you in the process of uploading and sharing your work, including:\n\nAn in-house repository, which is an institutionally managed online location for hosting research material, including preprints and postprints\nGuidance to help you adhere to publisher copyright policies\n\nThese repositories are typically managed by your institution’s library. Open Policy Finder also offers a free search-based Directory of Open Access Repositories (DOAR). Click the link below to search for your institution or other repositories of interest:\nOpenDOAR"
+  },
+  {
+    "objectID": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-submitted-version-or-preprint",
+    "href": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-submitted-version-or-preprint",
+    "title": "Self Archiving 101",
+    "section": "If allowed to archive the submitted version or “preprint”",
+    "text": "If allowed to archive the submitted version or “preprint”\n\nAttach a preprint notice to the first page of your submitted manuscript, for example:\nThis manuscript is in submission for publication. It has not yet been peer reviewed.\nPost the submitted manuscript to a preprint server. \nPost the preprint citation, DOI link, and submitted version to your personal website or university repository."
+  },
+  {
+    "objectID": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-accepted-version-or-postprint",
+    "href": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-accepted-version-or-postprint",
+    "title": "Self Archiving 101",
+    "section": "If allowed to archive the accepted version or “postprint”",
+    "text": "If allowed to archive the accepted version or “postprint”\n\nAttach a user license to the first page of your accepted manuscript, for example: \nThis is the accepted version of an article published by [Publisher] in [Journal], © [Year], [Volume (Issue)], [Page Range]. It is available online at [DOI] and is made available here with the permission of [Publisher]. Licensed under the Creative Commons [license details and URL, if applicable].\nPost the full citation, DOI link, and accepted version to your personal website or university repository."
+  },
+  {
+    "objectID": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-published-version",
+    "href": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-published-version",
+    "title": "Self Archiving 101",
+    "section": "If allowed to archive the published version",
+    "text": "If allowed to archive the published version\nSome (but not many) publishers allow you to archive the published version of your manuscript. If the journal policy states this is allowed:\n\nPost the full citation, DOI link, and publisher PDF to your personal website or university repository."
+  },
+  {
+    "objectID": "Resources/Self-Archiving-101/index.html#best-practices-for-uploading-and-linking-journal-articles",
+    "href": "Resources/Self-Archiving-101/index.html#best-practices-for-uploading-and-linking-journal-articles",
+    "title": "Self Archiving 101",
+    "section": "Best practices for uploading and linking journal articles",
+    "text": "Best practices for uploading and linking journal articles\n\nDOI vs URL\nA DOI is a “digital object identifier”, and is your journal article’s permanent online location/identifier. Always direct people to your original article with the DOI (found on the publisher’s article page), not the URL (the web address, which can change if the publisher makes any website updates).\n\nExample URL: https://pubs.asha.org/doi/10.1044/2020_JSLHR-20-00010\nExample DOI: https://doi.org/10.1044/2020_JSLHR-20-00010\n\nThese are the same journal article! But the URL can be broken, while the DOI can’t.\n\n\nLinking to the free version vs the article of record\nAlways, always, always link to your journal article with its DOI. That’s the only way you’ll be able to:\n\nShow people where the original is, and\nProperly measure traffic to it (e.g. via Altmetric).\n\nWe recommend that if you’re creating a professional website, your article be linked with the DOI, and the free (possibly “unofficial”) version be a separate link that says something like free version.\n\n\nWhat if I prefer for people to just email me instead?\nRequiring clinicians to email when they want a paper puts a barrier between the science and clinical practice.\nIt also makes the work of science communicators, who are trying to direct people to your work, much more difficult.\n\n\nHow will people find my uploaded articles?\nMost people will Google the title of your paper. So as long as that text is on your webpage, you’re all set!"
+  },
+  {
     "objectID": "Resources/Zotero/index.html",
     "href": "Resources/Zotero/index.html",
     "title": "Zotero",
@@ -313,82 +390,5 @@
     "title": "Collin Brice",
     "section": "",
     "text": "Collin Brice, MS, CCC-SLPPhD CandidateUniversity of Cincinnati\n\n\n\n\n\nCollin (he/him) is a researcher in speech-language pathology with interests in mixed methods, gender perception in voice, and neuroimaging using fNIRS. His work explores how listeners experience individuals’ speech. He is also passionate about pedagogy and advancing diversity, equity, and inclusion (DE&I) practices in education and research, with a strong commitment to open science and inclusive methodologies.\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "Resources/Self-Archiving-101/index.html",
-    "href": "Resources/Self-Archiving-101/index.html",
-    "title": "Self Archiving 101",
-    "section": "",
-    "text": "This tutorial teaches you how to self-archive your work. Use the table of contents to navigate to specific steps in the process."
-  },
-  {
-    "objectID": "Resources/Self-Archiving-101/index.html#shades-of-open-access",
-    "href": "Resources/Self-Archiving-101/index.html#shades-of-open-access",
-    "title": "Self Archiving 101",
-    "section": "Shades of Open Access",
-    "text": "Shades of Open Access\nDid you know you can make your article open-access without paying a fee to the publisher? Sharing your postprint is also a way to make it open access!\n\n\n\nGreen Open Access ✅\nYour article is green open access if you have taken the time to self-archive your manuscript on an institutional repository, laboratory website, or personal website at any stage of the publication process.\nSharing your paper (per journal policies) can be a legal way to disseminate the peer-reviewed version of your article without having to pay a fee to make it accessible.\n\n\n\n\n\nGold Open Access ⭐️\nYour article is gold open access if you paid a fee to the publisher to make the published version open access. This fee can be up to $2-10K!\nWhile this method can increase the accessibility of your article, it is not affordable for many scientists.\nConsider the things we could do with grant monies if we didn’t have to use it to pay for gold open access!\n\n\n\n\n\n\nDiamond Open Access 💎\nYour article is diamond open access if you published your article in a journal that did not charge processing fees AND made the published version open access. Though this is an exemplar for open-science, it requires systemic change among journals and publishers.\n\n\n\n\n\nBlack Open Access 🏴‍☠️\nYour article is black open access when it is shared online (e.g., via Sci-Hub) but does not have reuse/open-access rights from the publisher."
-  },
-  {
-    "objectID": "Resources/Self-Archiving-101/index.html#versions-of-your-manuscript",
-    "href": "Resources/Self-Archiving-101/index.html#versions-of-your-manuscript",
-    "title": "Self Archiving 101",
-    "section": "Versions of Your Manuscript…",
-    "text": "Versions of Your Manuscript…\n…throughout the publication process\n\n\nSubmitted Version → Preprints\nOnce you’ve finished writing up a study into an article, you submit it for publication to a journal. This submitted version of your manuscript is called a preprint.\nPreprints are usually the version of the document with line numbers and double spacing that has not yet been peer-reviewed.\nMany journals allow authors to post this version of their manuscripts to a preprint server.\n\n\n\nAccepted Version → Postprints\nAfter your article has been peer-reviewed and your final edits are approved by the editor, your article is then accepted for publication (congratulations!).\nThis accepted version of your article is called a postprint. Postprints are the final version of your manuscript that haven’t yet received the fancy journal formatting treatment seen in the publisher version of your PDF.\nMost journals allow you to self-archive postprints in a university repository, lab website, or personal website, which means you can legally share this version of your peer-reviewed article!\n\n\nPublished Version → Offprint\nOnce your paper has been accepted, publishers apply special formatting to your manuscript for readability and accessibility. This version of your article is called the published version, publisher PDF, or sometimes called an offprint.\nThe published version of your article typically has strict restrictions on how and where you can share it, so some authors pay to make this version gold open access to increase its accessibility."
-  },
-  {
-    "objectID": "Resources/Self-Archiving-101/index.html#which-version-can-you-self-archive",
-    "href": "Resources/Self-Archiving-101/index.html#which-version-can-you-self-archive",
-    "title": "Self Archiving 101",
-    "section": "Which version can you self-archive?",
-    "text": "Which version can you self-archive?\nThe version of a manuscript you can self-archive will vary by publisher. The information for your publisher will be in the copyright policy and may be one or more of the following:\n\nSubmitted version (“preprint”)\nAccepted version (“postprint”)\nPublished or final version (“offprint”)"
-  },
-  {
-    "objectID": "Resources/Self-Archiving-101/index.html#when-can-you-self-archive",
-    "href": "Resources/Self-Archiving-101/index.html#when-can-you-self-archive",
-    "title": "Self Archiving 101",
-    "section": "When can you self-archive?",
-    "text": "When can you self-archive?\nSome journals may place the accepted or published version of your manuscript under an embargo.\n\n\n\n\n\n\nAn embargo is a period of time (most often 6-12 months post-publication date) when sharing a version of the article is not allowed. Thus, you may not be able to self-archive your manuscript while it is under embargo.\n\n\n\nEmbargoes are usually used by journals with high impact factors or with a large reader base who are likely to pay to read a recently published article.\nIt’s basically like putting the cookie jar on top of the fridge to keep the kids from digging in too soon. Crazy, we know.\nIf your article is embargoed, mark the date on your calendar for when you can self-archive!\n\nFor preprints, can you archive before/after journal submission, after revising-resubmitting, or after acceptance?\nIs there an embargo period that you have to wait before archiving?"
-  },
-  {
-    "objectID": "Resources/Self-Archiving-101/index.html#host-on-your-own-professional-website.",
-    "href": "Resources/Self-Archiving-101/index.html#host-on-your-own-professional-website.",
-    "title": "Self Archiving 101",
-    "section": "Host on your own professional website.",
-    "text": "Host on your own professional website.\nFree options for archiving published manuscripts in CSD\nHaving your own professional or lab website allows you to provide free, legal access to almost all of your published manuscripts at the click of a button. Further, once manuscripts are linked on your website, they will also be indexed by Google, where others are more likely to discover your work.\nHere are 4 simple steps for creating a website that will get you started on your self-archiving journey. This approach is free and assumes no prior experience in website design/development.\n\n1. Choose a website builder\nWebsite builders make it possible to create and publish a website in minutes. They provide you with a bunch of templates that can be customized to fit your needs. Some free and easy-to-use options include Wix, Owlstown, Squarespace, Weebly, and Google Sites.\nIf you have some experience in coding, there are also some Advanced Options for website creation. For example, this website is created with R and Quarto and hosted via GitHub Pages.\n\n\n\n2. Add your information\nCreate an ‘About Me’ section where you include a short bio (name, affiliation, research interests) so that your audience knows they have found the right website.\nCreate a ‘Publications’ section where you list all of your publications.\nOptional extras: Recent and upcoming talks, courses taught, projects, blogposts, ‘in the news’, links to other sites (e.g., Google Scholar, ORCID), and social media accounts.\n\n\n3. Add your publications\nFor each publication, follow our self-archiving steps to determine what version can be linked.\n\n\n4. Publish your website\nPublish your website!\nThen, rinse and repeat steps 2-4 as your new publications come out."
-  },
-  {
-    "objectID": "Resources/Self-Archiving-101/index.html#host-on-institution-based-options.",
-    "href": "Resources/Self-Archiving-101/index.html#host-on-institution-based-options.",
-    "title": "Self Archiving 101",
-    "section": "Host on institution-based options.",
-    "text": "Host on institution-based options.\n\nAre you required to use your institution’s laboratory website?\nIn most cases, as long as you link directly to your laboratory website somewhere from your personal professional page, you can self-archive your publications elsewhere.\nIf you do, in fact, prefer to use your institution-based laboratory website to self-archive your manuscripts, you can follow similar steps as those posted above. You would just add a link following the DOI to direct readers to the posted version (such as an open source repository like the OSF, or uploaded directly to your lab page). Check out how some of our featured scientists have done this!\n\n\nInstitution-based digital repositories\nDid you know?\nYour institution’s library may have its own digital repository or services that can assist you in the process of uploading and sharing your work, including:\n\nAn in-house repository, which is an institutionally managed online location for hosting research material, including preprints and postprints\nGuidance to help you adhere to publisher copyright policies\n\nThese repositories are typically managed by your institution’s library. Open Policy Finder also offers a free search-based Directory of Open Access Repositories (DOAR). Click the link below to search for your institution or other repositories of interest:\nOpenDOAR"
-  },
-  {
-    "objectID": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-submitted-version-or-preprint",
-    "href": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-submitted-version-or-preprint",
-    "title": "Self Archiving 101",
-    "section": "If allowed to archive the submitted version or “preprint”",
-    "text": "If allowed to archive the submitted version or “preprint”\n\nAttach a preprint notice to the first page of your submitted manuscript, for example:\nThis manuscript is in submission for publication. It has not yet been peer reviewed.\nPost the submitted manuscript to a preprint server. \nPost the preprint citation, DOI link, and submitted version to your personal website or university repository."
-  },
-  {
-    "objectID": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-accepted-version-or-postprint",
-    "href": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-accepted-version-or-postprint",
-    "title": "Self Archiving 101",
-    "section": "If allowed to archive the accepted version or “postprint”",
-    "text": "If allowed to archive the accepted version or “postprint”\n\nAttach a user license to the first page of your accepted manuscript, for example: \nThis is the accepted version of an article published by [Publisher] in [Journal], © [Year], [Volume (Issue)], [Page Range]. It is available online at [DOI] and is made available here with the permission of [Publisher]. Licensed under the Creative Commons [license details and URL, if applicable].\nPost the full citation, DOI link, and accepted version to your personal website or university repository."
-  },
-  {
-    "objectID": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-published-version",
-    "href": "Resources/Self-Archiving-101/index.html#if-allowed-to-archive-the-published-version",
-    "title": "Self Archiving 101",
-    "section": "If allowed to archive the published version",
-    "text": "If allowed to archive the published version\nSome (but not many) publishers allow you to archive the published version of your manuscript. If the journal policy states this is allowed:\n\nPost the full citation, DOI link, and publisher PDF to your personal website or university repository."
-  },
-  {
-    "objectID": "Resources/Self-Archiving-101/index.html#best-practices-for-uploading-and-linking-journal-articles",
-    "href": "Resources/Self-Archiving-101/index.html#best-practices-for-uploading-and-linking-journal-articles",
-    "title": "Self Archiving 101",
-    "section": "Best practices for uploading and linking journal articles",
-    "text": "Best practices for uploading and linking journal articles\n\nDOI vs URL\nA DOI is a “digital object identifier”, and is your journal article’s permanent online location/identifier. Always direct people to your original article with the DOI (found on the publisher’s article page), not the URL (the web address, which can change if the publisher makes any website updates).\n\nExample URL: https://pubs.asha.org/doi/10.1044/2020_JSLHR-20-00010\nExample DOI: https://doi.org/10.1044/2020_JSLHR-20-00010\n\nThese are the same journal article! But the URL can be broken, while the DOI can’t.\n\n\nLinking to the free version vs the article of record\nAlways, always, always link to your journal article with its DOI. That’s the only way you’ll be able to:\n\nShow people where the original is, and\nProperly measure traffic to it (e.g. via Altmetric).\n\nWe recommend that if you’re creating a professional website, your article be linked with the DOI, and the free (possibly “unofficial”) version be a separate link that says something like free version.\n\n\nWhat if I prefer for people to just email me instead?\nRequiring clinicians to email when they want a paper puts a barrier between the science and clinical practice.\nIt also makes the work of science communicators, who are trying to direct people to your work, much more difficult.\n\n\nHow will people find my uploaded articles?\nMost people will Google the title of your paper. So as long as that text is on your webpage, you’re all set!"
   }
 ]
