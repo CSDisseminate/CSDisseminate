@@ -1,0 +1,213 @@
+/* css styles */
+
+/* Make sure the back-to-top button is always on top */
+div.#quarto-back-to-top {
+  z-index: 1000 !important;
+  position: relative;
+}
+
+
+/* Clean footer matching Quarto content width */
+.custom-footer {
+  max-width: var(--content-max-width, 800px); /* fallback to 800px if variable isn't defined */
+  margin: 2em auto;
+  padding: 1em 2em;
+  font-size: 0.90em;
+  line-height: 1.6;
+  color: #666;
+  border-top: 1px solid #ddd;
+  background-color: #ffffff;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+[data-categories="Featured Scientists"] .card-img-top > img {
+  height: auto         !important;
+  aspect-ratio: 1/1    !important;
+  width: 100%          !important;
+  object-fit: cover    !important;
+  display: block;
+}
+
+[data-categories="Featured Scientists"] .card-img-top {
+  height: auto         !important;
+}
+
+/* Scope to Featured Scientists listing via its data‑categories attr */
+[data-categories="Featured Scientists"] .card.quarto-grid-item {
+  /* white card background */
+  background: #fff !important;
+
+  /* rounded corners on the whole card */
+  border-radius: 1rem !important;
+
+  /* gentle drop shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+
+  /* remove old border */
+  border: none !important;
+
+  /* ensure the image and body respect the rounding */
+  overflow: hidden;
+}
+
+/* keep the thumbnail itself rounded */
+[data-categories="Featured Scientists"] .card-img-top > img {
+  border-radius: 1rem 1rem 0 0 !important; /* only top corners rounded */
+}
+
+/* tighten up the card body look */
+[data-categories="Featured Scientists"] .card-body {
+  padding: 1em;
+  /* you can add: text‑align: center; if you want centered titles */
+}
+
+
+/* 1) Smooth transition on the card */
+[data-categories="Featured Scientists"] .card.quarto-grid-item {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* 2) Scale up and deepen shadow on hover */
+[data-categories="Featured Scientists"] .card.quarto-grid-item:hover {
+  transform: scale(1.03);                    /* 3% larger */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
+  z-index: 1;                                 /* keep it above neighbors */
+}
+
+/* —— TEAM LISTING CARD STYLES —— */
+
+/* make team images square and cover */
+[data-categories="Collaborator"] .card-img-top > img {
+  height: auto         !important;
+  aspect-ratio: 1/1    !important;
+  width: 100%          !important;
+  object-fit: cover    !important;
+  display: block;
+}
+
+/* card background & rounding */
+[data-categories="Collaborator"] .card.quarto-grid-item {
+  background: #fff !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border: none !important;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* tighten up team card body padding */
+[data-categories="Collaborator"] .card-body {
+  padding: 1em;
+}
+
+/* image corner rounding */
+[data-categories="Collaborator"] .card-img-top > img {
+  border-radius: 1rem 1rem 0 0 !important;
+}
+
+/* hover effect */
+[data-categories="Collaborator"] .card.quarto-grid-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
+  z-index: 1;
+}
+
+/* make team images square and cover */
+[data-categories="Ambassador"] .card-img-top > img {
+  height: auto         !important;
+  aspect-ratio: 1/1    !important;
+  width: 100%          !important;
+  object-fit: cover    !important;
+  display: block;
+}
+
+/* card background & rounding */
+[data-categories="Ambassador"] .card.quarto-grid-item {
+  background: #fff !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border: none !important;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* tighten up team card body padding */
+[data-categories="Ambassador"] .card-body {
+  padding: 1em;
+}
+
+/* image corner rounding */
+[data-categories="Ambassador"] .card-img-top > img {
+  border-radius: 1rem 1rem 0 0 !important;
+}
+
+/* hover effect */
+[data-categories="Ambassador"] .card.quarto-grid-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
+  z-index: 1;
+}
+
+
+
+.person-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;           /* or whatever grid‑cell width you like */
+  margin: 0.5em;
+}
+
+.person-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.person-meta {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.person-meta .affiliation {
+  font-weight: 600;
+  margin: 0.2em 0;
+}
+
+.person-meta .pronouns {
+  margin: 0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* Hide the first <td> (the “pronouns”, “credentials”, etc. labels) */
+.card-other-values td:first-child {
+  display: none;
+}
+
+/* Optional: collapse the leftover empty column spacing */
+.card-other-values tr {
+  grid-template-columns: 1fr;
+}
+
+
+/* Limit image size in the recent-announcements listing */
+[data-categories="Announcement"] img {
+  max-width: 150px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+hr {
+  border: none;         /* Remove the horizontal line */
+  height: 2em;          /* Adds vertical spacing */
+  margin: 2em 0;        /* Extra spacing above and below */
+}
+
