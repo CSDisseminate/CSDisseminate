@@ -7,7 +7,6 @@ author:
   - Helen Long
 categories:
  - Announcement
- - Event
 lightbox: true
 draft: false
 title-block-banner: true

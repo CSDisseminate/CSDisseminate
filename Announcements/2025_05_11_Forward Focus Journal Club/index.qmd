@@ -7,7 +7,6 @@ author:
   - Danika Pfeiffer
 categories:
  - Announcement
- - Event
 lightbox: true
 draft: false
 title-block-banner: true
