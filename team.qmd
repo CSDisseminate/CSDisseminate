@@ -1,5 +1,6 @@
 ---
 title: "Team"
+pagetitle: "Team"
 aliases:
   - meet-us.html
   
