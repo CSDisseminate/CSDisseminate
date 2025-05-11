@@ -1,5 +1,6 @@
 ---
 title: "OpenCSD and CSDissemiante join forces!"
+pagetitle: "Announcements"
 aliases: 
   - 2025%5C_04_18.html
   - 2025_04_18.html

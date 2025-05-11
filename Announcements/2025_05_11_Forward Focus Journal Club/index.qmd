@@ -1,0 +1,19 @@
+---
+title: "CSDisseminate and the Forward Focus Journal Club team up to discuss our recent study: “1-800-Help-Me-With-Open-Science-Stuff”"
+pagetitle: "Announcements"
+date: "2025-05-11"
+author:
+  - Austin Thompson
+  - Danika Pfeiffer
+categories:
+ - Announcement
+lightbox: true
+draft: false
+title-block-banner: true
+---
+
+Join us on May 18th for the Forward Focus Journal Club where we’ll discuss our recent paper, [“1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders](https://www.csdisseminate.com/Research/Publications/Pfeiffer-et-al-2025/). This study examined assistant professors' perceptions of, and experiences with, open science practices. In our discussion, we'll provide an overview about open science, and provide practical tips on how you can get started!\
+\
+Join the Forward Focus on Voice Journal Club Community Members list for FREE to get registration information! Message them on [Instagram](https://www.instagram.com/forwardfocusonvoice/) or email [forwardfocusonvoice\@gmail.com](mailto:forwardfocusonvoice@gmail.com).\
+
+![The flyer for the upcoming talk.](Forward-Focus-Flyer.png){fig-alt="Flyer for the Forward Focus Journal Club promoting a discussion titled “1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders. Speakers are Dr. Danika Pfeiffer and Dr. Austin Thompson. The event is scheduled for Sunday, May 18, 2025, at 10 AM PT / 12 PM CT / 1 PM ET. Contact email for interest: forwardfocusonvoice@gmail.com. The flyer includes circular photos of the two speakers and features a purple and cream wave design background." fig-align="left" width="400"}
