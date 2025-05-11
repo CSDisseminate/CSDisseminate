@@ -2,6 +2,9 @@
 title: "Team"
 aliases:
   - meet-us.html
+  
+open-graph:
+  title: "Team"
 
 # define three listing blocks, each with a filter on `category`
 listing:
