@@ -1,5 +1,6 @@
 ---
 title: "Elaine Kearney"
+pagetitle: "Elaine Kearney"
 first-name: "Elaine"
 last-name: "Kearney"
 date-joined: "2020-05-01"

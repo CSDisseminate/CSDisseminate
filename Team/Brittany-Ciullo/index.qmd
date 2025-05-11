@@ -1,5 +1,6 @@
 ---
 title: "Brittany Ciullo"
+pagetitle: "Brittany Ciullo"
 first-name: "Brittany"
 last-name: "Ciullo"
 date-joined: "2023-12-01"

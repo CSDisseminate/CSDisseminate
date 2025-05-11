@@ -1,5 +1,6 @@
 ---
 title: "Audibility, Perception, and Cognition Lab"
+pagetitle: "Audibility, Perception, and Cognition Lab"
 categories:
  - Featured Scientists
 lightbox: true
@@ -8,12 +9,10 @@ draft: false
 
 PI: Ryan McCreery, PhD
 
-Ryan McCreery, PhD, is the Director of Research and Audiology at Boys Town National Research Hospital. He is a hearing scientist dedicated to improving the developmental outcomes of children who are hard of hearing. He directs the [Audibility, Perception, and Cognition laboratory](https://www.boystownhospital.org/research/hearing-speech-perception/audibility-perception-cognition), where we explore how children's auditory, linguistic, and cognitive skills impact their ability to understand speech in complex listening environments. His current research projects focus on developing ways to improve the ways we test children’s hearing, and fit hearing aids for children who are hard of hearing.
-\
+Ryan McCreery, PhD, is the Director of Research and Audiology at Boys Town National Research Hospital. He is a hearing scientist dedicated to improving the developmental outcomes of children who are hard of hearing. He directs the [Audibility, Perception, and Cognition laboratory](https://www.boystownhospital.org/research/hearing-speech-perception/audibility-perception-cognition), where we explore how children's auditory, linguistic, and cognitive skills impact their ability to understand speech in complex listening environments. His current research projects focus on developing ways to improve the ways we test children’s hearing, and fit hearing aids for children who are hard of hearing.\
 \
 
-[Visit the Lab Website!](https://www.ryan-mccreery.com/){.btn .btn-outline-primary .btn role="button" data-toggle="button" title="Visit the Lab Website"}
-\
+[Visit the Lab Website!](https://www.ryan-mccreery.com/){.btn .btn-outline-primary .btn role="button" data-toggle="button" title="Visit the Lab Website"}\
 \
 
 :::::::: columns
@@ -25,13 +24,13 @@ Ryan McCreery, PhD, is the Director of Research and Audiology at Boys Town Natio
 :::
 
 ::: {.column width="30%"}
-![Brenda Ryals, Editor-in-Chief of Ear & Hearing, presenting a special recognition to Mary Pat Moeller, Ryan McCreery, Ruth Bentler, Pat Stelmachowicz, Beth Walker, and Merry Spratford on behalf of the Outcomes of Children with Hearing Loss team for their work on a supplement edition of Ear & Hearing. [Go to link](https://ochlstudy.org/)](Audibility, Perception, and Cognition Lab 2.avif)
+![Brenda Ryals, Editor-in-Chief of Ear & Hearing, presenting a special recognition to Mary Pat Moeller, Ryan McCreery, Ruth Bentler, Pat Stelmachowicz, Beth Walker, and Merry Spratford on behalf of the Outcomes of Children with Hearing Loss team for their work on a supplement edition of Ear & Hearing. [Go to link](https://ochlstudy.org/)](Audibility,%20Perception,%20and%20Cognition%20Lab%202.avif)
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="30%"}
-![Members of the Audibility, Perception, and Cognition laboratory holding a virtual lab meeting. In addition to meeting online, our lab has created virtual testing protocols to move experiments online, expanding our ability to visit with children and families all over the US!](Audibility, Perception, and Cognition Lab 3.avif)
+![Members of the Audibility, Perception, and Cognition laboratory holding a virtual lab meeting. In addition to meeting online, our lab has created virtual testing protocols to move experiments online, expanding our ability to visit with children and families all over the US!](Audibility,%20Perception,%20and%20Cognition%20Lab%203.avif)
 :::
 ::::::::

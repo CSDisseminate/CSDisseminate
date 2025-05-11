@@ -1,5 +1,6 @@
 ---
 title: "Alisa Baron"
+pagetitle: "Alisa Baron"
 first-name: "Alisa"
 last-name: "Baron"
 date-joined: "2025-02-01"

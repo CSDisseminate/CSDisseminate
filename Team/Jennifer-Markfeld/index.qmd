@@ -1,5 +1,6 @@
 ---
 title: "Jennifer Markfeld"
+pagetitle: "Jennifer Markfeld"
 first-name: "Jennifer"
 last-name: "Markfeld"
 date-joined: "2024-02-01"

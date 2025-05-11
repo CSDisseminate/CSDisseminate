@@ -1,5 +1,6 @@
 ---
 title: "Andrea Ford"
+pagetitle: "Andrea Ford"
 first-name: "Andrea"
 last-name: "Ford"
 date-joined: "2024-05-01"

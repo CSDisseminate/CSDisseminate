@@ -1,5 +1,6 @@
 ---
 title: "Events"
+pagetitle: "Events"
 ---
 
 ::: {.callout-warning appearance="minimal"}

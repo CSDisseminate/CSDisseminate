@@ -1,5 +1,6 @@
 ---
 title: "Austin Thompson"
+pagetitle: "Austin Thompson"
 first-name: "Austin"
 last-name: "Thompson"
 date-joined: "2022-01-01"

@@ -1,5 +1,6 @@
 ---
 title: "Zotero"
+pagetitle: "Zotero"
 date: 01-04-2025
 date-title: "Date Added"
 author: "Austin Thompson"

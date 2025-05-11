@@ -1,5 +1,6 @@
 ---
 title: "Research"
+pagetitle: "Research"
 aliases: 
   - in-press.html
 # define three listing blocks, each with a filter on `category`

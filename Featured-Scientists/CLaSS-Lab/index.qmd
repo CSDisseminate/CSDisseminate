@@ -1,5 +1,6 @@
 ---
 title: "Children’s Literacy and Speech Sound (CLaSS) Lab"
+pagetitle: "Children’s Literacy and Speech Sound (CLaSS) Lab"
 categories:
  - Featured Scientists
 lightbox: true
@@ -8,30 +9,28 @@ draft: false
 
 PI: Kelly Farquharson, PhD, CCC-SLP
 
-The Children’s Literacy and Speech Sound (CLaSS) Lab has a mission to help children with speech and language impairments achieve classroom success. We work towards this goal in two related lines of work. One has examined how working memory, language, and orthography may influence children's abilities to learn new words, read, and achieve age-appropriate speech production. A related line of work has examined how speech therapy-level variables, such as SLPs' stress, job satisfaction, therapy quality, and IEP goals, may impact the outcomes seen in children with speech and language impairments.
-\
+The Children’s Literacy and Speech Sound (CLaSS) Lab has a mission to help children with speech and language impairments achieve classroom success. We work towards this goal in two related lines of work. One has examined how working memory, language, and orthography may influence children's abilities to learn new words, read, and achieve age-appropriate speech production. A related line of work has examined how speech therapy-level variables, such as SLPs' stress, job satisfaction, therapy quality, and IEP goals, may impact the outcomes seen in children with speech and language impairments.\
 \
 
-[Visit the Lab Website!](https://classlab.cci.fsu.edu/){.btn .btn-outline-primary .btn role="button" data-toggle="button" title="Visit the Lab Website"}
-\
+[Visit the Lab Website!](https://classlab.cci.fsu.edu/){.btn .btn-outline-primary .btn role="button" data-toggle="button" title="Visit the Lab Website"}\
 \
 
 :::::::: columns
 ::: {.column width="30%"}
-![Kelly Farquharson, PhD, CCC-SLP](CLaSS Lab 1.png)
+![Kelly Farquharson, PhD, CCC-SLP](CLaSS%20Lab%201.png)
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="30%"}
-![Receiving the OSSPEAC Award, a Clinical Achievement award, from Dr. Wayne Secord](CLaSS Lab 2.png)
+![Receiving the OSSPEAC Award, a Clinical Achievement award, from Dr. Wayne Secord](CLaSS%20Lab%202.png)
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="30%"}
-![Poster presentation with Katie Goodwin (lab undergrad) and Dr. Whitney Schneider-Cline, collaborator](CLaSS Lab 3.png)
+![Poster presentation with Katie Goodwin (lab undergrad) and Dr. Whitney Schneider-Cline, collaborator](CLaSS%20Lab%203.png)
 :::
 ::::::::

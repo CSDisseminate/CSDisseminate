@@ -1,5 +1,6 @@
 ---
 title: "Featured Scientists"
+pagetitle: "Featured Scientists"
 aliases: 
   - FeaturedScientists.html
 listing:

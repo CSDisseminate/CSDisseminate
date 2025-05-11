@@ -1,5 +1,6 @@
 ---
 title: "Jessica Salley Riccardi"
+pagetitle: "Jessica Salley Riccardi"
 first-name: "Jessica Salley"
 last-name: "Riccardi"
 date-joined: "2021-02-01"

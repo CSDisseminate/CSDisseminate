@@ -1,5 +1,6 @@
 ---
 title: "James Borders"
+pagetitle: "James Borders"
 first-name: "James"
 last-name: "Borders"
 date-joined: "2021-02-01"

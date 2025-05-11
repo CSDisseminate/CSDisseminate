@@ -1,5 +1,6 @@
 ---
 title: "Helen Long"
+pagetitle: "Helen Long"
 first-name: "Helen"
 last-name: "Long"
 date-joined: "2020-05-01"

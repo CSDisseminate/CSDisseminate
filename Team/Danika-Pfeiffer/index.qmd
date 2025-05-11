@@ -1,5 +1,6 @@
 ---
 title: "Danika Pfeiffer"
+pagetitle: "Danika Pfeiffer"
 first-name: "Danika"
 last-name: "Pfeiffer"
 date-joined: "2020-06-01"

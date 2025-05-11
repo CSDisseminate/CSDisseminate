@@ -1,5 +1,6 @@
 ---
 title: "Mariam El Amin"
+pagetitle: "Mariam El Amin"
 first-name: "Mariam"
 last-name: "El Amin"
 date-joined: "2020-05-01"

@@ -1,5 +1,6 @@
 ---
 title: "Join Us"
+pagetitle: "Join Us"
 ---
 
 ## Interested in getting involved?
