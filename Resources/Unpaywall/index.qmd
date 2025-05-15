@@ -1,0 +1,25 @@
+---
+title: "Unpaywall"
+pagetitle: "Unpaywall"
+date: 05-15-2025
+date-title: "Date Added"
+author: "Austin Thompson"
+author-title: "Contributor"
+short-description: "Unpaywall is a browser extension for Chrome and Firefox that points you to legal, author-posted manuscripts that are hosted on university and government web servers."
+long-description: "**Unpaywall** is a browser extension for Chrome and Firefox that points you to legal, author-posted manuscripts that are hosted on university and government web servers - usually versions that have been posted with the full and explicit authorization of the publishers themselves."
+resource-link: https://unpaywall.org/
+resource-button: "Learn more about Unpaywall"
+categories:
+  - For Scientists
+  - For Clinicians
+  - Open Access
+  - Free
+editor: source
+---
+----
+
+## About this Resource
+{{< meta short-description >}}
+\
+
+[{{< meta resource-button>}}]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
