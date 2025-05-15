@@ -5,6 +5,7 @@ date: 01-04-2025
 date-title: "Date Added"
 author:
   - Mariam El Amin
+  - Meredith Harold
   - Elaine Kearney
   - Helen Long
   - Danika Pfeiffer
