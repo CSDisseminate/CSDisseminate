@@ -4,8 +4,10 @@ pagetitle: "Self Archiving 101"
 date: 01-04-2025
 date-title: "Date Added"
 author:
-  - Helen Long
+  - Mariam El Amin
   - Elaine Kearney
+  - Helen Long
+  - Danika Pfeiffer
 author-title: "Contributor"
 short-description: This tutorial is a step-by-step guide to self-archive your work.
 resource-link: 
