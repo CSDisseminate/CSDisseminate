@@ -1,13 +1,13 @@
 ---
-title: "Github"
-pagetitle: "Github"
+title: "GitHub"
+pagetitle: "GitHub"
 date: 01-04-2025
 date-title: "Date Added"
 author: "Austin Thompson"
 author-title: "Contributor"
 short-description: "GitHub, Inc. is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project."
 resource-link: https://github.com/
-resource-button: "Learn more About Github"
+resource-button: "Learn more About GitHub"
 categories:
  - OS Tools
  - Open Data

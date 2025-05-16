@@ -14,6 +14,7 @@ short-description: This tutorial is a step-by-step guide to self-archive your wo
 resource-link: 
 resource-button:
 categories:
+ - CSDisseminate Resource
  - Self-Archiving
  - Open Access
  - For Scientists
