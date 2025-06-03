@@ -5,12 +5,12 @@ project:
 website:
   title: "CSDisseminate"
   favicon: /Images/favicon-96x96.png
-  announcement: 
-    icon: info-circle
-    dismissable: true
-    content: "Register today for CSDisseminate's Open Data Workshop on June 3rd, 2025! [Click here to learn more!](https://www.csdisseminate.com/Announcements/2025_05_02_Open-Data-Webinar/)"
-    type: info
-    position: below-navbar
+  #announcement: 
+  #  icon: info-circle
+  #  dismissable: true
+  #  content: "Register today for CSDisseminate's Open Data Workshop on June 3rd, 2025! [Click here to learn more!](https://www.csdisseminate.com/Announcements/2025_05_02_Open-Data-Webinar/)"
+  #  type: info
+  #  position: below-navbar
   navbar:
     title: " 
   ![](/Images/CSDisseminate Logo_White Logo_Purple Background Circle.png){width=45}

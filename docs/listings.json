@@ -4,17 +4,11 @@
     "items": [
       "/Resources/GitHub/index.html",
       "/Resources/OS-Coursera/index.html",
+      "/Resources/Preregistration-Essentials/index.html",
       "/Resources/Python/index.html",
       "/Resources/Self-Archiving-101/index.html",
       "/Resources/Unpaywall/index.html",
       "/Resources/Zotero/index.html"
-    ]
-  },
-  {
-    "listing": "/featured-scientists.html",
-    "items": [
-      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
-      "/Featured-Scientists/CLaSS-Lab/index.html"
     ]
   },
   {
@@ -23,6 +17,13 @@
       "/Research/Publications/Pfeiffer-et-al-2025/index.html",
       "/Research/Publications/Long-Drown-El-Amin-2023/index.html",
       "/Research/Publications/El-Amin-et-al-2023/index.html"
+    ]
+  },
+  {
+    "listing": "/featured-scientists.html",
+    "items": [
+      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
+      "/Featured-Scientists/CLaSS-Lab/index.html"
     ]
   },
   {
