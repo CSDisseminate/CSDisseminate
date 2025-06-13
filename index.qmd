@@ -26,7 +26,6 @@ title-block-banner: false
 embed-resource: true
 ---
 
-
 :::: {style="text-align: center; padding-top: 2em; padding-bottom: 2em;"}
 <img src="Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" alt="CSDisseminate Logo" style="width: 400px;"/>
 

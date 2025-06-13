@@ -1,8 +1,27 @@
 ---
 title: "Events"
 pagetitle: "Events"
+listing:
+  - id: all-events
+    contents: Events
+    sort: "date desc"
+    type: default
+    fields: 
+      - image
+      - title
+      - date
+      - author
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 3
 ---
 
-::: {.callout-warning appearance="minimal"}
-This page is under construction! Thank you for your patience.
+Stay up to date on upcoming webinars, workshops, and community events.
+
+----
+
+## Past Events
+
+::: {#recent-events}
 :::

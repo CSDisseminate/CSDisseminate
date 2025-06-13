@@ -31,6 +31,8 @@ website:
         href: Research/index.qmd
       - text: "Resources"
         href: resources.qmd
+      - text: "Events"
+        href: events.qmd
       #- text: "Resources"
       #  href: resources.qmd
       #- text: "Events"

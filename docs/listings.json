@@ -20,6 +20,13 @@
     ]
   },
   {
+    "listing": "/events.html",
+    "items": [
+      "/Events/2025-06-03-Open-Data-Workshop/index.html",
+      "/Events/2025-05-18-Forward-Focus/index.html"
+    ]
+  },
+  {
     "listing": "/featured-scientists.html",
     "items": [
       "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
@@ -38,11 +45,11 @@
       "/Team/Austin-Thompson/index.html",
       "/Team/Micah-Hirsch/index.html",
       "/Team/Brittany-Ciullo/index.html",
+      "/Team/Jennifer-Markfeld/index.html",
       "/Team/Andrea-Ford/index.html",
       "/Team/Alisa-Baron/index.html",
       "/Team/Collin-Brice/index.html",
-      "/Team/Anne-Reed/index.html",
-      "/Team/Jennifer-Markfeld/index.html"
+      "/Team/Anne-Reed/index.html"
     ]
   },
   {
