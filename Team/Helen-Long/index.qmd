@@ -13,7 +13,7 @@ pronouns: "she/her"
 orcid: "0000-0001-6406-1222"
 description-research: "Dr. Helen Long's programmatic research examines early communication development in children with cerebral palsy to advance early identification and intervention of speech, language and communication impairments in this population."
 description-os: "Dr. Long is an advocate of free and public access to scientific manuscripts for clinicians and scientists, and is dedicated to advancing knowledge on how to share and access research."
-link: "https://www.helen-long.com"
+link: "http://caslabs.case.edu/commspeech/"
 website-button: "Visit the Dr. Long's Website!"
 headshot: "Helen Long.jpg"
 lightbox: true
