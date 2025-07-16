@@ -1,7 +1,8 @@
 ---
 title: "“1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders"
-journal-name: "Journal of Speech, Language, and Hearing Research"
-date: "2025-01-02"
+publication: "Journal of Speech, Language, and Hearing Research"
+date: "2025-01-02" # year-month-day
+year: "2025"
 author: 
   - name: Danika Pfeiffer
     orcid: 0000-0003-1080-4961
@@ -44,6 +45,9 @@ categories:
   - "Publication"
   - "Open Science"
 doi: "https://doi.org/10.1044/2024_JSLHR-24-00378"
+postprint: "https://osf.io/preprints/osf/9kxa7_v1"
+materials: "https://osf.io/tprzu/"
+preregistration: "https://osf.io/6yq2s"
 title-block-banner: true
 editor: source
 ---

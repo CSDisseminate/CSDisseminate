@@ -1,0 +1,58 @@
+```{=html}
+<ul class="pub-list list">
+<% for (const item of items) { %>
+  <li <%= metadataAttrs(item) %>>
+  <h5 style="margin: 0;"><strong><%= item.title %></strong></h5>
+    <%= item.author %><br />
+    <em><%= item.publication %></em>
+    (<%= item.year %>)<br />
+    <div class="pub-buttons" style="margin-top: 0.5rem;">
+      <a href="<%- item.path %>" class="btn btn-primary">
+        Details
+      </a>
+      <% if (item.doi) { %>
+      <a href="<%- item.doi %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        DOI
+      </a>
+      <% } %>
+      <% if (item.oa) { %>
+      <a href="<%- item.oa %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-pdf"></i> Open Access
+      </a>
+      <% } %>
+      <% if (item.postprint) { %>
+      <a href="<%- item.postprint %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-text"></i> Postprint
+      </a>
+      <% } %>
+      <% if (item.pubmed) { %>
+      <a href="<%- item.pubmed %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-medical"></i> PubMed
+      </a>
+      <% } %>
+      <% if (item.preprint) { %>
+      <a href="<%- item.preprint %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-text"></i> Preprint
+      </a>
+      <% } %>
+      <% if (item.materials) { %>
+      <a href="<%- item.materials %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-box-seam"></i> Materials
+      </a>
+      <% } %>
+      <% if (item.preregistration) { %>
+      <a href="<%- item.preregistration %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-journal-check"></i> Preregistration
+      </a>
+      <% } %>
+      <% if (item.link) { %>
+      <a href="<%- item.link %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-globe"></i> Article
+      </a>
+      <% } %>
+    </div>
+  </li>
+<% } %>
+</ul>
+
+```

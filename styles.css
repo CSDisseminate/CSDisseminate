@@ -1,5 +1,6 @@
 /* css styles */
 
+
 /* Make sure the back-to-top button is always on top */
 div.#quarto-back-to-top {
   z-index: 1000 !important;
@@ -210,4 +211,22 @@ hr {
   height: 2em;          /* Adds vertical spacing */
   margin: 2em 0;        /* Extra spacing above and below */
 }
+
+
+.pub-list.list > li {
+  margin-bottom: 2rem; /* Adjust as needed */
+}
+
+.pub-list {
+  list-style-type: none;
+  padding-left: .5;
+}
+
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-tertiary {
+  border-radius: 1.5rem;
+}
+
 

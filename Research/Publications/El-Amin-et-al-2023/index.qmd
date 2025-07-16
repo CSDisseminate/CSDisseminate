@@ -1,7 +1,8 @@
 ---
 title: "Open Science Practices in Communication Sciences and Disorders: A Survey"
-journal-name: "Journal of Speech, Language, and Hearing Research"
-date: "2023-06-20"
+publication: "Journal of Speech, Language, and Hearing Research"
+date: "2023-06-20" # year-month-day
+year: "2023"
 author: 
   - name: Mariam El Amin
     orcid: 0000-0001-7150-4271
@@ -32,6 +33,9 @@ categories:
   - "Publication"
   - "Open Science"
 doi: "https://doi.org/10.1044/2022_JSLHR-22-00062"
+postprint: "https://osf.io/jwba3_v1"
+materials: "https://osf.io/2f7xp/"
+preregistration: "https://osf.io/tca2v"
 title-block-banner: true
 editor: source
 ---

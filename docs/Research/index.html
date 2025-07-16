@@ -79,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-journal-name',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-journal-name',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-publication","listing-date","listing-year","listing-author","listing-abstract","listing-categories","listing-doi","listing-materials","listing-postprint","listing-preregistration","listing-title-block-banner","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -230,69 +230,119 @@ window.Quarto = {
 <hr>
 <section id="peer-reviewed-publications" class="level2">
 <h2 class="anchored" data-anchor-id="peer-reviewed-publications">Peer-Reviewed Publications</h2>
-<div id="listing-publications" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Publication Date
-</th>
-<th>
-Title
-</th>
-<th>
-Author(s)
-</th>
-<th>
-Journal
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="Publication,Open Science" data-listing-date-sort="1735797600000" data-listing-file-modified-sort="1745203983230" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35" data-listing-title-sort="“1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jan 2, 2025</span>
-</td>
-<td>
-<a href="../Research/Publications/Pfeiffer-et-al-2025/index.html" class="title listing-title">“1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders</a>
-</td>
-<td>
-<span class="listing-author">Danika Pfeiffer, Austin Thompson, Brittany Ciullo, Micah E. Hirsch, Mariam El Amin, Andrea Ford, Jessica Riccardi, Elaine Kearney</span>
-</td>
-<td>
-<span class="listing-journal-name">Journal of Speech, Language, and Hearing Research</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="Publication,Open Access" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1745201387555" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33" data-listing-title-sort="The Effect of Open Access on Scholarly and Societal Metrics of Impact in the ASHA Journals" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jun 20, 2023</span>
-</td>
-<td>
-<a href="../Research/Publications/Long-Drown-El-Amin-2023/index.html" class="title listing-title">The Effect of Open Access on Scholarly and Societal Metrics of Impact in the ASHA Journals</a>
-</td>
-<td>
-<span class="listing-author">Helen Long, Lee Drown, Mariam El Amin</span>
-</td>
-<td>
-<span class="listing-journal-name">Journal of Speech, Language, and Hearing Research</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="Publication,Open Science" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1745203432175" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35" data-listing-title-sort="Open Science Practices in Communication Sciences and Disorders: A Survey" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jun 20, 2023</span>
-</td>
-<td>
-<a href="../Research/Publications/El-Amin-et-al-2023/index.html" class="title listing-title">Open Science Practices in Communication Sciences and Disorders: A Survey</a>
-</td>
-<td>
-<span class="listing-author">Mariam El Amin, James Borders, Helen Long, Mary Alice Keller, Elaine Kearney</span>
-</td>
-<td>
-<span class="listing-journal-name">Journal of Speech, Language, and Hearing Research</span>
-</td>
-</tr>
-</tbody>
-</table>
+<div id="listing-publications" class="quarto-listing quarto-listing-container-custom">
+<ul class="pub-list list">
+
+  <li data-index="0" data-categories="Publication,Open Science" data-listing-date-sort="1735797600000" data-listing-file-modified-sort="1752709454813" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
+  <h5 style="margin: 0;" class="anchored"><strong>“1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders</strong></h5>
+    Danika Pfeiffer, Austin Thompson, Brittany Ciullo, Micah E. Hirsch, Mariam El Amin, Andrea Ford, Jessica Riccardi, Elaine Kearney<br>
+    <em>Journal of Speech, Language, and Hearing Research</em>
+    (2025)<br>
+    <div class="pub-buttons" style="margin-top: 0.5rem;">
+      <a href="../Research/Publications/Pfeiffer-et-al-2025/index.html" class="btn btn-primary">
+        Details
+      </a>
+      
+      <a href="https://doi.org/10.1044/2024_JSLHR-24-00378" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        DOI
+      </a>
+      
+      
+      
+      <a href="https://osf.io/preprints/osf/9kxa7_v1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-text"></i> Postprint
+      </a>
+      
+      
+      
+      
+      <a href="https://osf.io/tprzu/" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-box-seam"></i> Materials
+      </a>
+      
+      
+      <a href="https://osf.io/6yq2s" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-journal-check"></i> Preregistration
+      </a>
+      
+      
+    </div>
+  </li>
+
+  <li data-index="1" data-categories="Publication,Open Access" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1752709278472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33">
+  <h5 style="margin: 0;" class="anchored"><strong>The Effect of Open Access on Scholarly and Societal Metrics of Impact in the ASHA Journals</strong></h5>
+    Helen Long, Lee Drown, Mariam El Amin<br>
+    <em>Journal of Speech, Language, and Hearing Research</em>
+    (2023)<br>
+    <div class="pub-buttons" style="margin-top: 0.5rem;">
+      <a href="../Research/Publications/Long-Drown-El-Amin-2023/index.html" class="btn btn-primary">
+        Details
+      </a>
+      
+      <a href="https://doi.org/10.1044/2022_JSLHR-22-00315" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        DOI
+      </a>
+      
+      
+      
+      <a href="https://osf.io/preprints/osf/2ufte_v1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-text"></i> Postprint
+      </a>
+      
+      
+      
+      
+      <a href="https://osf.io/927bk/" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-box-seam"></i> Materials
+      </a>
+      
+      
+      <a href="https://osf.io/7wnga" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-journal-check"></i> Preregistration
+      </a>
+      
+      
+    </div>
+  </li>
+
+  <li data-index="2" data-categories="Publication,Open Science" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1752709507892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
+  <h5 style="margin: 0;" class="anchored"><strong>Open Science Practices in Communication Sciences and Disorders: A Survey</strong></h5>
+    Mariam El Amin, James Borders, Helen Long, Mary Alice Keller, Elaine Kearney<br>
+    <em>Journal of Speech, Language, and Hearing Research</em>
+    (2023)<br>
+    <div class="pub-buttons" style="margin-top: 0.5rem;">
+      <a href="../Research/Publications/El-Amin-et-al-2023/index.html" class="btn btn-primary">
+        Details
+      </a>
+      
+      <a href="https://doi.org/10.1044/2022_JSLHR-22-00062" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        DOI
+      </a>
+      
+      
+      
+      <a href="https://osf.io/jwba3_v1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-file-earmark-text"></i> Postprint
+      </a>
+      
+      
+      
+      
+      <a href="https://osf.io/2f7xp/" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-box-seam"></i> Materials
+      </a>
+      
+      
+      <a href="https://osf.io/tca2v" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-journal-check"></i> Preregistration
+      </a>
+      
+      
+    </div>
+  </li>
+
+</ul>
+
 <div class="listing-no-matching d-none">
 No matching items
 </div>

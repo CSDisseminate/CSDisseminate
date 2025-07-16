@@ -1,7 +1,8 @@
 ---
 title: "The Effect of Open Access on Scholarly and Societal Metrics of Impact in the ASHA Journals"
-journal-name: "Journal of Speech, Language, and Hearing Research"
-date: "2023-06-20"
+publication: "Journal of Speech, Language, and Hearing Research"
+date: "2023-06-20" # year-month-day
+year: "2023"
 author: 
   - name: Helen Long
     orcid: 0000-0001-6406-1222
@@ -25,6 +26,9 @@ categories:
   - "Publication"
   - "Open Access"
 doi: "https://doi.org/10.1044/2022_JSLHR-22-00315"
+materials: "https://osf.io/927bk/"
+postprint: "https://osf.io/preprints/osf/2ufte_v1"
+preregistration: "https://osf.io/7wnga"
 title-block-banner: true
 ---
 

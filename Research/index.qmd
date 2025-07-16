@@ -7,6 +7,7 @@ aliases:
 listing:
   - id: publications
     contents: Publications
+    template: ../ejs/article.ejs
     type: table
     fields:
       - date
