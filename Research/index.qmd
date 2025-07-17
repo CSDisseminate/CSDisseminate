@@ -19,8 +19,27 @@ listing:
       date: "Publication Date"
       author: "Author(s)"
       journal-name: "Journal"
-    #include:
-      #categories: "Publication"
+    include:
+      categories: "Publication"
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+  - id: preprints
+    contents: Publications
+    template: ../ejs/article.ejs
+    type: table
+    fields:
+      - date
+      - title
+      - author
+      - journal-name
+    field-display-names: 
+      title: "Title"
+      date: "Publication Date"
+      author: "Author(s)"
+      journal-name: "Journal"
+    include:
+      categories: "Preprint"
     sort: "date desc"
     sort-ui: false
     filter-ui: false
@@ -31,6 +50,11 @@ lightbox: true
 Research produced by the CSDisseminate team and collaborators.
 
 ------------------------------------------------------------------------
+
+## Preprints
+
+::: {#preprints}
+:::
 
 ## Peer-Reviewed Publications
 
