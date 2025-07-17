@@ -19,8 +19,8 @@ listing:
       date: "Publication Date"
       author: "Author(s)"
       journal-name: "Journal"
-    include:
-      categories: "Publication"
+    #include:
+      #categories: "Publication"
     sort: "date desc"
     sort-ui: false
     filter-ui: false
