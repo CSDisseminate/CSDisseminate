@@ -1,5 +1,5 @@
 ---
-title: "“There’s going to have to be a culture shift”: Associate and full professors’ perceptions and experiences related to open science practices in communication sciences and disorders."
+title: "“There’s going to have to be a culture shift”: Associate and full professors’ perceptions and experiences related to open science practices in communication sciences and disorders"
 publication: "EdArXiv"
 date: "2025-06-10" # year-month-day
 year: "Under Review"
