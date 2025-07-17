@@ -125,6 +125,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-other .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-journal-name',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-publication","listing-date","listing-year","listing-author","listing-abstract","listing-categories","listing-link","listing-title-block-banner","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-other'] = new List('listing-other', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -230,6 +258,7 @@ window.Quarto = {
   <ul>
   <li><a href="#preprints" id="toc-preprints" class="nav-link active" data-scroll-target="#preprints">Preprints</a></li>
   <li><a href="#peer-reviewed-publications" id="toc-peer-reviewed-publications" class="nav-link" data-scroll-target="#peer-reviewed-publications">Peer-Reviewed Publications</a></li>
+  <li><a href="#other-publications" id="toc-other-publications" class="nav-link" data-scroll-target="#other-publications">Other Publications</a></li>
   </ul>
 </nav>
     </div>
@@ -410,6 +439,42 @@ No matching items
         <i class="bi bi-journal-check"></i> Preregistration
       </a>
       
+      
+    </div>
+  </li>
+
+</ul>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="other-publications" class="level2">
+<h2 class="anchored" data-anchor-id="other-publications">Other Publications</h2>
+<div id="listing-other" class="quarto-listing quarto-listing-container-custom">
+<ul class="pub-list list">
+
+  <li data-index="0" data-categories="Other,Open Science" data-listing-date-sort="1663563600000" data-listing-file-modified-sort="1752724361401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+  <h5 style="margin: 0;" class="anchored"><strong>Access research beyond the paywall: Five strategies to read what you need</strong></h5>
+    Danika Pfeiffer, Helen Long, Mariam El Amin<br>
+    <em>ASHA Leader Live</em>
+    (2022)<br>
+    <div class="pub-buttons" style="margin-top: 0.5rem;">
+      <a href="../Research/Publications/Pfeiffer-et-al-2022/index.html" class="btn btn-primary">
+        Details
+      </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      <a href="https://leader.pubs.asha.org/do/10.1044/2022-0919-slp-aud-research/full/" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-globe"></i> Article
+      </a>
       
     </div>
   </li>

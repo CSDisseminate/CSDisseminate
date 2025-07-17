@@ -18,7 +18,7 @@ author:
       - University of Georgia
 abstract: "Restricted access to journals can make it challenging for clinicians to keep up with new research. Check out these five free, legal ways to read what you need. This is an online ASHA Leader article."
 categories: 
-  - "Article"
+  - "Other"
   - "Open Science"
 link: "https://leader.pubs.asha.org/do/10.1044/2022-0919-slp-aud-research/full/"
 title-block-banner: true
