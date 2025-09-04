@@ -6,9 +6,24 @@
       "/Resources/OS-Coursera/index.html",
       "/Resources/Preregistration-Essentials/index.html",
       "/Resources/Python/index.html",
+      "/Resources/CSD-Open-Data/index.html",
       "/Resources/Self-Archiving-101/index.html",
       "/Resources/Unpaywall/index.html",
       "/Resources/Zotero/index.html"
+    ]
+  },
+  {
+    "listing": "/featured-scientists.html",
+    "items": [
+      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
+      "/Featured-Scientists/CLaSS-Lab/index.html"
+    ]
+  },
+  {
+    "listing": "/events.html",
+    "items": [
+      "/Events/2025-06-03-Open-Data-Workshop/index.html",
+      "/Events/2025-05-18-Forward-Focus/index.html"
     ]
   },
   {
@@ -20,20 +35,6 @@
       "/Research/Publications/Schroeder-et-al-2023/index.html",
       "/Research/Publications/Pfeiffer-et-al-2025b/index.html",
       "/Research/Publications/Pfeiffer-et-al-2022/index.html"
-    ]
-  },
-  {
-    "listing": "/events.html",
-    "items": [
-      "/Events/2025-06-03-Open-Data-Workshop/index.html",
-      "/Events/2025-05-18-Forward-Focus/index.html"
-    ]
-  },
-  {
-    "listing": "/featured-scientists.html",
-    "items": [
-      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
-      "/Featured-Scientists/CLaSS-Lab/index.html"
     ]
   },
   {
