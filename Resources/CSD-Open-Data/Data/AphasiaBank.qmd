@@ -1,0 +1,18 @@
+---
+title: "AphasiaBank"
+short-description: "AphasiaBank is a shared database of multimedia interactions for the study of communication in aphasia. Access to the data in AphasiaBank is password protected and restricted to members of the AphasiaBank consortium group. This bank is part of the TalkBank repository."
+authors:
+  - Brian MacWhinney
+dataset-link-text: "Learn More"
+dataset-link: https://talkbank.org/aphasia/
+paper-link-text:
+paper-link:
+data-level: raw # raw or analytic
+access-level: restricted # open or restricted
+categories:
+  - Aphasia
+  - Adult Language
+editor: source
+---
+
+{{<meta short-description>}}

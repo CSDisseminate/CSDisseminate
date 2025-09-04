@@ -1,0 +1,29 @@
+---
+title: "BilingBank"
+short-description: "BilingBank is a component of TalkBank dedicated to providing corpora for the study of multilingualism. This bank is part of the TalkBank repository."
+authors:
+  - Brian MacWhinney
+  - Fatma Özcan
+  - Ilknur Keçik
+  - Jens Normann Jörgensen
+  - Irina Sekerina
+  - Nada Jeletic
+  - Eliana Mirkovic
+  - Gordana Hrzica
+  - Ana Maria Collazos
+  - Eva Eppler
+  - Aspa Hatzidaki
+  - Penelope Gardner-Chloros
+  - Margaret Deuchar
+dataset-link-text: "Learn More"
+dataset-link: https://talkbank.org/biling/
+paper-link-text:
+paper-link:
+data-level: raw # raw or analytic
+access-level: restricted # open or restricted
+categories:
+  - Multilingualism
+editor: source
+---
+
+{{<meta short-description>}}

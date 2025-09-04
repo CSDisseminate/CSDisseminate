@@ -1,0 +1,18 @@
+---
+title: "SLABank"
+short-description: "SLABank is a component of TalkBank dedicated to providing corpora for the study of second language acquisition."
+authors:
+  - Brian MacWhinney and 47 other contributors
+dataset-link-text: "Learn More"
+dataset-link: https://talkbank.org/slabank/
+paper-link-text:
+paper-link:
+data-level: raw # raw or analytic
+access-level: restricted # open or restricted
+categories:
+  - Multilingualism
+  - Second Language Learning
+editor: source
+---
+
+{{<meta short-description>}}

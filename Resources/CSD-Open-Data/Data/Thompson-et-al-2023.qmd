@@ -1,0 +1,20 @@
+---
+title: "Vowel Acoustics as Predictors of Speech Intelligibility in Dysarthria"
+short-description: "This OSF page contains open datasets needed to replicate the primary outcomes for the study “Vowel Acoustics as Predictors of Speech Intelligibility in Dysarthria”."
+authors:
+  - Austin Thompson
+  - Micah E Hirsch
+  - Kaitlin L Lansford
+  - Yunjung Kim
+dataset-link-text: "Access the Data"
+dataset-link: https://osf.io/hr7aj/
+paper-link-text: "Read the Paper"
+paper-link: https://pubmed.ncbi.nlm.nih.gov/36795536/
+data-level: analytic # raw or analytic
+access-level: open # open or restricted
+categories:
+  - Dysarthria
+editor: source
+---
+
+{{<meta short-description>}}

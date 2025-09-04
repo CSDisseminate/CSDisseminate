@@ -7,7 +7,7 @@ aliases:
   
 listing:
   - id: resources-all
-    contents: Resources
+    contents: "Resources/*/*.{qmd,md}"
     type: table
     fields:
       - title
@@ -19,7 +19,7 @@ listing:
     sort-ui: true
     filter-ui: true
   - id: resources-scientists
-    contents: Resources
+    contents: "Resources/*/*.{qmd,md}"
     type: table
     fields:
       - title
@@ -33,7 +33,7 @@ listing:
     sort-ui: true
     filter-ui: true
   - id: resources-clinicians
-    contents: Resources
+    contents: "Resources/*/*.{qmd,md}"
     type: table
     fields:
       - title

@@ -1,0 +1,18 @@
+---
+title: "PhonBank"
+short-description: "PhonBank is the child phonology component of the TalkBank system"
+authors:
+  - Brian MacWhinney
+  - Yvan Rose
+dataset-link-text: "Learn More"
+dataset-link: https://talkbank.org/phon/index.html
+paper-link-text:
+paper-link:
+data-level: raw # raw or analytic
+access-level: restricted # open or restricted
+categories:
+  - Child Language
+editor: source
+---
+
+{{<meta short-description>}}

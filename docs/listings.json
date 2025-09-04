@@ -65,5 +65,29 @@
       "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
       "/Featured-Scientists/CLaSS-Lab/index.html"
     ]
+  },
+  {
+    "listing": "/Resources/CSD-Open-Data/index.html",
+    "items": [
+      "/Resources/CSD-Open-Data/Data/ASDBank.html",
+      "/Resources/CSD-Open-Data/Data/AphasiaBank.html",
+      "/Resources/CSD-Open-Data/Data/BilingBank.html",
+      "/Resources/CSD-Open-Data/Data/Elsherif-et-al-2021.html",
+      "/Resources/CSD-Open-Data/Data/FluencyBank.html",
+      "/Resources/CSD-Open-Data/Data/Battal-et-al-2020.html",
+      "/Resources/CSD-Open-Data/Data/HomeBank.html",
+      "/Resources/CSD-Open-Data/Data/Novotný-et-al-2016.html",
+      "/Resources/CSD-Open-Data/Data/Curtis-et-al-2023.html",
+      "/Resources/CSD-Open-Data/Data/PERCEPT.html",
+      "/Resources/CSD-Open-Data/Data/PhonBank.html",
+      "/Resources/CSD-Open-Data/Data/Kearney-et-al-2023.html",
+      "/Resources/CSD-Open-Data/Data/SLABank.html",
+      "/Resources/CSD-Open-Data/Data/King-et-al-2022.html",
+      "/Resources/CSD-Open-Data/Data/TORGO.html",
+      "/Resources/CSD-Open-Data/Data/TalkBank.html",
+      "/Resources/CSD-Open-Data/Data/SEED-Corpus.html",
+      "/Resources/CSD-Open-Data/Data/UltraSuite.html",
+      "/Resources/CSD-Open-Data/Data/Thompson-et-al-2023.html"
+    ]
   }
 ]

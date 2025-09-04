@@ -1,0 +1,16 @@
+---
+title: "TalkBank"
+short-description: "The goal of TalkBank is to foster fundamental research in the study of human communication with an emphasis on spoken communication. Currently, TalkBank provides repositories in 14 research areas."
+authors:
+  - Brian MacWhinney
+dataset-link-text: "Learn More"
+dataset-link: https://talkbank.org/
+paper-link-text:
+paper-link:
+data-level: raw # raw or analytic
+access-level: restricted # open or restricted
+categories:
+editor: source
+---
+
+{{<meta short-description>}}

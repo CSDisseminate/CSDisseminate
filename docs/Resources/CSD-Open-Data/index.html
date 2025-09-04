@@ -34,6 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../..//Images/favicon-96x96.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,7 +72,121 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-data-all .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-short-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-short-description","listing-authors","listing-dataset-link-text","listing-dataset-link","listing-paper-link-text","listing-paper-link","listing-data-level","listing-access-level","listing-categories","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-data-all'] = new List('listing-data-all', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-data-raw .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-short-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-short-description","listing-authors","listing-dataset-link-text","listing-dataset-link","listing-paper-link-text","listing-paper-link","listing-data-level","listing-access-level","listing-categories","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-data-raw'] = new List('listing-data-raw', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-data-analytic .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-short-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-short-description","listing-authors","listing-dataset-link-text","listing-dataset-link","listing-paper-link-text","listing-paper-link","listing-data-level","listing-access-level","listing-categories","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-data-analytic'] = new List('listing-data-analytic', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -146,16 +262,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#about-this-resource" id="toc-about-this-resource" class="nav-link active" data-scroll-target="#about-this-resource">About this Resource</a>
   <ul class="collapse">
   <li><a href="#general" id="toc-general" class="nav-link" data-scroll-target="#general">General</a></li>
-  <li><a href="#child-language" id="toc-child-language" class="nav-link" data-scroll-target="#child-language">Child Language</a></li>
-  <li><a href="#adult-language-aphasia" id="toc-adult-language-aphasia" class="nav-link" data-scroll-target="#adult-language-aphasia">Adult Language &amp; Aphasia</a></li>
-  <li><a href="#fluency" id="toc-fluency" class="nav-link" data-scroll-target="#fluency">Fluency</a></li>
-  <li><a href="#bilingualism-second-language-acquisition" id="toc-bilingualism-second-language-acquisition" class="nav-link" data-scroll-target="#bilingualism-second-language-acquisition">Bilingualism &amp; Second Language Acquisition</a></li>
-  <li><a href="#dysarthria" id="toc-dysarthria" class="nav-link" data-scroll-target="#dysarthria">Dysarthria</a></li>
-  <li><a href="#swallowing" id="toc-swallowing" class="nav-link" data-scroll-target="#swallowing">Swallowing</a></li>
   </ul></li>
+  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets</a></li>
   </ul>
 </nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="AAC">AAC</div><div class="category" data-category="Adult Language">Adult Language</div><div class="category" data-category="Aphasia">Aphasia</div><div class="category" data-category="Autism">Autism</div><div class="category" data-category="Child Language">Child Language</div><div class="category" data-category="Dysarthria">Dysarthria</div><div class="category" data-category="Fluency &amp; Stuttering">Fluency &amp; Stuttering</div><div class="category" data-category="Hearing Disorders">Hearing Disorders</div><div class="category" data-category="Multilingualism">Multilingualism</div><div class="category" data-category="Resting-state fMRI">Resting-state fMRI</div><div class="category" data-category="Second Language Learning">Second Language Learning</div><div class="category" data-category="Swallowing">Swallowing</div><div class="category" data-category="Ultrasound">Ultrasound</div><div class="category" data-category="Voice &amp; Resonance">Voice &amp; Resonance</div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -206,53 +317,1216 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><a href="https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data">NIH’s Resource for Finding Data Repositories</a> — Hint, narrow your search by selecting “NIDCD” in the <em>Institute or Center</em> column.</li>
 <li><a href="https://osf.io/">Open Science Framework (OSF)</a> — Search for your population of interest and filter by files or project.</li>
-<li><a href="https://talkbank.org/">TalkBank</a> — The goal of TalkBank is to foster fundamental research in the study of human communication with an emphasis on spoken communication. Currently, TalkBank provides repositories in 14 research areas.</li>
 </ul>
+<hr>
 </section>
-<section id="child-language" class="level3">
-<h3 class="anchored" data-anchor-id="child-language">Child Language</h3>
-<ul>
-<li><a href="https://talkbank.org/phon/index.html">PhonBank</a> — PhonBank is the child phonology component of the <a href="https://talkbank.org/">TalkBank</a> system.</li>
-<li><a href="https://osf.io/ygc8n/">SEED Corpus</a> — The SEED corpus includes recordings of single words and continuous speech samples that provide examples of speakers with and without speech disorders.</li>
-<li><a href="https://www.ultrax-speech.org/ultrasuite/">UltraSuite</a> — UltraSuite is a repository of ultrasound and acoustic data from child speech therapy sessions.</li>
-<li><a href="https://osf.io/nqzd9/">PERCEPT</a> — Data for PERCEPT-R and PERCEPT-GFTA were collected during 34 separate cross-sectional and longitudinal studies at Syracuse University, Montclair State University, and New York University between 2006 and 2021.</li>
-<li><a href="https://asd.talkbank.org/">ASDBank</a> — ASDBank includes data on language development from children and adolescents with autism spectrum disorder. This bank is part of the <a href="https://talkbank.org/">TalkBank</a> repository.</li>
-<li><a href="https://homebank.talkbank.org/">HomeBank</a> — HomeBank is a resource for shared multi-hour, real-world recordings of children’s everyday experiences (for example, daylong home recordings using the LENA system), plus tools for analyzing those recordings. It is a component of the <a href="https://talkbank.org/">TalkBank</a> system.</li>
-</ul>
 </section>
-<section id="adult-language-aphasia" class="level3">
-<h3 class="anchored" data-anchor-id="adult-language-aphasia">Adult Language &amp; Aphasia</h3>
-<ul>
-<li><a href="https://aphasia.talkbank.org/">AphasiaBank</a> — AphasiaBank is a shared database of multimedia interactions for the study of communication in aphasia. Access to the data in AphasiaBank is password protected and restricted to members of the AphasiaBank consortium group. This bank is part of the <a href="https://talkbank.org/">TalkBank</a> repository.</li>
-</ul>
-</section>
-<section id="fluency" class="level3">
-<h3 class="anchored" data-anchor-id="fluency">Fluency</h3>
-<ul>
-<li><a href="https://fluency.talkbank.org/">FluencyBank</a> — FluencyBank is a shared database for the study of fluency development. Participants include typically-developing monolingual and bilingual children, children and adults who stutter (C/AWS) or who clutter (C/AWC), and second language learners. This bank is part of the <a href="https://talkbank.org/">TalkBank</a> repository.</li>
-</ul>
-</section>
-<section id="bilingualism-second-language-acquisition" class="level3">
-<h3 class="anchored" data-anchor-id="bilingualism-second-language-acquisition">Bilingualism &amp; Second Language Acquisition</h3>
-<ul>
-<li><a href="https://biling.talkbank.org/">BilingBank</a> — BilingBank is a component of TalkBank dedicated to providing corpora for the study of multilingualism. This bank is part of the <a href="https://talkbank.org/">TalkBank</a> repository.</li>
-<li><a href="https://slabank.talkbank.org/">SLABank</a> — SLABank is a component of TalkBank dedicated to providing corpora for the study of second language acquisition. This bank is part of the <a href="https://talkbank.org/">TalkBank</a> repository.</li>
-</ul>
-</section>
-<section id="dysarthria" class="level3">
-<h3 class="anchored" data-anchor-id="dysarthria">Dysarthria</h3>
-<ul>
-<li><a href="http://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html">TORGO</a> — The TORGO database of dysarthric articulation consists of aligned acoustics and measured 3D articulatory features from speakers with either cerebral palsy (CP) or amyotrophic lateral sclerosis (ALS), which are two of the most prevalent causes of speech disability (Kent and Rosen, 2004), and matched controls.</li>
-</ul>
-</section>
-<section id="swallowing" class="level3">
-<h3 class="anchored" data-anchor-id="swallowing">Swallowing</h3>
-<ul>
-<li><a href="https://osf.io/4anzm/">Normative Reference Values for FEES and VASES: Preliminary Data From 39 Nondysphagic, Community-Dwelling Adults</a> — This OSF page contains open datasets needed to replicate the primary outcomes for the study “<a href="https://pubs.asha.org/doi/10.1044/2023_JSLHR-23-00132?url_ver=Z39.88-2003&amp;rfr_id=ori:rid:crossref.org&amp;rfr_dat=cr_pub%20%200pubmed">Normative Reference Values for FEES and VASES: A Prospective, Observational Study of Non-Dysphagic, Community-Dwelling Adults</a>”.</li>
+<section id="datasets" class="level2">
+<h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">All Datasets</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Raw Datasets</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Analytic Datasets</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The following datasets share varying levels of data, from raw data to analytic data.</p>
+<section id="datasets-1" class="level3">
+<h3 class="anchored" data-anchor-id="datasets-1">Datasets</h3>
+<div id="listing-data-all" class="quarto-listing quarto-listing-container-custom">
+
+<ul class="dataset-list list">
+
+  <li class="dataset-item" data-index="0" data-categories="Child Language,Autism" data-listing-file-modified-sort="1757021548050" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>ASDBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney, Sanne Kuijper, Aparna Nadig, Angela MacDonald-Prégent, Inge-Marie Eigsti, Helen Tager-Flusberg, Janet Bang, Jean Quigley, Sinead McNally, Pamela Rollins, Nadège Foudon, Hariklia Proios, Jing Zhou</div>
+      <p class="dataset-desc">ASDBank includes data on language development from children and adolescents with autism spectrum disorder. This bank is part of the TalkBank repository.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/asd/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="1" data-categories="Aphasia,Adult Language" data-listing-file-modified-sort="1757021535572" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>AphasiaBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney</div>
+      <p class="dataset-desc">AphasiaBank is a shared database of multimedia interactions for the study of communication in aphasia. Access to the data in AphasiaBank is password protected and restricted to members of the AphasiaBank consortium group. This bank is part of the TalkBank repository.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/aphasia/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="2" data-categories="Multilingualism" data-listing-file-modified-sort="1757021586855" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>BilingBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney, Fatma Özcan, Ilknur Keçik, Jens Normann Jörgensen, Irina Sekerina, Nada Jeletic, Eliana Mirkovic, Gordana Hrzica, Ana Maria Collazos, Eva Eppler, Aspa Hatzidaki, Penelope Gardner-Chloros, Margaret Deuchar</div>
+      <p class="dataset-desc">BilingBank is a component of TalkBank dedicated to providing corpora for the study of multilingualism. This bank is part of the TalkBank repository.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/biling/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="3" data-categories="Fluency &amp; Stuttering" data-listing-file-modified-sort="1757023378035" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Do dyslexia and stuttering share a processing deficit?</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Mahmoud M. Elsherif, Linda R. Wheeldon, Steven Frisson</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “Do dyslexia and stuttering share a processing deficit?”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/wzd6k/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33444937/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="4" data-categories="Fluency &amp; Stuttering" data-listing-file-modified-sort="1757023394102" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>FluencyBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney, Nan Bernstein Ratner</div>
+      <p class="dataset-desc">FluencyBank is a shared database for the study of fluency development. Participants include typically-developing monolingual and bilingual children, children and adults who stutter (C/AWS) or who clutter (C/AWC), and second language learners. This bank is part of the TalkBank repository.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/fluency/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="5" data-categories="Hearing Disorders" data-listing-file-modified-sort="1757021572381" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>General Enhancement of Spatial Hearing in Congenitally Blind People</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Ceren Battal, Valeria Occelli, Giorgia Bertonati, Federica Falagiarda, Olivier Collignon</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “General Enhancement of Spatial Hearing in Congenitally Blind People”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/tav35/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32846109/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="6" data-categories="Child Language" data-listing-file-modified-sort="1757021610650" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>HomeBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney, Mark VanDam</div>
+      <p class="dataset-desc">HomeBank is a resource for shared multi-hour, real-world recordings of children’s everyday experiences (for example, daylong home recordings using the LENA system), plus tools for analyzing those recordings. It is a component of the TalkBank system.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/homebank/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="7" data-categories="Voice &amp; Resonance" data-listing-file-modified-sort="1757021765234" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Hypernasality associated with basal ganglia dysfunction: evidence from Parkinson's disease and Huntington's disease</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Michal Novotný, Jan Rusz, Roman Čmejla, Hana Růžičková, Jiří Klempíř, Evžen Růžička</div>
+      <p class="dataset-desc">This page contains open datasets needed to replicate the primary outcomes for the study “Hypernasality associated with basal ganglia dysfunction: evidence from Parkinson's disease and Huntington's disease”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5047145/#_ad93_" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27703866/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="8" data-categories="Swallowing" data-listing-file-modified-sort="1757021726990" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Normative Reference Values for FEES and VASES: Preliminary Data From 39 Nondysphagic, Community-Dwelling Adults</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">James Arthur Curtis, James C. Borders, Avery Dakin</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “Normative Reference Values for FEES and VASES: A Prospective, Observational Study of Non-Dysphagic, Community-Dwelling Adults”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/4anzm/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://pubs.asha.org/doi/10.1044/2023_JSLHR-23-00132?url_ver=Z39.88-2003&amp;rfr_id=ori:rid:crossref.org&amp;rfr_dat=cr_pub%20%200pubmed" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="9" data-categories="Child Language" data-listing-file-modified-sort="1757021621936" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>PERCEPT</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Nina R Benway, Jonathan Preston, Elaine Hitchcock, Yvan Rose, Asif Salekin, Wendy Liang, Tara McAllister</div>
+      <p class="dataset-desc">Data for PERCEPT-R and PERCEPT-GFTA were collected during 34 separate cross-sectional and longitudinal studies at Syracuse University, Montclair State University, and New York University between 2006 and 2021.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://dali.talkbank.org/clan/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://osf.io/preprints/osf/hzwvf_v1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read about the Data
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="10" data-categories="Child Language" data-listing-file-modified-sort="1757021634704" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>PhonBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney, Yvan Rose</div>
+      <p class="dataset-desc">PhonBank is the child phonology component of the TalkBank system</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/phon/index.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="11" data-categories="Resting-state fMRI,Aphasia" data-listing-file-modified-sort="1757023207625" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Relationships between reading performance and regional spontaneous brain activity following surgical removal of primary left-hemisphere tumors: A resting-state fMRI study</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Elaine Kearney, Sonia L.E. Brownsett, David A. Copland, Katharine J. Drummond, Rosalind L. Jeffree, Sarah Olson, Emma Murton, Benjamin Ong, Gail A. Robinson, Valeriya Tolkacheva, Katie L. McMahon, Greig I. de Zubicaray</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “Relationships between reading performance and regional spontaneous brain activity following surgical removal of primary left-hemisphere tumors: A resting-state fMRI study”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/pgfv2/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://linkinghub.elsevier.com/retrieve/pii/S0028-3932(23)00165-3" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="12" data-categories="Multilingualism,Second Language Learning" data-listing-file-modified-sort="1757021678167" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>SLABank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney and 47 other contributors</div>
+      <p class="dataset-desc">SLABank is a component of TalkBank dedicated to providing corpora for the study of second language acquisition.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/slabank/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="13" data-categories="AAC" data-listing-file-modified-sort="1757021756499" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Supporting Emergent Bilinguals Who Use Augmentative and Alternative Communication and Their Families: Lessons in Telepractice From the COVID-19 Pandemic</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Marika King, Hannah Ward, Gloria Soto, Tyson S. Barrettc</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “Supporting Emergent Bilinguals Who Use Augmentative and Alternative Communication and Their Families: Lessons in Telepractice From the COVID-19 Pandemic”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/sx3nf/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://doi.org/10.1044/2022_AJSLP-22-00003" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="14" data-categories="Dysarthria" data-listing-file-modified-sort="1757021694826" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>TORGO</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Frank Rudzicz, Aravind Kumar Namasivayam, Talya Wolff</div>
+      <p class="dataset-desc">The TORGO database of dysarthric articulation consists of aligned acoustics and measured 3D articulatory features from speakers with either cerebral palsy (CP) or amyotrophic lateral sclerosis (ALS), which are two of the most prevalent causes of speech disability (Kent and Rosen, 2004), and matched controls.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://link.springer.com/article/10.1007/s10579-011-9145-0" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="15" data-listing-file-modified-sort="1757021050989" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>TalkBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney</div>
+      <p class="dataset-desc">The goal of TalkBank is to foster fundamental research in the study of human communication with an emphasis on spoken communication. Currently, TalkBank provides repositories in 14 research areas.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="16" data-categories="Child Language" data-listing-file-modified-sort="1757021668254" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>The SEED Corpus</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Marisha Speights</div>
+      <p class="dataset-desc">The SEED corpus includes recordings of single words and continuous speech samples that provide examples of speakers with and without speech disorders.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/ygc8n/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="17" data-categories="Child Language,Ultrasound" data-listing-file-modified-sort="1757021708909" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>UltraSuite</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Aciel Eshky, Manuel Sam Ribeiro, Joanne Cleland, Korin Richmond, Zoe Roxburgh, James Scobbie, Alan Wrench</div>
+      <p class="dataset-desc">UltraSuite is a repository of ultrasound and acoustic data from child speech therapy sessions.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://www.ultrax-speech.org/ultrasuite/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://ultrasuite.github.io/papers/ultrasuite_IS18.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="18" data-categories="Dysarthria" data-listing-file-modified-sort="1757022013488" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Vowel Acoustics as Predictors of Speech Intelligibility in Dysarthria</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Austin Thompson, Micah E Hirsch, Kaitlin L Lansford, Yunjung Kim</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “Vowel Acoustics as Predictors of Speech Intelligibility in Dysarthria”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/hr7aj/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://pubmed.ncbi.nlm.nih.gov/36795536/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
 </ul>
 
+<style>
+.dataset-list{list-style:none;padding-left:0;margin:0}
+.dataset-item{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;border-bottom:1px solid var(--quarto-border-color,#e5e7eb);padding:1rem 0}
+.dataset-main{flex:1}
+.dataset-title{margin:0 0 .25rem 0;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.dataset-authors{font-size:.9rem;color:var(--quarto-text-muted,#6b7280);margin-bottom:.5rem}
+.dataset-desc{margin:0}
+.dataset-actions{display:flex;flex-direction:column;gap:.4rem;white-space:nowrap}
 
+/* Access badge */
+.access-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .75rem;
+  line-height: 1;
+  padding: .18rem .5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+.access-badge .bi {
+  font-size: .85em;
+}
+
+/* Color theming */
+.access-open {
+  background: rgba(16,185,129,.12);   /* teal-green background */
+  color: #065f46;                     /* dark green text */
+  border-color: rgba(16,185,129,.25);
+}
+.access-restricted {
+  background: rgba(234,179,8,.12);    /* yellow background */
+  color: #713f12;                     /* dark golden-brown text */
+  border-color: rgba(234,179,8,.25);
+}
+.access-mixed {
+  background: rgba(59,130,246,.12);   /* blue background */
+  color: #1e3a8a;
+  border-color: rgba(59,130,246,.25);
+}
+.access-embargoed {
+  background: rgba(239,68,68,.12);    /* reddish background */
+  color: #7f1d1d;
+  border-color: rgba(239,68,68,.25);
+}
+
+@media (max-width: 720px){
+  .dataset-item{flex-direction:column}
+  .dataset-actions{flex-direction:row;flex-wrap:wrap}
+}
+</style>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 </section>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><em>Raw data</em> is the original, unprocessed information collected directly from participants or instruments, such as audio recordings, sensor outputs, or survey responses.</p>
+<section id="datasets-2" class="level3">
+<h3 class="anchored" data-anchor-id="datasets-2">Datasets</h3>
+<div id="listing-data-raw" class="quarto-listing quarto-listing-container-custom">
+
+<ul class="dataset-list list">
+
+  <li class="dataset-item" data-index="0" data-categories="Child Language,Autism" data-listing-file-modified-sort="1757021548050" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>ASDBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney, Sanne Kuijper, Aparna Nadig, Angela MacDonald-Prégent, Inge-Marie Eigsti, Helen Tager-Flusberg, Janet Bang, Jean Quigley, Sinead McNally, Pamela Rollins, Nadège Foudon, Hariklia Proios, Jing Zhou</div>
+      <p class="dataset-desc">ASDBank includes data on language development from children and adolescents with autism spectrum disorder. This bank is part of the TalkBank repository.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/asd/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="1" data-categories="Aphasia,Adult Language" data-listing-file-modified-sort="1757021535572" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>AphasiaBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney</div>
+      <p class="dataset-desc">AphasiaBank is a shared database of multimedia interactions for the study of communication in aphasia. Access to the data in AphasiaBank is password protected and restricted to members of the AphasiaBank consortium group. This bank is part of the TalkBank repository.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/aphasia/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="2" data-categories="Multilingualism" data-listing-file-modified-sort="1757021586855" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>BilingBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney, Fatma Özcan, Ilknur Keçik, Jens Normann Jörgensen, Irina Sekerina, Nada Jeletic, Eliana Mirkovic, Gordana Hrzica, Ana Maria Collazos, Eva Eppler, Aspa Hatzidaki, Penelope Gardner-Chloros, Margaret Deuchar</div>
+      <p class="dataset-desc">BilingBank is a component of TalkBank dedicated to providing corpora for the study of multilingualism. This bank is part of the TalkBank repository.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/biling/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="3" data-categories="Fluency &amp; Stuttering" data-listing-file-modified-sort="1757023394102" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>FluencyBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney, Nan Bernstein Ratner</div>
+      <p class="dataset-desc">FluencyBank is a shared database for the study of fluency development. Participants include typically-developing monolingual and bilingual children, children and adults who stutter (C/AWS) or who clutter (C/AWC), and second language learners. This bank is part of the TalkBank repository.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/fluency/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="4" data-categories="Child Language" data-listing-file-modified-sort="1757021610650" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>HomeBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney, Mark VanDam</div>
+      <p class="dataset-desc">HomeBank is a resource for shared multi-hour, real-world recordings of children’s everyday experiences (for example, daylong home recordings using the LENA system), plus tools for analyzing those recordings. It is a component of the TalkBank system.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/homebank/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="5" data-categories="Child Language" data-listing-file-modified-sort="1757021621936" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>PERCEPT</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Nina R Benway, Jonathan Preston, Elaine Hitchcock, Yvan Rose, Asif Salekin, Wendy Liang, Tara McAllister</div>
+      <p class="dataset-desc">Data for PERCEPT-R and PERCEPT-GFTA were collected during 34 separate cross-sectional and longitudinal studies at Syracuse University, Montclair State University, and New York University between 2006 and 2021.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://dali.talkbank.org/clan/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://osf.io/preprints/osf/hzwvf_v1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read about the Data
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="6" data-categories="Child Language" data-listing-file-modified-sort="1757021634704" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>PhonBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney, Yvan Rose</div>
+      <p class="dataset-desc">PhonBank is the child phonology component of the TalkBank system</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/phon/index.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="7" data-categories="Multilingualism,Second Language Learning" data-listing-file-modified-sort="1757021678167" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>SLABank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney and 47 other contributors</div>
+      <p class="dataset-desc">SLABank is a component of TalkBank dedicated to providing corpora for the study of second language acquisition.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/slabank/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="8" data-categories="Dysarthria" data-listing-file-modified-sort="1757021694826" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>TORGO</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Frank Rudzicz, Aravind Kumar Namasivayam, Talya Wolff</div>
+      <p class="dataset-desc">The TORGO database of dysarthric articulation consists of aligned acoustics and measured 3D articulatory features from speakers with either cerebral palsy (CP) or amyotrophic lateral sclerosis (ALS), which are two of the most prevalent causes of speech disability (Kent and Rosen, 2004), and matched controls.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://link.springer.com/article/10.1007/s10579-011-9145-0" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="9" data-listing-file-modified-sort="1757021050989" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>TalkBank</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Brian MacWhinney</div>
+      <p class="dataset-desc">The goal of TalkBank is to foster fundamental research in the study of human communication with an emphasis on spoken communication. Currently, TalkBank provides repositories in 14 research areas.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://talkbank.org/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="10" data-categories="Child Language" data-listing-file-modified-sort="1757021668254" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>The SEED Corpus</strong>
+        
+          <span class="access-badge access-restricted" aria-label="Access level: Restricted">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>
+            <span class="access-text">Restricted</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Marisha Speights</div>
+      <p class="dataset-desc">The SEED corpus includes recordings of single words and continuous speech samples that provide examples of speakers with and without speech disorders.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/ygc8n/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
+      
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="11" data-categories="Child Language,Ultrasound" data-listing-file-modified-sort="1757021708909" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>UltraSuite</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Aciel Eshky, Manuel Sam Ribeiro, Joanne Cleland, Korin Richmond, Zoe Roxburgh, James Scobbie, Alan Wrench</div>
+      <p class="dataset-desc">UltraSuite is a repository of ultrasound and acoustic data from child speech therapy sessions.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://www.ultrax-speech.org/ultrasuite/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://ultrasuite.github.io/papers/ultrasuite_IS18.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+</ul>
+
+<style>
+.dataset-list{list-style:none;padding-left:0;margin:0}
+.dataset-item{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;border-bottom:1px solid var(--quarto-border-color,#e5e7eb);padding:1rem 0}
+.dataset-main{flex:1}
+.dataset-title{margin:0 0 .25rem 0;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.dataset-authors{font-size:.9rem;color:var(--quarto-text-muted,#6b7280);margin-bottom:.5rem}
+.dataset-desc{margin:0}
+.dataset-actions{display:flex;flex-direction:column;gap:.4rem;white-space:nowrap}
+
+/* Access badge */
+.access-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .75rem;
+  line-height: 1;
+  padding: .18rem .5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+.access-badge .bi {
+  font-size: .85em;
+}
+
+/* Color theming */
+.access-open {
+  background: rgba(16,185,129,.12);   /* teal-green background */
+  color: #065f46;                     /* dark green text */
+  border-color: rgba(16,185,129,.25);
+}
+.access-restricted {
+  background: rgba(234,179,8,.12);    /* yellow background */
+  color: #713f12;                     /* dark golden-brown text */
+  border-color: rgba(234,179,8,.25);
+}
+.access-mixed {
+  background: rgba(59,130,246,.12);   /* blue background */
+  color: #1e3a8a;
+  border-color: rgba(59,130,246,.25);
+}
+.access-embargoed {
+  background: rgba(239,68,68,.12);    /* reddish background */
+  color: #7f1d1d;
+  border-color: rgba(239,68,68,.25);
+}
+
+@media (max-width: 720px){
+  .dataset-item{flex-direction:column}
+  .dataset-actions{flex-direction:row;flex-wrap:wrap}
+}
+</style>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><em>Analytic data</em> is information that has been cleaned, coded, or transformed into a format ready for analysis; these types of datasets are often shared alongside publications to support computational reproducibility.</p>
+<section id="datasets-3" class="level3">
+<h3 class="anchored" data-anchor-id="datasets-3">Datasets</h3>
+<div id="listing-data-analytic" class="quarto-listing quarto-listing-container-custom">
+
+<ul class="dataset-list list">
+
+  <li class="dataset-item" data-index="0" data-categories="Fluency &amp; Stuttering" data-listing-file-modified-sort="1757023378035" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Do dyslexia and stuttering share a processing deficit?</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Mahmoud M. Elsherif, Linda R. Wheeldon, Steven Frisson</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “Do dyslexia and stuttering share a processing deficit?”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/wzd6k/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33444937/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="1" data-categories="Hearing Disorders" data-listing-file-modified-sort="1757021572381" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>General Enhancement of Spatial Hearing in Congenitally Blind People</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Ceren Battal, Valeria Occelli, Giorgia Bertonati, Federica Falagiarda, Olivier Collignon</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “General Enhancement of Spatial Hearing in Congenitally Blind People”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/tav35/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://pubmed.ncbi.nlm.nih.gov/32846109/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="2" data-categories="Voice &amp; Resonance" data-listing-file-modified-sort="1757021765234" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Hypernasality associated with basal ganglia dysfunction: evidence from Parkinson's disease and Huntington's disease</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Michal Novotný, Jan Rusz, Roman Čmejla, Hana Růžičková, Jiří Klempíř, Evžen Růžička</div>
+      <p class="dataset-desc">This page contains open datasets needed to replicate the primary outcomes for the study “Hypernasality associated with basal ganglia dysfunction: evidence from Parkinson's disease and Huntington's disease”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5047145/#_ad93_" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://pubmed.ncbi.nlm.nih.gov/27703866/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="3" data-categories="Swallowing" data-listing-file-modified-sort="1757021726990" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Normative Reference Values for FEES and VASES: Preliminary Data From 39 Nondysphagic, Community-Dwelling Adults</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">James Arthur Curtis, James C. Borders, Avery Dakin</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “Normative Reference Values for FEES and VASES: A Prospective, Observational Study of Non-Dysphagic, Community-Dwelling Adults”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/4anzm/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://pubs.asha.org/doi/10.1044/2023_JSLHR-23-00132?url_ver=Z39.88-2003&amp;rfr_id=ori:rid:crossref.org&amp;rfr_dat=cr_pub%20%200pubmed" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="4" data-categories="Resting-state fMRI,Aphasia" data-listing-file-modified-sort="1757023207625" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Relationships between reading performance and regional spontaneous brain activity following surgical removal of primary left-hemisphere tumors: A resting-state fMRI study</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Elaine Kearney, Sonia L.E. Brownsett, David A. Copland, Katharine J. Drummond, Rosalind L. Jeffree, Sarah Olson, Emma Murton, Benjamin Ong, Gail A. Robinson, Valeriya Tolkacheva, Katie L. McMahon, Greig I. de Zubicaray</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “Relationships between reading performance and regional spontaneous brain activity following surgical removal of primary left-hemisphere tumors: A resting-state fMRI study”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/pgfv2/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://linkinghub.elsevier.com/retrieve/pii/S0028-3932(23)00165-3" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="5" data-categories="AAC" data-listing-file-modified-sort="1757021756499" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Supporting Emergent Bilinguals Who Use Augmentative and Alternative Communication and Their Families: Lessons in Telepractice From the COVID-19 Pandemic</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Marika King, Hannah Ward, Gloria Soto, Tyson S. Barrettc</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “Supporting Emergent Bilinguals Who Use Augmentative and Alternative Communication and Their Families: Lessons in Telepractice From the COVID-19 Pandemic”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/sx3nf/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://doi.org/10.1044/2022_AJSLP-22-00003" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+  <li class="dataset-item" data-index="6" data-categories="Dysarthria" data-listing-file-modified-sort="1757022013488" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+    <div class="dataset-main">
+      <h5 class="dataset-title anchored">
+        <strong>Vowel Acoustics as Predictors of Speech Intelligibility in Dysarthria</strong>
+        
+          <span class="access-badge access-open" aria-label="Access level: Open">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+            <span class="access-text">Open</span>
+          </span>
+        
+      </h5>
+      <div class="dataset-authors">Austin Thompson, Micah E Hirsch, Kaitlin L Lansford, Yunjung Kim</div>
+      <p class="dataset-desc">This OSF page contains open datasets needed to replicate the primary outcomes for the study “Vowel Acoustics as Predictors of Speech Intelligibility in Dysarthria”.</p>
+    </div>
+    <div class="dataset-actions">
+      
+        <a href="https://osf.io/hr7aj/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Access the Data
+        </a>
+      
+      
+        <a href="https://pubmed.ncbi.nlm.nih.gov/36795536/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          Read the Paper
+        </a>
+      
+    </div>
+  </li>
+
+</ul>
+
+<style>
+.dataset-list{list-style:none;padding-left:0;margin:0}
+.dataset-item{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;border-bottom:1px solid var(--quarto-border-color,#e5e7eb);padding:1rem 0}
+.dataset-main{flex:1}
+.dataset-title{margin:0 0 .25rem 0;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.dataset-authors{font-size:.9rem;color:var(--quarto-text-muted,#6b7280);margin-bottom:.5rem}
+.dataset-desc{margin:0}
+.dataset-actions{display:flex;flex-direction:column;gap:.4rem;white-space:nowrap}
+
+/* Access badge */
+.access-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .75rem;
+  line-height: 1;
+  padding: .18rem .5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+.access-badge .bi {
+  font-size: .85em;
+}
+
+/* Color theming */
+.access-open {
+  background: rgba(16,185,129,.12);   /* teal-green background */
+  color: #065f46;                     /* dark green text */
+  border-color: rgba(16,185,129,.25);
+}
+.access-restricted {
+  background: rgba(234,179,8,.12);    /* yellow background */
+  color: #713f12;                     /* dark golden-brown text */
+  border-color: rgba(234,179,8,.25);
+}
+.access-mixed {
+  background: rgba(59,130,246,.12);   /* blue background */
+  color: #1e3a8a;
+  border-color: rgba(59,130,246,.25);
+}
+.access-embargoed {
+  background: rgba(239,68,68,.12);    /* reddish background */
+  color: #7f1d1d;
+  border-color: rgba(239,68,68,.25);
+}
+
+@media (max-width: 720px){
+  .dataset-item{flex-direction:column}
+  .dataset-actions{flex-direction:row;flex-wrap:wrap}
+}
+</style>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+
+
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

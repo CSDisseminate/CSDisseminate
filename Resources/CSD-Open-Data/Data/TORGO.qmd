@@ -1,0 +1,19 @@
+---
+title: "TORGO"
+short-description: "The TORGO database of dysarthric articulation consists of aligned acoustics and measured 3D articulatory features from speakers with either cerebral palsy (CP) or amyotrophic lateral sclerosis (ALS), which are two of the most prevalent causes of speech disability (Kent and Rosen, 2004), and matched controls."
+authors:
+  - Frank Rudzicz
+  - Aravind Kumar Namasivayam
+  - Talya Wolff 
+dataset-link-text: "Access the Data"
+dataset-link: https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html
+paper-link-text: "Read the Paper"
+paper-link: https://link.springer.com/article/10.1007/s10579-011-9145-0
+data-level: raw # raw or analytic
+access-level: open # open or restricted
+categories:
+  - Dysarthria
+editor: source
+---
+
+{{<meta short-description>}}

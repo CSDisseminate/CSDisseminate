@@ -1,0 +1,19 @@
+---
+title: "Do dyslexia and stuttering share a processing deficit?"
+short-description: "This OSF page contains open datasets needed to replicate the primary outcomes for the study “Do dyslexia and stuttering share a processing deficit?”."
+authors:
+  - Mahmoud M. Elsherif
+  - Linda R. Wheeldon
+  - Steven Frisson
+dataset-link-text: "Access the Data"
+dataset-link: https://osf.io/wzd6k/
+paper-link-text: "Read the Paper"
+paper-link: https://pubmed.ncbi.nlm.nih.gov/33444937/
+data-level: analytic # raw or analytic
+access-level: open # open or restricted
+categories:
+  - Fluency & Stuttering
+editor: source
+---
+
+{{<meta short-description>}}

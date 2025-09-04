@@ -1,0 +1,19 @@
+---
+title: "Normative Reference Values for FEES and VASES: Preliminary Data From 39 Nondysphagic, Community-Dwelling Adults"
+short-description: "This OSF page contains open datasets needed to replicate the primary outcomes for the study “Normative Reference Values for FEES and VASES: A Prospective, Observational Study of Non-Dysphagic, Community-Dwelling Adults”."
+authors:
+  - James Arthur Curtis
+  - James C. Borders
+  - Avery Dakin
+dataset-link-text: "Access the Data"
+dataset-link: https://osf.io/4anzm/
+paper-link-text: "Read the Paper"
+paper-link: https://pubs.asha.org/doi/10.1044/2023_JSLHR-23-00132?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed
+data-level: analytic # raw or analytic
+access-level: open # open or restricted
+categories:
+  - Swallowing
+editor: source
+---
+
+{{<meta short-description>}}

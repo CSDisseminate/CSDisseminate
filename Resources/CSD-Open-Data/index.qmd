@@ -15,6 +15,51 @@ categories:
  - Open Data
  - For Scientists
  - Free
+
+listing:
+  - id: data-all
+    contents: Data
+    type: table
+    template: ../../ejs/dataset.ejs
+    fields:
+      - title
+      - short-description
+    field-display-names: 
+      title: "Title"
+      short-description: "Description"
+    categories: unnumbered
+    sort-ui: false
+    filter-ui: false
+  - id: data-raw
+    contents: Data
+    type: table
+    template: ../../ejs/dataset.ejs
+    include:
+      data-level: raw
+    fields:
+      - title
+      - short-description
+    field-display-names: 
+      title: "Title"
+      short-description: "Description"
+    categories: unnumbered
+    sort-ui: false
+    filter-ui: false
+  - id: data-analytic
+    contents: Data
+    type: table
+    template: ../../ejs/dataset.ejs
+    include:
+      data-level: analytic
+    fields:
+      - title
+      - short-description
+    field-display-names: 
+      title: "Title"
+      short-description: "Description"
+    categories: unnumbered
+    sort-ui: false
+    filter-ui: false
 editor: source
 ---
 
@@ -28,34 +73,30 @@ editor: source
 
 -   [NIH's Resource for Finding Data Repositories](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data) — Hint, narrow your search by selecting "NIDCD" in the *Institute or Center* column.
 -   [Open Science Framework (OSF)](https://osf.io/) — Search for your population of interest and filter by files or project.
--   [TalkBank](https://talkbank.org/) — The goal of TalkBank is to foster fundamental research in the study of human communication with an emphasis on spoken communication. Currently, TalkBank provides repositories in 14 research areas.
 
-### Child Language
+------------------------------------------------------------------------
 
--   [PhonBank](https://talkbank.org/phon/index.html) — PhonBank is the child phonology component of the [TalkBank](https://talkbank.org/) system.
--   [SEED Corpus](https://osf.io/ygc8n/) — The SEED corpus includes recordings of single words and continuous speech samples that provide examples of speakers with and without speech disorders.
--   [UltraSuite](https://www.ultrax-speech.org/ultrasuite/) — UltraSuite is a repository of ultrasound and acoustic data from child speech therapy sessions.
--   [PERCEPT](https://osf.io/nqzd9/) — Data for PERCEPT-R and PERCEPT-GFTA were collected during 34 separate cross-sectional and longitudinal studies at Syracuse University, Montclair State University, and New York University between 2006 and 2021.
--   [ASDBank](https://asd.talkbank.org/) — ASDBank includes data on language development from children and adolescents with autism spectrum disorder. This bank is part of the [TalkBank](https://talkbank.org/) repository.
--   [HomeBank](https://homebank.talkbank.org/) — HomeBank is a resource for shared multi-hour, real-world recordings of children’s everyday experiences (for example, daylong home recordings using the LENA system), plus tools for analyzing those recordings. It is a component of the [TalkBank](https://talkbank.org/) system.
+## Datasets
+:::::: panel-tabset
+## All Datasets
+The following datasets share varying levels of data, from raw data to analytic data.
 
-### Adult Language & Aphasia
+### Datasets
+::: {#data-all}
+:::
 
--   [AphasiaBank](https://aphasia.talkbank.org/) — AphasiaBank is a shared database of multimedia interactions for the study of communication in aphasia. Access to the data in AphasiaBank is password protected and restricted to members of the AphasiaBank consortium group. This bank is part of the [TalkBank](https://talkbank.org/) repository.
+## Raw Datasets
+*Raw data* is the original, unprocessed information collected directly from participants or instruments, such as audio recordings, sensor outputs, or survey responses.
 
-### Fluency
+### Datasets
+::: {#data-raw}
+:::
 
--   [FluencyBank](https://fluency.talkbank.org/) — FluencyBank is a shared database for the study of fluency development. Participants include typically-developing monolingual and bilingual children, children and adults who stutter (C/AWS) or who clutter (C/AWC), and second language learners. This bank is part of the [TalkBank](https://talkbank.org/) repository.
+## Analytic Datasets
+*Analytic data* is information that has been cleaned, coded, or transformed into a format ready for analysis; these types of datasets are often shared alongside publications to support computational reproducibility.
 
-### Bilingualism & Second Language Acquisition
+### Datasets
+::: {#data-analytic}
+:::
 
--   [BilingBank](https://biling.talkbank.org/) — BilingBank is a component of TalkBank dedicated to providing corpora for the study of multilingualism. This bank is part of the [TalkBank](https://talkbank.org/) repository.
--   [SLABank](https://slabank.talkbank.org/) — SLABank is a component of TalkBank dedicated to providing corpora for the study of second language acquisition. This bank is part of the [TalkBank](https://talkbank.org/) repository.
-
-### Dysarthria
-
--   [TORGO](http://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html) — The TORGO database of dysarthric articulation consists of aligned acoustics and measured 3D articulatory features from speakers with either cerebral palsy (CP) or amyotrophic lateral sclerosis (ALS), which are two of the most prevalent causes of speech disability (Kent and Rosen, 2004), and matched controls.
-
-### Swallowing
-
--   [Normative Reference Values for FEES and VASES: Preliminary Data From 39 Nondysphagic, Community-Dwelling Adults](https://osf.io/4anzm/) — This OSF page contains open datasets needed to replicate the primary outcomes for the study "[Normative Reference Values for FEES and VASES: A Prospective, Observational Study of Non-Dysphagic, Community-Dwelling Adults](https://pubs.asha.org/doi/10.1044/2023_JSLHR-23-00132?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed)".
+:::::: 

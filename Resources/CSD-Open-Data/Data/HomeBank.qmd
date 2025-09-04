@@ -1,0 +1,18 @@
+---
+title: "HomeBank"
+short-description: "HomeBank is a resource for shared multi-hour, real-world recordings of children’s everyday experiences (for example, daylong home recordings using the LENA system), plus tools for analyzing those recordings. It is a component of the TalkBank system."
+authors:
+  - Brian MacWhinney
+  - Mark VanDam
+dataset-link-text: "Learn More"
+dataset-link: https://talkbank.org/homebank/
+paper-link-text:
+paper-link:
+data-level: raw # raw or analytic
+access-level: restricted # open or restricted
+categories:
+  - Child Language
+editor: source
+---
+
+{{<meta short-description>}}

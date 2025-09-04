@@ -1,0 +1,21 @@
+---
+title: "General Enhancement of Spatial Hearing in Congenitally Blind People"
+short-description: "This OSF page contains open datasets needed to replicate the primary outcomes for the study “General Enhancement of Spatial Hearing in Congenitally Blind People”."
+authors:
+  - Ceren Battal
+  - Valeria Occelli
+  - Giorgia Bertonati
+  - Federica Falagiarda
+  - Olivier Collignon
+dataset-link-text: "Access the Data"
+dataset-link: https://osf.io/tav35/
+paper-link-text: "Read the Paper"
+paper-link: https://pubmed.ncbi.nlm.nih.gov/32846109/
+data-level: analytic # raw or analytic
+access-level: open # open or restricted
+categories:
+  - Hearing Disorders
+editor: source
+---
+
+{{<meta short-description>}}

@@ -1,0 +1,23 @@
+---
+title: "PERCEPT"
+short-description: "Data for PERCEPT-R and PERCEPT-GFTA were collected during 34 separate cross-sectional and longitudinal studies at Syracuse University, Montclair State University, and New York University between 2006 and 2021."
+authors:
+  - Nina R Benway
+  - Jonathan Preston
+  - Elaine Hitchcock
+  - Yvan Rose
+  - Asif Salekin
+  - Wendy Liang
+  - Tara McAllister
+dataset-link-text: "Access the Data"
+dataset-link: https://dali.talkbank.org/clan/
+paper-link-text: "Read about the Data"
+paper-link: https://osf.io/preprints/osf/hzwvf_v1
+data-level: raw # raw or analytic
+access-level: restricted # open or restricted
+categories:
+  - Child Language
+editor: source
+---
+
+{{<meta short-description>}}

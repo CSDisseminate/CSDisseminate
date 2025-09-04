@@ -1,0 +1,18 @@
+---
+title: "FluencyBank"
+short-description: "FluencyBank is a shared database for the study of fluency development. Participants include typically-developing monolingual and bilingual children, children and adults who stutter (C/AWS) or who clutter (C/AWC), and second language learners. This bank is part of the TalkBank repository."
+authors:
+  - Brian MacWhinney
+  - Nan Bernstein Ratner
+dataset-link-text: "Learn More"
+dataset-link: https://talkbank.org/fluency/
+paper-link-text:
+paper-link:
+data-level: raw # raw or analytic
+access-level: restricted # open or restricted
+categories:
+  - Fluency & Stuttering
+editor: source
+---
+
+{{<meta short-description>}}

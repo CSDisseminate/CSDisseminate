@@ -1,0 +1,118 @@
+```{=html}
+
+<ul class="dataset-list list">
+<%
+  function authorsText(item) {
+    const a = item.authors ?? item.author;
+    if (!a) return "";
+    if (Array.isArray(a)) return a.map(v => (typeof v === "string" ? v : (v?.name ?? v?.literal ?? String(v)))).join(", ");
+    return String(a);
+  }
+  function textOr(defaultTxt, v) {
+    return (v && String(v).trim().length > 0) ? String(v) : defaultTxt;
+  }
+  function descOf(item) {
+    return item["short-description"] ?? item.description ?? "";
+  }
+  function accessInfo(item) {
+    const raw = (item["access-level"] ?? item["access"] ?? "").toString().trim().toLowerCase();
+    if (raw === "open" || raw === "public") {
+      return {label: "Open", icon: "bi-unlock-fill", className: "access-open"};
+    } else if (raw === "restricted" || raw === "private" || raw === "consortium") {
+      return {label: "Restricted", icon: "bi-lock-fill", className: "access-restricted"};
+    } else if (raw === "mixed" || raw === "partial") {
+      return {label: "Mixed", icon: "bi-shield-lock-fill", className: "access-mixed"};
+    } else if (raw === "embargoed") {
+      return {label: "Embargoed", icon: "bi-hourglass-split", className: "access-embargoed"};
+    }
+    return null; // unknown or not provided
+  }
+%>
+<% for (const item of items) { 
+     const ai = accessInfo(item);
+%>
+  <li class="dataset-item" <%= metadataAttrs(item) %>>
+    <div class="dataset-main">
+      <h5 class="dataset-title">
+        <strong><%= item.title ?? "(Untitled)" %></strong>
+        <% if (ai) { %>
+          <span class="access-badge <%= ai.className %>" aria-label="Access level: <%= ai.label %>">
+            <i class="bi <%= ai.icon %>" aria-hidden="true"></i>
+            <span class="access-text"><%= ai.label %></span>
+          </span>
+        <% } %>
+      </h5>
+      <div class="dataset-authors"><%= authorsText(item) %></div>
+      <p class="dataset-desc"><%= descOf(item) %></p>
+    </div>
+    <div class="dataset-actions">
+      <% if (item["dataset-link"]) { %>
+        <a href="<%- item['dataset-link'] %>" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <%= textOr("Access the Data", item["dataset-link-text"]) %>
+        </a>
+      <% } %>
+      <% if (item["paper-link"]) { %>
+        <a href="<%- item['paper-link'] %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          <%= textOr("Read the Paper", item["paper-link-text"]) %>
+        </a>
+      <% } %>
+    </div>
+  </li>
+<% } %>
+</ul>
+
+<style>
+.dataset-list{list-style:none;padding-left:0;margin:0}
+.dataset-item{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;border-bottom:1px solid var(--quarto-border-color,#e5e7eb);padding:1rem 0}
+.dataset-main{flex:1}
+.dataset-title{margin:0 0 .25rem 0;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.dataset-authors{font-size:.9rem;color:var(--quarto-text-muted,#6b7280);margin-bottom:.5rem}
+.dataset-desc{margin:0}
+.dataset-actions{display:flex;flex-direction:column;gap:.4rem;white-space:nowrap}
+
+/* Access badge */
+.access-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .75rem;
+  line-height: 1;
+  padding: .18rem .5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+.access-badge .bi {
+  font-size: .85em;
+}
+
+/* Color theming */
+.access-open {
+  background: rgba(16,185,129,.12);   /* teal-green background */
+  color: #065f46;                     /* dark green text */
+  border-color: rgba(16,185,129,.25);
+}
+.access-restricted {
+  background: rgba(234,179,8,.12);    /* yellow background */
+  color: #713f12;                     /* dark golden-brown text */
+  border-color: rgba(234,179,8,.25);
+}
+.access-mixed {
+  background: rgba(59,130,246,.12);   /* blue background */
+  color: #1e3a8a;
+  border-color: rgba(59,130,246,.25);
+}
+.access-embargoed {
+  background: rgba(239,68,68,.12);    /* reddish background */
+  color: #7f1d1d;
+  border-color: rgba(239,68,68,.25);
+}
+
+@media (max-width: 720px){
+  .dataset-item{flex-direction:column}
+  .dataset-actions{flex-direction:row;flex-wrap:wrap}
+}
+</style>
+
+
+
+```

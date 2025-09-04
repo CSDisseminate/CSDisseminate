@@ -1,0 +1,30 @@
+---
+title: "ASDBank"
+short-description: "ASDBank includes data on language development from children and adolescents with autism spectrum disorder. This bank is part of the TalkBank repository."
+authors:
+  - Brian MacWhinney
+  - Sanne Kuijper
+  - Aparna Nadig
+  - Angela MacDonald-Prégent
+  - Inge-Marie Eigsti
+  - Helen Tager-Flusberg
+  - Janet Bang
+  - Jean Quigley
+  - Sinead McNally
+  - Pamela Rollins
+  - Nadège Foudon
+  - Hariklia Proios
+  - Jing Zhou
+dataset-link-text: "Learn More"
+dataset-link: https://talkbank.org/asd/
+paper-link-text:
+paper-link:
+data-level: raw # raw or analytic
+access-level: restricted # open or restricted
+categories:
+  - Child Language
+  - Autism
+editor: source
+---
+
+{{<meta short-description>}}

@@ -1,0 +1,24 @@
+---
+title: "UltraSuite"
+short-description: "UltraSuite is a repository of ultrasound and acoustic data from child speech therapy sessions."
+authors:
+  - Aciel Eshky
+  - Manuel Sam Ribeiro
+  - Joanne Cleland
+  - Korin Richmond
+  - Zoe Roxburgh
+  - James Scobbie
+  - Alan Wrench
+dataset-link-text: "Access the Data"
+dataset-link: https://www.ultrax-speech.org/ultrasuite/
+paper-link-text: "Read the Paper"
+paper-link: https://ultrasuite.github.io/papers/ultrasuite_IS18.pdf
+data-level: raw # raw or analytic
+access-level: open # open or restricted
+categories:
+  - Child Language
+  - Ultrasound
+editor: source
+---
+
+{{<meta short-description>}}

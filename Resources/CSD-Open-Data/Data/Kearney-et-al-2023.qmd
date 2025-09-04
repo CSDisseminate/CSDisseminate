@@ -1,0 +1,29 @@
+---
+title: "Relationships between reading performance and regional spontaneous brain activity following surgical removal of primary left-hemisphere tumors: A resting-state fMRI study"
+short-description: "This OSF page contains open datasets needed to replicate the primary outcomes for the study “Relationships between reading performance and regional spontaneous brain activity following surgical removal of primary left-hemisphere tumors: A resting-state fMRI study”."
+authors:
+  - Elaine Kearney
+  - Sonia L.E. Brownsett
+  - David A. Copland 
+  - Katharine J. Drummond 
+  - Rosalind L. Jeffree 
+  - Sarah Olson
+  - Emma Murton 
+  - Benjamin Ong
+  - Gail A. Robinson
+  - Valeriya Tolkacheva
+  - Katie L. McMahon
+  - Greig I. de Zubicaray
+dataset-link-text: "Access the Data"
+dataset-link: https://osf.io/pgfv2/
+paper-link-text: "Read the Paper"
+paper-link: https://linkinghub.elsevier.com/retrieve/pii/S0028-3932(23)00165-3
+data-level: analytic # raw or analytic
+access-level: open # open or restricted
+categories:
+  - Resting-state fMRI
+  - Aphasia
+editor: source
+---
+
+{{<meta short-description>}}

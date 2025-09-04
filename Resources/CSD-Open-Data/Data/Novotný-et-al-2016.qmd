@@ -1,0 +1,22 @@
+---
+title: "Hypernasality associated with basal ganglia dysfunction: evidence from Parkinson's disease and Huntington's disease"
+short-description: "This page contains open datasets needed to replicate the primary outcomes for the study “Hypernasality associated with basal ganglia dysfunction: evidence from Parkinson's disease and Huntington's disease”."
+authors:
+  - Michal Novotný
+  - Jan Rusz
+  - Roman Čmejla
+  - Hana Růžičková
+  - Jiří Klempíř
+  - Evžen Růžička
+dataset-link-text: "Access the Data"
+dataset-link: https://pmc.ncbi.nlm.nih.gov/articles/PMC5047145/#_ad93_
+paper-link-text: "Read the Paper"
+paper-link: https://pubmed.ncbi.nlm.nih.gov/27703866/
+data-level: analytic # raw or analytic
+access-level: open # open or restricted
+categories:
+  - Voice & Resonance
+editor: source
+---
+
+{{<meta short-description>}}
