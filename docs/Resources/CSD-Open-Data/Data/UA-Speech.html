@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href=".//Images/favicon-96x96.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../..//Images/favicon-96x96.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,95 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-announcements .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-announcements'] = new List('listing-recent-announcements', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-featured-scientists .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-featured-scientists'] = new List('listing-featured-scientists', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -168,8 +80,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title"><img src="./Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title"><img src="../../../Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -179,7 +91,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -188,29 +100,29 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-people">    
         <li>
-    <a class="dropdown-item" href="./team.html">
+    <a class="dropdown-item" href="../../../team.html">
  <span class="dropdown-text">Meet the Team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./join-us.html">
+    <a class="dropdown-item" href="../../../join-us.html">
  <span class="dropdown-text">Join Us</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./featured-scientists.html">
+    <a class="dropdown-item" href="../../../featured-scientists.html">
  <span class="dropdown-text">Featured Scientists</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./Research/index.html"> 
+    <a class="nav-link" href="../../../Research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../../../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./events.html"> 
+    <a class="nav-link" href="../../../events.html"> 
 <span class="menu-text">Events</span></a>
   </li>  
 </ul>
@@ -224,234 +136,49 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#learn-about" id="toc-learn-about" class="nav-link active" data-scroll-target="#learn-about">Learn about…</a>
-  <ul class="collapse">
-  <li><a href="#open-science" id="toc-open-science" class="nav-link" data-scroll-target="#open-science">☂️ Open Science</a></li>
-  </ul></li>
-  <li><a href="#announcements" id="toc-announcements" class="nav-link" data-scroll-target="#announcements">Announcements</a></li>
-  <li><a href="#our-mission" id="toc-our-mission" class="nav-link" data-scroll-target="#our-mission">Our Mission</a></li>
-  <li><a href="#leading-by-example" id="toc-leading-by-example" class="nav-link" data-scroll-target="#leading-by-example">Leading by Example</a></li>
-  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">UA-Speech</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Dysarthria</div>
+  </div>
+  </div>
 
 
 
+<div class="quarto-title-meta">
 
-<div style="text-align: center; padding-top: 2em; padding-bottom: 2em;">
-<p><img src="Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" alt="CSDisseminate Logo" style="width: 400px;"></p>
-<div style="font-size: 2em; font-weight: 700; margin-top: 1em;">
-<p>CSDisseminate</p>
-</div>
-<p style="max-width: 600px; margin: 1em auto; font-size: 1.1em;">
-</p><p>Disseminating knowledge and resources about open science practices to researchers and clinicians in the field of Communication Sciences and Disorders (CSD).</p>
-<p></p>
-</div>
-<hr>
-<section id="learn-about" class="level2">
-<h2 class="anchored" data-anchor-id="learn-about">Learn about…</h2>
-<section id="open-science" class="level3">
-<h3 class="anchored" data-anchor-id="open-science">☂️ Open Science</h3>
-<p>Open science is an umbrella term for a set of practices aimed at making scientific research, data, and dissemination accessible to all.</p>
-<div class="columns">
-<div class="column" style="width:10%;">
-
-</div><div class="column" style="width:90%;">
-<section id="preregistration" class="level3">
-<h3 class="anchored" data-anchor-id="preregistration">✅ Preregistration</h3>
-<p>Preregistration is the practice of documenting and publicly sharing the research plan and hypotheses before conducting a study to increase transparency and reduce bias.</p>
-</section>
-<section id="open-methods" class="level3">
-<h3 class="anchored" data-anchor-id="open-methods">📐 Open Methods</h3>
-<p>Open methods involve the transparent sharing of research methodologies, protocols, and processes, allowing others to replicate, verify, and build upon the original research.</p>
-</section>
-<section id="open-data" class="level3">
-<h3 class="anchored" data-anchor-id="open-data">💽 Open Data</h3>
-<p>Open data refers to data that is freely available for anyone to use, modify, and share without restrictions, promoting transparency, innovation, and collaboration.</p>
-</section>
-<section id="open-access-self-archiving" class="level3">
-<h3 class="anchored" data-anchor-id="open-access-self-archiving">🔓 Open Access &amp; Self-Archiving</h3>
-<p>Open access is the practice of providing unrestricted online access to scholarly research, allowing anyone to read, download, and share it freely.</p>
-</section>
-<section id="open-educational-resources" class="level3">
-<h3 class="anchored" data-anchor-id="open-educational-resources">🍎 Open Educational Resources</h3>
-<p>Open educational resources are freely accessible, openly licensed materials used for teaching and learning, allowing users to legally use, modify, and distribute them.</p>
-</section>
-</div>
-</div>
-<hr>
-</section>
-</section>
-<section id="announcements" class="level2">
-<h2 class="anchored" data-anchor-id="announcements">Announcements</h2>
-<div id="listing-recent-announcements" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1746939600000" data-listing-file-modified-sort="1747003735000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
-<div class="thumbnail"><a href="./Announcements/2025_05_11_Forward Focus Journal Club/index.html" class="no-external">
-
-<p class="card-img-top"><img src="Announcements/2025_05_11_Forward Focus Journal Club/Forward-Focus-Flyer.png" alt="Flyer for the Forward Focus Journal Club promoting a discussion titled “1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders. Speakers are Dr. Danika Pfeiffer and Dr. Austin Thompson. The event is scheduled for Sunday, May 18, 2025, at 10 AM PT / 12 PM CT / 1 PM ET. Contact email for interest: forwardfocusonvoice@gmail.com. The flyer includes circular photos of the two speakers and features a purple and cream wave design background."  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Announcements/2025_05_11_Forward Focus Journal Club/index.html" class="no-external">CSDisseminate and the Forward Focus Journal Club team up to discuss our recent study: “1-800-Help-Me-With-Open-Science-Stuff”</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./Announcements/2025_05_11_Forward Focus Journal Club/index.html" class="no-external">
-<div class="listing-date">
-May 11, 2025
-</div>
-<div class="listing-author">
-Austin Thompson, Danika Pfeiffer
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1746162000000" data-listing-file-modified-sort="1747003718000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
-<div class="thumbnail"><a href="./Announcements/2025_05_02_Open-Data-Webinar/index.html" class="no-external">
-
-<p class="card-img-top"><img src="Announcements/2025_05_02_Open-Data-Webinar/open-data-webinar-flyer.png" alt="Flyer for a webinar titled “Open Data 101: A Guide for Researchers,” hosted by CSDisseminate. The design features a large black circle with white text and a bar graph icon, and the event is scheduled for Tuesday, June 3, 2025, at 4:00 PM EST. Wavy black lines border the image, with purple accents and a lightbulb logo representing CSDisseminate at the top."  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Announcements/2025_05_02_Open-Data-Webinar/index.html" class="no-external">Attend our upcoming webinar: Open Data 101 - A Guide for Researchers!</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./Announcements/2025_05_02_Open-Data-Webinar/index.html" class="no-external">
-<div class="listing-date">
-May 2, 2025
-</div>
-<div class="listing-author">
-Danika Pfeiffer, Helen Long
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1744952400000" data-listing-file-modified-sort="1747002578000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="266">
-<div class="thumbnail"><a href="./Announcements/2025_04_18_CSDisseminate &amp; OpenCSD/index.html" class="no-external">
-
-<p class="card-img-top"><img src="Announcements/2025_04_18_CSDisseminate & OpenCSD/merger-image.png" alt="Graphic featuring the phrase “TOGETHER IS BETTER” with the old CSDisseminate logo (a document with an unlocked padlock) and the OpenCSD LOGO (a lightbulb with a waveform inside) merging visually. The background uses overlapping pastel shapes in pink, blue, and purple, with a white “X” in the center suggesting collaboration. The CSDisseminate logo appears at the bottom."  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Announcements/2025_04_18_CSDisseminate &amp; OpenCSD/index.html" class="no-external">OpenCSD and CSDissemiante join forces!</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./Announcements/2025_04_18_CSDisseminate &amp; OpenCSD/index.html" class="no-external">
-<div class="listing-date">
-Apr 18, 2025
-</div>
-<div class="listing-author">
-Austin Thompson
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<hr>
-</section>
-<section id="our-mission" class="level2">
-<h2 class="anchored" data-anchor-id="our-mission">Our Mission</h2>
-<p><strong>What:</strong> We are a working group of researchers and clinicians dedicated to disseminating knowledge about open science practices to clinicians and researchers in Communication Sciences and Disorders (CSD) and beyond.</p>
-<p><strong>Who:</strong> We aim to educate a diverse group of partners—researchers, speech-language pathologists, audiologists, students, administrators, policymakers, publishers, and community members—on resources and strategies that enhance the reproducibility, transparency, and accessibility of science in our discipline.</p>
-<p><strong>Why:</strong> When researchers and clinicians embrace open science practices, it:</p>
-<ol type="1">
-<li><p>Increases transparency and reproducibility of research methods;</p></li>
-<li><p>Fosters interdisciplinary clinical research collaboration;</p></li>
-<li><p>Bridges the clinical and research gap in the CSD community by reducing barriers to accessing and understanding research.</p></li>
-</ol>
-<p><strong>How:</strong> Our organization promotes open science practices through various initiatives, including:</p>
-<ul>
-<li><p>Sharing resources that aid in discovering openly available research materials and products;</p></li>
-<li><p>Educating on methods for the management and sustainability of open science practices, including self-archiving, pre-registration, open data, and sharing materials;</p></li>
-<li><p>Conducting research to explore the use and sustainability of various open science practices in our discipline;</p></li>
-<li><p>Hosting initiatives such as ambassador programs, learning labs, podcasts, journal clubs, and workshops that empower researchers and clinicians to integrate open science practices into their work.</p></li>
-</ul>
-<p><strong>Vision:</strong> To advance the worldwide accessibility, reproducibility, and transparency of research, aiming to enhance speech, language, hearing, and swallowing for all people.</p>
-<hr>
-</section>
-<section id="leading-by-example" class="level2">
-<h2 class="anchored" data-anchor-id="leading-by-example">Leading by Example</h2>
-<p>Check out the websites of these rockstar researchers to see what self-archiving and open science looks like in action! For more examples, check out our <a href="./featured-scientists.html">Featured Scientists page</a>.</p>
-<div id="listing-featured-scientists" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="RmVhdHVyZWQlMjBTY2llbnRpc3Rz" data-listing-file-modified-sort="1747001124000" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
-<a href="./Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Featured-Scientists/Audibility-Perception-and-Cognition-Lab/Audibility, Perception, and Cognition Lab 1.avif" alt="Ryan McCreery, PhD, Director of Research and Audiology, standing outside of Boys Town National Research Hospital. Fun fact—Ryan completed his audiology clinical externship at Boys Town!" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Audibility, Perception, and Cognition Lab
-</h5>
-<div class="card-text listing-description delink">
-PI: Ryan McCreery, PhD
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="RmVhdHVyZWQlMjBTY2llbnRpc3Rz" data-listing-file-modified-sort="1747001137000" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
-<a href="./Featured-Scientists/CLaSS-Lab/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Featured-Scientists/CLaSS-Lab/CLaSS Lab 1.png" alt="Kelly Farquharson, PhD, CCC-SLP" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Children’s Literacy and Speech Sound (CLaSS) Lab
-</h5>
-<div class="card-text listing-description delink">
-PI: Kelly Farquharson, PhD, CCC-SLP
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<hr>
-</section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<div style="background-color: #e4e4e4; border-radius: 20px; padding: 2em; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-<div style="flex: 1; min-width: 300px; padding-right: 2em; font-size: 1em;">
-<p>We’d love your feedback as we continue to develop this site.</p>
-<p>After all, it is a site to help <em>you</em>!</p>
-<p>Connect with us on social media or reach out to us here:</p>
-<p><a href="mailto:CSDisseminate@gmail.com">CSDisseminate@gmail.com</a></p>
-</div>
-<div style="flex: 1; min-width: 300px;">
-<p><img src="Images/Typing on Laptop.jpg" alt="Typing on laptop" style="width: 100%; border-radius: 15px;"></p>
-</div>
-</div>
-<p><br>
-</p>
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Heejin Kim </p>
+             <p>Mark Hasegawa-Johnson </p>
+             <p>Adrienne Perlman </p>
+             <p>Jon Gunderson </p>
+             <p>Thomas S. Huang </p>
+             <p>Kenneth Watkin </p>
+             <p>Simone Frame </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
-</section>
+
+<p>The UA-Speech corpus was published in 2008. It originally contained recordings of nineteen individuals with dysarthria as a correlate of cerebral palsy, plus age-matched and gender-matched controls. Of the original nineteen, three have removed permission over the years, and/or their data has been corrupted, so that the distribution now contains data from sixteen speakers.</p>
+
+
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <footer class="custom-footer">

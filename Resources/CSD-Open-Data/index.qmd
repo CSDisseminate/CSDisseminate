@@ -15,6 +15,7 @@ categories:
  - Open Data
  - For Scientists
  - Free
+ - CSDisseminate Resource
 
 listing:
   - id: data-all
@@ -65,38 +66,48 @@ editor: source
 
 ------------------------------------------------------------------------
 
-## About this Resource
+# Where can I find data?
 
 {{< meta short-description >}}
 
-### General
+## Databases
 
--   [NIH's Resource for Finding Data Repositories](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data) — Hint, narrow your search by selecting "NIDCD" in the *Institute or Center* column.
+-   [NIH's Resource for Finding Data Repositories](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data) — Hint, narrow your search by selecting "NIDCD" (or whichever intitute may contain the data you are interested in) in the *Institute or Center* column.
 -   [Open Science Framework (OSF)](https://osf.io/) — Search for your population of interest and filter by files or project.
+-   [Mendeley Data](https://data.mendeley.com/)
+-   [Figshare](https://figshare.com/)
+-   [IEEE Dataport](https://ieee-dataport.org/datasets)
+-   [Synapse](https://www.synapse.org/)
 
 ------------------------------------------------------------------------
 
 ## Datasets
+
 :::::: panel-tabset
 ## All Datasets
+
 The following datasets share varying levels of data, from raw data to analytic data.
 
 ### Datasets
+
 ::: {#data-all}
 :::
 
 ## Raw Datasets
+
 *Raw data* is the original, unprocessed information collected directly from participants or instruments, such as audio recordings, sensor outputs, or survey responses.
 
 ### Datasets
+
 ::: {#data-raw}
 :::
 
 ## Analytic Datasets
+
 *Analytic data* is information that has been cleaned, coded, or transformed into a format ready for analysis; these types of datasets are often shared alongside publications to support computational reproducibility.
 
 ### Datasets
+
 ::: {#data-analytic}
 :::
-
-:::::: 
+::::::

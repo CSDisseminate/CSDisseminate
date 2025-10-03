@@ -1,0 +1,23 @@
+---
+title: "UA-Speech"
+short-description: "The UA-Speech corpus was published in 2008. It originally contained recordings of nineteen individuals with dysarthria as a correlate of cerebral palsy, plus age-matched and gender-matched controls. Of the original nineteen, three have removed permission over the years, and/or their data has been corrupted, so that the distribution now contains data from sixteen speakers."
+authors:
+  - Heejin Kim
+  - Mark Hasegawa-Johnson
+  - Adrienne Perlman
+  - Jon Gunderson
+  - Thomas S. Huang
+  - Kenneth Watkin
+  - Simone Frame
+dataset-link-text: "Access the Data"
+dataset-link: https://speechtechnology.web.illinois.edu/uaspeech/
+paper-link-text: "Read the Paper"
+paper-link: https://doi.org/10.21437/Interspeech.2008-480
+data-level: raw # raw or analytic
+access-level: restricted # open or restricted
+categories:
+  - Dysarthria
+editor: source
+---
+
+{{<meta short-description>}}
