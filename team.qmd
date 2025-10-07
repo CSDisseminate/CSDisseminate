@@ -9,6 +9,7 @@ listing:
   - id: collaborators
     contents: Team
     type: grid
+    template: ejs/team-cards.ejs
     grid-columns: 3
     fields:
       - image
@@ -32,6 +33,7 @@ listing:
   - id: ambassadors
     contents: Team
     type: grid
+    template: ejs/team-cards.ejs
     fields:
       - image
       - title

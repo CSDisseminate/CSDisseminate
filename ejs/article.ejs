@@ -1,58 +1,80 @@
 ```{=html}
-<ul class="pub-list list">
-<% for (const item of items) { %>
-  <li <%= metadataAttrs(item) %>>
-  <h5 style="margin: 0;"><strong><%= item.title %></strong></h5>
-    <%= item.author %><br />
-    <em><%= item.publication %></em>
-    (<%= item.year %>)<br />
-    <div class="pub-buttons" style="margin-top: 0.5rem;">
-      <a href="<%- item.path %>" class="btn btn-primary">
-        Details
-      </a>
-      <% if (item.doi) { %>
-      <a href="<%- item.doi %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        DOI
-      </a>
+<ul class="people-list list">
+<%
+function first(arr, fallback=null) {
+  return Array.isArray(arr) && arr.length ? arr[0] : fallback;
+}
+%>
+
+<style>
+/* ==== Scoped card styles ==== */
+.people-list .card.quarto-grid-item {
+  background: #fff;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+.people-list .card.quarto-grid-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  z-index: 1;
+}
+.people-list .card-img-top > img {
+  width: 100%; height: auto; display: block; object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.people-list .card-body { padding: 1em; }
+
+/* Square thumbnails for most team cards */
+.people-list .is-square .card-img-top > img { aspect-ratio: 1/1; }
+
+/* Announcement variant */
+.people-list .is-announcement img {
+  max-width: 150px; width: auto; height: auto; object-fit: contain; border-radius: 8px;
+}
+
+/* Metadata styles */
+.people-list .person-meta { text-align: center; }
+.people-list .person-meta .affiliation { font-weight: 600; margin: .2em 0; }
+.people-list .person-meta .pronouns { margin: 0; color: #555; font-size: .9em; }
+
+.people-list .btn, .people-list .btn-primary, .people-list .btn-secondary, .people-list .btn-tertiary {
+  border-radius: 1.5rem;
+}
+</style>
+
+<% for (const item of items) {
+     const cats = item.categories || [];
+     const isAnnouncement = cats.includes("Announcement");
+     const isSquare = cats.includes("Featured Scientists") || cats.includes("Collaborator") || cats.includes("Ambassador");
+     const cardClasses = ["card","quarto-grid-item",isAnnouncement?"is-announcement":"",isSquare?"is-square":""].filter(Boolean).join(" ");
+%>
+  <li class="<%= cardClasses %>" <%= metadataAttrs(item) %> data-categories="<%= cats.join(', ') %>">
+    <a href="<%- item.path %>" style="text-decoration:none;color:inherit;">
+      <% if (item.image) { %>
+      <div class="card-img-top">
+        <img src="<%- item.image %>" alt="<%= item.title %>">
+      </div>
       <% } %>
-      <% if (item.oa) { %>
-      <a href="<%- item.oa %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-pdf"></i> Open Access
-      </a>
-      <% } %>
-      <% if (item.postprint) { %>
-      <a href="<%- item.postprint %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-text"></i> Postprint
-      </a>
-      <% } %>
-      <% if (item.pubmed) { %>
-      <a href="<%- item.pubmed %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-medical"></i> PubMed
-      </a>
-      <% } %>
-      <% if (item.preprint) { %>
-      <a href="<%- item.preprint %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-text"></i> Preprint
-      </a>
-      <% } %>
-      <% if (item.materials) { %>
-      <a href="<%- item.materials %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-box-seam"></i> Materials
-      </a>
-      <% } %>
-      <% if (item.preregistration) { %>
-      <a href="<%- item.preregistration %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-journal-check"></i> Preregistration
-      </a>
-      <% } %>
-      <% if (item.link) { %>
-      <a href="<%- item.link %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-globe"></i> Article
-      </a>
-      <% } %>
-    </div>
+      <div class="card-body">
+        <h5 class="card-title" style="margin:0;"><strong><%= item.title %></strong></h5>
+        <% if (item.affiliation || item.pronouns || item.credentials) { %>
+          <div class="person-meta">
+            <% if (item.affiliation) { %><div class="affiliation"><%= item.affiliation %></div><% } %>
+            <% if (item.pronouns) { %><p class="pronouns"><%= item.pronouns %></p><% } %>
+            <% if (item.credentials) { %><p class="credentials"><%= item.credentials %></p><% } %>
+          </div>
+        <% } %>
+        <% if (item.description) { %>
+          <p class="card-text"><%= item.description %></p>
+        <% } %>
+      </div>
+    </a>
   </li>
 <% } %>
 </ul>
+
 
 ```

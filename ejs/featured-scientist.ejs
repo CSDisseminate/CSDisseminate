@@ -1,0 +1,98 @@
+```{=html}
+
+<ul class="featured-list list">
+<%
+function resolveImg(item) {
+  const img = item.headshot || item.image || item.thumbnail;
+  if (!img) return null;
+  if (/^https?:\/\//i.test(img)) return img;
+  const base = (item.path || "").replace(/[^/]+$/, "");
+  const enc = encodeURI(img).replace(/%2F/gi, "/");
+  return base + enc;
+}
+%>
+
+<style>
+/* ---- GRID: fixed column counts by breakpoint ---- */
+.featured-list {
+  display: grid;
+  gap: 1.5rem;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+@media (min-width: 640px) { .featured-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .featured-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* ---- Card ---- */
+.featured-list .card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-align: left;
+}
+.featured-list .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ---- Image ---- */
+.featured-list .card-img-top {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+.featured-list .card-img-top img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---- Text ---- */
+.featured-list .card-body {
+  padding: 1em;
+}
+.featured-list .card-title {
+  font-weight: 600;
+  margin-bottom: 0.25em;
+  font-size: 1.05em;
+  line-height: 1.3;
+}
+.featured-list .pi {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.4;
+}
+</style>
+
+<% for (const item of items) { 
+     const imgSrc = resolveImg(item);
+%>
+  <li class="card" <%= metadataAttrs(item) %>>
+    <a href="<%- item.path %>" style="text-decoration:none;color:inherit;">
+      <% if (imgSrc) { %>
+        <div class="card-img-top">
+          <img src="<%- imgSrc %>" alt="<%= item.pagetitle || item.title %>">
+        </div>
+      <% } %>
+      <div class="card-body">
+        <h5 class="card-title"><%= item.pagetitle || item.title %></h5>
+        <% if (item.pi) { %><div class="pi"><%= item.pi %></div><% } %>
+      </div>
+    </a>
+  </li>
+<% } %>
+</ul>
+
+
+
+```

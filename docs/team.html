@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-credentials','listing-position','listing-affiliation',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-credentials','listing-position','listing-affiliation',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-pagetitle","listing-first-name","listing-last-name","listing-date-joined","listing-categories","listing-credentials","listing-position","listing-affiliation","listing-pronouns","listing-orcid","listing-description-research","listing-description-os","listing-link","listing-website-button","listing-headshot","listing-lightbox","listing-draft","listing-layout","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -108,9 +108,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-credentials','listing-position','listing-affiliation',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-credentials','listing-position','listing-affiliation',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-pagetitle","listing-first-name","listing-last-name","listing-date-joined","listing-categories","listing-credentials","listing-position","listing-affiliation","listing-pronouns","listing-orcid","listing-description-research","listing-description-os","listing-link","listing-website-button","listing-headshot","listing-lightbox","listing-draft","listing-layout","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -261,542 +261,266 @@ window.Quarto = {
 <hr>
 <section id="collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
-<div id="listing-collaborators" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000949000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<a href="./Team/Elaine-Kearney/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Elaine-Kearney/kearney - Elaine Kearney.jpg" alt="Elaine Kearney, PhD Conjoint Research Fellow in Speech Pathology University of Queensland, Princess Alexandra Hospital" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Elaine Kearney
-</h5>
-<table class="card-other-values">
+<div id="listing-collaborators" class="quarto-listing quarto-listing-container-custom">
 
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-PhD
-</td>
-</tr>
+<ul class="people-list list">
 
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-Conjoint Research Fellow in Speech Pathology
-</td>
-</tr>
+<style>
+/* ---- GRID: fixed column counts by breakpoint ---- */
+.people-list {
+  display: grid;
+  gap: 1.5rem;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 1rem;
 
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-University of Queensland, Princess Alexandra Hospital
-</td>
-</tr>
+  /* default: 1 column on very small screens */
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1751419616000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<a href="./Team/Helen-Long/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Helen-Long/Helen Long.jpg" alt="Helen Long, PhD, CCC-SLP Assistant Professor Case Western Reserve University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Helen Long
-</h5>
-<table class="card-other-values">
+/* ≥640px: 2 columns */
+@media (min-width: 640px) {
+  .people-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-PhD, CCC-SLP
-</td>
-</tr>
+/* ≥1024px: 3 columns */
+@media (min-width: 1024px) {
+  .people-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-Assistant Professor
-</td>
-</tr>
+/* ---- Card ---- */
+.people-list .card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-align: left;
+}
+.people-list .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
 
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-Case Western Reserve University
-</td>
-</tr>
+/* ---- Square image with rounded top corners ---- */
+.people-list .card-img-top {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+.people-list .card-img-top img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
 
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747001026000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<a href="./Team/Mariam-El-Amin/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Mariam-El-Amin/Mariam El Amin.jpg" alt="Mariam El Amin, PhD Postdoctoral Research Associate University of South Carolina" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Mariam El Amin
-</h5>
-<table class="card-other-values">
+/* ---- Text ---- */
+.people-list .card-body { padding: 1em; }
+.people-list .card-title { font-weight: 600; margin-bottom: .25em; font-size: 1.05em; line-height: 1.3; }
+.people-list .credentials { font-size: .9em; color: #555; margin-bottom: .25em; }
+.people-list .affiliation { font-size: .9em; color: #666; line-height: 1.3; }
+</style>
 
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-PhD
-</td>
-</tr>
+  <li class="card" data-index="0" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000949000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Elaine-Kearney/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Elaine-Kearney/kearney - Elaine Kearney.jpg" alt="Elaine Kearney">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Elaine Kearney</h5>
+        <div class="credentials">PhD</div>
+        <div class="affiliation">University of Queensland, Princess Alexandra Hospital</div>
+      </div>
+    </a>
+  </li>
 
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-Postdoctoral Research Associate
-</td>
-</tr>
+  <li class="card" data-index="1" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1751419616000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Helen-Long/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Helen-Long/Helen Long.jpg" alt="Helen Long">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Helen Long</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">Case Western Reserve University</div>
+      </div>
+    </a>
+  </li>
 
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-University of South Carolina
-</td>
-</tr>
+  <li class="card" data-index="2" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747001026000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Mariam-El-Amin/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Mariam-El-Amin/Mariam El Amin.jpg" alt="Mariam El Amin">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Mariam El Amin</h5>
+        <div class="credentials">PhD</div>
+        <div class="affiliation">University of South Carolina</div>
+      </div>
+    </a>
+  </li>
 
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000923000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<a href="./Team/Danika-Pfeiffer/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Danika-Pfeiffer/Danika Pfeiffer.jpeg" alt="Danika Pfeiffer, PhD, CCC-SLP Assistant Professor Old Dominion University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Danika Pfeiffer
-</h5>
-<table class="card-other-values">
+  <li class="card" data-index="3" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000923000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Danika-Pfeiffer/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Danika-Pfeiffer/Danika Pfeiffer.jpeg" alt="Danika Pfeiffer">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Danika Pfeiffer</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">Old Dominion University</div>
+      </div>
+    </a>
+  </li>
 
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-PhD, CCC-SLP
-</td>
-</tr>
+  <li class="card" data-index="4" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1759854411747" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
+    <a href="./Team/Jessica-Salley-Riccardi/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Jessica-Salley-Riccardi/Jessica Riccardi.jpg" alt="Jessica Salley Riccardi">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Jessica Salley Riccardi</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">University of Maine</div>
+      </div>
+    </a>
+  </li>
 
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-Assistant Professor
-</td>
-</tr>
+  <li class="card" data-index="5" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000972000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/James-Borders/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/James-Borders/James Borders.png" alt="James Borders">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">James Borders</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">Boston University</div>
+      </div>
+    </a>
+  </li>
 
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-Old Dominion University
-</td>
-</tr>
+  <li class="card" data-index="6" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000882000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Austin-Thompson/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Austin-Thompson/Thompson Headshot - Austin Thompson.jpeg" alt="Austin Thompson">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Austin Thompson</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">University of Houston</div>
+      </div>
+    </a>
+  </li>
 
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747001015000" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-<a href="./Team/Jessica-Salley-Riccardi/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Jessica-Salley-Riccardi/Jessica Riccardi.jpg" alt="Jessica Salley Riccardi, PhD, CCC-SLP Assistant Professor University of Maine" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Jessica Salley Riccardi
-</h5>
-<table class="card-other-values">
+  <li class="card" data-index="7" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747001041000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Micah-Hirsch/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Micah-Hirsch/Micah Hirsch.jpeg" alt="Micah Hirsch">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Micah Hirsch</h5>
+        <div class="credentials">PhD</div>
+        <div class="affiliation">Boston University</div>
+      </div>
+    </a>
+  </li>
 
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-PhD, CCC-SLP
-</td>
-</tr>
+  <li class="card" data-index="8" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000895000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/Brittany-Ciullo/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Brittany-Ciullo/Brittany Ciullo.png" alt="Brittany Ciullo">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Brittany Ciullo</h5>
+        <div class="credentials">MA, CCC-SLP</div>
+        <div class="affiliation">UMass Amherst</div>
+      </div>
+    </a>
+  </li>
 
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-Assistant Professor
-</td>
-</tr>
+  <li class="card" data-index="9" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1749838870000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/Jennifer-Markfeld/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Jennifer-Markfeld/Jennifer Markfeld.jpg" alt="Jennifer Markfeld">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Jennifer Markfeld</h5>
+        <div class="credentials">MS, CF-SLP</div>
+        <div class="affiliation">Vanderbilt University</div>
+      </div>
+    </a>
+  </li>
 
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-University of Maine
-</td>
-</tr>
+  <li class="card" data-index="10" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000847000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/Andrea-Ford/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Andrea-Ford/Andrea Ford.jpg" alt="Andrea Ford">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Andrea Ford</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">University of Cincinnati</div>
+      </div>
+    </a>
+  </li>
 
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000972000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<a href="./Team/James-Borders/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/James-Borders/James Borders.png" alt="James Borders, PhD, CCC-SLP Assistant Professor Boston University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-James Borders
-</h5>
-<table class="card-other-values">
+  <li class="card" data-index="11" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000835000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/Alisa-Baron/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Alisa-Baron/Alisa Baron.png" alt="Alisa Baron">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Alisa Baron</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">University of Rhode Island</div>
+      </div>
+    </a>
+  </li>
 
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-PhD, CCC-SLP
-</td>
-</tr>
+  <li class="card" data-index="12" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000906000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/Collin-Brice/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Collin-Brice/Collin Brice.JPEG" alt="Collin Brice">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Collin Brice</h5>
+        <div class="credentials">MS, CCC-SLP</div>
+        <div class="affiliation">University of Cincinnati</div>
+      </div>
+    </a>
+  </li>
 
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-Assistant Professor
-</td>
-</tr>
+</ul>
 
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-Boston University
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000882000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<a href="./Team/Austin-Thompson/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Austin-Thompson/Thompson Headshot - Austin Thompson.jpeg" alt="Austin Thompson, PhD, CCC-SLP Assistant Professor University of Houston" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Austin Thompson
-</h5>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-PhD, CCC-SLP
-</td>
-</tr>
-
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-Assistant Professor
-</td>
-</tr>
-
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-University of Houston
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747001041000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<a href="./Team/Micah-Hirsch/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Micah-Hirsch/Micah Hirsch.jpeg" alt="Micah Hirsch, PhD Postdoctoral Research Associate Boston University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Micah Hirsch
-</h5>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-PhD
-</td>
-</tr>
-
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-Postdoctoral Research Associate
-</td>
-</tr>
-
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-Boston University
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000895000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<a href="./Team/Brittany-Ciullo/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Brittany-Ciullo/Brittany Ciullo.png" alt="Brittany Ciullo, MA, CCC-SLP PhD Student UMass Amherst" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Brittany Ciullo
-</h5>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-MA, CCC-SLP
-</td>
-</tr>
-
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-PhD Student
-</td>
-</tr>
-
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-UMass Amherst
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1749838870000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<a href="./Team/Jennifer-Markfeld/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Jennifer-Markfeld/Jennifer Markfeld.jpg" alt="Jennifer Markfeld, MS, CF-SLP PhD Candidate Vanderbilt University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Jennifer Markfeld
-</h5>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-MS, CF-SLP
-</td>
-</tr>
-
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-PhD Candidate
-</td>
-</tr>
-
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-Vanderbilt University
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="10" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000847000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<a href="./Team/Andrea-Ford/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Andrea-Ford/Andrea Ford.jpg" alt="Andrea Ford, PhD, CCC-SLP Assistant Professor University of Cincinnati" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Andrea Ford
-</h5>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-PhD, CCC-SLP
-</td>
-</tr>
-
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-Assistant Professor
-</td>
-</tr>
-
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-University of Cincinnati
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000835000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<a href="./Team/Alisa-Baron/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Alisa-Baron/Alisa Baron.png" alt="Alisa Baron, PhD, CCC-SLP Assistant Professor University of Rhode Island" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Alisa Baron
-</h5>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-PhD, CCC-SLP
-</td>
-</tr>
-
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-Assistant Professor
-</td>
-</tr>
-
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-University of Rhode Island
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="12" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1747000906000" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<a href="./Team/Collin-Brice/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Collin-Brice/Collin Brice.JPEG" alt="Collin Brice, MS, CCC-SLP PhD Candidate University of Cincinnati" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Collin Brice
-</h5>
-<table class="card-other-values">
-
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-MS, CCC-SLP
-</td>
-</tr>
-
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-PhD Candidate
-</td>
-</tr>
-
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-University of Cincinnati
-</td>
-</tr>
-
-</tbody></table>
-</div>
-</div></a>
-</div>
-</div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <hr>
@@ -804,50 +528,86 @@ University of Cincinnati
 <section id="ambassadors" class="level2">
 <h2 class="anchored" data-anchor-id="ambassadors">Ambassadors</h2>
 <p>Meet our University Ambassadors who are currently working to increase the use of open science practices within their CSD and affiliated departments!</p>
-<div id="listing-ambassadors" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="QW1iYXNzYWRvcg==" data-listing-file-modified-sort="1747000868000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<a href="./Team/Anne-Reed/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="Team/Anne-Reed/Anne C. Reed.jpg" alt="Anne C. Reed, EdS, CCC-SLP Doctoral Candidate Florida State University" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Anne C. Reed
-</h5>
-<table class="card-other-values">
+<div id="listing-ambassadors" class="quarto-listing quarto-listing-container-custom">
 
-<tbody><tr>
-<td>
-Credentials
-</td>
-<td class="credentials">
-EdS, CCC-SLP
-</td>
-</tr>
+<ul class="people-list list">
 
-<tr>
-<td>
-Position
-</td>
-<td class="position">
-Doctoral Candidate
-</td>
-</tr>
+<style>
+/* ---- GRID: fixed column counts by breakpoint ---- */
+.people-list {
+  display: grid;
+  gap: 1.5rem;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 1rem;
 
-<tr>
-<td>
-Affiliation
-</td>
-<td class="affiliation">
-Florida State University
-</td>
-</tr>
+  /* default: 1 column on very small screens */
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 
-</tbody></table>
-</div>
-</div></a>
-</div>
-</div>
+/* ≥640px: 2 columns */
+@media (min-width: 640px) {
+  .people-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ≥1024px: 3 columns */
+@media (min-width: 1024px) {
+  .people-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ---- Card ---- */
+.people-list .card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-align: left;
+}
+.people-list .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ---- Square image with rounded top corners ---- */
+.people-list .card-img-top {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+.people-list .card-img-top img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
+
+/* ---- Text ---- */
+.people-list .card-body { padding: 1em; }
+.people-list .card-title { font-weight: 600; margin-bottom: .25em; font-size: 1.05em; line-height: 1.3; }
+.people-list .credentials { font-size: .9em; color: #555; margin-bottom: .25em; }
+.people-list .affiliation { font-size: .9em; color: #666; line-height: 1.3; }
+</style>
+
+  <li class="card" data-index="0" data-categories="QW1iYXNzYWRvcg==" data-listing-file-modified-sort="1747000868000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Anne-Reed/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Anne-Reed/Anne C. Reed.jpg" alt="Anne C. Reed">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Anne C. Reed</h5>
+        <div class="credentials">EdS, CCC-SLP</div>
+        <div class="affiliation">Florida State University</div>
+      </div>
+    </a>
+  </li>
+
+</ul>
+
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <hr>

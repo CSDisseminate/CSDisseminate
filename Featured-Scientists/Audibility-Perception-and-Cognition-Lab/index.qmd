@@ -1,6 +1,8 @@
 ---
 title: "Audibility, Perception, and Cognition Lab"
 pagetitle: "Audibility, Perception, and Cognition Lab"
+pi: Ryan McCreery, PhD
+headshot: "Audibility, Perception, and Cognition Lab 1.avif"
 categories:
  - Featured Scientists
 lightbox: true

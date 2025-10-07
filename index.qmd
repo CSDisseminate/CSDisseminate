@@ -17,6 +17,7 @@ listing:
     contents: Featured-Scientists
     sort: "date desc"
     type: grid
+    template: ejs/featured-scientist.ejs
     categories: false
     sort-ui: false
     filter-ui: false
