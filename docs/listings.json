@@ -45,13 +45,6 @@
     ]
   },
   {
-    "listing": "/events.html",
-    "items": [
-      "/Events/2025-06-03-Open-Data-Workshop/index.html",
-      "/Events/2025-05-18-Forward-Focus/index.html"
-    ]
-  },
-  {
     "listing": "/Research/index.html",
     "items": [
       "/Research/Publications/Pfeiffer-et-al-2025/index.html",
@@ -59,7 +52,15 @@
       "/Research/Publications/El-Amin-et-al-2023/index.html",
       "/Research/Publications/Schroeder-et-al-2023/index.html",
       "/Research/Publications/Pfeiffer-et-al-2025b/index.html",
-      "/Research/Publications/Pfeiffer-et-al-2022/index.html"
+      "/Research/Publications/Pfeiffer-et-al-2022/index.html",
+      "/Research/Publications/Gaeta-et-al-2022/index.html"
+    ]
+  },
+  {
+    "listing": "/events.html",
+    "items": [
+      "/Events/2025-06-03-Open-Data-Workshop/index.html",
+      "/Events/2025-05-18-Forward-Focus/index.html"
     ]
   },
   {

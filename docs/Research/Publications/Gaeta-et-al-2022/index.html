@@ -6,8 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lauren Gaeta">
+<meta name="author" content="Danika Pfeiffer">
+<meta name="author" content="Elaine Kearney">
+<meta name="dcterms.date" content="2022-01-15">
 
-<title>Research – CSDisseminate</title>
+<title>CSDisseminate</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +27,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="..//Images/favicon-96x96.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../..//Images/favicon-96x96.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,134 +72,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-publications .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-journal-name',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-publication","listing-date","listing-year","listing-author","listing-abstract","listing-categories","listing-doi","listing-materials","listing-postprint","listing-preregistration","listing-title-block-banner","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-publications'] = new List('listing-publications', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-preprints .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-journal-name',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-publication","listing-date","listing-year","listing-author","listing-abstract","listing-categories","listing-preprint","listing-materials","listing-preregistration","listing-title-block-banner","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-preprints'] = new List('listing-preprints', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-other .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-journal-name',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-publication","listing-date","listing-year","listing-author","listing-abstract","listing-categories","listing-doi","listing-postprint","listing-title-block-banner","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-oa"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-other'] = new List('listing-other', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title"><img src="../Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title"><img src="../../../Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -207,7 +95,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -216,29 +104,29 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-people">    
         <li>
-    <a class="dropdown-item" href="../team.html">
+    <a class="dropdown-item" href="../../../team.html">
  <span class="dropdown-text">Meet the Team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../join-us.html">
+    <a class="dropdown-item" href="../../../join-us.html">
  <span class="dropdown-text">Join Us</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../featured-scientists.html">
+    <a class="dropdown-item" href="../../../featured-scientists.html">
  <span class="dropdown-text">Featured Scientists</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../Research/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../Research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../resources.html"> 
+    <a class="nav-link" href="../../../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../events.html"> 
+    <a class="nav-link" href="../../../events.html"> 
 <span class="menu-text">Events</span></a>
   </li>  
 </ul>
@@ -249,7 +137,79 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Enhancing Accessibility of Communication Sciences and Disorders Research: Open Access and Self-Archiving</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Other</div>
+                <div class="quarto-category">Open Science</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-heading">Affiliations</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author">Lauren Gaeta <a href="https://orcid.org/0000-0001-5493-9636" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              California State University Sacramento
+            </p>
+        </div>
+      <div class="quarto-title-meta-contents">
+      <p class="author">Danika Pfeiffer <a href="https://orcid.org/0000-0003-1080-4961" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              Old Dominion University
+            </p>
+        </div>
+      <div class="quarto-title-meta-contents">
+      <p class="author">Elaine Kearney <a href="https://orcid.org/0000-0003-4456-1291" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              The University of Queensland
+            </p>
+          <p class="affiliation">
+              Princess Alexandra Hospital
+            </p>
+        </div>
+    </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 15, 2022</p>
+      </div>
+    </div>
+    
+      
+      <div>
+      <div class="quarto-title-meta-heading">Doi</div>
+      <div class="quarto-title-meta-contents">
+        <p class="doi">
+          <a href="https://doi.org/https://www.audiology.org/news-and-publications/audiology-today/articles/opinion-editorial-enhancing-accessibility-of-communication-sciences-and-disorders-research-open-access-and-self-archiving/">https://www.audiology.org/news-and-publications/audiology-today/articles/opinion-editorial-enhancing-accessibility-of-communication-sciences-and-disorders-research-open-access-and-self-archiving/</a>
+        </p>
+      </div>
+    </div>
+    </div>
+    
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      This article provides an overview of two open science practices in communication sciences and disorders. Readers will learn the importance of open access and self-archiving, as well as their benefits and drawbacks.
+    </div>
+  </div>
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -257,294 +217,26 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#preprints" id="toc-preprints" class="nav-link active" data-scroll-target="#preprints">Preprints</a></li>
-  <li><a href="#peer-reviewed-publications" id="toc-peer-reviewed-publications" class="nav-link" data-scroll-target="#peer-reviewed-publications">Peer-Reviewed Publications</a></li>
-  <li><a href="#other-publications" id="toc-other-publications" class="nav-link" data-scroll-target="#other-publications">Other Publications</a></li>
+  <li><a href="#important-links" id="toc-important-links" class="nav-link active" data-scroll-target="#important-links">Important Links</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Research</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<p>Research produced by the CSDisseminate team and collaborators.</p>
-<hr>
-<section id="preprints" class="level2">
-<h2 class="anchored" data-anchor-id="preprints">Preprints</h2>
-<div id="listing-preprints" class="quarto-listing quarto-listing-container-custom">
-<ul class="pub-list list">
-
-  <li data-index="0" data-categories="UHJlcHJpbnQlMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1749531600000" data-listing-file-modified-sort="1752768029000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
-  <h5 style="margin: 0;" class="anchored"><strong>“There’s going to have to be a culture shift”: Associate and full professors’ perceptions and experiences related to open science practices in communication sciences and disorders</strong></h5>
-    Danika Pfeiffer, Austin Thompson, Alisa Baron, Collin Brice, Brittany Ciullo, Micah E. Hirsch, Helen Long, Andrea Ford<br>
-    <em>EdArXiv</em>
-    (Under Review)<br>
-    <div class="pub-buttons" style="margin-top: 0.5rem;">
-      <a href="../Research/Publications/Pfeiffer-et-al-2025b/index.html" class="btn btn-primary">
-        Details
-      </a>
-      
-      
-      
-      
-      
-      <a href="https://osf.io/preprints/edarxiv/ygfhp_v1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-text"></i> Preprint
-      </a>
-      
-      
-      <a href="https://osf.io/dvkqg/" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-box-seam"></i> Materials
-      </a>
-      
-      
-      <a href="https://osf.io/he3np" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-journal-check"></i> Preregistration
-      </a>
-      
-      
-    </div>
-  </li>
-
+<p><br>
+<br>
+</p>
+<section id="important-links" class="level2">
+<h2 class="anchored" data-anchor-id="important-links">Important Links</h2>
+<ul>
+<li><p><a href="https://www.audiology.org/news-and-publications/audiology-today/articles/opinion-editorial-enhancing-accessibility-of-communication-sciences-and-disorders-research-open-access-and-self-archiving/">Read on the Audiology Today</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/1FXWixMTAdDHtti_St3FRE5olSlVbi0df/view">Read on the Postprint</a></p></li>
 </ul>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="peer-reviewed-publications" class="level2">
-<h2 class="anchored" data-anchor-id="peer-reviewed-publications">Peer-Reviewed Publications</h2>
-<div id="listing-publications" class="quarto-listing quarto-listing-container-custom">
-<ul class="pub-list list">
-
-  <li data-index="0" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1735797600000" data-listing-file-modified-sort="1752709454000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
-  <h5 style="margin: 0;" class="anchored"><strong>“1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders</strong></h5>
-    Danika Pfeiffer, Austin Thompson, Brittany Ciullo, Micah E. Hirsch, Mariam El Amin, Andrea Ford, Jessica Riccardi, Elaine Kearney<br>
-    <em>Journal of Speech, Language, and Hearing Research</em>
-    (2025)<br>
-    <div class="pub-buttons" style="margin-top: 0.5rem;">
-      <a href="../Research/Publications/Pfeiffer-et-al-2025/index.html" class="btn btn-primary">
-        Details
-      </a>
-      
-      <a href="https://doi.org/10.1044/2024_JSLHR-24-00378" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        DOI
-      </a>
-      
-      
-      
-      <a href="https://osf.io/preprints/osf/9kxa7_v1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-text"></i> Postprint
-      </a>
-      
-      
-      
-      
-      <a href="https://osf.io/tprzu/" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-box-seam"></i> Materials
-      </a>
-      
-      
-      <a href="https://osf.io/6yq2s" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-journal-check"></i> Preregistration
-      </a>
-      
-      
-    </div>
-  </li>
-
-  <li data-index="1" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwQWNjZXNz" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1752709278000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33">
-  <h5 style="margin: 0;" class="anchored"><strong>The Effect of Open Access on Scholarly and Societal Metrics of Impact in the ASHA Journals</strong></h5>
-    Helen Long, Lee Drown, Mariam El Amin<br>
-    <em>Journal of Speech, Language, and Hearing Research</em>
-    (2023)<br>
-    <div class="pub-buttons" style="margin-top: 0.5rem;">
-      <a href="../Research/Publications/Long-Drown-El-Amin-2023/index.html" class="btn btn-primary">
-        Details
-      </a>
-      
-      <a href="https://doi.org/10.1044/2022_JSLHR-22-00315" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        DOI
-      </a>
-      
-      
-      
-      <a href="https://osf.io/preprints/osf/2ufte_v1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-text"></i> Postprint
-      </a>
-      
-      
-      
-      
-      <a href="https://osf.io/927bk/" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-box-seam"></i> Materials
-      </a>
-      
-      
-      <a href="https://osf.io/7wnga" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-journal-check"></i> Preregistration
-      </a>
-      
-      
-    </div>
-  </li>
-
-  <li data-index="2" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1752709507000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
-  <h5 style="margin: 0;" class="anchored"><strong>Open Science Practices in Communication Sciences and Disorders: A Survey</strong></h5>
-    Mariam El Amin, James Borders, Helen Long, Mary Alice Keller, Elaine Kearney<br>
-    <em>Journal of Speech, Language, and Hearing Research</em>
-    (2023)<br>
-    <div class="pub-buttons" style="margin-top: 0.5rem;">
-      <a href="../Research/Publications/El-Amin-et-al-2023/index.html" class="btn btn-primary">
-        Details
-      </a>
-      
-      <a href="https://doi.org/10.1044/2022_JSLHR-22-00062" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        DOI
-      </a>
-      
-      
-      
-      <a href="https://osf.io/jwba3_v1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-text"></i> Postprint
-      </a>
-      
-      
-      
-      
-      <a href="https://osf.io/2f7xp/" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-box-seam"></i> Materials
-      </a>
-      
-      
-      <a href="https://osf.io/tca2v" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-journal-check"></i> Preregistration
-      </a>
-      
-      
-    </div>
-  </li>
-
-  <li data-index="3" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1752768643000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
-  <h5 style="margin: 0;" class="anchored"><strong>Evaluating Research Transparency and Openness in Communication Sciences and Disorders Journals</strong></h5>
-    Scott R. Schroeder, Laura Gaeta, Mariam El Amin, Jason C. Chow, James C. Borders<br>
-    <em>Journal of Speech, Language, and Hearing Research</em>
-    (2023)<br>
-    <div class="pub-buttons" style="margin-top: 0.5rem;">
-      <a href="../Research/Publications/Schroeder-et-al-2023/index.html" class="btn btn-primary">
-        Details
-      </a>
-      
-      <a href="https://doi.org/10.1044/2022_JSLHR-22-00330" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        DOI
-      </a>
-      
-      
-      
-      <a href="https://osf.io/preprints/psyarxiv/dy5zs_v1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-text"></i> Postprint
-      </a>
-      
-      
-      
-      
-      <a href="https://osf.io/f3qku/" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-box-seam"></i> Materials
-      </a>
-      
-      
-      
-    </div>
-  </li>
-
-</ul>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="other-publications" class="level2">
-<h2 class="anchored" data-anchor-id="other-publications">Other Publications</h2>
-<div id="listing-other" class="quarto-listing quarto-listing-container-custom">
-<ul class="pub-list list">
-
-  <li data-index="0" data-categories="T3RoZXIlMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1663563600000" data-listing-file-modified-sort="1760545651029" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
-  <h5 style="margin: 0;" class="anchored"><strong>Access research beyond the paywall: Five strategies to read what you need</strong></h5>
-    Danika Pfeiffer, Helen Long, Mariam El Amin<br>
-    <em>ASHA Leader Live</em>
-    (2022)<br>
-    <div class="pub-buttons" style="margin-top: 0.5rem;">
-      <a href="../Research/Publications/Pfeiffer-et-al-2022/index.html" class="btn btn-primary">
-        Details
-      </a>
-      
-      <a href="https://leader.pubs.asha.org/do/10.1044/2022-0919-slp-aud-research/full/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        DOI
-      </a>
-      
-      
-      <a href="https://leader.pubs.asha.org/do/10.1044/2022-0919-slp-aud-research/full/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-pdf"></i> Open Access
-      </a>
-      
-      
-      
-      
-      
-      
-      
-    </div>
-  </li>
-
-  <li data-index="1" data-categories="T3RoZXIlMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1642226400000" data-listing-file-modified-sort="1760545238173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
-  <h5 style="margin: 0;" class="anchored"><strong>Enhancing Accessibility of Communication Sciences and Disorders Research: Open Access and Self-Archiving</strong></h5>
-    Lauren Gaeta, Danika Pfeiffer, Elaine Kearney<br>
-    <em>Audiology Today</em>
-    (2022)<br>
-    <div class="pub-buttons" style="margin-top: 0.5rem;">
-      <a href="../Research/Publications/Gaeta-et-al-2022/index.html" class="btn btn-primary">
-        Details
-      </a>
-      
-      <a href="https://www.audiology.org/news-and-publications/audiology-today/articles/opinion-editorial-enhancing-accessibility-of-communication-sciences-and-disorders-research-open-access-and-self-archiving/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        DOI
-      </a>
-      
-      
-      
-      <a href="https://drive.google.com/file/d/1FXWixMTAdDHtti_St3FRE5olSlVbi0df/view" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-file-earmark-text"></i> Postprint
-      </a>
-      
-      
-      
-      
-      
-      
-    </div>
-  </li>
-
-</ul>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-
 
 
 </section>

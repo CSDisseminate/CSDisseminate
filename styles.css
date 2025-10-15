@@ -22,180 +22,6 @@ div.#quarto-back-to-top {
   box-sizing: border-box;
 }
 
-[data-categories="Featured Scientists"] .card-img-top > img {
-  height: auto         !important;
-  aspect-ratio: 1/1    !important;
-  width: 100%          !important;
-  object-fit: cover    !important;
-  display: block;
-}
-
-[data-categories="Featured Scientists"] .card-img-top {
-  height: auto         !important;
-}
-
-/* Scope to Featured Scientists listing via its data‑categories attr */
-[data-categories="Featured Scientists"] .card.quarto-grid-item {
-  /* white card background */
-  background: #fff !important;
-
-  /* rounded corners on the whole card */
-  border-radius: 1rem !important;
-
-  /* gentle drop shadow */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
-
-  /* remove old border */
-  border: none !important;
-
-  /* ensure the image and body respect the rounding */
-  overflow: hidden;
-}
-
-/* keep the thumbnail itself rounded */
-[data-categories="Featured Scientists"] .card-img-top > img {
-  border-radius: 1rem 1rem 0 0 !important; /* only top corners rounded */
-}
-
-/* tighten up the card body look */
-[data-categories="Featured Scientists"] .card-body {
-  padding: 1em;
-  /* you can add: text‑align: center; if you want centered titles */
-}
-
-
-/* 1) Smooth transition on the card */
-[data-categories="Featured Scientists"] .card.quarto-grid-item {
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-/* 2) Scale up and deepen shadow on hover */
-[data-categories="Featured Scientists"] .card.quarto-grid-item:hover {
-  transform: scale(1.03);                    /* 3% larger */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
-  z-index: 1;                                 /* keep it above neighbors */
-}
-
-/* —— TEAM LISTING CARD STYLES —— */
-
-/* make team images square and cover */
-[data-categories="Collaborator"] .card-img-top > img {
-  height: auto         !important;
-  aspect-ratio: 1/1    !important;
-  width: 100%          !important;
-  object-fit: cover    !important;
-  display: block;
-}
-
-/* card background & rounding */
-[data-categories="Collaborator"] .card.quarto-grid-item {
-  background: #fff !important;
-  border-radius: 1rem !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
-  border: none !important;
-  overflow: hidden;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-/* tighten up team card body padding */
-[data-categories="Collaborator"] .card-body {
-  padding: 1em;
-}
-
-/* image corner rounding */
-[data-categories="Collaborator"] .card-img-top > img {
-  border-radius: 1rem 1rem 0 0 !important;
-}
-
-/* hover effect */
-[data-categories="Collaborator"] .card.quarto-grid-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
-  z-index: 1;
-}
-
-/* make team images square and cover */
-[data-categories="Ambassador"] .card-img-top > img {
-  height: auto         !important;
-  aspect-ratio: 1/1    !important;
-  width: 100%          !important;
-  object-fit: cover    !important;
-  display: block;
-}
-
-/* card background & rounding */
-[data-categories="Ambassador"] .card.quarto-grid-item {
-  background: #fff !important;
-  border-radius: 1rem !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
-  border: none !important;
-  overflow: hidden;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-/* tighten up team card body padding */
-[data-categories="Ambassador"] .card-body {
-  padding: 1em;
-}
-
-/* image corner rounding */
-[data-categories="Ambassador"] .card-img-top > img {
-  border-radius: 1rem 1rem 0 0 !important;
-}
-
-/* hover effect */
-[data-categories="Ambassador"] .card.quarto-grid-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;
-  z-index: 1;
-}
-
-
-
-.person-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  width: 200px;           /* or whatever grid‑cell width you like */
-  margin: 0.5em;
-}
-
-.person-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.person-meta {
-  padding: 0.5em;
-  text-align: center;
-}
-
-.person-meta .affiliation {
-  font-weight: 600;
-  margin: 0.2em 0;
-}
-
-.person-meta .pronouns {
-  margin: 0;
-  color: #555;
-  font-size: 0.9em;
-}
-
-/* Hide the first <td> (the “pronouns”, “credentials”, etc. labels) */
-.card-other-values td:first-child {
-  display: none;
-}
-
-/* Optional: collapse the leftover empty column spacing */
-.card-other-values tr {
-  grid-template-columns: 1fr;
-}
-
 
 /* Limit image size in the recent-announcements listing */
 [data-categories="Announcement"] img {
@@ -227,6 +53,109 @@ hr {
 .btn-secondary,
 .btn-tertiary {
   border-radius: 1.5rem;
+}
+
+
+/* Liquid Glass button */
+.btn-liquid {
+  --lg-hue: 215;                /* base hue (blue-ish). tweak per variant */
+  --lg-sat: 90%;
+  --lg-light: 55%;
+  --lg-bg: rgba(255,255,255,0.20);     /* glass fill */
+  --lg-border: rgba(255,255,255,0.55); /* frosted rim */
+  --lg-shadow: rgba(30,30,60,0.25);
+  --lg-glow: hsla(var(--lg-hue), var(--lg-sat), 60%, 0.4);
+  --lg-tint: hsla(var(--lg-hue), var(--lg-sat), var(--lg-light), 0.15);
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .625rem 1rem;
+  border-radius: 16px;
+  border: 1px solid var(--lg-border);
+  color: #0b1220;                       /* readable on light glass */
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1;
+  backdrop-filter: saturate(140%) blur(14px);
+  -webkit-backdrop-filter: saturate(140%) blur(14px); /* iOS */
+  background:
+    /* subtle inner color wash */
+    linear-gradient(180deg, var(--lg-tint), transparent 60%),
+    /* sheen diagonals */
+    radial-gradient(120% 100% at 0% 0%, rgba(255,255,255,.55), transparent 40%),
+    radial-gradient(120% 100% at 100% 0%, rgba(255,255,255,.25), transparent 42%),
+    /* base translucent glass */
+    var(--lg-bg);
+  box-shadow:
+    0 6px 18px var(--lg-shadow),
+    inset 0 0 0 0.5px rgba(255,255,255,0.35);
+  transition: transform .15s ease, box-shadow .2s ease, background .2s ease;
+}
+
+/* gloss layer */
+.btn-liquid::before {
+  content: "";
+  position: absolute;
+  inset: 2px 2px 45% 2px;               /* top half gloss */
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,.65), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+/* highlight bubble */
+.btn-liquid::after {
+  content: "";
+  position: absolute;
+  top: 6px; left: 10px;
+  width: 42px; height: 18px;
+  background: radial-gradient(60% 100% at 50% 50%, rgba(255,255,255,.85), rgba(255,255,255,0));
+  filter: blur(4px);
+  opacity: .9;
+  pointer-events: none;
+}
+
+/* hover/active */
+.btn-liquid:hover {
+  box-shadow:
+    0 8px 22px var(--lg-shadow),
+    0 0 0 6px var(--lg-glow);
+  transform: translateY(-1px);
+}
+.btn-liquid:active { transform: translateY(0); }
+
+/* icon-only spacing if you add an icon */
+.btn-liquid i { font-size: 1.05em; }
+
+/* size variants */
+.btn-liquid.sm { padding: .5rem .8rem; border-radius: 14px; }
+.btn-liquid.lg { padding: .8rem 1.15rem; border-radius: 18px; }
+
+/* color variants (change the hue/lightness wash) */
+.btn-liquid.blue   { --lg-hue: 215; --lg-light: 56%; }
+.btn-liquid.pink   { --lg-hue: 330; --lg-light: 62%; }
+.btn-liquid.green  { --lg-hue: 158; --lg-light: 50%; }
+.btn-liquid.purple { --lg-hue: 265; --lg-light: 60%; }
+
+/* dark theme tweaks */
+:root[data-theme="dark"] .btn-liquid {
+  color: rgba(255,255,255,0.92);
+  --lg-bg: rgba(255,255,255,0.10);
+  --lg-border: rgba(255,255,255,0.35);
+  --lg-shadow: rgba(0,0,0,0.45);
+}
+
+/* fallback for browsers without backdrop-filter */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .btn-liquid {
+    background: linear-gradient(180deg, rgba(255,255,255,.22), rgba(255,255,255,.06));
+  }
+}
+
+/* motion-reduced */
+@media (prefers-reduced-motion: reduce) {
+  .btn-liquid { transition: none; }
 }
 
 
