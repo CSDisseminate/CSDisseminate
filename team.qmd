@@ -30,27 +30,27 @@ listing:
       - date-joined
     sort-ui: false
     filter-ui: false
-  - id: ambassadors
-    contents: Team
-    type: grid
-    template: ejs/team-cards.ejs
-    fields:
-      - image
-      - title
-      - credentials
-      - position
-      - affiliation
-    field-display-names: 
-      image: "Headshot"
-      title: "Name"
-      pronouns: "Pronouns"
-      credentials: "Credentials"
-      position: "Position"
-      affiliation: "Affiliation"
-    include:
-      categories: "Ambassador"
-    sort-ui: false
-    filter-ui: false
+#  - id: ambassadors
+#    contents: Team
+#    type: grid
+#    template: ejs/team-cards.ejs
+#    fields:
+#      - image
+#      - title
+#      - credentials
+#      - position
+#      - affiliation
+#    field-display-names: 
+#      image: "Headshot"
+#      title: "Name"
+#      pronouns: "Pronouns"
+#      credentials: "Credentials"
+#      position: "Position"
+#      affiliation: "Affiliation"
+#    include:
+#      categories: "Ambassador"
+#    sort-ui: false
+#    filter-ui: false
 title-block-banner: false
 lightbox: true
 freeze: true
@@ -68,6 +68,7 @@ We are a working group of researchers and clinicians dedicated to disseminating 
 
 ------------------------------------------------------------------------
 
+<!--# 
 ## Ambassadors
 
 Meet our University Ambassadors who are currently working to increase the use of open science practices within their CSD and affiliated departments!
@@ -76,6 +77,7 @@ Meet our University Ambassadors who are currently working to increase the use of
 :::
 
 ------------------------------------------------------------------------
+-->
 
 ## Past Collaborators
 

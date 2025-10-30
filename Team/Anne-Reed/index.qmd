@@ -5,7 +5,7 @@ first-name: "Anne"
 last-name: "Reed"
 date-joined: "2024-06-01"
 categories:
- - "Ambassador"
+ - "Collaborator"
 credentials: "EdS, CCC-SLP"
 position: "Doctoral Candidate"
 affiliation: "Florida State University"
