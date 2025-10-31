@@ -1,0 +1,21 @@
+---
+title: "CSDisseminate Featured by the Center for Open Science!"
+pagetitle: "Announcements"
+date: "2025-10-30"
+author:
+  - Austin Thompson
+categories:
+ - Announcement
+image: https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(10).png
+lightbox: true
+draft: false
+title-block-banner: true
+---
+
+On October 30, 2025, members of CSDisseminate were featured in a [Center for Open Science](https://www.cos.io/) blog post highlighting our recent preprint, **“There’s going to have to be a culture shift”: Associate and full professors’ perceptions and experiences related to open science practices in communication sciences and disorders**.
+
+The post showcases how preprints are helping advance transparency and collaboration in our field.
+
+[Click here to read the blog post!](https://www.cos.io/blog/preprints-in-action-advancing-open-science-across-communication-sciences-and-disorders){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+
+[![The image from the Center for Open Science blog post.](https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(10).png){fig-align="left" width="600"}](https://www.cos.io/blog/preprints-in-action-advancing-open-science-across-communication-sciences-and-disorders)
