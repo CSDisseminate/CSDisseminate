@@ -10,6 +10,8 @@ categories:
 lightbox: true
 draft: false
 title-block-banner: true
+aliases: 
+  - Announcements/2025_05_11_Forward%20Focus%20Journal%20Club/
 ---
 
 Join us on May 18th for the Forward Focus Journal Club where we’ll discuss our recent paper, [“1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders](https://www.csdisseminate.com/Research/Publications/Pfeiffer-et-al-2025/). This study examined assistant professors' perceptions of, and experiences with, open science practices. In our discussion, we'll provide an overview about open science, and provide practical tips on how you can get started!\
