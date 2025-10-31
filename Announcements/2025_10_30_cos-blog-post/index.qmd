@@ -1,5 +1,5 @@
 ---
-title: "CSDisseminate Featured by the Center for Open Science!"
+title: "CSDisseminate Featured by the Center for Open Science"
 pagetitle: "Announcements"
 date: "2025-10-30"
 author:

@@ -1,5 +1,5 @@
 ---
-title: "OpenCSD and CSDissemiante join forces!"
+title: "OpenCSD and CSDissemiante join forces"
 pagetitle: "Announcements"
 aliases: 
   - 2025%5C_04_18.html
