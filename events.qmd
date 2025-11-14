@@ -3,7 +3,7 @@ title: "Events"
 pagetitle: "Events"
 listing:
   - id: all-events
-    contents: Events
+    contents: events
     sort: "date desc"
     type: default
     fields: 
@@ -19,7 +19,7 @@ listing:
 
 Stay up to date on upcoming webinars, workshops, and community events.
 
-----
+------------------------------------------------------------------------
 
 ## Past Events
 

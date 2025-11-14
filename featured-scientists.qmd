@@ -4,7 +4,7 @@ pagetitle: "Featured Scientists"
 aliases: 
   - FeaturedScientists.html
 listing:
-  contents: Featured-Scientists
+  contents: featured-scientists
   type: grid
   template: ejs/featured-scientist.ejs
   categories: false

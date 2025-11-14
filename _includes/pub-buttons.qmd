@@ -1,0 +1,27 @@
+::: {.content-hidden unless-meta="links.doi.show"}
+[<i class="bi bi-journal"></i> DOI]({{< meta links.doi.link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read this study on the journal's website."}
+:::
+
+::: {.content-hidden unless-meta="links.oa.show"}
+[<i class="bi bi-file-earmark-text"></i> Open Access]({{< meta links.oa.link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read this accepted version of this study for free."}
+:::
+
+::: {.content-hidden unless-meta="links.pubmed.show"}
+[<i class="bi bi-file-earmark-text"></i> Pubmed]({{< meta links.pubmed.link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read this accepted version of this study for free."}
+:::
+
+::: {.content-hidden unless-meta="links.postprint.show"}
+[<i class="bi bi-file-earmark-text"></i> Postprint]({{< meta links.postprint.link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read this accepted version of this study for free."}
+:::
+
+::: {.content-hidden unless-meta="links.preprint.show"}
+[<i class="bi bi-file-earmark-text"></i> Preprint]({{< meta links.preprint.link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read this accepted version of this study for free."}
+:::
+
+::: {.content-hidden unless-meta="links.materials.show"}
+[<i class="bi bi-box-seam"></i> Materials]({{< meta links.materials.link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Access the materials for this study."}
+:::
+
+::: {.content-hidden unless-meta="links.preregistration.show"}
+[<i class="bi bi-journal-check"></i> Preregistration]({{< meta links.preregistration.link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="tooltip" title="Read the preregistration for this study."}
+:::

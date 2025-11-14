@@ -1,0 +1,40 @@
+---
+title: "Enhancing Accessibility of Communication Sciences and Disorders Research: Open Access and Self-Archiving"
+publication: "Audiology Today"
+date: "2022-01-15" # year-month-day
+year: "2022"
+author: 
+  - name: Lauren Gaeta
+    orcid: 0000-0001-5493-9636
+    affiliations:
+      - California State University Sacramento
+  - name: Danika Pfeiffer
+    orcid: 0000-0003-1080-4961
+    affiliations:
+      - Old Dominion University
+  - name: Elaine Kearney
+    orcid: 0000-0003-4456-1291
+    affiliations:
+      - The University of Queensland
+      - Princess Alexandra Hospital
+abstract: "This article provides an overview of two open science practices in communication sciences and disorders. Readers will learn the importance of open access and self-archiving, as well as their benefits and drawbacks."
+categories: 
+  - "Other"
+  - "Open Science"
+links:
+  doi:
+    show: TRUE
+    link: "https://www.audiology.org/news-and-publications/audiology-today/articles/opinion-editorial-enhancing-accessibility-of-communication-sciences-and-disorders-research-open-access-and-self-archiving/"
+  postprint:
+    show: TRUE
+    link: "https://drive.google.com/file/d/1FXWixMTAdDHtti_St3FRE5olSlVbi0df/view"
+title-block-banner: true
+editor: source
+---
+
+\
+\
+
+## Important Links
+
+{{< include ../../../_includes/pub-buttons.qmd >}}

@@ -1,0 +1,56 @@
+---
+title: "Evaluating Research Transparency and Openness in Communication Sciences and Disorders Journals"
+publication: "Journal of Speech, Language, and Hearing Research"
+date: "2023-06-20" # year-month-day
+year: "2023"
+author: 
+  - name: Scott R. Schroeder
+    orcid: 0000-0003-0616-3276
+    affiliations:
+      - Hofstra University
+  - name: Laura Gaeta
+    orcid: 0000-0001-5493-9636
+    affiliations:
+      - California State University
+  - name: Mariam El Amin
+    orcid: 0000-0001-7150-4271
+    affiliations:
+      - University of Georgia
+  - name: Jason C. Chow
+    orcid: 0000-0002-2878-7410
+    affiliations:
+      - Vanderbilt University
+  - name: James C. Borders
+    orcid: 0000-0002-0291-4266
+    affiliations:
+      - Boston University
+categories: 
+  - "Publication"
+  - "Open Science"
+links:
+  doi:
+    show: TRUE
+    link: "https://doi.org/10.1044/2022_JSLHR-22-00330"
+  postprint:
+    show: TRUE
+    link: "https://osf.io/preprints/psyarxiv/dy5zs_v1"
+  materials:
+    show: TRUE
+    link: "https://osf.io/f3qku/"
+abstract: "**Purpose:** To improve the credibility, reproducibility, and clinical utility of research findings, many scientific fields are implementing transparent and open research practices. Such open science practices include researchers making their data publicly available and preregistering their hypotheses and analyses. A way to enhance the adoption of open science practices is for journals to encourage or require submitting authors to participate in such practices. Accordingly, the American Speech-Language-Hearing Association's Journals Program has recently announced their intention to promote open science practices. Here, we quantitatively assess the extent to which several journals in communication sciences and disorders (CSD) encourage or require participation in several open science practices by using the Transparency and Openness Promotion (TOP) Factor metric.
+<br>
+**Method:** TOP Factors were assessed for 34 CSD journals, as well as several journals in related fields. TOP Factors measure the level of implementation across 10 open science–related practices (e.g., data transparency, analysis plan preregistration, and replication) for a total possible score of 29 points.
+<br>
+**Results:** Collectively, CSD journals had very low TOP Factors (M = 1.4, range: 0–8). The related fields of Psychology (M = 4.0), Rehabilitation (M = 3.2), Linguistics (M = 1.7), and Education (M = 1.6) also had low scores, though Psychology and Rehabilitation had higher scores than CSD.
+<br>
+**Conclusions:** CSD journals currently have low levels of encouraging or requiring participation in open science practices, which may impede adoption."
+title-block-banner: true
+editor: source
+---
+
+\
+\
+
+## Important Links
+
+{{< include ../../../_includes/pub-buttons.qmd >}}

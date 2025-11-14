@@ -1,7 +1,7 @@
 ---
 listing:
   - id: recent-announcements
-    contents: Announcements
+    contents: announcements
     sort: "date desc"
     type: default
     fields: 
@@ -14,7 +14,7 @@ listing:
     filter-ui: false
     max-items: 3
   - id: featured-scientists
-    contents: Featured-Scientists
+    contents: featured-scientists
     sort: "date desc"
     type: grid
     template: ejs/featured-scientist.ejs
