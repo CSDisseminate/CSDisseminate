@@ -41,6 +41,7 @@
   {
     "listing": "/Research/index.html",
     "items": [
+      "/Research/Publications/Borders-et-al-2025/index.html",
       "/Research/Publications/Pfeiffer-et-al-2025/index.html",
       "/Research/Publications/Long-Drown-El-Amin-2023/index.html",
       "/Research/Publications/El-Amin-et-al-2023/index.html",
@@ -67,7 +68,7 @@
       "/Resources/CSD-Open-Data/Data/FluencyBank.html",
       "/Resources/CSD-Open-Data/Data/Battal-et-al-2020.html",
       "/Resources/CSD-Open-Data/Data/HomeBank.html",
-      "/Resources/CSD-Open-Data/Data/Novotný-et-al-2016.html",
+      "/Resources/CSD-Open-Data/Data/Novotný-et-al-2016.html",
       "/Resources/CSD-Open-Data/Data/Curtis-et-al-2023.html",
       "/Resources/CSD-Open-Data/Data/PERCEPT.html",
       "/Resources/CSD-Open-Data/Data/PhonBank.html",
@@ -87,7 +88,7 @@
     "items": [
       "/Announcements/2025_10_30_cos-blog-post/index.html",
       "/Announcements/2025_05_11_forward-focus-journal-club/index.html",
-      "/Announcements/2025_05_02_Open-Data-Webinar/index.html",
+      "/Announcements/2025_05_02_open-data-webinar/index.html",
       "/Announcements/2025_04_18_CSDisseminate & OpenCSD/index.html",
       "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
       "/Featured-Scientists/CLaSS-Lab/index.html"
