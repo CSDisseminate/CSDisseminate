@@ -1,0 +1,66 @@
+---
+title: "“1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders"
+publication: "Journal of Speech, Language, and Hearing Research"
+date: "2025-01-02" # year-month-day
+year: "2025"
+author: 
+  - name: Danika Pfeiffer
+    orcid: 0000-0003-1080-4961
+    affiliations:
+      - Old Dominion University
+  - name: Austin Thompson
+    orcid: 0000-0002-4224-4850
+    affiliations:
+      - University of Houston
+  - name: Brittany Ciullo
+    orcid: 0000-0002-1261-0258
+    affiliations:
+      - University of Massachusetts Amherst
+  - name: Micah E. Hirsch 
+    orcid: 0000-0002-2661-0101
+    affiliations:
+      - Florida State University
+  - name: Mariam El Amin
+    orcid: 0000-0001-7150-4271
+    affiliations:
+      - University of Georgia
+  - name: Andrea Ford
+    orcid: 0000-0003-0213-526X
+    affiliations:
+      - University of Cincinnati
+  - name: Jessica Riccardi
+    orcid: 0000-0002-3102-3358
+    affiliations:
+      - University of Maine
+  - name: Elaine Kearney
+    orcid: 0000-0003-4456-1291
+    affiliations:
+      - The University of Queensland
+      - Princess Alexandra Hospital
+abstract: "**Purpose:** The purpose of this qualitative study was to examine the perceptions of communication sciences and disorders (CSD) assistant professors in the United States related to barriers and facilitators to engaging in open science practices and identify opportunities for improving open science training and support in the field. <br>
+**Method:** Thirty-five assistant professors (16 from very high research activity [R1] institutions, 19 from institutions with other Carnegie classifications) participated in one 1-hr virtual focus group conducted via Zoom recording technology. The researchers used a conventional content analysis approach to analyze the focus group data and develop categories from the discussions. <br>
+**Results:** Five categories were developed from the focus groups: (a) a desire to learn about open science through opportunities for independent learning and learning with peers; (b) perceived benefits of engaging in open science on assistant professors' careers, the broader scientific community, and the quality of research in the field of CSD; (c) personal factors that act as barriers and/or facilitators to engaging in open science practices; (d) systemic factors that act as barriers and/or facilitators to engaging in open science practices; and (e) differences in perceptions of R1 and non-R1 assistant professors. <br>
+**Conclusions:** Assistant professors in CSD perceive benefits of open science for their careers, the scientific community, and the field. However, they face many barriers (e.g., time, lack of knowledge and training), which impede their engagement in open science practices. Preliminary recommendations for CSD assistant professors, academic institutions, publishers, and funding agencies are provided to reduce barriers to engagement in open science practices."
+categories: 
+  - "Publication"
+  - "Open Science"
+doi: "https://doi.org/10.1044/2024_JSLHR-24-00378"
+postprint: "https://osf.io/preprints/osf/9kxa7_v1"
+materials: "https://osf.io/tprzu/"
+preregistration: "https://osf.io/6yq2s"
+title-block-banner: true
+editor: source
+---
+
+\
+\
+
+## Important Links
+
+-   [Read on JSLHR]({{< meta doi>}})
+
+-   [Read the self-archived postprint on OSF](https://osf.io/preprints/osf/9kxa7_v1)
+
+-   [Get the data and code from OSF](https://osf.io/tprzu/)
+
+-   [Read the preregistration for this study on OSF](https://osf.io/6yq2s)

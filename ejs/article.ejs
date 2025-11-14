@@ -10,43 +10,43 @@
       <a href="<%- item.path %>" class="btn btn-primary">
         Details
       </a>
-      <% if (item.links && item.links.doi && item.links.doi.link) { %>
-      <a href="<%- item.links.doi.link %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      <% if (item.doi) { %>
+      <a href="<%- item.doi %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
         DOI
       </a>
       <% } %>
-      <% if (item.links && item.links.oa && item.links.oa.link) { %>
-      <a href="<%- item.links.oa.link %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      <% if (item.oa) { %>
+      <a href="<%- item.oa %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-pdf"></i> Open Access
       </a>
       <% } %>
-      <% if (item.links && item.links.postprint && item.links.postprint.link) { %>
-      <a href="<%- item.links.postprint.link %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      <% if (item.postprint) { %>
+      <a href="<%- item.postprint %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-earmark-text"></i> Postprint
       </a>
       <% } %>
-      <% if (item.links && item.links.pubmed && item.links.pubmed.link) { %>
-      <a href="<%- item.links.pubmed.link %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      <% if (item.pubmed) { %>
+      <a href="<%- item.pubmed %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-medical"></i> PubMed
       </a>
       <% } %>
-      <% if (item.links && item.links.preprint && item.links.preprint.link) { %>
-      <a href="<%- item.links.preprint.link %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      <% if (item.preprint) { %>
+      <a href="<%- item.preprint %>" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-file-text"></i> Preprint
       </a>
       <% } %>
-      <% if (item.links && item.links.materials && item.links.materials.link) { %>
-      <a href="<%- item.links.materials.link %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+      <% if (item.materials) { %>
+      <a href="<%- item.materials %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-box-seam"></i> Materials
       </a>
       <% } %>
-      <% if (item.links && item.links.preregistration && item.links.preregistration.link) { %>
-      <a href="<%- item.links.preregistration.link %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+      <% if (item.preregistration) { %>
+      <a href="<%- item.preregistration %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-journal-check"></i> Preregistration
       </a>
       <% } %>
-      <% if (item.links && item.links.other && item.links.other.link) { %>
-      <a href="<%- item.links.other.link %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
+      <% if (item.link) { %>
+      <a href="<%- item.link %>" class="btn btn-tertiary" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-globe"></i> Article
       </a>
       <% } %>
