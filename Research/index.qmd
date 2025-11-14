@@ -6,7 +6,7 @@ aliases:
 # define three listing blocks, each with a filter on `category`
 listing:
   - id: publications
-    contents: Publications
+    contents: "publications/*/*.{qmd,md}"
     template: ../ejs/article.ejs
     type: table
     fields:
@@ -25,7 +25,7 @@ listing:
     sort-ui: false
     filter-ui: false
   - id: preprints
-    contents: Publications
+    contents: "publications/*/*.{qmd,md}"
     template: ../ejs/article.ejs
     type: table
     fields:
@@ -44,7 +44,7 @@ listing:
     sort-ui: false
     filter-ui: false
   - id: other
-    contents: Publications
+    contents: "publications/*/*.{qmd,md}"
     template: ../ejs/article.ejs
     type: table
     fields:

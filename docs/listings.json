@@ -2,14 +2,14 @@
   {
     "listing": "/resources.html",
     "items": [
-      "/Resources/github/index.html",
-      "/Resources/os-coursera/index.html",
-      "/Resources/preregistration-essentials/index.html",
-      "/Resources/python/index.html",
-      "/Resources/csd-open-data/index.html",
-      "/Resources/self-archiving-101/index.html",
-      "/Resources/unpaywall/index.html",
-      "/Resources/zotero/index.html"
+      "/resources/github/index.html",
+      "/resources/os-coursera/index.html",
+      "/resources/preregistration-essentials/index.html",
+      "/resources/python/index.html",
+      "/resources/csd-open-data/index.html",
+      "/resources/self-archiving-101/index.html",
+      "/resources/unpaywall/index.html",
+      "/resources/zotero/index.html"
     ]
   },
   {
@@ -39,16 +39,16 @@
     ]
   },
   {
-    "listing": "/Research/index.html",
+    "listing": "/research/index.html",
     "items": [
-      "/Research/Publications/2025-11-10_borders-et-al/index.html",
-      "/Research/Publications/2025-01-02_pfeiffer-et-al/index.html",
-      "/Research/Publications/2023-06-20_el-amin-et-al/index.html",
-      "/Research/Publications/2023-06-20_schroeder-et-al/index.html",
-      "/Research/Publications/2023-06-20_long-et-al/index.html",
-      "/Research/Publications/2025_preprint_pfeiffer-et-al/index.html",
-      "/Research/Publications/2022-09-19_pfeiffer-et-al/index.html",
-      "/Research/Publications/2022-01-15_gaeta-et-al/index.html"
+      "/research/publications/2025-11-10_borders-et-al/index.html",
+      "/research/publications/2025-01-02_pfeiffer-et-al/index.html",
+      "/research/publications/2023-06-20_el-amin-et-al/index.html",
+      "/research/publications/2023-06-20_long-et-al/index.html",
+      "/research/publications/2023-06-20_schroeder-et-al/index.html",
+      "/research/publications/2025_preprint_pfeiffer-et-al/index.html",
+      "/research/publications/2022-09-19_pfeiffer-et-al/index.html",
+      "/research/publications/2022-01-15_gaeta-et-al/index.html"
     ]
   },
   {
@@ -59,28 +59,28 @@
     ]
   },
   {
-    "listing": "/Resources/csd-open-data/index.html",
+    "listing": "/resources/csd-open-data/index.html",
     "items": [
-      "/Resources/csd-open-data/Data/ASDBank.html",
-      "/Resources/csd-open-data/Data/AphasiaBank.html",
-      "/Resources/csd-open-data/Data/BilingBank.html",
-      "/Resources/csd-open-data/Data/Elsherif-et-al-2021.html",
-      "/Resources/csd-open-data/Data/FluencyBank.html",
-      "/Resources/csd-open-data/Data/Battal-et-al-2020.html",
-      "/Resources/csd-open-data/Data/HomeBank.html",
-      "/Resources/csd-open-data/Data/Novotný-et-al-2016.html",
-      "/Resources/csd-open-data/Data/Curtis-et-al-2023.html",
-      "/Resources/csd-open-data/Data/PERCEPT.html",
-      "/Resources/csd-open-data/Data/PhonBank.html",
-      "/Resources/csd-open-data/Data/Kearney-et-al-2023.html",
-      "/Resources/csd-open-data/Data/SLABank.html",
-      "/Resources/csd-open-data/Data/King-et-al-2022.html",
-      "/Resources/csd-open-data/Data/TORGO.html",
-      "/Resources/csd-open-data/Data/TalkBank.html",
-      "/Resources/csd-open-data/Data/SEED-Corpus.html",
-      "/Resources/csd-open-data/Data/UA-Speech.html",
-      "/Resources/csd-open-data/Data/UltraSuite.html",
-      "/Resources/csd-open-data/Data/Thompson-et-al-2023.html"
+      "/resources/csd-open-data/Data/ASDBank.html",
+      "/resources/csd-open-data/Data/AphasiaBank.html",
+      "/resources/csd-open-data/Data/BilingBank.html",
+      "/resources/csd-open-data/Data/Elsherif-et-al-2021.html",
+      "/resources/csd-open-data/Data/FluencyBank.html",
+      "/resources/csd-open-data/Data/Battal-et-al-2020.html",
+      "/resources/csd-open-data/Data/HomeBank.html",
+      "/resources/csd-open-data/Data/Novotný-et-al-2016.html",
+      "/resources/csd-open-data/Data/Curtis-et-al-2023.html",
+      "/resources/csd-open-data/Data/PERCEPT.html",
+      "/resources/csd-open-data/Data/PhonBank.html",
+      "/resources/csd-open-data/Data/Kearney-et-al-2023.html",
+      "/resources/csd-open-data/Data/SLABank.html",
+      "/resources/csd-open-data/Data/King-et-al-2022.html",
+      "/resources/csd-open-data/Data/TORGO.html",
+      "/resources/csd-open-data/Data/TalkBank.html",
+      "/resources/csd-open-data/Data/SEED-Corpus.html",
+      "/resources/csd-open-data/Data/UA-Speech.html",
+      "/resources/csd-open-data/Data/UltraSuite.html",
+      "/resources/csd-open-data/Data/Thompson-et-al-2023.html"
     ]
   },
   {
