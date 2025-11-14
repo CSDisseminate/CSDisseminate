@@ -3,7 +3,7 @@ title: "Events"
 pagetitle: "Events"
 listing:
   - id: all-events
-    contents: events
+    contents: Events
     sort: "date desc"
     type: default
     fields: 

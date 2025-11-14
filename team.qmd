@@ -7,7 +7,7 @@ aliases:
 # define three listing blocks, each with a filter on `category`
 listing:
   - id: collaborators
-    contents: team
+    contents: Team
     type: grid
     template: ejs/team-cards.ejs
     grid-columns: 3
