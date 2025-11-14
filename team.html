@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Collin Brice – CSDisseminate</title>
+<title>Team – CSDisseminate</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../..//Images/favicon-96x96.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href=".//Images/favicon-96x96.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,9 +69,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-collaborators .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-credentials','listing-position','listing-affiliation',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-pagetitle","listing-first-name","listing-last-name","listing-date-joined","listing-categories","listing-credentials","listing-position","listing-affiliation","listing-pronouns","listing-orcid","listing-description-research","listing-description-os","listing-link","listing-website-button","listing-headshot","listing-lightbox","listing-draft","listing-layout","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-collaborators'] = new List('listing-collaborators', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="./styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -82,8 +139,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title"><img src="../../Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title"><img src="./Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -102,29 +159,29 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-people">    
         <li>
-    <a class="dropdown-item" href="../../team.html">
+    <a class="dropdown-item" href="./team.html">
  <span class="dropdown-text">Meet the Team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../join-us.html">
+    <a class="dropdown-item" href="./join-us.html">
  <span class="dropdown-text">Join Us</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../featured-scientists.html">
+    <a class="dropdown-item" href="./featured-scientists.html">
  <span class="dropdown-text">Featured Scientists</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../Research/index.html"> 
+    <a class="nav-link" href="./Research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resources.html"> 
+    <a class="nav-link" href="./resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../events.html"> 
+    <a class="nav-link" href="./events.html"> 
 <span class="menu-text">Events</span></a>
   </li>  
 </ul>
@@ -138,19 +195,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#collaborators" id="toc-collaborators" class="nav-link active" data-scroll-target="#collaborators">Collaborators</a></li>
+  <li><a href="#past-collaborators" id="toc-past-collaborators" class="nav-link" data-scroll-target="#past-collaborators">Past Collaborators</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Collin Brice</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Collaborator</div>
-  </div>
-  </div>
+<h1 class="title">Team</h1>
+</div>
 
 
 
@@ -166,23 +227,314 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="Collin Brice.JPEG" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Collin Brice, MS, CCC-SLP PhD Candidate University of Cincinnati"><img src="Collin Brice.JPEG" class="img-fluid figure-img" alt="Collin Brice, MS, CCC-SLP PhD Candidate University of Cincinnati"></a></p>
-<figcaption>Collin Brice, MS, CCC-SLP<br>PhD Candidate<br>University of Cincinnati</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:5%;">
+<p>We are a working group of researchers and clinicians dedicated to disseminating knowledge about open science practices to clinicians and researchers in Communication Sciences and Disorders (CSD) and beyond.</p>
+<hr>
+<section id="collaborators" class="level2">
+<h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<div id="listing-collaborators" class="quarto-listing quarto-listing-container-custom">
 
-</div><div class="column" style="width:65%;">
-<p>Collin (he/him) is a researcher in speech-language pathology with interests in mixed methods, gender perception in voice, and neuroimaging using fNIRS. His work explores how listeners experience individuals’ speech. He is also passionate about pedagogy and advancing diversity, equity, and inclusion (DE&amp;I) practices in education and research, with a strong commitment to open science and inclusive methodologies.</p>
-<p></p>
+<ul class="people-list list">
+
+<style>
+/* ---- GRID: fixed column counts by breakpoint ---- */
+.people-list {
+  display: grid;
+  gap: 1.5rem;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 1rem;
+
+  /* default: 1 column on very small screens */
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+/* ≥640px: 2 columns */
+@media (min-width: 640px) {
+  .people-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ≥1024px: 3 columns */
+@media (min-width: 1024px) {
+  .people-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ---- Card ---- */
+.people-list .card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-align: left;
+}
+.people-list .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ---- Square image with rounded top corners ---- */
+.people-list .card-img-top {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+.people-list .card-img-top img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
+
+/* ---- Text ---- */
+.people-list .card-body { padding: 1em; }
+.people-list .card-title { font-weight: 600; margin-bottom: .25em; font-size: 1.05em; line-height: 1.3; }
+.people-list .credentials { font-size: .9em; color: #555; margin-bottom: .25em; }
+.people-list .affiliation { font-size: .9em; color: #666; line-height: 1.3; }
+</style>
+
+  <li class="card" data-index="0" data-categories="Collaborator" data-listing-file-modified-sort="1747000949350" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Elaine-Kearney/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Elaine-Kearney/kearney - Elaine Kearney.jpg" alt="Elaine Kearney">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Elaine Kearney</h5>
+        <div class="credentials">PhD</div>
+        <div class="affiliation">University of Queensland, Princess Alexandra Hospital</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="1" data-categories="Collaborator" data-listing-file-modified-sort="1751419616700" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Helen-Long/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Helen-Long/Helen Long.jpg" alt="Helen Long">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Helen Long</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">Case Western Reserve University</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="2" data-categories="Collaborator" data-listing-file-modified-sort="1747001026546" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Mariam-El-Amin/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Mariam-El-Amin/Mariam El Amin.jpg" alt="Mariam El Amin">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Mariam El Amin</h5>
+        <div class="credentials">PhD</div>
+        <div class="affiliation">University of South Carolina</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="3" data-categories="Collaborator" data-listing-file-modified-sort="1747000923799" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Danika-Pfeiffer/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Danika-Pfeiffer/Danika Pfeiffer.jpeg" alt="Danika Pfeiffer">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Danika Pfeiffer</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">Old Dominion University</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="4" data-categories="Collaborator" data-listing-file-modified-sort="1759854411000" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
+    <a href="./Team/Jessica-Salley-Riccardi/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Jessica-Salley-Riccardi/Jessica Riccardi.jpg" alt="Jessica Salley Riccardi">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Jessica Salley Riccardi</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">University of Maine</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="5" data-categories="Collaborator" data-listing-file-modified-sort="1747000972975" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/James-Borders/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/James-Borders/James Borders.png" alt="James Borders">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">James Borders</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">Boston University</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="6" data-categories="Collaborator" data-listing-file-modified-sort="1747000882718" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Austin-Thompson/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Austin-Thompson/Thompson Headshot - Austin Thompson.jpeg" alt="Austin Thompson">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Austin Thompson</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">University of Houston</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="7" data-categories="Collaborator" data-listing-file-modified-sort="1747001041092" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Micah-Hirsch/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Micah-Hirsch/Micah Hirsch.jpeg" alt="Micah Hirsch">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Micah Hirsch</h5>
+        <div class="credentials">PhD</div>
+        <div class="affiliation">Boston University</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="8" data-categories="Collaborator" data-listing-file-modified-sort="1747000895920" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/Brittany-Ciullo/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Brittany-Ciullo/Brittany Ciullo.png" alt="Brittany Ciullo">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Brittany Ciullo</h5>
+        <div class="credentials">MA, CCC-SLP</div>
+        <div class="affiliation">UMass Amherst</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="9" data-categories="Collaborator" data-listing-file-modified-sort="1749838870274" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/Jennifer-Markfeld/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Jennifer-Markfeld/Jennifer Markfeld.jpg" alt="Jennifer Markfeld">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Jennifer Markfeld</h5>
+        <div class="credentials">MS, CF-SLP</div>
+        <div class="affiliation">Vanderbilt University</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="10" data-categories="Collaborator" data-listing-file-modified-sort="1747000847066" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/Andrea-Ford/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Andrea-Ford/Andrea Ford.jpg" alt="Andrea Ford">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Andrea Ford</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">University of Cincinnati</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="11" data-categories="Collaborator" data-listing-file-modified-sort="1761847222000" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/Anne-Reed/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Anne-Reed/Anne C. Reed.jpg" alt="Anne C. Reed">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Anne C. Reed</h5>
+        <div class="credentials">EdS, CCC-SLP</div>
+        <div class="affiliation">Florida State University</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="12" data-categories="Collaborator" data-listing-file-modified-sort="1747000835217" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/Alisa-Baron/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Alisa-Baron/Alisa Baron.png" alt="Alisa Baron">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Alisa Baron</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">University of Rhode Island</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="13" data-categories="Collaborator" data-listing-file-modified-sort="1747000906984" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/Collin-Brice/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/Collin-Brice/Collin Brice.JPEG" alt="Collin Brice">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Collin Brice</h5>
+        <div class="credentials">MS, CCC-SLP</div>
+        <div class="affiliation">University of Cincinnati</div>
+      </div>
+    </a>
+  </li>
+
+</ul>
+
+<div class="listing-no-matching d-none">
+No matching items
 </div>
 </div>
+<hr>
+<!--# 
+## Ambassadors
+
+Meet our University Ambassadors who are currently working to increase the use of open science practices within their CSD and affiliated departments!
+
+::: {#ambassadors}
+:::
+
+------------------------------------------------------------------------
+-->
+</section>
+<section id="past-collaborators" class="level2">
+<h2 class="anchored" data-anchor-id="past-collaborators">Past Collaborators</h2>
+<p>We are forever grateful for all of our past and present collaborators who have supported our initiatives! Below are a list of past collaborating members of CSDisseminate.</p>
+<ul>
+<li><p>Meredith Harold, PhD, CCC-SLP</p></li>
+<li><p>Meredith Spratford, AuD, CCC-A</p></li>
+<li><p>Lee Drown, MA, CCC-SLP</p></li>
+<li><p>Mary Alice Keller, PhD, CCC-SLP</p></li>
+</ul>
 
 
+
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <footer class="custom-footer">
@@ -637,38 +989,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","loop":false,"closeEffect":"zoom","descPosition":"bottom"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 
