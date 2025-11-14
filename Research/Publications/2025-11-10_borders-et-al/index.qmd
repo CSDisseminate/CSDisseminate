@@ -1,0 +1,50 @@
+---
+title: "Using Synthetic Data in Communication Sciences and Disorders to Promote Computational Reproducibility and Transparency"
+publication: "Journal of Speech, Language, and Hearing Research"
+date: "2025-11-10" # year-month-day
+year: "2025"
+author: 
+  - name: James C. Borders
+    orcid: 0000-0002-0291-4266
+    affiliations:
+      - Boston University
+  - name: Austin Thompson
+    orcid: 0000-0002-4224-4850
+    affiliations:
+      - University of Houston
+  - name: Elaine Kearney
+    orcid: 0000-0003-4456-1291
+    affiliations:
+      - The University of Queensland
+      - Princess Alexandra Hospital
+categories: 
+  - "Publication"
+  - "Open Science"
+  - "Open Data"
+links:
+  doi:
+    show: TRUE
+    link: "https://doi.org/10.1044/2025_JSLHR-24-00736"
+  postprint:
+    show: TRUE
+    link: "https://osf.io/preprints/osf/dutga_v1"
+  materials:
+    show: TRUE
+    link: "https://osf.io/yhkqf"
+  preregistration:
+    show: TRUE
+    link: "https://osf.io/vhgq2"
+abstract: "**Purpose:** Reproducibility is a core principle of science, and access to a study's data is essential to reproduce its findings. However, data sharing is uncommon in the discipline of communication sciences and disorders (CSD), often due to concerns related to privacy and disclosure risks. Synthetic data offer a potential solution to this barrier by generating artificial data sets that do not represent real individuals yet retain statistical properties and relationships from the original data. This study aimed to explore the feasibility and preliminary utility of synthetic data to promote transparency and reproducibility in the discipline of CSD. <br>
+**Method:** Ten open data sets were obtained from previously published research within the American Speech-Language-Hearing Association “Big Nine” domains (articulation, cognition, communication, fluency, hearing, language, social communication, voice and resonance, and swallowing) across a range of study outcomes and designs. Synthetic data sets were generated with the synthpop R package. General utility was assessed visually and with the standardized ratio of the propensity mean squared error (S_pMSE). Specific utility assessed whether inferential relationships from the original data were preserved in the synthetic data set by comparing model fit indices, coefficients, and p values. <br>
+**Results:** All synthetic data sets showed strong general utility, maintaining univariate and bivariate distributions. Six of nine synthetic data sets that used inferential statistics showed strong specific utility, maintaining inferential relationships from the original analysis. Specific utility was low in three data sets with hierarchical structures. <br>
+**Conclusions:** Findings suggest that synthetic data can effectively maintain statistical properties and relationships across a wide range of nonhierarchical data commonly seen in the discipline of CSD. Other approaches for hierarchical data need to be explored in future work. Researchers who use synthetic data should assess its utility in preserving their results for their own data and use-case."
+title-block-banner: true
+editor: source
+---
+
+\
+\
+
+## Important Links
+
+{{< include ../../../_includes/pub-buttons.qmd >}}
