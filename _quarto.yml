@@ -28,7 +28,7 @@ website:
           - text: "Featured Scientists"
             href: featured-scientists.qmd
       - text: "Research"
-        href: research/index.qmd
+        href: Research/index.qmd
       - text: "Resources"
         href: resources.qmd
       - text: "Events"
