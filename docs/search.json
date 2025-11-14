@@ -242,67 +242,83 @@
     "href": "Research/index.html#peer-reviewed-publications",
     "title": "Research",
     "section": "Peer-Reviewed Publications",
+<<<<<<< Updated upstream
     "text": "Peer-Reviewed Publications\n\n\n\n  \n  Using Synthetic Data in Communication Sciences and Disorders to Promote Computational Reproducibility and Transparency\n    James C. Borders, Austin Thompson, Elaine Kearney\n    Journal of Speech, Language, and Hearing Research\n    (2025)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n         Preregistration\n      \n      \n      \n    \n  \n\n  \n  “1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders\n    Danika Pfeiffer, Austin Thompson, Brittany Ciullo, Micah E. Hirsch, Mariam El Amin, Andrea Ford, Jessica Riccardi, Elaine Kearney\n    Journal of Speech, Language, and Hearing Research\n    (2025)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n         Preregistration\n      \n      \n      \n    \n  \n\n  \n  Open Science Practices in Communication Sciences and Disorders: A Survey\n    Mariam El Amin, James Borders, Helen Long, Mary Alice Keller, Elaine Kearney\n    Journal of Speech, Language, and Hearing Research\n    (2023)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n         Preregistration\n      \n      \n      \n    \n  \n\n  \n  Evaluating Research Transparency and Openness in Communication Sciences and Disorders Journals\n    Scott R. Schroeder, Laura Gaeta, Mariam El Amin, Jason C. Chow, James C. Borders\n    Journal of Speech, Language, and Hearing Research\n    (2023)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n    \n  \n\n  \n  The Effect of Open Access on Scholarly and Societal Metrics of Impact in the ASHA Journals\n    Helen Long, Lee Drown, Mariam El Amin\n    Journal of Speech, Language, and Hearing Research\n    (2023)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n         Preregistration\n      \n      \n      \n    \n  \n\n\n\n\nNo matching items"
+=======
+<<<<<<< HEAD
+    "text": "Peer-Reviewed Publications\n\n\n\n  \n  “1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders\n    Danika Pfeiffer, Austin Thompson, Brittany Ciullo, Micah E. Hirsch, Mariam El Amin, Andrea Ford, Jessica Riccardi, Elaine Kearney\n    Journal of Speech, Language, and Hearing Research\n    (2025)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n         Preregistration\n      \n      \n      \n    \n  \n\n  \n  The Effect of Open Access on Scholarly and Societal Metrics of Impact in the ASHA Journals\n    Helen Long, Lee Drown, Mariam El Amin\n    Journal of Speech, Language, and Hearing Research\n    (2023)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n         Preregistration\n      \n      \n      \n    \n  \n\n  \n  Open Science Practices in Communication Sciences and Disorders: A Survey\n    Mariam El Amin, James Borders, Helen Long, Mary Alice Keller, Elaine Kearney\n    Journal of Speech, Language, and Hearing Research\n    (2023)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n         Preregistration\n      \n      \n      \n    \n  \n\n  \n  Evaluating Research Transparency and Openness in Communication Sciences and Disorders Journals\n    Scott R. Schroeder, Laura Gaeta, Mariam El Amin, Jason C. Chow, James C. Borders\n    Journal of Speech, Language, and Hearing Research\n    (2023)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n    \n  \n\n\n\n\nNo matching items"
+=======
+    "text": "Peer-Reviewed Publications\n\n\n\n  \n  Using Synthetic Data in Communication Sciences and Disorders to Promote Computational Reproducibility and Transparency\n    James C. Borders, Austin Thompson, Elaine Kearney\n    Journal of Speech, Language, and Hearing Research\n    (2025)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n         Preregistration\n      \n      \n      \n    \n  \n\n  \n  “1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders\n    Danika Pfeiffer, Austin Thompson, Brittany Ciullo, Micah E. Hirsch, Mariam El Amin, Andrea Ford, Jessica Riccardi, Elaine Kearney\n    Journal of Speech, Language, and Hearing Research\n    (2025)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n         Preregistration\n      \n      \n      \n    \n  \n\n  \n  Open Science Practices in Communication Sciences and Disorders: A Survey\n    Mariam El Amin, James Borders, Helen Long, Mary Alice Keller, Elaine Kearney\n    Journal of Speech, Language, and Hearing Research\n    (2023)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n         Preregistration\n      \n      \n      \n    \n  \n\n  \n  Evaluating Research Transparency and Openness in Communication Sciences and Disorders Journals\n    Scott R. Schroeder, Laura Gaeta, Mariam El Amin, Jason C. Chow, James C. Borders\n    Journal of Speech, Language, and Hearing Research\n    (2023)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n    \n  \n\n  \n  The Effect of Open Access on Scholarly and Societal Metrics of Impact in the ASHA Journals\n    Helen Long, Lee Drown, Mariam El Amin\n    Journal of Speech, Language, and Hearing Research\n    (2023)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n         Materials\n      \n      \n      \n      \n         Preregistration\n      \n      \n      \n    \n  \n\n\n\n\nNo matching items"
+>>>>>>> 56b5f975f9d6f553753225433f97877160e08b9a
+>>>>>>> Stashed changes
   },
   {
     "objectID": "Research/index.html#other-publications",
     "href": "Research/index.html#other-publications",
     "title": "Research",
     "section": "Other Publications",
+<<<<<<< Updated upstream
     "text": "Other Publications\n\n\n\n  \n  Access research beyond the paywall: Five strategies to read what you need\n    Danika Pfeiffer, Helen Long, Mariam El Amin\n    ASHA Leader Live\n    (2022)\n    \n      \n        Details\n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n  \n\n  \n  Enhancing Accessibility of Communication Sciences and Disorders Research: Open Access and Self-Archiving\n    Lauren Gaeta, Danika Pfeiffer, Elaine Kearney\n    Audiology Today\n    (2022)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n      \n    \n  \n\n\n\n\nNo matching items"
+=======
+<<<<<<< HEAD
+    "text": "Other Publications\n\n\n\n  \n  Access research beyond the paywall: Five strategies to read what you need\n    Danika Pfeiffer, Helen Long, Mariam El Amin\n    ASHA Leader Live\n    (2022)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n         Open Access\n      \n      \n      \n      \n      \n      \n      \n      \n    \n  \n\n  \n  Enhancing Accessibility of Communication Sciences and Disorders Research: Open Access and Self-Archiving\n    Lauren Gaeta, Danika Pfeiffer, Elaine Kearney\n    Audiology Today\n    (2022)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n      \n    \n  \n\n\n\n\nNo matching items"
+=======
+    "text": "Other Publications\n\n\n\n  \n  Access research beyond the paywall: Five strategies to read what you need\n    Danika Pfeiffer, Helen Long, Mariam El Amin\n    ASHA Leader Live\n    (2022)\n    \n      \n        Details\n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n  \n\n  \n  Enhancing Accessibility of Communication Sciences and Disorders Research: Open Access and Self-Archiving\n    Lauren Gaeta, Danika Pfeiffer, Elaine Kearney\n    Audiology Today\n    (2022)\n    \n      \n        Details\n      \n      \n      \n        DOI\n      \n      \n      \n      \n      \n         Postprint\n      \n      \n      \n      \n      \n      \n      \n    \n  \n\n\n\n\nNo matching items"
+>>>>>>> 56b5f975f9d6f553753225433f97877160e08b9a
+>>>>>>> Stashed changes
   },
   {
-    "objectID": "Research/Publications/2025_preprint_pfeiffer-et-al/index.html#important-links",
-    "href": "Research/Publications/2025_preprint_pfeiffer-et-al/index.html#important-links",
+    "objectID": "Research/Publications/2025_preprint_Pfeiffer-et-al/index.html#important-links",
+    "href": "Research/Publications/2025_preprint_Pfeiffer-et-al/index.html#important-links",
     "title": "“There’s going to have to be a culture shift”: Associate and full professors’ perceptions and experiences related to open science practices in communication sciences and disorders",
     "section": "Important Links",
     "text": "Important Links\n Preprint\n Materials\n Preregistration"
   },
   {
-    "objectID": "Research/Publications/2025-01-02_pfeiffer-et-al/index.html#important-links",
-    "href": "Research/Publications/2025-01-02_pfeiffer-et-al/index.html#important-links",
+    "objectID": "Research/Publications/2025-01-02_Pfeiffer-et-al/index.html#important-links",
+    "href": "Research/Publications/2025-01-02_Pfeiffer-et-al/index.html#important-links",
     "title": "“1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders",
     "section": "Important Links",
     "text": "Important Links\n DOI\n Postprint\n Materials\n Preregistration"
   },
   {
-    "objectID": "Research/Publications/2023-06-20_el-amin-et-al/index.html#important-links",
-    "href": "Research/Publications/2023-06-20_el-amin-et-al/index.html#important-links",
+    "objectID": "Research/Publications/2023-06-20_El-Amin-et-al/index.html#important-links",
+    "href": "Research/Publications/2023-06-20_El-Amin-et-al/index.html#important-links",
     "title": "Open Science Practices in Communication Sciences and Disorders: A Survey",
     "section": "Important Links",
     "text": "Important Links\n DOI\n Postprint\n Materials\n Preregistration"
   },
   {
-    "objectID": "Research/Publications/2022-01-15_gaeta-et-al/index.html#important-links",
-    "href": "Research/Publications/2022-01-15_gaeta-et-al/index.html#important-links",
+    "objectID": "Research/Publications/2022-01-15_Gaeta-et-al/index.html#important-links",
+    "href": "Research/Publications/2022-01-15_Gaeta-et-al/index.html#important-links",
     "title": "Enhancing Accessibility of Communication Sciences and Disorders Research: Open Access and Self-Archiving",
     "section": "Important Links",
     "text": "Important Links\n DOI\n Postprint"
   },
   {
-    "objectID": "Research/Publications/2025-11-10_borders-et-al/index.html#important-links",
-    "href": "Research/Publications/2025-11-10_borders-et-al/index.html#important-links",
+    "objectID": "Research/Publications/2025-11-10_Borders-et-al/index.html#important-links",
+    "href": "Research/Publications/2025-11-10_Borders-et-al/index.html#important-links",
     "title": "Using Synthetic Data in Communication Sciences and Disorders to Promote Computational Reproducibility and Transparency",
     "section": "Important Links",
     "text": "Important Links\n DOI\n Postprint\n Materials\n Preregistration"
   },
   {
-    "objectID": "Research/Publications/2023-06-20_schroeder-et-al/index.html#important-links",
-    "href": "Research/Publications/2023-06-20_schroeder-et-al/index.html#important-links",
+    "objectID": "Research/Publications/2023-06-20_Schroeder-et-al/index.html#important-links",
+    "href": "Research/Publications/2023-06-20_Schroeder-et-al/index.html#important-links",
     "title": "Evaluating Research Transparency and Openness in Communication Sciences and Disorders Journals",
     "section": "Important Links",
     "text": "Important Links\n DOI\n Postprint\n Materials"
   },
   {
-    "objectID": "Research/Publications/2022-09-19_pfeiffer-et-al/index.html#important-links",
-    "href": "Research/Publications/2022-09-19_pfeiffer-et-al/index.html#important-links",
+    "objectID": "Research/Publications/2022-09-19_Pfeiffer-et-al/index.html#important-links",
+    "href": "Research/Publications/2022-09-19_Pfeiffer-et-al/index.html#important-links",
     "title": "Access research beyond the paywall: Five strategies to read what you need",
     "section": "Important Links",
     "text": "Important Links\n\nRead on the ASHA Leader"
   },
   {
-    "objectID": "Research/Publications/2023-06-20_long-et-al/index.html#important-links",
-    "href": "Research/Publications/2023-06-20_long-et-al/index.html#important-links",
+    "objectID": "Research/Publications/2023-06-20_Long-et-al/index.html#important-links",
+    "href": "Research/Publications/2023-06-20_Long-et-al/index.html#important-links",
     "title": "The Effect of Open Access on Scholarly and Societal Metrics of Impact in the ASHA Journals",
     "section": "Important Links",
     "text": "Important Links\n DOI\n Postprint\n Materials\n Preregistration"
