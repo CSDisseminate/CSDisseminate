@@ -15,6 +15,9 @@ categories:
  - For Scientists
  - Free
 editor: source
+aliases: 
+  - Resources/Github
+  - Resources/github
 ---
 ----
 ## About this Resource
