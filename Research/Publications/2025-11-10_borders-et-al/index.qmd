@@ -30,7 +30,7 @@ postprint: "https://osf.io/preprints/osf/dutga_v1"
 materials: "https://osf.io/yhkqf"
 preregistration: "https://osf.io/vhgq2"
 aliases:
-  - Borders-et-al-2025/index.html
+  - /Research/Publications/Borders-et-al-2025/
 title-block-banner: true
 editor: source
 ---
