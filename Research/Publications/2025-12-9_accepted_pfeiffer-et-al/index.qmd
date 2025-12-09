@@ -50,7 +50,8 @@ preprint: "https://osf.io/preprints/edarxiv/ygfhp_v1"
 materials: "https://osf.io/dvkqg/"
 preregistration: "https://osf.io/he3np"
 aliases:
-  - "Research/Publications/Pfeiffer-et-al-2025b"
+  - /Research/Publications/Pfeiffer-et-al-2025b/
+  #- /Research/Publications/2025-12-9_accepted_pfeiffer-et-al/
 title-block-banner: true
 editor: source
 ---
