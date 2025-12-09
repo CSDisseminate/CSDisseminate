@@ -68,6 +68,7 @@ We are a working group of researchers and clinicians dedicated to disseminating 
 
 ------------------------------------------------------------------------
 
+```{=html}
 <!--# 
 ## Ambassadors
 
@@ -78,6 +79,7 @@ Meet our University Ambassadors who are currently working to increase the use of
 
 ------------------------------------------------------------------------
 -->
+```
 
 ## Past Collaborators
 

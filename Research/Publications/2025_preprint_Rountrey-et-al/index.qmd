@@ -1,8 +1,8 @@
 ---
 title: "Introducing Open Science in Higher Education Settings: A Case Example from a College of AlliedHealth Sciences"
-publication: "OSF Preprints"
-date: "2025-11-07" # year-month-day
-year: "Preprint"
+publication: "Journal of Speech, Language, and Hearing Research"
+date: "2025-12-09" # year-month-day
+year: "Accepted"
 author: 
   - name: Carrie Rountrey
     orcid: 0000-0002-1599-8681

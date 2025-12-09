@@ -1,0 +1,193 @@
+```{=html}
+
+<script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"></script>
+
+
+<ul class="people-list list">
+<%
+/* Resolve headshot/image path */
+function resolveImg(item) {
+  const img = item.headshot || item.image || item.thumbnail;
+  if (!img) return null;
+  if (/^https?:\/\//i.test(img)) return img;              // absolute URL
+  const base = (item.path || "").replace(/[^/]+$/, "");   // item’s output dir
+  const enc = encodeURI(img).replace(/%2F/gi, "/");       // keep subfolders
+  return base + enc;
+}
+%>
+
+<style>
+/* ---- GRID: fixed column counts by breakpoint ---- */
+.people-list {
+  display: grid;
+  gap: 1.5rem;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .people-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+  .people-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ---- Card ---- */
+.people-list .card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-align: left;
+}
+.people-list .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ---- Square image with rounded top corners ---- */
+.people-list .card-img-top {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+.people-list .card-img-top img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
+
+/* ---- Text panel ---- */
+.people-list .card-body {
+  padding: 1em;
+  background: #f7f7f7;              /* fallback if Vibrant fails */
+  transition: background 0.4s ease;  /* smooth color fade-in */
+}
+.people-list .card-title {
+  font-weight: 600;
+  margin-bottom: .25em;
+  font-size: 1.05em;
+  line-height: 1.3;
+}
+.people-list .credentials {
+  font-size: .9em;
+  color: #555;
+  margin-bottom: .25em;
+}
+.people-list .affiliation {
+  font-size: .9em;
+  color: #666;
+  line-height: 1.3;
+}
+</style>
+
+<% for (const item of items) {
+     const imgSrc = resolveImg(item);
+%>
+  <li class="card" <%= metadataAttrs(item) %>>
+    <a href="<%- item.path %>" style="text-decoration:none;color:inherit;">
+      <% if (imgSrc) { %>
+        <div class="card-img-top">
+          <img class="headshot-img" src="<%- imgSrc %>" alt="<%= item.pagetitle || item.title %>">
+        </div>
+      <% } %>
+      <div class="card-body">
+        <h5 class="card-title"><%= item.pagetitle || item.title %></h5>
+        <% if (item.credentials) { %>
+          <div class="credentials"><%= item.credentials %></div>
+        <% } %>
+        <% if (item.affiliation) { %>
+          <div class="affiliation"><%= item.affiliation %></div>
+        <% } %>
+      </div>
+    </a>
+  </li>
+<% } %>
+</ul>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof Vibrant === "undefined") return;
+
+  const cards = document.querySelectorAll(".people-list .card");
+
+  cards.forEach(card => {
+    const img = card.querySelector(".card-img-top img");
+    const body = card.querySelector(".card-body");
+    if (!img || !body) return;
+
+    function applyColor() {
+      Vibrant.from(img).getPalette()
+        .then(palette => {
+          const swatch =
+            palette.LightVibrant ||
+            palette.Vibrant ||
+            palette.Muted ||
+            palette.LightMuted;
+
+          if (!swatch) return;
+
+          const [r, g, b] = swatch.rgb;
+
+          // --- RGB → HSL conversion ---
+          function rgbToHsl(r, g, b) {
+            r /= 255; g /= 255; b /= 255;
+            const max = Math.max(r, g, b), min = Math.min(r, g, b);
+            let h, s, l = (max + min) / 2;
+
+            if (max === min) { h = s = 0; }
+            else {
+              const d = max - min;
+              s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+              switch (max) {
+                case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                case g: h = (b - r) / d + 2; break;
+                case b: h = (r - g) / d + 4; break;
+              }
+              h /= 6;
+            }
+            return [h * 360, s, l];
+          }
+
+          // --- convert ---
+          let [h, s, l] = rgbToHsl(r, g, b);
+
+          // --- Normalize saturation & lightness ---
+          s = 0.23;   // subtle color (0.20–0.35 works great)
+          l = 0.90;   // unified brightness (0.87–0.92 sweet spot)
+
+          // --- HSL → CSS color ---
+          const color = `hsl(${Math.round(h)}, ${Math.round(s * 100)}%, ${Math.round(l * 100)}%)`;
+
+          // --- Apply gradient background ---
+          body.style.background =
+            "linear-gradient(180deg, " + color + ", " + color + ")";
+
+          // --- Automatic text contrast ---
+          const yiq = ((r*299)+(g*587)+(b*114))/1000;
+          const textColor = yiq >= 128 ? "#000" : "#fff";
+          body.style.color = textColor;
+
+          const title = card.querySelector(".card-title");
+          const cred  = card.querySelector(".credentials");
+          const aff   = card.querySelector(".affiliation");
+          [title, cred, aff].forEach(el => { if (el) el.style.color = textColor; });
+        })
+        .catch(err => console.warn("Vibrant error:", err));
+    }
+
+    img.complete ? applyColor() : img.addEventListener("load", applyColor, { once: true });
+  });
+});
+</script>
+
+
+
+
+```
