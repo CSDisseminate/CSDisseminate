@@ -143,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Support</h1>
+<h1 class="title">Support CSDisseminate</h1>
 </div>
 
 
@@ -160,42 +160,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>We’re raising funds to support our equipment maintenance, student research stipends, and open data infrastructure.</p>
-<div id="donation-thermometer" style="max-width: 180px; margin: 2em auto; text-align:center;">
-  <svg viewbox="0 0 100 300" style="width:100%;">
-    <!-- thermometer outline -->
-    <rect x="40" y="20" width="20" height="200" rx="10" ry="10" fill="#eee"></rect>
-    <!-- fill area -->
-    <rect id="thermo-fill" x="40" y="220" width="20" height="0" rx="10" ry="10" fill="url(#grad)"></rect>
-    <!-- bulb -->
-    <circle cx="50" cy="250" r="30" fill="url(#grad)"></circle>
-    <defs>
-      <lineargradient id="grad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#4b9fff"></stop>
-        <stop offset="100%" stop-color="#3174ff"></stop>
-      </lineargradient>
-    </defs>
-  </svg>
-  <p id="thermo-label" style="margin-top:0.5em; font-weight:600;"></p>
-  <a href="https://your-donation-link" class="btn btn-primary" style="margin-top:0.5em;">Donate Now</a>
+<p>We are currently fundraising for 2026 to cover basic operating costs that allow our work to remain free and publicly available.</p>
+<hr>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="where-your-donation-goes" class="level3">
+<h3 class="anchored" data-anchor-id="where-your-donation-goes">Where your donation goes</h3>
+<p>Your support helps cover:</p>
+<ul>
+<li><p>Our annual website domain and hosting (~$47)</p></li>
+<li><p>A Canva subscription used to create accessible, shareable educational materials (~$120)</p></li>
+<li><p>Transaction and platform fees associated with fundraising</p></li>
+</ul>
+<p>Our goal is <strong>$200</strong>, which covers these costs and a small buffer for fees.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-body-container">
+<p>No funds are used to pay ourselves. CSDisseminate is entirely volunteer-driven. Every dollar supports the infrastructure that allows us to share resources, host initiatives, and build community around open science.</p>
+</div>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:5%;">
 
-<script>
-  // pull from YAML params
-  const raised = 0;
-  const goal = 100;
+</div><div class="column" style="width:45%;">
+<script async="" src="https://widgets.givebutter.com/latest.umd.cjs?acct=kpNykZthZpD0PANx&amp;p=other"></script>
 
-  const percent = Math.min(raised / goal, 1);
-  const fillHeight = 200 * percent;
+<!-- Put the actual widget embed snippet here -->
+<givebutter-widget id="LyXqAj"></givebutter-widget>
+<script async="" src="https://widgets.givebutter.com/latest.umd.cjs?acct=kpNykZthZpD0PANx&amp;p=other"></script>
 
-  const fill = document.getElementById('thermo-fill');
-  fill.setAttribute('height', fillHeight);
-  fill.setAttribute('y', 220 - fillHeight);
-
-  document.getElementById('thermo-label').textContent =
-    `$${raised.toLocaleString()} raised of $${goal.toLocaleString()} goal`;
-</script>
-
+<!-- Put the actual widget embed snippet here -->
+<givebutter-widget id="j9Zw6L"></givebutter-widget>
+</div>
+</div>
 
 
 
