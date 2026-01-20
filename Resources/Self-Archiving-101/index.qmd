@@ -48,7 +48,7 @@ Did you know you can make your article open-access without paying a fee to the p
 
 :::::: columns
 ::: {.column width="45%"}
-#### **Green Open Access ✅**
+#### Green Open Access ✅
 
 Your article is *green open access* if you have taken the time to self-archive your manuscript on an institutional repository, laboratory website, or personal website at any stage of the publication process.
 
@@ -59,7 +59,7 @@ Sharing your paper (per journal policies) can be a legal way to disseminate the 
 :::
 
 ::: {.column width="45%"}
-#### **Gold Open Access ⭐️**
+#### Gold Open Access ⭐️
 
 Your article is *gold open access* if you paid a fee to the publisher to make the published version open access. This fee can be up to \$2-10K!
 
@@ -71,7 +71,7 @@ Consider the things we could do with grant monies if we didn't have to use it to
 
 :::::: columns
 ::: {.column width="45%"}
-#### **Diamond Open Access 💎**
+#### Diamond Open Access 💎
 
 Your article is *diamond open access* if you published your article in a journal that did not charge processing fees AND made the published version open access. Though this is an exemplar for open-science, it requires systemic change among journals and publishers.
 :::
@@ -80,7 +80,7 @@ Your article is *diamond open access* if you published your article in a journal
 :::
 
 ::: {.column width="45%"}
-#### **Black Open Access 🏴‍☠️**
+#### Black Open Access 🏴‍☠️
 
 Your article is *black open access* when it is shared online (e.g., via Sci-Hub) but does not have reuse/open-access rights from the publisher.
 :::
@@ -92,7 +92,7 @@ Your article is *black open access* when it is shared online (e.g., via Sci-Hub)
 
 ![](manuscript%20versions.png)
 
-#### **Submitted Version → Preprints**
+#### Submitted Version → Preprints
 
 Once you've finished writing up a study into an article, you submit it for publication to a journal. This submitted version of your manuscript is called a preprint.
 
@@ -102,7 +102,7 @@ Many journals allow authors to post this version of their manuscripts to a prepr
 
 <!--# You can find out more about preprint servers here. -->
 
-#### **Accepted Version → Postprints**
+#### Accepted Version → Postprints
 
 After your article has been peer-reviewed and your final edits are approved by the editor, your article is then accepted for publication (congratulations!).
 
@@ -110,7 +110,7 @@ This accepted version of your article is called a postprint. Postprints are the 
 
 Most journals allow you to self-archive postprints in a university repository, lab website, or personal website, which means you can legally share this version of your peer-reviewed article!
 
-#### **Published Version → Offprint**
+#### Published Version → Offprint
 
 Once your paper has been accepted, publishers apply special formatting to your manuscript for readability and accessibility. This version of your article is called the published version, publisher PDF, or sometimes called an offprint.
 
@@ -208,7 +208,7 @@ Having your own professional or lab website allows you to provide free, legal ac
 
 Here are 4 simple steps for creating a website that will get you started on your self-archiving journey. This approach is free and assumes no prior experience in website design/development.
 
-### **1. Choose a website builder**
+### 1. Choose a website builder
 
 Website builders make it possible to create and publish a website in minutes. They provide you with a bunch of templates that can be customized to fit your needs. Some free and easy-to-use options include [Wix](https://www.wix.com/), [Owlstown](https://www.owlstown.com/), [Squarespace](https://www.squarespace.com/), [Weebly](https://www.weebly.com/), and [Google Sites](https://sites.google.com/).
 
@@ -216,7 +216,7 @@ If you have some experience in coding, there are also some [Advanced Options](ht
 
 {{< video https://youtu.be/-o_sTGPQ4k8?si=Xs5TryUqP959ukIq >}}
 
-### **2. Add your information**
+### 2. Add your information
 
 Create an 'About Me' section where you include a short bio (name, affiliation, research interests) so that your audience knows they have found the right website.
 
@@ -224,11 +224,11 @@ Create a 'Publications' section where you list all of your publications.
 
 Optional extras: Recent and upcoming talks, courses taught, projects, blogposts, 'in the news', links to other sites (e.g., Google Scholar, ORCID), and social media accounts.
 
-### **3. Add your publications**
+### 3. Add your publications
 
 For each publication, follow our self-archiving steps to determine what version can be linked.
 
-### **4. Publish your website**
+### 4. Publish your website
 
 Publish your website!
 

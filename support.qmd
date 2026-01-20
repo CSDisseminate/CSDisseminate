@@ -3,9 +3,10 @@ title: "Support CSDisseminate"
 pagetitle: "Support CSDissmeninate"
 ---
 
-We are currently fundraising for 2026 to cover basic operating costs that allow our work to remain free and publicly available.
+We are currently fundraising to cover basic operating costs for 2026-2029, enabling our work to remain free and publicly available.
 
 ------------------------------------------------------------------------
+
 ::::::: columns
 :::: {.column width="50%"}
 ### Where your donation goes
@@ -18,7 +19,7 @@ Your support helps cover:
 
 -   Transaction and platform fees associated with fundraising
 
-Our goal is **\$200**, which covers these costs and a small buffer for fees.
+Our goal is **\$500**, which covers these costs and a small buffer for fees.
 
 ::: {.callout-note appearance="simple"}
 No funds are used to pay ourselves. CSDisseminate is entirely volunteer-driven. Every dollar supports the infrastructure that allows us to share resources, host initiatives, and build community around open science.
