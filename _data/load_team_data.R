@@ -1,13 +1,5 @@
 # _data/load_team_data.R
-library(readr)
-library(dplyr)
-library(yaml)
-library(googlesheets4) # install.packages("googlesheets4")
 
-
-https://docs.google.com/spreadsheets/d/197QV8dW_Pmb2GL_0a7DgEiy-5mqv9FpBuEsLSFrrb7M/edit?usp=sharing
-
-# _data/load_team_data.R
 library(googlesheets4)
 library(yaml)
 library(dplyr)
@@ -21,9 +13,13 @@ sheet_id <- "197QV8dW_Pmb2GL_0a7DgEiy-5mqv9FpBuEsLSFrrb7M"  # your actual ID
 sheet_name <- "Sheet1"  # or whatever your tab is named
 output_dir <- "_data/team"
 
+#googlesheets4::gs4_auth(scope = "https://www.googleapis.com/auth/drive")
+
+
 # --- READ SHEET -------------------------------------------------------
 message("Reading Google Sheet...")
-team <- read_sheet(sheet_id, sheet = sheet_name)
+team <-
+  read_sheet("https://docs.google.com/spreadsheets/d/197QV8dW_Pmb2GL_0a7DgEiy-5mqv9FpBuEsLSFrrb7M/edit?usp=sharing")
 
 # --- CLEAN COLUMN NAMES (optional) -----------------------------------
 names(team) <- tolower(gsub("\\s+", "-", names(team)))
