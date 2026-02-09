@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-journal-name',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-publication","listing-date","listing-year","listing-author","listing-abstract","listing-categories","listing-doi","listing-materials","listing-postprint","listing-preregistration","listing-title-block-banner","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-aliases","listing-preprint"],
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-publication","listing-date","listing-year","listing-author","listing-abstract","listing-categories","listing-doi","listing-materials","listing-postprint","listing-preregistration","listing-title-block-banner","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-preprint","listing-aliases"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -108,9 +109,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-journal-name',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-journal-name',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-publication","listing-date","listing-year","listing-author","listing-abstract","listing-categories","listing-preprint","listing-materials","listing-title-block-banner","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -170,7 +171,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -196,6 +197,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title"><img src="../Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
     </a>
@@ -296,14 +299,28 @@ window.Quarto = {
 <div id="listing-preprints" class="quarto-listing quarto-listing-container-custom">
 <ul class="pub-list list">
 
-  <li data-index="0" data-categories="UHJlcHJpbnQlMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1765260000000" data-listing-file-modified-sort="1765297049731" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
+</ul>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="peer-reviewed-publications" class="level2">
+<h2 class="anchored" data-anchor-id="peer-reviewed-publications">Peer-Reviewed Publications</h2>
+<div id="listing-publications" class="quarto-listing quarto-listing-container-custom">
+<ul class="pub-list list">
+
+  <li data-index="0" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1766988000000" data-listing-file-modified-sort="1770660003943" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
   <h5 style="margin: 0;" class="anchored"><strong>Introducing Open Science in Higher Education Settings: A Case Example from a College of AlliedHealth Sciences</strong></h5>
     Carrie Rountrey, Andrea Ford, Collin Brice, Lynn Warner, Seung-Yeon Lee, Amy Koshoffer, Victoria Wangia-Anderson<br>
-    <em>Journal of Speech, Language, and Hearing Research</em>
-    (Accepted)<br>
+    <em>Evidence-Based Communication Assessment and Intervention</em>
+    (2025)<br>
     <div class="pub-buttons" style="margin-top: 0.5rem;">
-      <a href="../Research/Publications/2025_preprint_Rountrey-et-al/index.html" class="btn btn-primary">
+      <a href="../Research/Publications/2025-12-29_Rountrey-et-al/index.html" class="btn btn-primary">
         Details
+      </a>
+      
+      <a href="https://doi.org/10.1080/17489539.2025.2588200" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+        DOI
       </a>
       
       
@@ -324,17 +341,7 @@ window.Quarto = {
     </div>
   </li>
 
-</ul>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="peer-reviewed-publications" class="level2">
-<h2 class="anchored" data-anchor-id="peer-reviewed-publications">Peer-Reviewed Publications</h2>
-<div id="listing-publications" class="quarto-listing quarto-listing-container-custom">
-<ul class="pub-list list">
-
-  <li data-index="0" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1765260000000" data-listing-file-modified-sort="1765298687318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
+  <li data-index="1" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1765260000000" data-listing-file-modified-sort="1765298687318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
   <h5 style="margin: 0;" class="anchored"><strong>“There’s going to have to be a culture shift”: Associate and full professors’ perceptions and experiences related to open science practices in communication sciences and disorders</strong></h5>
     Danika Pfeiffer, Austin Thompson, Alisa Baron, Collin Brice, Brittany Ciullo, Micah E. Hirsch, Helen Long, Andrea Ford<br>
     <em>Journal of Speech, Language, and Hearing Research</em>
@@ -366,7 +373,7 @@ window.Quarto = {
     </div>
   </li>
 
-  <li data-index="1" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZSUyQ09wZW4lMjBEYXRh" data-listing-date-sort="1762754400000" data-listing-file-modified-sort="1765297770420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
+  <li data-index="2" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZSUyQ09wZW4lMjBEYXRh" data-listing-date-sort="1762754400000" data-listing-file-modified-sort="1765297770420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
   <h5 style="margin: 0;" class="anchored"><strong>Using Synthetic Data in Communication Sciences and Disorders to Promote Computational Reproducibility and Transparency</strong></h5>
     James C. Borders, Austin Thompson, Elaine Kearney<br>
     <em>Journal of Speech, Language, and Hearing Research</em>
@@ -402,7 +409,7 @@ window.Quarto = {
     </div>
   </li>
 
-  <li data-index="2" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1735797600000" data-listing-file-modified-sort="1763094662000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
+  <li data-index="3" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1735797600000" data-listing-file-modified-sort="1763094662000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
   <h5 style="margin: 0;" class="anchored"><strong>“1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders</strong></h5>
     Danika Pfeiffer, Austin Thompson, Brittany Ciullo, Micah E. Hirsch, Mariam El Amin, Andrea Ford, Jessica Riccardi, Elaine Kearney<br>
     <em>Journal of Speech, Language, and Hearing Research</em>
@@ -438,7 +445,7 @@ window.Quarto = {
     </div>
   </li>
 
-  <li data-index="3" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwQWNjZXNz" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1763094662000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33">
+  <li data-index="4" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwQWNjZXNz" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1763094662000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33">
   <h5 style="margin: 0;" class="anchored"><strong>The Effect of Open Access on Scholarly and Societal Metrics of Impact in the ASHA Journals</strong></h5>
     Helen Long, Lee Drown, Mariam El Amin<br>
     <em>Journal of Speech, Language, and Hearing Research</em>
@@ -474,7 +481,7 @@ window.Quarto = {
     </div>
   </li>
 
-  <li data-index="4" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1763094662000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
+  <li data-index="5" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1763094662000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
   <h5 style="margin: 0;" class="anchored"><strong>Open Science Practices in Communication Sciences and Disorders: A Survey</strong></h5>
     Mariam El Amin, James Borders, Helen Long, Mary Alice Keller, Elaine Kearney<br>
     <em>Journal of Speech, Language, and Hearing Research</em>
@@ -510,7 +517,7 @@ window.Quarto = {
     </div>
   </li>
 
-  <li data-index="5" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1763094662000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
+  <li data-index="6" data-categories="UHVibGljYXRpb24lMkNPcGVuJTIwU2NpZW5jZQ==" data-listing-date-sort="1687237200000" data-listing-file-modified-sort="1763094662000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
   <h5 style="margin: 0;" class="anchored"><strong>Evaluating Research Transparency and Openness in Communication Sciences and Disorders Journals</strong></h5>
     Scott R. Schroeder, Laura Gaeta, Mariam El Amin, Jason C. Chow, James C. Borders<br>
     <em>Journal of Speech, Language, and Hearing Research</em>
@@ -682,13 +689,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

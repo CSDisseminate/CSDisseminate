@@ -1,8 +1,8 @@
 ---
 title: "Introducing Open Science in Higher Education Settings: A Case Example from a College of AlliedHealth Sciences"
-publication: "Journal of Speech, Language, and Hearing Research"
-date: "2025-12-09" # year-month-day
-year: "Accepted"
+publication: "Evidence-Based Communication Assessment and Intervention"
+date: "2025-12-29" # year-month-day
+year: "2025"
 author: 
   - name: Carrie Rountrey
     orcid: 0000-0002-1599-8681
@@ -31,8 +31,9 @@ author:
   
 abstract: "Open Science (OS) has the potential to transform research transparency and collaboration, yet itsadoption in higher education often remains aspirational rather than embedded in practice. This paper presents a case example and tutorial from a College of Allied Health Sciences, illustrating how an interdisciplinary team of six “ambassadors,” with a small amount of internal funding, partnered with the Center for Open Science to co-create a scalable, sustainable program. Guided by a logic model grounded in implementation science and diffusion of innovations, we describe how the team translated principles into practice at the individual, interpersonal, and organizational levels. Key artifacts, including agendas, resource guides, and OSF templates, are linked for direct download to encourage replication and adaptation in other contexts. We highlight how the initiative was adapted to local needs and sustained beyond the grant period, with early signs of institutional traction. Drawing on our experiences, we offer reflections on challenges encountered, adaptations made, and practical recommendations for tailoring similar efforts in higher education. By situating lessons learned within a real-world case, this paper contributes a transparent, replicable example of how OS practices can move from principle to implementation in academic research culture and infrastructure to support long-term, systemic change."
 categories: 
-  - "Preprint"
+  - "Publication"
   - "Open Science"
+doi: "https://doi.org/10.1080/17489539.2025.2588200"
 preprint: "https://osf.io/preprints/osf/uhkfd_v3"
 materials: "https://osf.io/b428z/overview"
 title-block-banner: true
