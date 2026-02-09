@@ -17,12 +17,15 @@ author:
     affiliations:
       - University of Cincinnati
   - name: Lynn Warner
+    orcid: 0009-0008-6789-413X
     affilitations:
       - University of Cincinnati
   - name: Seung-Yeon Lee
+    orcid: 0000-0002-5865-749X
     affilitations:
       - University of Cincinnati
   - name: Amy Koshoffer
+    orcid: 0000-0001-8130-103X
     affilitations:
       - University of Cincinnati
   - name: Victoria Wangia-Anderson
