@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mariam El Amin">
+<meta name="author" content="Meredith Harold">
+<meta name="author" content="Elaine Kearney">
+<meta name="author" content="Helen Long">
+<meta name="author" content="Danika Pfeiffer">
+<meta name="dcterms.date" content="2025-01-04">
+
+<title>Self Archiving 101 – CSDisseminate</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../..//Images/favicon-96x96.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title"><img src="../../Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">People</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-people">    
+        <li>
+    <a class="dropdown-item" href="../../team.html">
+ <span class="dropdown-text">Meet the Team</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../join-us.html">
+ <span class="dropdown-text">Join Us</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../featured-scientists.html">
+ <span class="dropdown-text">Featured Scientists</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../Research/index.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../events.html"> 
+<span class="menu-text">Events</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../support.html"> 
+<span class="menu-text">Support</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#step-1-about-self-archiving" id="toc-step-1-about-self-archiving" class="nav-link active" data-scroll-target="#step-1-about-self-archiving">Step 1: About Self-Archiving</a></li>
+  <li><a href="#step-2-understanding-the-terminology" id="toc-step-2-understanding-the-terminology" class="nav-link" data-scroll-target="#step-2-understanding-the-terminology">Step 2: Understanding the Terminology</a>
+  <ul class="collapse">
+  <li><a href="#shades-of-open-access" id="toc-shades-of-open-access" class="nav-link" data-scroll-target="#shades-of-open-access">Shades of Open Access</a></li>
+  <li><a href="#versions-of-your-manuscript" id="toc-versions-of-your-manuscript" class="nav-link" data-scroll-target="#versions-of-your-manuscript">Versions of Your Manuscript…</a></li>
+  </ul></li>
+  <li><a href="#step-3-understanding-journal-policies" id="toc-step-3-understanding-journal-policies" class="nav-link" data-scroll-target="#step-3-understanding-journal-policies">Step 3: Understanding Journal Policies</a>
+  <ul class="collapse">
+  <li><a href="#which-version-can-you-self-archive" id="toc-which-version-can-you-self-archive" class="nav-link" data-scroll-target="#which-version-can-you-self-archive">Which version can you self-archive?</a></li>
+  <li><a href="#when-can-you-self-archive" id="toc-when-can-you-self-archive" class="nav-link" data-scroll-target="#when-can-you-self-archive">When can you self-archive?</a></li>
+  </ul></li>
+  <li><a href="#step-4-where-to-host" id="toc-step-4-where-to-host" class="nav-link" data-scroll-target="#step-4-where-to-host">Step 4: Where to host?</a>
+  <ul class="collapse">
+  <li><a href="#host-on-your-own-professional-website." id="toc-host-on-your-own-professional-website." class="nav-link" data-scroll-target="#host-on-your-own-professional-website.">Host on your own professional website.</a>
+  <ul class="collapse">
+  <li><a href="#choose-a-website-builder" id="toc-choose-a-website-builder" class="nav-link" data-scroll-target="#choose-a-website-builder">1. Choose a website builder</a></li>
+  <li><a href="#add-your-information" id="toc-add-your-information" class="nav-link" data-scroll-target="#add-your-information">2. Add your information</a></li>
+  <li><a href="#add-your-publications" id="toc-add-your-publications" class="nav-link" data-scroll-target="#add-your-publications">3. Add your publications</a></li>
+  <li><a href="#publish-your-website" id="toc-publish-your-website" class="nav-link" data-scroll-target="#publish-your-website">4. Publish your website</a></li>
+  </ul></li>
+  <li><a href="#host-on-institution-based-options." id="toc-host-on-institution-based-options." class="nav-link" data-scroll-target="#host-on-institution-based-options.">Host on institution-based options.</a>
+  <ul class="collapse">
+  <li><a href="#are-you-required-to-use-your-institutions-laboratory-website" id="toc-are-you-required-to-use-your-institutions-laboratory-website" class="nav-link" data-scroll-target="#are-you-required-to-use-your-institutions-laboratory-website">Are you required to use your institution’s laboratory website?</a></li>
+  <li><a href="#institution-based-digital-repositories" id="toc-institution-based-digital-repositories" class="nav-link" data-scroll-target="#institution-based-digital-repositories">Institution-based digital repositories</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#step-5-pulling-it-all-together" id="toc-step-5-pulling-it-all-together" class="nav-link" data-scroll-target="#step-5-pulling-it-all-together">Step 5: Pulling it all together</a>
+  <ul class="collapse">
+  <li><a href="#if-allowed-to-archive-the-submitted-version-or-preprint" id="toc-if-allowed-to-archive-the-submitted-version-or-preprint" class="nav-link" data-scroll-target="#if-allowed-to-archive-the-submitted-version-or-preprint">If allowed to archive the submitted version or “preprint”</a></li>
+  <li><a href="#if-allowed-to-archive-the-accepted-version-or-postprint" id="toc-if-allowed-to-archive-the-accepted-version-or-postprint" class="nav-link" data-scroll-target="#if-allowed-to-archive-the-accepted-version-or-postprint">If allowed to archive the accepted version or “postprint”</a></li>
+  <li><a href="#if-allowed-to-archive-the-published-version" id="toc-if-allowed-to-archive-the-published-version" class="nav-link" data-scroll-target="#if-allowed-to-archive-the-published-version">If allowed to archive the published version</a></li>
+  <li><a href="#best-practices-for-uploading-and-linking-journal-articles" id="toc-best-practices-for-uploading-and-linking-journal-articles" class="nav-link" data-scroll-target="#best-practices-for-uploading-and-linking-journal-articles">Best practices for uploading and linking journal articles</a>
+  <ul class="collapse">
+  <li><a href="#doi-vs-url" id="toc-doi-vs-url" class="nav-link" data-scroll-target="#doi-vs-url">DOI vs URL</a></li>
+  <li><a href="#linking-to-the-free-version-vs-the-article-of-record" id="toc-linking-to-the-free-version-vs-the-article-of-record" class="nav-link" data-scroll-target="#linking-to-the-free-version-vs-the-article-of-record">Linking to the free version vs the article of record</a></li>
+  <li><a href="#what-if-i-prefer-for-people-to-just-email-me-instead" id="toc-what-if-i-prefer-for-people-to-just-email-me-instead" class="nav-link" data-scroll-target="#what-if-i-prefer-for-people-to-just-email-me-instead">What if I prefer for people to just email me instead?</a></li>
+  <li><a href="#how-will-people-find-my-uploaded-articles" id="toc-how-will-people-find-my-uploaded-articles" class="nav-link" data-scroll-target="#how-will-people-find-my-uploaded-articles">How will people find my uploaded articles?</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#still-have-questions" id="toc-still-have-questions" class="nav-link" data-scroll-target="#still-have-questions">Still have questions?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Self Archiving 101</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">CSDisseminate Resource</div>
+    <div class="quarto-category">Self-Archiving</div>
+    <div class="quarto-category">Open Access</div>
+    <div class="quarto-category">For Scientists</div>
+    <div class="quarto-category">Guide</div>
+    <div class="quarto-category">Free</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Contributor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mariam El Amin </p>
+             <p>Meredith Harold </p>
+             <p>Elaine Kearney </p>
+             <p>Helen Long </p>
+             <p>Danika Pfeiffer </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 4, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This tutorial teaches you how to self-archive your work. Use the table of contents to navigate to specific steps in the process.</p>
+<hr>
+<section id="step-1-about-self-archiving" class="level1">
+<h1>Step 1: About Self-Archiving</h1>
+<p>Self-archiving involves the act of making a version of a manuscript (submitted, accepted, or published—depending on publisher policies) available on a personal or institutional website for free access to those interested.</p>
+<p>Self-archiving is only one form of research dissemination but it has the potential to substantially improve your research impact. Research on this topic has shown that having free versions of your research available can greatly increase the number of citations (<a href="https://doi.org/10.1038/35079151">Lawrence, 2001)</a>.</p>
+<p>But journal policies vary on where, when, and which version of your manuscript you can legally share for free.</p>
+<hr>
+</section>
+<section id="step-2-understanding-the-terminology" class="level1">
+<h1>Step 2: Understanding the Terminology</h1>
+<p>Let’s review the terms used throughout the publication process and the different types of open access.</p>
+<section id="shades-of-open-access" class="level2">
+<h2 class="anchored" data-anchor-id="shades-of-open-access">Shades of Open Access</h2>
+<p>Did you know you can make your article open-access without paying a fee to the publisher? Sharing your postprint is also a way to make it open access!</p>
+<div class="columns">
+<div class="column" style="width:45%;">
+<section id="green-open-access" class="level4">
+<h4 class="anchored" data-anchor-id="green-open-access">Green Open Access ✅</h4>
+<p>Your article is <em>green open access</em> if you have taken the time to self-archive your manuscript on an institutional repository, laboratory website, or personal website at any stage of the publication process.</p>
+<p>Sharing your paper (per journal policies) can be a legal way to disseminate the peer-reviewed version of your article without having to pay a fee to make it accessible.</p>
+</section>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<section id="gold-open-access" class="level4">
+<h4 class="anchored" data-anchor-id="gold-open-access">Gold Open Access ⭐️</h4>
+<p>Your article is <em>gold open access</em> if you paid a fee to the publisher to make the published version open access. This fee can be up to $2-10K!</p>
+<p>While this method can increase the accessibility of your article, it is not affordable for many scientists.</p>
+<p>Consider the things we could do with grant monies if we didn’t have to use it to pay for gold open access!</p>
+</section>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:45%;">
+<section id="diamond-open-access" class="level4">
+<h4 class="anchored" data-anchor-id="diamond-open-access">Diamond Open Access 💎</h4>
+<p>Your article is <em>diamond open access</em> if you published your article in a journal that did not charge processing fees AND made the published version open access. Though this is an exemplar for open-science, it requires systemic change among journals and publishers.</p>
+</section>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<section id="black-open-access" class="level4">
+<h4 class="anchored" data-anchor-id="black-open-access">Black Open Access 🏴‍☠️</h4>
+<p>Your article is <em>black open access</em> when it is shared online (e.g., via Sci-Hub) but does not have reuse/open-access rights from the publisher.</p>
+</section>
+</div>
+</div>
+</section>
+<section id="versions-of-your-manuscript" class="level2">
+<h2 class="anchored" data-anchor-id="versions-of-your-manuscript">Versions of Your Manuscript…</h2>
+<p>…throughout the publication process</p>
+<p><img src="manuscript versions.png" class="img-fluid"></p>
+<section id="submitted-version-preprints" class="level4">
+<h4 class="anchored" data-anchor-id="submitted-version-preprints">Submitted Version → Preprints</h4>
+<p>Once you’ve finished writing up a study into an article, you submit it for publication to a journal. This submitted version of your manuscript is called a preprint.</p>
+<p>Preprints are usually the version of the document with line numbers and double spacing that has not yet been peer-reviewed.</p>
+<p>Many journals allow authors to post this version of their manuscripts to a preprint server.</p>
+<!--# You can find out more about preprint servers here. -->
+</section>
+<section id="accepted-version-postprints" class="level4">
+<h4 class="anchored" data-anchor-id="accepted-version-postprints">Accepted Version → Postprints</h4>
+<p>After your article has been peer-reviewed and your final edits are approved by the editor, your article is then accepted for publication (congratulations!).</p>
+<p>This accepted version of your article is called a postprint. Postprints are the final version of your manuscript that haven’t yet received the fancy journal formatting treatment seen in the publisher version of your PDF.</p>
+<p>Most journals allow you to self-archive postprints in a university repository, lab website, or personal website, which means you can legally share this version of your peer-reviewed article!</p>
+</section>
+<section id="published-version-offprint" class="level4">
+<h4 class="anchored" data-anchor-id="published-version-offprint">Published Version → Offprint</h4>
+<p>Once your paper has been accepted, publishers apply special formatting to your manuscript for readability and accessibility. This version of your article is called the published version, publisher PDF, or sometimes called an offprint.</p>
+<p>The published version of your article typically has strict restrictions on how and where you can share it, so some authors pay to make this version <em>gold open access</em> to increase its accessibility.</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="step-3-understanding-journal-policies" class="level1">
+<h1>Step 3: Understanding Journal Policies</h1>
+<p>All publishers have slightly different rules. But finding the rules, quickly, is actually very easy with the three websites below.</p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<section id="open-policy-finder-formerly-sherpa-romeo" class="level3">
+<h3 class="anchored" data-anchor-id="open-policy-finder-formerly-sherpa-romeo">Open Policy Finder (Formerly Sherpa Romeo)</h3>
+<p>Enter the name of a journal or publisher to see the corresponding copyright and self-archiving policies.</p>
+<p><a href="https://openpolicyfinder.jisc.ac.uk/" class="btn btn-outline-primary" role="button" data-toggle="button">Try it</a></p>
+</section>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:30%;">
+<section id="how-can-i-share-it" class="level3">
+<h3 class="anchored" data-anchor-id="how-can-i-share-it">How Can I Share It?</h3>
+<p>Enter your DOI to see a list of exactly how and where you can share different versions of manuscripts. <em>Note: Some journals are not yet included on this website, including the ASHA journals.</em></p>
+<p><a href="https://www.howcanishareit.com/" class="btn btn-outline-primary" role="button" data-toggle="button">Try it</a></p>
+</section>
+</div><div class="column" style="width:3%;">
+
+</div><div class="column" style="width:30%;">
+<section id="shareyourpaper" class="level3">
+<h3 class="anchored" data-anchor-id="shareyourpaper">ShareYourPaper</h3>
+<p>Enter your DOI and ShareYourPaper gathers information about your paper and finds the easiest way to share it.</p>
+<p><a href="https://shareyourpaper.org/" class="btn btn-outline-primary" role="button" data-toggle="button">Try it</a></p>
+</section>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Can’t find what you need above? A quick Google search of [Journal name] and “preprint policy” or “self-archiving policy” will give you the exact information you need from the journal itself!</p>
+</div>
+</div>
+<section id="which-version-can-you-self-archive" class="level2">
+<h2 class="anchored" data-anchor-id="which-version-can-you-self-archive">Which version can you self-archive?</h2>
+<p>The version of a manuscript you can self-archive will vary by publisher. The information for your publisher will be in the copyright policy and may be one or more of the following:</p>
+<ul>
+<li><p>Submitted version (“preprint”)</p></li>
+<li><p>Accepted version (“postprint”)</p></li>
+<li><p>Published or final version (“offprint”)</p></li>
+</ul>
+</section>
+<section id="when-can-you-self-archive" class="level2">
+<h2 class="anchored" data-anchor-id="when-can-you-self-archive">When can you self-archive?</h2>
+<p>Some journals may place the accepted or published version of your manuscript under an embargo<strong>.</strong></p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>An <strong>embargo</strong> is a period of time (most often 6-12 months post-publication date) when sharing a version of the article is not allowed. Thus, you may not be able to self-archive your manuscript while it is under embargo.</p>
+</div>
+</div>
+</div>
+<p>Embargoes are usually used by journals with high impact factors or with a large reader base who are likely to pay to read a recently published article.</p>
+<p>It’s basically like putting the cookie jar on top of the fridge to keep the kids from digging in too soon. Crazy, we know.</p>
+<p><strong>If your article is embargoed, mark the date on your calendar for when you can self-archive!</strong></p>
+<ol type="1">
+<li><p>For preprints, can you archive before/after journal submission, after revising-resubmitting, or after acceptance?</p></li>
+<li><p>Is there an embargo period that you have to wait before archiving?</p></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="step-4-where-to-host" class="level1">
+<h1>Step 4: Where to host?</h1>
+<p>You know what versions of your journal articles to upload. Now, where do you put them?</p>
+<p>Your journal article will ultimately have a DOI that directs people straight to the publisher’s webpage for that article. If you paid for gold open access, you can direct people straight to the publisher for access!</p>
+<p>But if you have opted for “green” open access to self-archive your accepted version or postprint, you can use some of the following options to host free, legal versions of your research such as:</p>
+<ul>
+<li><p>Your own professional website</p></li>
+<li><p>And/or institution-based options</p></li>
+</ul>
+<section id="host-on-your-own-professional-website." class="level2">
+<h2 class="anchored" data-anchor-id="host-on-your-own-professional-website.">Host on your own professional website.</h2>
+<p>Free options for archiving published manuscripts in CSD</p>
+<p>Having your own professional or lab website allows you to provide free, legal access to almost all of your published manuscripts at the click of a button. Further, once manuscripts are linked on your website, they will also be indexed by Google, where others are more likely to discover your work.</p>
+<p>Here are 4 simple steps for creating a website that will get you started on your self-archiving journey. This approach is free and assumes no prior experience in website design/development.</p>
+<section id="choose-a-website-builder" class="level3">
+<h3 class="anchored" data-anchor-id="choose-a-website-builder">1. Choose a website builder</h3>
+<p>Website builders make it possible to create and publish a website in minutes. They provide you with a bunch of templates that can be customized to fit your needs. Some free and easy-to-use options include <a href="https://www.wix.com/">Wix</a>, <a href="https://www.owlstown.com/">Owlstown</a>, <a href="https://www.squarespace.com/">Squarespace</a>, <a href="https://www.weebly.com/">Weebly</a>, and <a href="https://sites.google.com/">Google Sites</a>.</p>
+<p>If you have some experience in coding, there are also some <a href="https://geocushen.com/create-your-website-with-hugo/">Advanced Options</a> for website creation. For example, this website is created with <a href="https://quarto.org/">R and Quarto</a> and hosted via GitHub Pages.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/-o_sTGPQ4k8?si=Xs5TryUqP959ukIq" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="add-your-information" class="level3">
+<h3 class="anchored" data-anchor-id="add-your-information">2. Add your information</h3>
+<p>Create an ‘About Me’ section where you include a short bio (name, affiliation, research interests) so that your audience knows they have found the right website.</p>
+<p>Create a ‘Publications’ section where you list all of your publications.</p>
+<p>Optional extras: Recent and upcoming talks, courses taught, projects, blogposts, ‘in the news’, links to other sites (e.g., Google Scholar, ORCID), and social media accounts.</p>
+</section>
+<section id="add-your-publications" class="level3">
+<h3 class="anchored" data-anchor-id="add-your-publications">3. Add your publications</h3>
+<p>For each publication, follow our self-archiving steps to determine what version can be linked.</p>
+</section>
+<section id="publish-your-website" class="level3">
+<h3 class="anchored" data-anchor-id="publish-your-website">4. Publish your website</h3>
+<p>Publish your website!</p>
+<p>Then, rinse and repeat steps 2-4 as your new publications come out.</p>
+</section>
+</section>
+<section id="host-on-institution-based-options." class="level2">
+<h2 class="anchored" data-anchor-id="host-on-institution-based-options.">Host on institution-based options.</h2>
+<section id="are-you-required-to-use-your-institutions-laboratory-website" class="level3">
+<h3 class="anchored" data-anchor-id="are-you-required-to-use-your-institutions-laboratory-website">Are you required to use your institution’s laboratory website?</h3>
+<p>In most cases, as long as you link directly to your laboratory website somewhere from your personal professional page, you can self-archive your publications elsewhere.</p>
+<p>If you do, in fact, prefer to use your institution-based laboratory website to self-archive your manuscripts, you can follow similar steps as those posted above. You would just add a link following the DOI to direct readers to the posted version (such as an open source repository like the OSF, or uploaded directly to your lab page). Check out how some of our <a href="https://www.csdisseminate.com/featured-scientists">featured scientists</a> have done this!</p>
+</section>
+<section id="institution-based-digital-repositories" class="level3">
+<h3 class="anchored" data-anchor-id="institution-based-digital-repositories">Institution-based digital repositories</h3>
+<p>Did you know?</p>
+<p>Your institution’s library may have its own digital repository or services that can assist you in the process of uploading and sharing your work, including:</p>
+<ul>
+<li><p>An in-house repository, which is an institutionally managed online location for hosting research material, including preprints and postprints</p></li>
+<li><p>Guidance to help you adhere to publisher copyright policies</p></li>
+</ul>
+<p>These repositories are typically managed by your institution’s library. Open Policy Finder also offers a free search-based Directory of Open Access Repositories (DOAR). Click the link below to search for your institution or other repositories of interest:</p>
+<p><a href="https://v2.sherpa.ac.uk/opendoar/">OpenDOAR</a></p>
+<hr>
+</section>
+</section>
+</section>
+<section id="step-5-pulling-it-all-together" class="level1">
+<h1>Step 5: Pulling it all together</h1>
+<p>Now that you know the copyright policies of your publisher or journal, which version of the manuscript will you self-archive? Recall that there are three basic versions of every manuscript:</p>
+<ul>
+<li><p>Submitted version (“preprint”)</p></li>
+<li><p>Accepted version (“postprint”)</p></li>
+<li><p>Published or final version (“offprint”)</p></li>
+</ul>
+<p>The following steps are general guidelines for archiving submitted, accepted, and published versions of your manuscripts. You may need to adapt them based on the information you found in the copyright policies (<a href="#step-3-understanding-journal-policies">Step 3: Understanding Journal Policies</a>).</p>
+<section id="if-allowed-to-archive-the-submitted-version-or-preprint" class="level2">
+<h2 class="anchored" data-anchor-id="if-allowed-to-archive-the-submitted-version-or-preprint">If allowed to archive the submitted version or “preprint”</h2>
+<ol type="1">
+<li><p>Attach a preprint notice to the first page of your submitted manuscript, for example:</p>
+<p><em>This manuscript is in submission for publication. It has not yet been peer reviewed.</em></p></li>
+<li><p>Post the submitted manuscript to a preprint server. <!--# preprint server used to have a link --></p></li>
+<li><p>Post the <a href="https://apastyle.apa.org/style-grammar-guidelines/references/examples/preprint-article-references">preprint citation</a>, DOI link, and submitted version to your personal website or university repository.</p></li>
+</ol>
+</section>
+<section id="if-allowed-to-archive-the-accepted-version-or-postprint" class="level2">
+<h2 class="anchored" data-anchor-id="if-allowed-to-archive-the-accepted-version-or-postprint">If allowed to archive the accepted version or “postprint”</h2>
+<ol type="1">
+<li><p>Attach a user license to the first page of your accepted manuscript, for example: <!--# There used to be link for user license here. --></p>
+<p><em>This is the accepted version of an article published by [Publisher] in [Journal], © [Year], [Volume (Issue)], [Page Range]. It is available online at [DOI] and is made available here with the permission of [Publisher]. Licensed under the Creative Commons [license details and URL, if applicable].</em></p></li>
+<li><p>Post the full citation, DOI link, and accepted version to your personal website or university repository.</p></li>
+</ol>
+</section>
+<section id="if-allowed-to-archive-the-published-version" class="level2">
+<h2 class="anchored" data-anchor-id="if-allowed-to-archive-the-published-version">If allowed to archive the published version</h2>
+<p>Some (but not many) publishers allow you to archive the published version of your manuscript. If the journal policy states this is allowed:</p>
+<ol type="1">
+<li>Post the full citation, DOI link, and publisher PDF to your personal website or university repository.</li>
+</ol>
+</section>
+<section id="best-practices-for-uploading-and-linking-journal-articles" class="level2">
+<h2 class="anchored" data-anchor-id="best-practices-for-uploading-and-linking-journal-articles">Best practices for uploading and linking journal articles</h2>
+<section id="doi-vs-url" class="level3">
+<h3 class="anchored" data-anchor-id="doi-vs-url">DOI vs URL</h3>
+<p>A DOI is a “digital object identifier”, and is your journal article’s <strong>permanent</strong> online location/identifier. Always direct people to your original article with the DOI (found on the publisher’s article page), not the URL (the web address, which can change if the publisher makes any website updates).</p>
+<ul>
+<li><p>Example URL: <a href="https://pubs.asha.org/doi/10.1044/2020_JSLHR-20-00010" class="uri">https://pubs.asha.org/doi/10.1044/2020_JSLHR-20-00010</a></p></li>
+<li><p>Example DOI: <a href="https://doi.org/10.1044/2020_JSLHR-20-00010" class="uri">https://doi.org/10.1044/2020_JSLHR-20-00010</a></p></li>
+</ul>
+<p>These are the same journal article! But the URL can be broken, while the DOI can’t.</p>
+</section>
+<section id="linking-to-the-free-version-vs-the-article-of-record" class="level3">
+<h3 class="anchored" data-anchor-id="linking-to-the-free-version-vs-the-article-of-record">Linking to the free version vs the article of record</h3>
+<p>Always, always, always link to your journal article with its DOI. That’s the only way you’ll be able to:</p>
+<ol type="1">
+<li><p>Show people where the original is, and</p></li>
+<li><p>Properly measure traffic to it (e.g.&nbsp;via Altmetric).</p></li>
+</ol>
+<p>We recommend that if you’re creating a professional website, your article be linked with the DOI, and the free (possibly “unofficial”) version be a separate link that says something like free version.</p>
+</section>
+<section id="what-if-i-prefer-for-people-to-just-email-me-instead" class="level3">
+<h3 class="anchored" data-anchor-id="what-if-i-prefer-for-people-to-just-email-me-instead">What if I prefer for people to just email me instead?</h3>
+<p>Requiring clinicians to email when they want a paper puts a barrier between the science and clinical practice.</p>
+<p>It also makes the work of science communicators, who are trying to direct people to your work, much more difficult.</p>
+</section>
+<section id="how-will-people-find-my-uploaded-articles" class="level3">
+<h3 class="anchored" data-anchor-id="how-will-people-find-my-uploaded-articles">How will people find my uploaded articles?</h3>
+<p>Most people will <strong>Google the title of your paper</strong>. So as long as that text is on your webpage, you’re all set!</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="still-have-questions" class="level1">
+<h1>Still have questions?</h1>
+<p>That’s ok! We’re here to help.</p>
+<p>First, make sure you’ve gone through all the steps.</p>
+<!--# Then, check our FAQs page. -->
+<p>If you’re still stuck, feel free to reach out to us: csdisseminate@gmail.com</p>
+<!--# Finally, if you're still stuck, feel free to reach out to us. -->
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<footer class="custom-footer">
+<p>
+  <strong>CSDisseminate</strong> is a volunteer-run community project. We do not pay ourselves; donations help cover operating costs and sustain our work.
+  If you’d like to support CSDisseminate, please visit our
+  <a href="https://www.csdisseminate.com/support">Support</a> page.
+</p>
+
+<p>
+  All content on this site is licensed under the
+  <strong>Creative Commons Attribution 4.0 International (CC BY 4.0)</strong> license.
+  Reuse and adaptation are permitted with attribution.
+</p>
+</footer>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.instagram.com/csdisseminate">
+      <i class="bi bi-instagram" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

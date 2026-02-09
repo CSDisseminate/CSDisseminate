@@ -1,0 +1,98 @@
+[
+  {
+    "listing": "/resources.html",
+    "items": [
+      "/Resources/GitHub/index.html",
+      "/Resources/OS-Coursera/index.html",
+      "/Resources/Preregistration-Essentials/index.html",
+      "/Resources/Python/index.html",
+      "/Resources/CSD-Open-Data/index.html",
+      "/Resources/Self-Archiving-101/index.html",
+      "/Resources/Unpaywall/index.html",
+      "/Resources/Zotero/index.html"
+    ]
+  },
+  {
+    "listing": "/team.html",
+    "items": [
+      "/Team/Elaine-Kearney/index.html",
+      "/Team/Helen-Long/index.html",
+      "/Team/Mariam-El-Amin/index.html",
+      "/Team/Danika-Pfeiffer/index.html",
+      "/Team/Jessica-Salley-Riccardi/index.html",
+      "/Team/James-Borders/index.html",
+      "/Team/Austin-Thompson/index.html",
+      "/Team/Micah-Hirsch/index.html",
+      "/Team/Brittany-Ciullo/index.html",
+      "/Team/Jennifer-Markfeld/index.html",
+      "/Team/Andrea-Ford/index.html",
+      "/Team/Anne-Reed/index.html",
+      "/Team/Alisa-Baron/index.html",
+      "/Team/Collin-Brice/index.html"
+    ]
+  },
+  {
+    "listing": "/events.html",
+    "items": [
+      "/Events/2025-06-03-Open-Data-Workshop/index.html",
+      "/Events/2025-05-18-Forward-Focus/index.html"
+    ]
+  },
+  {
+    "listing": "/Research/index.html",
+    "items": [
+      "/Research/Publications/2025-12-29_Rountrey-et-al/index.html",
+      "/Research/Publications/2025-12-9_accepted_pfeiffer-et-al/index.html",
+      "/Research/Publications/2025-11-10_borders-et-al/index.html",
+      "/Research/Publications/Pfeiffer-et-al-2025/index.html",
+      "/Research/Publications/Long-Drown-El-Amin-2023/index.html",
+      "/Research/Publications/El-Amin-et-al-2023/index.html",
+      "/Research/Publications/Schroeder-et-al-2023/index.html",
+      "/Research/Publications/Pfeiffer-et-al-2022/index.html",
+      "/Research/Publications/Gaeta-et-al-2022/index.html"
+    ]
+  },
+  {
+    "listing": "/featured-scientists.html",
+    "items": [
+      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
+      "/Featured-Scientists/CLaSS-Lab/index.html"
+    ]
+  },
+  {
+    "listing": "/Resources/CSD-Open-Data/index.html",
+    "items": [
+      "/Resources/CSD-Open-Data/Data/ASDBank.html",
+      "/Resources/CSD-Open-Data/Data/AphasiaBank.html",
+      "/Resources/CSD-Open-Data/Data/BilingBank.html",
+      "/Resources/CSD-Open-Data/Data/Elsherif-et-al-2021.html",
+      "/Resources/CSD-Open-Data/Data/FluencyBank.html",
+      "/Resources/CSD-Open-Data/Data/Battal-et-al-2020.html",
+      "/Resources/CSD-Open-Data/Data/HomeBank.html",
+      "/Resources/CSD-Open-Data/Data/Novotný-et-al-2016.html",
+      "/Resources/CSD-Open-Data/Data/Curtis-et-al-2023.html",
+      "/Resources/CSD-Open-Data/Data/PERCEPT.html",
+      "/Resources/CSD-Open-Data/Data/PhonBank.html",
+      "/Resources/CSD-Open-Data/Data/Kearney-et-al-2023.html",
+      "/Resources/CSD-Open-Data/Data/SLABank.html",
+      "/Resources/CSD-Open-Data/Data/King-et-al-2022.html",
+      "/Resources/CSD-Open-Data/Data/TORGO.html",
+      "/Resources/CSD-Open-Data/Data/TalkBank.html",
+      "/Resources/CSD-Open-Data/Data/SEED-Corpus.html",
+      "/Resources/CSD-Open-Data/Data/UA-Speech.html",
+      "/Resources/CSD-Open-Data/Data/UltraSuite.html",
+      "/Resources/CSD-Open-Data/Data/Thompson-et-al-2023.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/Announcements/2025_10_30_cos-blog-post/index.html",
+      "/Announcements/2025_05_11_forward-focus-journal-club/index.html",
+      "/Announcements/2025_05_02_Open-Data-Webinar/index.html",
+      "/Announcements/2025_04_18_csdisseminate & opencsd/index.html",
+      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
+      "/Featured-Scientists/CLaSS-Lab/index.html"
+    ]
+  }
+]
