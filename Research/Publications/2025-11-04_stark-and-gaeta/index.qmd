@@ -1,0 +1,55 @@
+---
+title: "Evidence Synthesis and Open Science: A Tutorial for Systematic Reviews and Beyond in Audiology Research"
+publication: "Journal of the American Academy of Audiology"
+date: "2025-11-04"
+year: "2025"
+author:
+  - name: Rachel Stark
+    orcid: 0000-0001-7946-2213
+  - name: Laura Gaeta
+    orcid: 0000-0001-5493-9636
+    affiliations:
+      - California State University
+categories:
+  - "Publication"
+  - "Open Science"
+links:
+  doi:
+    show: true
+    link: "https://doi.org/10.3766/jaaa.250020"
+  pubmed:
+    show: false
+    link: ""
+  postprint:
+    show: false
+    link: ""
+  preprint:
+    show: false
+    link: ""
+  oa:
+    show: false
+    link: ""
+  materials:
+    show: false
+    link: ""
+  preregistration:
+    show: false
+    link: ""
+abstract: "**Background:** Evidence synthesis refers to a reproducible literature review that addresses a structured research question with a critical analysis of the results from a comprehensive literature search such as what is seen in systematic reviews, scoping reviews, and meta-analyses. Evidence synthesis publications have become more common, but their quality has not increased. However, with an increased understanding of how to produce a high-quality evidence synthesis, this issue can be addressed. Adherence to the open science principles of transparency, collaboration, reproducibility, and accessibility can help increase the quality of evidence synthesis. <br>
+**Purpose:** This tutorial provides step-by-step instructions regarding how to produce a high-quality evidence synthesis project following best practices for evidence synthesis and open science principles. <br>
+**Research Design:** Tutorial. <br>
+**Data Collection and Analysis:** This tutorial is a step-by-step guide of how to apply current evidence synthesis standards to knowledge synthesis projects that will contribute to audiology research. Information regarding open access and how the principles of open science contribute to the quality and reproducibility of evidence synthesis is provided. <br>
+**Results:** Widely applicable steps for high-quality evidence synthesis research are presented with information about how open science principles can be applied to the evidence synthesis process. <br>
+**Conclusions:** By incorporating open science principles in the production of evidence synthesis, published research will be of higher quality and improve access to critical information for evidence-based practice. Professionals can produce high-quality research by understanding the appropriate steps for an evidence synthesis project, choosing the appropriate method for a structured research question, and utilizing the recognized international standards for the production of systematic reviews and other types of evidence synthesis. <br>
+**Clinical Relevance Statement:** This tutorial introduces readers to evidence synthesis with step-by-step guidance and resources for clinician and researcher teams to create high-quality research while following best practices for evidence synthesis."
+title-block-banner: true
+editor: source
+---
+
+\
+\
+
+## Important Links
+
+{{< include ../../../_includes/pub-buttons.qmd >}}
+
