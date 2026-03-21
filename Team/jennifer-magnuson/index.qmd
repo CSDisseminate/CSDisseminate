@@ -1,24 +1,26 @@
 ---
-title: "Jennifer Markfeld"
-pagetitle: "Jennifer Markfeld"
+title: "Jennifer Magnuson"
+pagetitle: "Jennifer Magnuson"
 first-name: "Jennifer"
-last-name: "Markfeld"
-date-joined: "2024-02-01"
-categories:
- - "Collaborator"
+last-name: "Magnuson"
 credentials: "MS, CF-SLP"
 position: "PhD Candidate"
 affiliation: "Vanderbilt University"
 pronouns: "she/her"
 orcid: "0000-0002-7995-6077"
+date-joined: "2024-02-01"
+order: 7
+categories:
+  - "Collaborator"
+  - "Social Media Team Lead"
 description-research: "Jennifer is a clinical fellow in speech-language pathologiy and PhD candidate at Vanderbilt University in the Biobehavioral Approaches to NeuroDevelopment Lab. Her broad interests include language development, early language experiences, caregiver-infant interactions, implementation science, and interventions to support infants who are at increased likelihood for neurodevelopmental conditions. Jennifer is passionate about increasing awareness of open science practices and is thrilled to be on the CSDisseminate team!"
-description-os:
-link:
-website-button: 
-headshot: "Jennifer Markfeld.jpg"
+headshot: "../_headshots/Jennifer Markfeld.jpg"
 lightbox: true
 draft: false
 layout: article
+title-block-categories: false
+aliases:
+  - /Team/Jennifer-Markfield, jennifer-markfield/
 editor: source
 ---
 
@@ -26,13 +28,11 @@ editor: source
 ::: {.column width="30%"}
 ![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
 :::
-
 ::: {.column width="5%"}
 :::
-
 ::: {.column width="65%"}
 {{< meta description-research >}}
 
-{{< meta description-os >}}
 :::
 ::::::
+

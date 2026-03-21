@@ -3,22 +3,25 @@ title: "Mariam El Amin"
 pagetitle: "Mariam El Amin"
 first-name: "Mariam"
 last-name: "El Amin"
-date-joined: "2020-05-01"
-categories:
- - "Collaborator"
 credentials: "PhD"
 position: "Postdoctoral Research Associate"
 affiliation: "University of South Carolina"
 pronouns: "she/her"
 orcid: "0000-0001-7150-4271"
+date-joined: "2020-05-01"
+order: 4
+categories:
+  - "Collaborator"
+  - "Board Member"
 description-research: "Mariam is interested in understanding how environmental factors such maternal linguistic input and the home literacy environment contribute to language development in monolingual and multilingual speakers with DLD and/or dyslexia."
 description-os: "As a clinician from the global south, Mariam is interested in increasing access, transparency, and diversification of science in communication sciences and disorders (CSD) through open science practices."
 link: "https://www.mariamelamin.com/"
-website-button: "Visit the Dr. El Amin's Website!"
-headshot: "Mariam El Amin.jpg"
+website-button: "Visit Dr. El Amin's Website!"
+headshot: "../_headshots/Mariam El Amin.jpg"
 lightbox: true
 draft: false
 layout: article
+title-block-categories: false
 editor: source
 ---
 
@@ -26,10 +29,8 @@ editor: source
 ::: {.column width="30%"}
 ![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
 :::
-
 ::: {.column width="5%"}
 :::
-
 ::: {.column width="65%"}
 {{< meta description-research >}}
 
@@ -39,3 +40,4 @@ editor: source
 \
 :::
 ::::::
+

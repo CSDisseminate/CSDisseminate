@@ -1,0 +1,35 @@
+---
+title: "Carrie Rountrey"
+pagetitle: "Carrie Rountrey"
+first-name: "Carrie"
+last-name: "Rountrey"
+credentials: "PhD, CCC-SLP"
+position: "Chair"
+affiliation: "Xavier University"
+pronouns: "she/her"
+orcid: "0000-0002-1599-8681"
+date-joined: "NA"
+order: 8
+categories:
+  - "Collaborator"
+description-research: "Carrie Rountrey, Ph. D., CCC-SLP, is an educator, researcher and mentor. She is currently the inaugural chair of the department of Speech, Language and Communicative Behavior at Xavier University, where she is building new programs from the ground up."
+headshot: "../_headshots/Carrie Rountrey.png"
+lightbox: true
+draft: false
+layout: article
+title-block-categories: false
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+:::
+::::::
+

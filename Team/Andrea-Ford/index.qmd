@@ -3,22 +3,24 @@ title: "Andrea Ford"
 pagetitle: "Andrea Ford"
 first-name: "Andrea"
 last-name: "Ford"
-date-joined: "2024-05-01"
-categories:
- - "Collaborator"
 credentials: "PhD, CCC-SLP"
 position: "Assistant Professor"
 affiliation: "University of Cincinnati"
 pronouns: "she/her/hers"
 orcid: "0000-0003-0213-526X"
+date-joined: "2024-05-01"
+order: 4
+categories:
+  - "Collaborator"
+  - "Board Member"
+  - "Ambassador Team Lead"
 description-research: "Andrea's research seeks to forge genuine partnerships between educators and researchers to drive the use of evidence-based communication strategies that enhance communication skills in young children with language delays and disabilities. Additionally, Andrea is focused on ensuring the reliability of our outcome measurements by applying generalizability theory, aiming to produce robust, consistent data that support intervention effectiveness."
 description-os: "As a former early childhood speech therapist in the schools, Andrea is passionate about making her work—and that of others—openly available and accessible for everyone to use."
-link: 
-website-button:
-headshot: "Andrea Ford.jpg"
+headshot: "../_headshots/Andrea Ford.jpg"
 lightbox: true
 draft: false
 layout: article
+title-block-categories: false
 editor: source
 ---
 
@@ -26,13 +28,13 @@ editor: source
 ::: {.column width="30%"}
 ![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
 :::
-
 ::: {.column width="5%"}
 :::
-
 ::: {.column width="65%"}
 {{< meta description-research >}}
 
 {{< meta description-os >}}
+
 :::
 ::::::
+

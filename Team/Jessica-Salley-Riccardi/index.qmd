@@ -3,22 +3,24 @@ title: "Jessica Salley Riccardi"
 pagetitle: "Jessica Salley Riccardi"
 first-name: "Jessica Salley"
 last-name: "Riccardi"
-date-joined: "2021-02-01"
-categories:
- - "Collaborator"
 credentials: "PhD, CCC-SLP"
 position: "Assistant Professor"
 affiliation: "University of Maine"
-pronouns: "she/her/hers"
+pronouns: "she/her"
 orcid: "0000-0002-3102-3358"
+date-joined: "2021-02-01"
+order: 8
+categories:
+  - "Collaborator"
 description-research: "Dr. Riccardi is interested in long-term outcomes after childhood brain injury, particularly in the area of cognitive-communication and in high-risk groups."
 description-os: "Dr. Riccardi is passionate about getting research in clinicians' hands to change practice and improve outcomes for our clients."
 link: "https://umaine.edu/bearlab/"
-website-button: "Visit the BEaR Lab Website"
-headshot: "Jessica Riccardi.jpg"
+website-button: "Visit the BEaR Lab Website!"
+headshot: "../_headshots/Jessica Riccardi.jpg"
 lightbox: true
 draft: false
 layout: article
+title-block-categories: false
 editor: source
 ---
 
@@ -26,16 +28,15 @@ editor: source
 ::: {.column width="30%"}
 ![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
 :::
-
 ::: {.column width="5%"}
 :::
-
 ::: {.column width="65%"}
 {{< meta description-research >}}
 
 {{< meta description-os >}}
 
-[{{< meta website-button>}}]({{< meta link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button" title="Visit the Lab Website"}\
+[{{< meta website-button>}}]({{< meta link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}\
 \
 :::
 ::::::
+

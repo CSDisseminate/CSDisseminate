@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-credentials','listing-position','listing-affiliation',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-pagetitle","listing-first-name","listing-last-name","listing-date-joined","listing-categories","listing-credentials","listing-position","listing-affiliation","listing-pronouns","listing-orcid","listing-description-research","listing-description-os","listing-link","listing-website-button","listing-headshot","listing-lightbox","listing-draft","listing-layout","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-pagetitle","listing-first-name","listing-last-name","listing-credentials","listing-position","listing-affiliation","listing-pronouns","listing-orcid","listing-date-joined","listing-order","listing-categories","listing-description-research","listing-headshot","listing-lightbox","listing-draft","listing-layout","listing-title-block-categories","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-description-os","listing-link","listing-website-button","listing-aliases"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -236,28 +236,21 @@ window.Quarto = {
 <section id="collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
 <div id="listing-collaborators" class="quarto-listing quarto-listing-container-custom">
-
 <ul class="people-list list">
 
 <style>
-/* ---- GRID: fixed column counts by breakpoint ---- */
+/* ---- GRID ---- */
 .people-list {
   display: grid;
   gap: 1.5rem;
   padding-left: 0;
   list-style: none;
   margin-top: 1rem;
-
-  /* default: 1 column on very small screens */
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-
-/* ≥640px: 2 columns */
 @media (min-width: 640px) {
   .people-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-
-/* ≥1024px: 3 columns */
 @media (min-width: 1024px) {
   .people-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
@@ -271,13 +264,14 @@ window.Quarto = {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   text-align: left;
+  max-width: 340px;
 }
 .people-list .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-/* ---- Square image with rounded top corners ---- */
+/* ---- Square image ---- */
 .people-list .card-img-top {
   position: relative;
   width: 100%;
@@ -295,221 +289,338 @@ window.Quarto = {
 .people-list .card-body { padding: 1em; }
 .people-list .card-title { font-weight: 600; margin-bottom: .25em; font-size: 1.05em; line-height: 1.3; }
 .people-list .credentials { font-size: .9em; color: #555; margin-bottom: .25em; }
-.people-list .affiliation { font-size: .9em; color: #666; line-height: 1.3; }
+.people-list .affiliation { font-size: .9em; color: #666; line-height: 1.3; margin-bottom: .5em; }
+
+/* ---- Role badges ---- */
+.role-badges { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .5rem; }
+.role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  font-size: .72rem;
+  line-height: 1;
+  padding: .2rem .55rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 500;
+}
+.role-badge .bi { font-size: .85em; }
 </style>
 
-  <li class="card" data-index="0" data-categories="Collaborator" data-listing-file-modified-sort="1747000949350" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-    <a href="./Team/Elaine-Kearney/index.html" style="text-decoration:none;color:inherit;">
+  <li class="card" data-index="0" data-categories="Collaborator,Chair" data-listing-file-modified-sort="1774109126368" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/danika-pfeiffer/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
-          <img src="./Team/Elaine-Kearney/kearney - Elaine Kearney.jpg" alt="Elaine Kearney">
-        </div>
-      
-      <div class="card-body">
-        <h5 class="card-title anchored">Elaine Kearney</h5>
-        <div class="credentials">PhD</div>
-        <div class="affiliation">University of Queensland, Princess Alexandra Hospital</div>
-      </div>
-    </a>
-  </li>
-
-  <li class="card" data-index="1" data-categories="Collaborator" data-listing-file-modified-sort="1751419616700" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-    <a href="./Team/Helen-Long/index.html" style="text-decoration:none;color:inherit;">
-      
-        <div class="card-img-top">
-          <img src="./Team/Helen-Long/Helen Long.jpg" alt="Helen Long">
-        </div>
-      
-      <div class="card-body">
-        <h5 class="card-title anchored">Helen Long</h5>
-        <div class="credentials">PhD, CCC-SLP</div>
-        <div class="affiliation">Case Western Reserve University</div>
-      </div>
-    </a>
-  </li>
-
-  <li class="card" data-index="2" data-categories="Collaborator" data-listing-file-modified-sort="1747001026546" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-    <a href="./Team/Mariam-El-Amin/index.html" style="text-decoration:none;color:inherit;">
-      
-        <div class="card-img-top">
-          <img src="./Team/Mariam-El-Amin/Mariam El Amin.jpg" alt="Mariam El Amin">
-        </div>
-      
-      <div class="card-body">
-        <h5 class="card-title anchored">Mariam El Amin</h5>
-        <div class="credentials">PhD</div>
-        <div class="affiliation">University of South Carolina</div>
-      </div>
-    </a>
-  </li>
-
-  <li class="card" data-index="3" data-categories="Collaborator" data-listing-file-modified-sort="1747000923799" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-    <a href="./Team/Danika-Pfeiffer/index.html" style="text-decoration:none;color:inherit;">
-      
-        <div class="card-img-top">
-          <img src="./Team/Danika-Pfeiffer/Danika Pfeiffer.jpeg" alt="Danika Pfeiffer">
+          <img src="./Team/danika-pfeiffer/../_headshots/Danika Pfeiffer.jpeg" alt="Danika Pfeiffer">
         </div>
       
       <div class="card-body">
         <h5 class="card-title anchored">Danika Pfeiffer</h5>
         <div class="credentials">PhD, CCC-SLP</div>
         <div class="affiliation">Old Dominion University</div>
+        
+          <div class="role-badges">
+            
+              <span class="role-badge" style="background:rgba(124,58,237,.12);color:#4c1d95;border-color:rgba(124,58,237,.25)">
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                Chair
+              </span>
+            
+          </div>
+        
       </div>
     </a>
   </li>
 
-  <li class="card" data-index="4" data-categories="Collaborator" data-listing-file-modified-sort="1759854411000" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-    <a href="./Team/Jessica-Salley-Riccardi/index.html" style="text-decoration:none;color:inherit;">
+  <li class="card" data-index="1" data-categories="Collaborator,Vice-Chair &amp; Secretary" data-listing-file-modified-sort="1774109126370" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/helen-long/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
-          <img src="./Team/Jessica-Salley-Riccardi/Jessica Riccardi.jpg" alt="Jessica Salley Riccardi">
+          <img src="./Team/helen-long/../_headshots/Helen Long.jpg" alt="Helen Long">
         </div>
       
       <div class="card-body">
-        <h5 class="card-title anchored">Jessica Salley Riccardi</h5>
+        <h5 class="card-title anchored">Helen Long</h5>
         <div class="credentials">PhD, CCC-SLP</div>
-        <div class="affiliation">University of Maine</div>
+        <div class="affiliation">Case Western Reserve University</div>
+        
+          <div class="role-badges">
+            
+              <span class="role-badge" style="background:rgba(79,70,229,.12);color:#1e1b4b;border-color:rgba(79,70,229,.25)">
+                <i class="bi bi-bookmark-star-fill" aria-hidden="true"></i>
+                Vice-Chair &amp; Secretary
+              </span>
+            
+          </div>
+        
       </div>
     </a>
   </li>
 
-  <li class="card" data-index="5" data-categories="Collaborator" data-listing-file-modified-sort="1747000972975" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-    <a href="./Team/James-Borders/index.html" style="text-decoration:none;color:inherit;">
+  <li class="card" data-index="2" data-categories="Collaborator,Treasurer,Website Team Lead" data-listing-file-modified-sort="1774109126368" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/austin-thompson/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
-          <img src="./Team/James-Borders/James Borders.png" alt="James Borders">
-        </div>
-      
-      <div class="card-body">
-        <h5 class="card-title anchored">James Borders</h5>
-        <div class="credentials">PhD, CCC-SLP</div>
-        <div class="affiliation">Boston University</div>
-      </div>
-    </a>
-  </li>
-
-  <li class="card" data-index="6" data-categories="Collaborator" data-listing-file-modified-sort="1747000882718" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-    <a href="./Team/Austin-Thompson/index.html" style="text-decoration:none;color:inherit;">
-      
-        <div class="card-img-top">
-          <img src="./Team/Austin-Thompson/Thompson Headshot - Austin Thompson.jpeg" alt="Austin Thompson">
+          <img src="./Team/austin-thompson/../_headshots/Austin Thompson.jpeg" alt="Austin Thompson">
         </div>
       
       <div class="card-body">
         <h5 class="card-title anchored">Austin Thompson</h5>
         <div class="credentials">PhD, CCC-SLP</div>
         <div class="affiliation">University of Houston</div>
+        
+          <div class="role-badges">
+            
+              <span class="role-badge" style="background:rgba(16,185,129,.12);color:#065f46;border-color:rgba(16,185,129,.25)">
+                <i class="bi bi-cash-stack" aria-hidden="true"></i>
+                Treasurer
+              </span>
+            
+              <span class="role-badge" style="background:rgba(234,179,8,.12);color:#713f12;border-color:rgba(234,179,8,.25)">
+                <i class="bi bi-code-slash" aria-hidden="true"></i>
+                Website Team Lead
+              </span>
+            
+          </div>
+        
       </div>
     </a>
   </li>
 
-  <li class="card" data-index="7" data-categories="Collaborator" data-listing-file-modified-sort="1747001041092" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-    <a href="./Team/Micah-Hirsch/index.html" style="text-decoration:none;color:inherit;">
+  <li class="card" data-index="3" data-categories="Collaborator,Board Member" data-listing-file-modified-sort="1774109126371" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/micah-hirsch/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
-          <img src="./Team/Micah-Hirsch/Micah Hirsch.jpeg" alt="Micah Hirsch">
+          <img src="./Team/micah-hirsch/../_headshots/Micah Hirsch.jpeg" alt="Micah Hirsch">
         </div>
       
       <div class="card-body">
         <h5 class="card-title anchored">Micah Hirsch</h5>
         <div class="credentials">PhD</div>
         <div class="affiliation">Boston University</div>
+        
+          <div class="role-badges">
+            
+              <span class="role-badge" style="background:rgba(59,130,246,.12);color:#1e3a8a;border-color:rgba(59,130,246,.25)">
+                <i class="bi bi-people-fill" aria-hidden="true"></i>
+                Board Member
+              </span>
+            
+          </div>
+        
       </div>
     </a>
   </li>
 
-  <li class="card" data-index="8" data-categories="Collaborator" data-listing-file-modified-sort="1747000895920" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-    <a href="./Team/Brittany-Ciullo/index.html" style="text-decoration:none;color:inherit;">
+  <li class="card" data-index="4" data-categories="Collaborator,Board Member" data-listing-file-modified-sort="1774109126369" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/mariam-el-amin/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
-          <img src="./Team/Brittany-Ciullo/Brittany Ciullo.png" alt="Brittany Ciullo">
+          <img src="./Team/mariam-el-amin/../_headshots/Mariam El Amin.jpg" alt="Mariam El Amin">
         </div>
       
       <div class="card-body">
-        <h5 class="card-title anchored">Brittany Ciullo</h5>
-        <div class="credentials">MA, CCC-SLP</div>
-        <div class="affiliation">UMass Amherst</div>
+        <h5 class="card-title anchored">Mariam El Amin</h5>
+        <div class="credentials">PhD</div>
+        <div class="affiliation">University of South Carolina</div>
+        
+          <div class="role-badges">
+            
+              <span class="role-badge" style="background:rgba(59,130,246,.12);color:#1e3a8a;border-color:rgba(59,130,246,.25)">
+                <i class="bi bi-people-fill" aria-hidden="true"></i>
+                Board Member
+              </span>
+            
+          </div>
+        
       </div>
     </a>
   </li>
 
-  <li class="card" data-index="9" data-categories="Collaborator" data-listing-file-modified-sort="1749838870274" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-    <a href="./Team/Jennifer-Markfeld/index.html" style="text-decoration:none;color:inherit;">
+  <li class="card" data-index="5" data-categories="Collaborator,Board Member,Ambassador Team Lead" data-listing-file-modified-sort="1774109126372" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/andrea-ford/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
-          <img src="./Team/Jennifer-Markfeld/Jennifer Markfeld.jpg" alt="Jennifer Markfeld">
-        </div>
-      
-      <div class="card-body">
-        <h5 class="card-title anchored">Jennifer Markfeld</h5>
-        <div class="credentials">MS, CF-SLP</div>
-        <div class="affiliation">Vanderbilt University</div>
-      </div>
-    </a>
-  </li>
-
-  <li class="card" data-index="10" data-categories="Collaborator" data-listing-file-modified-sort="1747000847066" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-    <a href="./Team/Andrea-Ford/index.html" style="text-decoration:none;color:inherit;">
-      
-        <div class="card-img-top">
-          <img src="./Team/Andrea-Ford/Andrea Ford.jpg" alt="Andrea Ford">
+          <img src="./Team/andrea-ford/../_headshots/Andrea Ford.jpg" alt="Andrea Ford">
         </div>
       
       <div class="card-body">
         <h5 class="card-title anchored">Andrea Ford</h5>
         <div class="credentials">PhD, CCC-SLP</div>
         <div class="affiliation">University of Cincinnati</div>
+        
+          <div class="role-badges">
+            
+              <span class="role-badge" style="background:rgba(59,130,246,.12);color:#1e3a8a;border-color:rgba(59,130,246,.25)">
+                <i class="bi bi-people-fill" aria-hidden="true"></i>
+                Board Member
+              </span>
+            
+              <span class="role-badge" style="background:rgba(239,68,68,.12);color:#7f1d1d;border-color:rgba(239,68,68,.25)">
+                <i class="bi bi-megaphone-fill" aria-hidden="true"></i>
+                Ambassador Team Lead
+              </span>
+            
+          </div>
+        
       </div>
     </a>
   </li>
 
-  <li class="card" data-index="11" data-categories="Collaborator" data-listing-file-modified-sort="1767123684389" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-    <a href="./Team/Anne-Reed/index.html" style="text-decoration:none;color:inherit;">
+  <li class="card" data-index="6" data-categories="Collaborator,Social Media Team Lead" data-listing-file-modified-sort="1774109126372" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+    <a href="./Team/jennifer-magnuson/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
-          <img src="./Team/Anne-Reed/Anne C. Reed.jpg" alt="Anne C. Reed">
+          <img src="./Team/jennifer-magnuson/../_headshots/Jennifer Markfeld.jpg" alt="Jennifer Magnuson">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Jennifer Magnuson</h5>
+        <div class="credentials">MS, CF-SLP</div>
+        <div class="affiliation">Vanderbilt University</div>
+        
+          <div class="role-badges">
+            
+              <span class="role-badge" style="background:rgba(236,72,153,.12);color:#831843;border-color:rgba(236,72,153,.25)">
+                <i class="bi bi-chat-heart-fill" aria-hidden="true"></i>
+                Social Media Team Lead
+              </span>
+            
+          </div>
+        
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="7" data-categories="Collaborator" data-listing-file-modified-sort="1774109126380" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+    <a href="./Team/carrie-rountrey/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/carrie-rountrey/../_headshots/Carrie Rountrey.png" alt="Carrie Rountrey">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Carrie Rountrey</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">Xavier University</div>
+        
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="8" data-categories="Collaborator" data-listing-file-modified-sort="1774109126369" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/elaine-kearney/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/elaine-kearney/../_headshots/Elaine Kearney.jpg" alt="Elaine Kearney">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Elaine Kearney</h5>
+        <div class="credentials">PhD</div>
+        <div class="affiliation">University of Queensland</div>
+        
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="9" data-categories="Collaborator" data-listing-file-modified-sort="1774109126371" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+    <a href="./Team/brittany-ciullo/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/brittany-ciullo/../_headshots/Brittany Ciullo.png" alt="Brittany Ciullo">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Brittany Ciullo</h5>
+        <div class="credentials">MA, CCC-SLP</div>
+        <div class="affiliation">UMass Amherst</div>
+        
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="10" data-categories="Collaborator" data-listing-file-modified-sort="1774109126376" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
+    <a href="./Team/anne-c-reed/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/anne-c-reed/../_headshots/Anne C. Reed.jpg" alt="Anne C. Reed">
         </div>
       
       <div class="card-body">
         <h5 class="card-title anchored">Anne C. Reed</h5>
-        <div class="credentials">Ph.D., CCC-SLP</div>
+        <div class="credentials">PhD, CCC-SLP</div>
         <div class="affiliation">Texas State University</div>
+        
       </div>
     </a>
   </li>
 
-  <li class="card" data-index="12" data-categories="Collaborator" data-listing-file-modified-sort="1747000835217" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-    <a href="./Team/Alisa-Baron/index.html" style="text-decoration:none;color:inherit;">
+  <li class="card" data-index="11" data-categories="Collaborator" data-listing-file-modified-sort="1774109126377" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+    <a href="./Team/alisa-baron/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
-          <img src="./Team/Alisa-Baron/Alisa Baron.png" alt="Alisa Baron">
+          <img src="./Team/alisa-baron/../_headshots/Alisa Baron.png" alt="Alisa Baron">
         </div>
       
       <div class="card-body">
         <h5 class="card-title anchored">Alisa Baron</h5>
         <div class="credentials">PhD, CCC-SLP</div>
         <div class="affiliation">University of Rhode Island</div>
+        
       </div>
     </a>
   </li>
 
-  <li class="card" data-index="13" data-categories="Collaborator" data-listing-file-modified-sort="1747000906984" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-    <a href="./Team/Collin-Brice/index.html" style="text-decoration:none;color:inherit;">
+  <li class="card" data-index="12" data-categories="Collaborator" data-listing-file-modified-sort="1774109126370" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+    <a href="./Team/jessica-salley-riccardi/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
-          <img src="./Team/Collin-Brice/Collin Brice.JPEG" alt="Collin Brice">
+          <img src="./Team/jessica-salley-riccardi/../_headshots/Jessica Riccardi.jpg" alt="Jessica Salley Riccardi">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">Jessica Salley Riccardi</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">University of Maine</div>
+        
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="13" data-categories="Collaborator" data-listing-file-modified-sort="1774109126370" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+    <a href="./Team/james-borders/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/james-borders/../_headshots/James Borders.png" alt="James Borders">
+        </div>
+      
+      <div class="card-body">
+        <h5 class="card-title anchored">James Borders</h5>
+        <div class="credentials">PhD, CCC-SLP</div>
+        <div class="affiliation">Boston University</div>
+        
+      </div>
+    </a>
+  </li>
+
+  <li class="card" data-index="14" data-categories="Collaborator" data-listing-file-modified-sort="1774109126378" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+    <a href="./Team/collin-brice/index.html" style="text-decoration:none;color:inherit;">
+      
+        <div class="card-img-top">
+          <img src="./Team/collin-brice/../_headshots/Collin Brice.JPEG" alt="Collin Brice">
         </div>
       
       <div class="card-body">
         <h5 class="card-title anchored">Collin Brice</h5>
         <div class="credentials">MS, CCC-SLP</div>
         <div class="affiliation">University of Cincinnati</div>
+        
       </div>
     </a>
   </li>
 
 </ul>
-
 <div class="listing-no-matching d-none">
 No matching items
 </div>

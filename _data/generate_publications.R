@@ -12,7 +12,6 @@ library(purrr)
 
 # Paste your Google Sheet ID here (from the sheet URL)
 publications_sheet_id <- "1cMgRXn2YwB9GL_QZsceIysWgow3IMIFmvHGX3X2DScM"
-team_sheet_id<- "197QV8dW_Pmb2GL_0a7DgEiy-5mqv9FpBuEsLSFrrb7M"
 
 # Path to your publications folder, relative to project root
 publications_dir <- "Research/Publications"

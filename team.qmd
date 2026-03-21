@@ -9,7 +9,7 @@ listing:
   - id: collaborators
     contents: Team
     type: grid
-    template: ejs/team-cards.ejs
+    template: ejs/team-cards-with-buttons.ejs
     grid-columns: 3
     fields:
       - image
@@ -27,7 +27,7 @@ listing:
     include:
       categories: "Collaborator"
     sort:
-      - date-joined
+      - order
     sort-ui: false
     filter-ui: false
 #  - id: ambassadors
