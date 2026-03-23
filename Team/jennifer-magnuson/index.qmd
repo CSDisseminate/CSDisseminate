@@ -3,9 +3,9 @@ title: "Jennifer Magnuson"
 pagetitle: "Jennifer Magnuson"
 first-name: "Jennifer"
 last-name: "Magnuson"
-credentials: "MS, CF-SLP"
-position: "PhD Candidate"
-affiliation: "Vanderbilt University"
+credentials: "PhD, CCC-SLP"
+position: "Postdoctoral Research Fellow"
+affiliation: "University of Maryland, College Park"
 pronouns: "she/her"
 orcid: "0000-0002-7995-6077"
 date-joined: "2024-02-01"
@@ -13,14 +13,14 @@ order: 7
 categories:
   - "Collaborator"
   - "Social Media Team Lead"
-description-research: "Jennifer is a clinical fellow in speech-language pathologiy and PhD candidate at Vanderbilt University in the Biobehavioral Approaches to NeuroDevelopment Lab. Her broad interests include language development, early language experiences, caregiver-infant interactions, implementation science, and interventions to support infants who are at increased likelihood for neurodevelopmental conditions. Jennifer is passionate about increasing awareness of open science practices and is thrilled to be on the CSDisseminate team!"
+description-research: "Jennifer Magnuson, PhD, CCC-SLP is a Postdoctoral Research Fellow in the Language, Experience, and Development (LEAD) lab at the University of Maryland, College Park. Her broad interests include language development, early language experiences, caregiver-infant interactions, caregiver stress, and interventions to support infants who are at increased likelihood for neurodevelopmental conditions. Jennifer is passionate about increasing awareness of open science practices and is thrilled to be on the CSDisseminate team!"
 headshot: "../_headshots/Jennifer Markfeld.jpg"
 lightbox: true
 draft: false
 layout: article
 title-block-categories: false
 aliases:
-  - /Team/Jennifer-Markfield, jennifer-markfield/
+  - /Team/Jennifer-Markfeld, jennifer-markfeld/
 editor: source
 ---
 
