@@ -99,6 +99,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-former-collaborators .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-credentials',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-last-name","listing-credentials","listing-categories","listing-draft","listing-robots","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-former-collaborators'] = new List('listing-former-collaborators', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -311,7 +339,7 @@ window.Quarto = {
 .role-badge .bi { font-size: .85em; }
 </style>
 
-  <li class="card" data-index="0" data-categories="Q29sbGFib3JhdG9yJTJDQ2hhaXI=" data-listing-file-modified-sort="1774281290565" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+  <li class="card" data-index="0" data-categories="Q29sbGFib3JhdG9yJTJDQ2hhaXI=" data-listing-file-modified-sort="1774368402722" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
     <a href="./Team/danika-pfeiffer/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -336,7 +364,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="1" data-categories="Q29sbGFib3JhdG9yJTJDVmljZS1DaGFpciUyMCUyNiUyMFNlY3JldGFyeQ==" data-listing-file-modified-sort="1774281290566" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+  <li class="card" data-index="1" data-categories="Q29sbGFib3JhdG9yJTJDVmljZS1DaGFpciUyMCUyNiUyMFNlY3JldGFyeQ==" data-listing-file-modified-sort="1774368402712" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
     <a href="./Team/helen-long/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -361,7 +389,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="2" data-categories="Q29sbGFib3JhdG9yJTJDVHJlYXN1cmVyJTJDV2Vic2l0ZSUyMFRlYW0lMjBMZWFk" data-listing-file-modified-sort="1774281290564" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+  <li class="card" data-index="2" data-categories="Q29sbGFib3JhdG9yJTJDVHJlYXN1cmVyJTJDV2Vic2l0ZSUyMFRlYW0lMjBMZWFk" data-listing-file-modified-sort="1774368402721" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
     <a href="./Team/austin-thompson/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -391,7 +419,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="3" data-categories="Q29sbGFib3JhdG9yJTJDQm9hcmQlMjBNZW1iZXI=" data-listing-file-modified-sort="1774281290568" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+  <li class="card" data-index="3" data-categories="Q29sbGFib3JhdG9yJTJDQm9hcmQlMjBNZW1iZXI=" data-listing-file-modified-sort="1774368402723" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
     <a href="./Team/micah-hirsch/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -416,7 +444,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="4" data-categories="Q29sbGFib3JhdG9yJTJDQm9hcmQlMjBNZW1iZXI=" data-listing-file-modified-sort="1774281290565" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+  <li class="card" data-index="4" data-categories="Q29sbGFib3JhdG9yJTJDQm9hcmQlMjBNZW1iZXI=" data-listing-file-modified-sort="1774368402723" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
     <a href="./Team/mariam-el-amin/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -441,7 +469,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="5" data-categories="Q29sbGFib3JhdG9yJTJDQm9hcmQlMjBNZW1iZXIlMkNBbWJhc3NhZG9yJTIwVGVhbSUyMExlYWQ=" data-listing-file-modified-sort="1774281290569" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+  <li class="card" data-index="5" data-categories="Q29sbGFib3JhdG9yJTJDQm9hcmQlMjBNZW1iZXIlMkNBbWJhc3NhZG9yJTIwVGVhbSUyMExlYWQ=" data-listing-file-modified-sort="1774368402723" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
     <a href="./Team/andrea-ford/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -471,7 +499,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="6" data-categories="Q29sbGFib3JhdG9yJTJDU29jaWFsJTIwTWVkaWElMjBUZWFtJTIwTGVhZA==" data-listing-file-modified-sort="1774281290569" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+  <li class="card" data-index="6" data-categories="Q29sbGFib3JhdG9yJTJDU29jaWFsJTIwTWVkaWElMjBUZWFtJTIwTGVhZA==" data-listing-file-modified-sort="1774368402722" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
     <a href="./Team/jennifer-magnuson/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -496,7 +524,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="7" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774281290571" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+  <li class="card" data-index="7" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774368402726" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
     <a href="./Team/carrie-rountrey/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -512,23 +540,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="8" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774281290566" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-    <a href="./Team/elaine-kearney/index.html" style="text-decoration:none;color:inherit;">
-      
-        <div class="card-img-top">
-          <img src="./Team/elaine-kearney/../_headshots/Elaine Kearney.jpg" alt="Elaine Kearney">
-        </div>
-      
-      <div class="card-body">
-        <h5 class="card-title anchored">Elaine Kearney</h5>
-        <div class="credentials">PhD</div>
-        <div class="affiliation">University of Queensland</div>
-        
-      </div>
-    </a>
-  </li>
-
-  <li class="card" data-index="9" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774281290568" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+  <li class="card" data-index="8" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774368402725" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
     <a href="./Team/brittany-ciullo/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -544,7 +556,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="10" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774281290569" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
+  <li class="card" data-index="9" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774368402725" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
     <a href="./Team/anne-c-reed/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -560,7 +572,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="11" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774281290570" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+  <li class="card" data-index="10" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774368402725" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
     <a href="./Team/alisa-baron/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -576,7 +588,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="12" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774281290567" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+  <li class="card" data-index="11" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774368402724" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
     <a href="./Team/jessica-salley-riccardi/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -592,7 +604,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="13" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774281290567" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+  <li class="card" data-index="12" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774368402724" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
     <a href="./Team/james-borders/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -608,7 +620,7 @@ window.Quarto = {
     </a>
   </li>
 
-  <li class="card" data-index="14" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774281290571" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+  <li class="card" data-index="13" data-categories="Q29sbGFib3JhdG9y" data-listing-file-modified-sort="1774368402726" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
     <a href="./Team/collin-brice/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -642,12 +654,90 @@ Meet our University Ambassadors who are currently working to increase the use of
 <section id="past-collaborators" class="level2">
 <h2 class="anchored" data-anchor-id="past-collaborators">Past Collaborators</h2>
 <p>We are forever grateful for all of our past and present collaborators who have supported our initiatives! Below are a list of past collaborating members of CSDisseminate.</p>
-<ul>
-<li><p>Meredith Harold, PhD, CCC-SLP</p></li>
-<li><p>Meredith Spratford, AuD, CCC-A</p></li>
-<li><p>Lee Drown, MA, CCC-SLP</p></li>
-<li><p>Mary Alice Keller, PhD, CCC-SLP</p></li>
+<div id="listing-former-collaborators" class="quarto-listing quarto-listing-container-custom">
+<ul class="former-list list">
+
+<style>
+.former-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.former-list li {
+  display: list-item;
+  gap: .6rem;
+  padding: .35rem 0;
+  font-size: .95rem;
+}
+.former-list li:last-child {
+  border-bottom: none;
+}
+.former-name {
+  font-weight: 500;
+  margin-right: .4rem;
+}
+.former-credentials {
+  color: #666;
+}
+.founder-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  font-size: .72rem;
+  line-height: 1;
+  padding: .2rem .55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(251,191,36,.35);
+  background: rgba(251,191,36,.12);
+  color: #78350f;
+  font-weight: 500;
+  vertical-align: middle;
+  margin-left: .2rem;
+}
+.founder-badge .bi { font-size: .85em; }
+</style>
+
+  <li>
+    <span class="former-name">Elaine Kearney</span>
+    
+      <span class="former-credentials">PhD</span>
+    
+    
+      <span class="founder-badge">
+        <i class="bi bi-award-fill" aria-hidden="true"></i>
+        Founder
+      </span>
+    
+  </li>
+
+  <li>
+    <span class="former-name">Lee Drown</span>
+    
+      <span class="former-credentials">MA, CCC-SLP</span>
+    
+    
+  </li>
+
+  <li>
+    <span class="former-name">Meredith Harold</span>
+    
+      <span class="former-credentials">PhD, CCC-SLP</span>
+    
+    
+  </li>
+
+  <li>
+    <span class="former-name">Mary Alice Keller</span>
+    
+      <span class="former-credentials">PhD, CCC-SLP</span>
+    
+    
+  </li>
+
 </ul>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 
 
 

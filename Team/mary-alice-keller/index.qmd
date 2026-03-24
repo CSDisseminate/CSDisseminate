@@ -1,10 +1,9 @@
 ---
-title: "Elaine Kearney"
-last-name: "Kearney"
-credentials: "PhD"
+title: "Mary Alice Keller"
+last-name: "Keller"
+credentials: "PhD, CCC-SLP"
 categories:
   - "Former Collaborator"
-  - "Founder"
 draft: false
 robots: "noindex"
 editor: source

@@ -30,27 +30,17 @@ listing:
       - order
     sort-ui: false
     filter-ui: false
-#  - id: ambassadors
-#    contents: Team
-#    type: grid
-#    template: ejs/team-cards.ejs
-#    fields:
-#      - image
-#      - title
-#      - credentials
-#      - position
-#      - affiliation
-#    field-display-names: 
-#      image: "Headshot"
-#      title: "Name"
-#      pronouns: "Pronouns"
-#      credentials: "Credentials"
-#      position: "Position"
-#      affiliation: "Affiliation"
-#    include:
-#      categories: "Ambassador"
-#    sort-ui: false
-#    filter-ui: false
+  - id: former-collaborators
+    contents: Team
+    type: table
+    template: ejs/former-members.ejs
+    fields:
+      - title
+      - credentials
+    include:
+      categories: "Former Collaborator"
+    sort-ui: false
+    filter-ui: false
 title-block-banner: false
 lightbox: true
 freeze: true
@@ -85,10 +75,5 @@ Meet our University Ambassadors who are currently working to increase the use of
 
 We are forever grateful for all of our past and present collaborators who have supported our initiatives! Below are a list of past collaborating members of CSDisseminate.
 
--   Meredith Harold, PhD, CCC-SLP
-
--   Meredith Spratford, AuD, CCC-A
-
--   Lee Drown, MA, CCC-SLP
-
--   Mary Alice Keller, PhD, CCC-SLP
+::: {#former-collaborators}
+:::

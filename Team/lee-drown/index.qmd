@@ -1,21 +1,11 @@
 ---
 title: "Lee Drown"
-pagetitle: "Lee Drown"
-first-name: "Lee"
 last-name: "Drown"
-pronouns: "she/her"
-orcid: "0000-0002-1189-1799"
-date-joined: "NA"
-order: 10
+credentials: "MA, CCC-SLP"
 categories:
   - "Former Collaborator"
-lightbox: true
 draft: false
-layout: article
-title-block-categories: false
+robots: "noindex"
 editor: source
 ---
-
-{{< meta description-research >}}
-
 

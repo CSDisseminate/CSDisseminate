@@ -1,0 +1,25 @@
+- title: "Elaine Kearney"
+  last-name: "Kearney"
+  credentials: "PhD"
+  categories:
+    - "Former Collaborator"
+  - "Founder"
+
+- title: "Lee Drown"
+  last-name: "Drown"
+  credentials: "MA, CCC-SLP"
+  categories:
+    - "Former Collaborator"
+
+- title: "Mary Alice Keller"
+  last-name: "Keller"
+  credentials: "PhD, CCC-SLP"
+  categories:
+    - "Former Collaborator"
+
+- title: "Meredith Harold"
+  last-name: "Harold"
+  credentials: "PhD, CCC-SLP"
+  categories:
+    - "Former Collaborator"
+
