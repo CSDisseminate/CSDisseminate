@@ -1,10 +1,9 @@
 ---
-title: "Meredith Harold"
-last-name: "Harold"
-credentials: "PhD, CCC-SLP"
+title: "Laura Gaeta"
+last-name: "Gaeta"
 categories:
+  - "Coauthor"
   - "Former Collaborator"
-  - "Founder"
 draft: false
 robots: "noindex"
 editor: source

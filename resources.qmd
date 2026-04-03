@@ -8,44 +8,17 @@ aliases:
 listing:
   - id: resources-all
     contents: "Resources/*/*.{qmd,md}"
-    type: table
+    type: custom
+    template: ejs/resource-cards.ejs
+    categories: false
     fields:
       - title
       - short-description
-    field-display-names: 
-      title: "Title"
-      short-description: "Description"
-    categories: unnumbered
-    sort-ui: true
-    filter-ui: true
-  - id: resources-scientists
-    contents: "Resources/*/*.{qmd,md}"
-    type: table
-    fields:
-      - title
-      - short-description
-    field-display-names: 
-      title: "Title"
-      short-description: "Description"
-    categories: unnumbered
-    include:
-      categories: "For Scientists"
-    sort-ui: true
-    filter-ui: true
-  - id: resources-clinicians
-    contents: "Resources/*/*.{qmd,md}"
-    type: table
-    fields:
-      - title
-      - short-description
-    field-display-names: 
-      title: "Title"
-      short-description: "Description"
-    categories: unnumbered
-    include:
-      categories: "For Clinicians"
-    sort-ui: true
-    filter-ui: true
+      - resource-link
+      - categories
+    sort-ui: FALSE
+    filter-ui: FALSE
+    #sort: "date desc"
 editor: source
 ---
 
@@ -54,20 +27,6 @@ Explore our curated database of resources designed to help scientists and clinic
 <!--# ::: {.callout-tip appearance="minimal"}
 See a resource missing? Let us know!
 ::: -->
-----
-:::::: panel-tabset
-## For All
-
+---
 ::: {#resources-all}
 :::
-
-## For Scientists
-
-::: {#resources-scientists}
-:::
-
-## For Clinicians
-
-::: {#resources-clinicians}
-:::
-::::::

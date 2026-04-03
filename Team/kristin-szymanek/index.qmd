@@ -1,10 +1,9 @@
 ---
-title: "Meredith Harold"
-last-name: "Harold"
-credentials: "PhD, CCC-SLP"
+title: "Kristin Szymanek"
+last-name: "Szymanek"
+credentials: "MA, CCC-SLP"
 categories:
   - "Former Collaborator"
-  - "Founder"
 draft: false
 robots: "noindex"
 editor: source

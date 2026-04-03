@@ -1,10 +1,9 @@
 ---
-title: "Meredith Harold"
-last-name: "Harold"
-credentials: "PhD, CCC-SLP"
+title: "Terlenda Lassiter"
+last-name: "Lassiter"
+credentials: "MA, CCC-SLP"
 categories:
   - "Former Collaborator"
-  - "Founder"
 draft: false
 robots: "noindex"
 editor: source

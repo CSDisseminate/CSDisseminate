@@ -1,0 +1,195 @@
+```{=html}
+<div id="resource-filter-bar" style="margin-bottom:1rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;">
+  <span style="font-size:.85rem;color:#6b7280;margin-right:.25rem;">Filter:</span>
+  <button class="resource-filter-btn active" data-cat="all"
+    style="font-size:.78rem;padding:.25rem .7rem;border-radius:999px;border:1px solid #d1d5db;background:#f3f4f6;cursor:pointer;font-weight:500;">
+    All
+  </button>
+</div>
+
+<ul class="resource-list list" id="resource-list">
+<%
+function resolveLink(item) {
+  const ext = item["resource-link"];
+  if (ext && String(ext).trim().length > 0) return String(ext).trim();
+  return item.path;
+}
+function isExternal(item) {
+  const ext = item["resource-link"];
+  return ext && String(ext).trim().length > 0;
+}
+function getCategories(item) {
+  const cats = item.categories;
+  if (!cats) return [];
+  if (Array.isArray(cats)) return cats.map(c => String(c).trim());
+  return String(cats).split(",").map(c => c.trim()).filter(Boolean);
+}
+
+/* Three-shade indigo system */
+const AUDIENCE_STYLE  = { bg: "rgba(124,58,237,.1)",  color: "#8966AB", border: "rgba(124,58,237,.25)" };
+const TOPIC_STYLE     = { bg: "rgba(124,58,237,.1)",  color: "#8966AB", border: "rgba(124,58,237,.25)"  };
+const CSD_STYLE       = { bg: "rgba(124,58,237,.1)",  color: "#8966AB", border: "rgba(124,58,237,.25)"   };
+
+const AUDIENCE_CATS = new Set(["For Scientists", "For Clinicians"]);
+const CSD_CATS      = new Set(["CSDisseminate Resource"]);
+
+function badgeStyle(cat) {
+  if (CSD_CATS.has(cat))      return `background:${CSD_STYLE.bg};color:${CSD_STYLE.color};border-color:${CSD_STYLE.border}`;
+  if (AUDIENCE_CATS.has(cat)) return `background:${AUDIENCE_STYLE.bg};color:${AUDIENCE_STYLE.color};border-color:${AUDIENCE_STYLE.border}`;
+  return `background:${TOPIC_STYLE.bg};color:${TOPIC_STYLE.color};border-color:${TOPIC_STYLE.border}`;
+}
+
+const allCats = [...new Set(items.flatMap(item => getCategories(item)))].sort();
+%>
+
+<style>
+.resource-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.resource-card {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--quarto-border-color, #e5e7eb);
+}
+.resource-card:last-child {
+  border-bottom: none;
+}
+.resource-card.hidden {
+  display: none;
+}
+.resource-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 .4rem 0;
+}
+.resource-title a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+.resource-title a:hover {
+  text-decoration: underline;
+}
+.resource-external-icon {
+  font-size: .8em;
+  margin-left: .25rem;
+  opacity: .6;
+}
+.resource-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+  margin-bottom: .5rem;
+}
+.resource-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: .72rem;
+  line-height: 1;
+  padding: .18rem .5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity .15s;
+}
+.resource-tag:hover {
+  opacity: .75;
+}
+.resource-desc {
+  font-size: .92rem;
+  color: var(--quarto-text-muted, #4b5563);
+  margin: 0;
+  line-height: 1.5;
+}
+.resource-filter-btn {
+  transition: all .15s;
+}
+.resource-filter-btn.active {
+  background: #8966AB !important;
+  color: #fff !important;
+  border-color: #8966AB !important;
+  font-weight: 700 !important;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const bar  = document.getElementById("resource-filter-bar");
+  const list = document.getElementById("resource-list");
+  // Build category list from card data attributes
+  const allCats = [...new Set(
+    Array.from(list.querySelectorAll(".resource-card"))
+      .flatMap(card => (card.dataset.categories || "").split(",").map(s => s.trim()))
+      .filter(Boolean)
+  )].sort();
+
+  allCats.forEach(cat => {
+    const btn = document.createElement("button");
+    btn.className = "resource-filter-btn";
+    btn.dataset.cat = cat;
+    btn.textContent = cat;
+    btn.style.cssText = "font-size:.78rem;padding:.25rem .7rem;border-radius:999px;border:1px solid #d1d5db;background:#f3f4f6;cursor:pointer;font-weight:500;";
+    bar.appendChild(btn);
+  });
+
+  bar.addEventListener("click", function(e) {
+    const btn = e.target.closest(".resource-filter-btn");
+    if (!btn) return;
+    const cat = btn.dataset.cat;
+    bar.querySelectorAll(".resource-filter-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    list.querySelectorAll(".resource-card").forEach(card => {
+      if (cat === "all") {
+        card.classList.remove("hidden");
+      } else {
+        const cardCats = (card.dataset.categories || "").split(",").map(s => s.trim());
+        card.classList.toggle("hidden", !cardCats.includes(cat));
+      }
+    });
+  });
+
+  list.addEventListener("click", function(e) {
+    const tag = e.target.closest(".resource-tag");
+    if (!tag) return;
+    const cat = tag.dataset.cat;
+    bar.querySelectorAll(".resource-filter-btn").forEach(function(btn) {
+      if (btn.dataset.cat === cat) btn.click();
+    });
+  });
+});
+</script>
+
+<% for (const item of items) {
+  const href     = resolveLink(item);
+  const external = isExternal(item);
+  const cats     = getCategories(item);
+  const desc     = item["short-description"] || item.description || "";
+%>
+  <li class="resource-card" data-categories="<%= cats.join(',') %>" <%= metadataAttrs(item) %>>
+    <h5 class="resource-title" style="margin:0;">
+      <strong>
+        <a href="<%- href %>"
+           <% if (external) { %> target="_blank" rel="noopener noreferrer" <% } %>>
+          <%= item.title %>
+          <% if (external) { %>
+            <i class="bi bi-box-arrow-up-right resource-external-icon" aria-label="External link"></i>
+          <% } %>
+        </a>
+      </strong>
+    </h5>
+    <% if (cats.length > 0) { %>
+      <div class="resource-tags">
+        <% for (const cat of cats) { %>
+          <span class="resource-tag" data-cat="<%= cat %>" style="<%= badgeStyle(cat) %>"><%= cat %></span>
+        <% } %>
+      </div>
+    <% } %>
+    <% if (desc) { %>
+      <p class="resource-desc"><%= desc %></p>
+    <% } %>
+  </li>
+<% } %>
+</ul>
+```

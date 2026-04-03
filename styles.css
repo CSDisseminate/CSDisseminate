@@ -7,6 +7,17 @@ div.#quarto-back-to-top {
   position: relative;
 }
 
+/* Updating the button colors */
+.btn-primary {
+  background-color: #8966AB;
+  border-color: #8966AB;
+}
+
+.btn-primary:hover {
+  background-color: #7a58a0;
+  border-color: #7a58a0;
+}
+
 
 /* Clean footer matching Quarto content width */
 .custom-footer {

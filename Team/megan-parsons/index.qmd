@@ -1,10 +1,9 @@
 ---
-title: "Meredith Harold"
-last-name: "Harold"
+title: "Megan Parsons"
+last-name: "Parsons"
 credentials: "PhD, CCC-SLP"
 categories:
   - "Former Collaborator"
-  - "Founder"
 draft: false
 robots: "noindex"
 editor: source

@@ -81,69 +81,13 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-short-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-short-description','listing-resource-link','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-title","listing-pagetitle","listing-date","listing-date-title","listing-author","listing-author-title","listing-short-description","listing-resource-link","listing-resource-button","listing-categories","listing-listing","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-aliases","listing-long-description","listing-draft","listing-audience"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-resources-all'] = new List('listing-resources-all', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-resources-scientists .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-short-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-resources-scientists'] = new List('listing-resources-scientists', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-resources-clinicians .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-short-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-resources-clinicians'] = new List('listing-resources-clinicians', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -259,9 +203,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="Q1NEaXNzZW1pbmF0ZSUyMFJlc291cmNl">CSDisseminate Resource</div><div class="category" data-category="Rm9yJTIwQ2xpbmljaWFucw==">For Clinicians</div><div class="category" data-category="Rm9yJTIwU2NpZW50aXN0cw==">For Scientists</div><div class="category" data-category="RnJlZQ==">Free</div><div class="category" data-category="R3VpZGU=">Guide</div><div class="category" data-category="T3BlbiUyMEFjY2Vzcw==">Open Access</div><div class="category" data-category="T3BlbiUyMERhdGE=">Open Data</div><div class="category" data-category="T3BlbiUyMEVkdWNhdGlvbmFsJTIwUmVzb3VyY2Vz">Open Educational Resources</div><div class="category" data-category="T3BlbiUyME1ldGhvZHM=">Open Methods</div><div class="category" data-category="T3BlbiUyMFBlZXIlMjBSZXZpZXc=">Open Peer Review</div><div class="category" data-category="T1MlMjBUb29scw==">OS Tools</div><div class="category" data-category="UHJlcmVnaXN0cmF0aW9u">Preregistration</div><div class="category" data-category="U2VsZi1BcmNoaXZpbmc=">Self-Archiving</div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -289,307 +233,379 @@ window.Quarto = {
 See a resource missing? Let us know!
 ::: -->
 <hr>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">For All</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">For Scientists</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">For Clinicians</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div id="listing-resources-all" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-resources-all-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-resources-all'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div id="listing-resources-all" class="quarto-listing quarto-listing-container-custom">
+<div id="resource-filter-bar" style="margin-bottom:1rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;">
+  <span style="font-size:.85rem;color:#6b7280;margin-right:.25rem;">Filter:</span>
+  <button class="resource-filter-btn active" data-cat="all" style="font-size:.78rem;padding:.25rem .7rem;border-radius:999px;border:1px solid #d1d5db;background:#f3f4f6;cursor:pointer;font-weight:500;">
+    All
+  </button>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
 
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
+<ul class="resource-list list" id="resource-list">
 
-<th>
-Description
-</th>
+<style>
+.resource-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.resource-card {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--quarto-border-color, #e5e7eb);
+}
+.resource-card:last-child {
+  border-bottom: none;
+}
+.resource-card.hidden {
+  display: none;
+}
+.resource-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 .4rem 0;
+}
+.resource-title a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+.resource-title a:hover {
+  text-decoration: underline;
+}
+.resource-external-icon {
+  font-size: .8em;
+  margin-left: .25rem;
+  opacity: .6;
+}
+.resource-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+  margin-bottom: .5rem;
+}
+.resource-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: .72rem;
+  line-height: 1;
+  padding: .18rem .5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity .15s;
+}
+.resource-tag:hover {
+  opacity: .75;
+}
+.resource-desc {
+  font-size: .92rem;
+  color: var(--quarto-text-muted, #4b5563);
+  margin: 0;
+  line-height: 1.5;
+}
+.resource-filter-btn {
+  transition: all .15s;
+}
+.resource-filter-btn.active {
+  background: #8966AB !important;
+  color: #fff !important;
+  border-color: #8966AB !important;
+  font-weight: 700 !important;
+}
+</style>
 
-</tr>
-</thead>
-<tbody class="list">
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const bar  = document.getElementById("resource-filter-bar");
+  const list = document.getElementById("resource-list");
+  // Build category list from card data attributes
+  const allCats = [...new Set(
+    Array.from(list.querySelectorAll(".resource-card"))
+      .flatMap(card => (card.dataset.categories || "").split(",").map(s => s.trim()))
+      .filter(Boolean)
+  )].sort();
 
-<tr data-index="0" data-categories="T1MlMjBUb29scyUyQ09wZW4lMjBEYXRhJTJDT3BlbiUyME1ldGhvZHMlMkNGb3IlMjBTY2llbnRpc3RzJTJDRnJlZQ==" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1763166824000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="GitHub" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/GitHub/index.html" class="title listing-title">GitHub</a>
-</td>
-<td>
-<span class="listing-short-description">GitHub, Inc.&nbsp;is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.</span>
-</td>
+  allCats.forEach(cat => {
+    const btn = document.createElement("button");
+    btn.className = "resource-filter-btn";
+    btn.dataset.cat = cat;
+    btn.textContent = cat;
+    btn.style.cssText = "font-size:.78rem;padding:.25rem .7rem;border-radius:999px;border:1px solid #d1d5db;background:#f3f4f6;cursor:pointer;font-weight:500;";
+    bar.appendChild(btn);
+  });
 
-</tr>
+  bar.addEventListener("click", function(e) {
+    const btn = e.target.closest(".resource-filter-btn");
+    if (!btn) return;
+    const cat = btn.dataset.cat;
+    bar.querySelectorAll(".resource-filter-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    list.querySelectorAll(".resource-card").forEach(card => {
+      if (cat === "all") {
+        card.classList.remove("hidden");
+      } else {
+        const cardCats = (card.dataset.categories || "").split(",").map(s => s.trim());
+        card.classList.toggle("hidden", !cardCats.includes(cat));
+      }
+    });
+  });
 
-<tr data-index="1" data-categories="Rm9yJTIwU2NpZW50aXN0cyUyQ0ZvciUyMENsaW5pY2lhbnMlMkNPcGVuJTIwQWNjZXNzJTJDT3BlbiUyMERhdGElMkNPcGVuJTIwUGVlciUyMFJldmlldyUyQ1ByZXJlZ2lzdHJhdGlvbiUyQ09wZW4lMjBFZHVjYXRpb25hbCUyMFJlc291cmNlcyUyQ0ZyZWU=" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747321687000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Learn about Open Science on Coursera" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/OS-Coursera/index.html" class="title listing-title">Learn about Open Science on Coursera</a>
-</td>
-<td>
-<span class="listing-short-description">This free Coursera course, <em>A Starter’s Guide to Open Science</em>, offers a comprehensive introduction to open science practices</span>
-</td>
+  list.addEventListener("click", function(e) {
+    const tag = e.target.closest(".resource-tag");
+    if (!tag) return;
+    const cat = tag.dataset.cat;
+    bar.querySelectorAll(".resource-filter-btn").forEach(function(btn) {
+      if (btn.dataset.cat === cat) btn.click();
+    });
+  });
+});
+</script>
 
-</tr>
+  <li class="resource-card" data-categories="OS Tools,Open Data,Open Methods,For Scientists,Free" data-index="0" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1763166824000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+    <h5 class="resource-title anchored" style="margin:0;">
+      <strong>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          GitHub
+          
+            <i class="bi bi-box-arrow-up-right resource-external-icon" aria-label="External link"></i>
+          
+        </a>
+      </strong>
+    </h5>
+    
+      <div class="resource-tags">
+        
+          <span class="resource-tag" data-cat="OS Tools" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">OS Tools</span>
+        
+          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+        
+          <span class="resource-tag" data-cat="Open Methods" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Methods</span>
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+      </div>
+    
+    
+      <p class="resource-desc">GitHub, Inc. is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.</p>
+    
+  </li>
 
-<tr data-index="2" data-categories="Rm9yJTIwU2NpZW50aXN0cyUyQ1ByZXJlZ2lzdHJhdGlvbiUyQ0ZyZWU=" data-listing-date-sort="1748926800000" data-listing-file-modified-sort="1748968509000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Preregistration Essentials: Enhancing Transparency in Research" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/Preregistration-Essentials/index.html" class="title listing-title">Preregistration Essentials: Enhancing Transparency in Research</a>
-</td>
-<td>
-<span class="listing-short-description">A practical guide to preregistration, this resource from the Center for Open Science outlines how researchers can enhance transparency and rigor by documenting study plans before data collection begins.</span>
-</td>
+  <li class="resource-card" data-categories="For Scientists,For Clinicians,Open Access,Open Data,Open Peer Review,Preregistration,Open Educational Resources,Free" data-index="1" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747321687000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+    <h5 class="resource-title anchored" style="margin:0;">
+      <strong>
+        <a href="https://www.coursera.org/learn/a-starters-guide-to-open-science#about" target="_blank" rel="noopener noreferrer">
+          Learn about Open Science on Coursera
+          
+            <i class="bi bi-box-arrow-up-right resource-external-icon" aria-label="External link"></i>
+          
+        </a>
+      </strong>
+    </h5>
+    
+      <div class="resource-tags">
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
+          <span class="resource-tag" data-cat="For Clinicians" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Clinicians</span>
+        
+          <span class="resource-tag" data-cat="Open Access" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Access</span>
+        
+          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+        
+          <span class="resource-tag" data-cat="Open Peer Review" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Peer Review</span>
+        
+          <span class="resource-tag" data-cat="Preregistration" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Preregistration</span>
+        
+          <span class="resource-tag" data-cat="Open Educational Resources" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Educational Resources</span>
+        
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+      </div>
+    
+    
+      <p class="resource-desc">This free Coursera course, *A Starter's Guide to Open Science*, offers a comprehensive introduction to open science practices</p>
+    
+  </li>
 
-</tr>
+  <li class="resource-card" data-categories="For Scientists,Preregistration,Free" data-index="2" data-listing-date-sort="1748926800000" data-listing-file-modified-sort="1748968509000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+    <h5 class="resource-title anchored" style="margin:0;">
+      <strong>
+        <a href="https://osf.io/cp4x5" target="_blank" rel="noopener noreferrer">
+          Preregistration Essentials: Enhancing Transparency in Research
+          
+            <i class="bi bi-box-arrow-up-right resource-external-icon" aria-label="External link"></i>
+          
+        </a>
+      </strong>
+    </h5>
+    
+      <div class="resource-tags">
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
+          <span class="resource-tag" data-cat="Preregistration" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Preregistration</span>
+        
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+      </div>
+    
+    
+      <p class="resource-desc">A practical guide to preregistration, this resource from the Center for Open Science outlines how researchers can enhance transparency and rigor by documenting study plans before data collection begins.</p>
+    
+  </li>
 
-<tr data-index="3" data-categories="T1MlMjBUb29scyUyQ09wZW4lMjBEYXRhJTJDT3BlbiUyME1ldGhvZHMlMkNGb3IlMjBTY2llbnRpc3RzJTJDRnJlZQ==" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747001091000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Python" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/Python/index.html" class="title listing-title">Python</a>
-</td>
-<td>
-<span class="listing-short-description">Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented, and functional programming.</span>
-</td>
+  <li class="resource-card" data-categories="OS Tools,Open Data,Open Methods,For Scientists,Free" data-index="3" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747001091000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+    <h5 class="resource-title anchored" style="margin:0;">
+      <strong>
+        <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
+          Python
+          
+            <i class="bi bi-box-arrow-up-right resource-external-icon" aria-label="External link"></i>
+          
+        </a>
+      </strong>
+    </h5>
+    
+      <div class="resource-tags">
+        
+          <span class="resource-tag" data-cat="OS Tools" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">OS Tools</span>
+        
+          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+        
+          <span class="resource-tag" data-cat="Open Methods" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Methods</span>
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+      </div>
+    
+    
+      <p class="resource-desc">Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented, and functional programming.</p>
+    
+  </li>
 
-</tr>
+  <li class="resource-card" data-categories="OS Tools,Open Data,For Scientists,Free,CSDisseminate Resource" data-index="4" data-listing-date-sort="1756962000000" data-listing-file-modified-sort="1759517532379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+    <h5 class="resource-title anchored" style="margin:0;">
+      <strong>
+        <a href="./Resources/CSD-Open-Data/index.html">
+          Resource Web: Open Data Repositories for CSD Research
+          
+        </a>
+      </strong>
+    </h5>
+    
+      <div class="resource-tags">
+        
+          <span class="resource-tag" data-cat="OS Tools" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">OS Tools</span>
+        
+          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+          <span class="resource-tag" data-cat="CSDisseminate Resource" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">CSDisseminate Resource</span>
+        
+      </div>
+    
+    
+      <p class="resource-desc">This resource web provides a curated list of open data repositories relevant to Communication Sciences and Disorders (CSD) research.</p>
+    
+  </li>
 
-<tr data-index="4" data-categories="T1MlMjBUb29scyUyQ09wZW4lMjBEYXRhJTJDRm9yJTIwU2NpZW50aXN0cyUyQ0ZyZWUlMkNDU0Rpc3NlbWluYXRlJTIwUmVzb3VyY2U=" data-listing-date-sort="1756962000000" data-listing-file-modified-sort="1759517532379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148" data-listing-title-sort="Resource Web: Open Data Repositories for CSD Research" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/CSD-Open-Data/index.html" class="title listing-title">Resource Web: Open Data Repositories for CSD Research</a>
-</td>
-<td>
-<span class="listing-short-description">This resource web provides a curated list of open data repositories relevant to Communication Sciences and Disorders (CSD) research.</span>
-</td>
+  <li class="resource-card" data-categories="CSDisseminate Resource,Self-Archiving,Open Access,For Scientists,Guide,Free" data-index="5" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1767910830000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2130">
+    <h5 class="resource-title anchored" style="margin:0;">
+      <strong>
+        <a href="./Resources/Self-Archiving-101/index.html">
+          Self Archiving 101
+          
+        </a>
+      </strong>
+    </h5>
+    
+      <div class="resource-tags">
+        
+          <span class="resource-tag" data-cat="CSDisseminate Resource" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">CSDisseminate Resource</span>
+        
+          <span class="resource-tag" data-cat="Self-Archiving" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Self-Archiving</span>
+        
+          <span class="resource-tag" data-cat="Open Access" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Access</span>
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
+          <span class="resource-tag" data-cat="Guide" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Guide</span>
+        
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+      </div>
+    
+    
+      <p class="resource-desc">This tutorial is a step-by-step guide to self-archive your work.</p>
+    
+  </li>
 
-</tr>
+  <li class="resource-card" data-categories="For Scientists,For Clinicians,Open Access,Free" data-index="6" data-listing-date-sort="1747285200000" data-listing-file-modified-sort="1747321659000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+    <h5 class="resource-title anchored" style="margin:0;">
+      <strong>
+        <a href="https://unpaywall.org/" target="_blank" rel="noopener noreferrer">
+          Unpaywall
+          
+            <i class="bi bi-box-arrow-up-right resource-external-icon" aria-label="External link"></i>
+          
+        </a>
+      </strong>
+    </h5>
+    
+      <div class="resource-tags">
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
+          <span class="resource-tag" data-cat="For Clinicians" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Clinicians</span>
+        
+          <span class="resource-tag" data-cat="Open Access" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Access</span>
+        
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+      </div>
+    
+    
+      <p class="resource-desc">Unpaywall is a browser extension for Chrome and Firefox that points you to legal, author-posted manuscripts that are hosted on university and government web servers.</p>
+    
+  </li>
 
-<tr data-index="5" data-categories="Q1NEaXNzZW1pbmF0ZSUyMFJlc291cmNlJTJDU2VsZi1BcmNoaXZpbmclMkNPcGVuJTIwQWNjZXNzJTJDRm9yJTIwU2NpZW50aXN0cyUyQ0d1aWRlJTJDRnJlZQ==" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1767910830000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2130" data-listing-title-sort="Self Archiving 101" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/Self-Archiving-101/index.html" class="title listing-title">Self Archiving 101</a>
-</td>
-<td>
-<span class="listing-short-description">This tutorial is a step-by-step guide to self-archive your work.</span>
-</td>
+  <li class="resource-card" data-categories="OS Tools,For Scientists,Free" data-index="7" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747001102000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+    <h5 class="resource-title anchored" style="margin:0;">
+      <strong>
+        <a href="https://www.zotero.org/" target="_blank" rel="noopener noreferrer">
+          Zotero
+          
+            <i class="bi bi-box-arrow-up-right resource-external-icon" aria-label="External link"></i>
+          
+        </a>
+      </strong>
+    </h5>
+    
+      <div class="resource-tags">
+        
+          <span class="resource-tag" data-cat="OS Tools" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">OS Tools</span>
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+      </div>
+    
+    
+      <p class="resource-desc">Zotero is a free and open-source reference management software to manage bibliographic data and related research materials, such as PDF files.</p>
+    
+  </li>
 
-</tr>
-
-<tr data-index="6" data-categories="Rm9yJTIwU2NpZW50aXN0cyUyQ0ZvciUyMENsaW5pY2lhbnMlMkNPcGVuJTIwQWNjZXNzJTJDRnJlZQ==" data-listing-date-sort="1747285200000" data-listing-file-modified-sort="1747321659000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Unpaywall" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/Unpaywall/index.html" class="title listing-title">Unpaywall</a>
-</td>
-<td>
-<span class="listing-short-description">Unpaywall is a browser extension for Chrome and Firefox that points you to legal, author-posted manuscripts that are hosted on university and government web servers.</span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-categories="T1MlMjBUb29scyUyQ0ZvciUyMFNjaWVudGlzdHMlMkNGcmVl" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747001102000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Zotero" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/Zotero/index.html" class="title listing-title">Zotero</a>
-</td>
-<td>
-<span class="listing-short-description">Zotero is a free and open-source reference management software to manage bibliographic data and related research materials, such as PDF files.</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
+</ul>
 <div class="listing-no-matching d-none">No matching items</div>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div id="listing-resources-scientists" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-resources-scientists-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-resources-scientists'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-<th>
-Description
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="T1MlMjBUb29scyUyQ09wZW4lMjBEYXRhJTJDT3BlbiUyME1ldGhvZHMlMkNGb3IlMjBTY2llbnRpc3RzJTJDRnJlZQ==" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1763166824000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="GitHub" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/GitHub/index.html" class="title listing-title">GitHub</a>
-</td>
-<td>
-<span class="listing-short-description">GitHub, Inc.&nbsp;is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="Rm9yJTIwU2NpZW50aXN0cyUyQ0ZvciUyMENsaW5pY2lhbnMlMkNPcGVuJTIwQWNjZXNzJTJDT3BlbiUyMERhdGElMkNPcGVuJTIwUGVlciUyMFJldmlldyUyQ1ByZXJlZ2lzdHJhdGlvbiUyQ09wZW4lMjBFZHVjYXRpb25hbCUyMFJlc291cmNlcyUyQ0ZyZWU=" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747321687000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Learn about Open Science on Coursera" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/OS-Coursera/index.html" class="title listing-title">Learn about Open Science on Coursera</a>
-</td>
-<td>
-<span class="listing-short-description">This free Coursera course, <em>A Starter’s Guide to Open Science</em>, offers a comprehensive introduction to open science practices</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-categories="Rm9yJTIwU2NpZW50aXN0cyUyQ1ByZXJlZ2lzdHJhdGlvbiUyQ0ZyZWU=" data-listing-date-sort="1748926800000" data-listing-file-modified-sort="1748968509000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Preregistration Essentials: Enhancing Transparency in Research" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/Preregistration-Essentials/index.html" class="title listing-title">Preregistration Essentials: Enhancing Transparency in Research</a>
-</td>
-<td>
-<span class="listing-short-description">A practical guide to preregistration, this resource from the Center for Open Science outlines how researchers can enhance transparency and rigor by documenting study plans before data collection begins.</span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-categories="T1MlMjBUb29scyUyQ09wZW4lMjBEYXRhJTJDT3BlbiUyME1ldGhvZHMlMkNGb3IlMjBTY2llbnRpc3RzJTJDRnJlZQ==" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747001091000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Python" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/Python/index.html" class="title listing-title">Python</a>
-</td>
-<td>
-<span class="listing-short-description">Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented, and functional programming.</span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-categories="T1MlMjBUb29scyUyQ09wZW4lMjBEYXRhJTJDRm9yJTIwU2NpZW50aXN0cyUyQ0ZyZWUlMkNDU0Rpc3NlbWluYXRlJTIwUmVzb3VyY2U=" data-listing-date-sort="1756962000000" data-listing-file-modified-sort="1759517532379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148" data-listing-title-sort="Resource Web: Open Data Repositories for CSD Research" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/CSD-Open-Data/index.html" class="title listing-title">Resource Web: Open Data Repositories for CSD Research</a>
-</td>
-<td>
-<span class="listing-short-description">This resource web provides a curated list of open data repositories relevant to Communication Sciences and Disorders (CSD) research.</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-categories="Q1NEaXNzZW1pbmF0ZSUyMFJlc291cmNlJTJDU2VsZi1BcmNoaXZpbmclMkNPcGVuJTIwQWNjZXNzJTJDRm9yJTIwU2NpZW50aXN0cyUyQ0d1aWRlJTJDRnJlZQ==" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1767910830000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2130" data-listing-title-sort="Self Archiving 101" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/Self-Archiving-101/index.html" class="title listing-title">Self Archiving 101</a>
-</td>
-<td>
-<span class="listing-short-description">This tutorial is a step-by-step guide to self-archive your work.</span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-categories="Rm9yJTIwU2NpZW50aXN0cyUyQ0ZvciUyMENsaW5pY2lhbnMlMkNPcGVuJTIwQWNjZXNzJTJDRnJlZQ==" data-listing-date-sort="1747285200000" data-listing-file-modified-sort="1747321659000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Unpaywall" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/Unpaywall/index.html" class="title listing-title">Unpaywall</a>
-</td>
-<td>
-<span class="listing-short-description">Unpaywall is a browser extension for Chrome and Firefox that points you to legal, author-posted manuscripts that are hosted on university and government web servers.</span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-categories="T1MlMjBUb29scyUyQ0ZvciUyMFNjaWVudGlzdHMlMkNGcmVl" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747001102000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Zotero" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/Zotero/index.html" class="title listing-title">Zotero</a>
-</td>
-<td>
-<span class="listing-short-description">Zotero is a free and open-source reference management software to manage bibliographic data and related research materials, such as PDF files.</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<div id="listing-resources-clinicians" class="quarto-listing quarto-listing-container-table">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-resources-clinicians-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-resources-clinicians'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-<th>
-Description
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="Rm9yJTIwU2NpZW50aXN0cyUyQ0ZvciUyMENsaW5pY2lhbnMlMkNPcGVuJTIwQWNjZXNzJTJDT3BlbiUyMERhdGElMkNPcGVuJTIwUGVlciUyMFJldmlldyUyQ1ByZXJlZ2lzdHJhdGlvbiUyQ09wZW4lMjBFZHVjYXRpb25hbCUyMFJlc291cmNlcyUyQ0ZyZWU=" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747321687000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Learn about Open Science on Coursera" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/OS-Coursera/index.html" class="title listing-title">Learn about Open Science on Coursera</a>
-</td>
-<td>
-<span class="listing-short-description">This free Coursera course, <em>A Starter’s Guide to Open Science</em>, offers a comprehensive introduction to open science practices</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="Rm9yJTIwU2NpZW50aXN0cyUyQ0ZvciUyMENsaW5pY2lhbnMlMkNPcGVuJTIwQWNjZXNzJTJDRnJlZQ==" data-listing-date-sort="1747285200000" data-listing-file-modified-sort="1747321659000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13" data-listing-title-sort="Unpaywall" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./Resources/Unpaywall/index.html" class="title listing-title">Unpaywall</a>
-</td>
-<td>
-<span class="listing-short-description">Unpaywall is a browser extension for Chrome and Firefox that points you to legal, author-posted manuscripts that are hosted on university and government web servers.</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</div>
-</div>
 </div>
 
 
