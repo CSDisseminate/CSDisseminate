@@ -10,6 +10,8 @@ resource-link: "https://help.osf.io/article/597-data-management-and-sharing-plan
 categories:
  - Guide
  - Open Data
+ - Free
+ - For Scientists
 editor: source
 ---
 

@@ -27,8 +27,8 @@ function getCategories(item) {
 
 /* Three-shade indigo system */
 const AUDIENCE_STYLE  = { bg: "rgba(124,58,237,.1)",  color: "#8966AB", border: "rgba(124,58,237,.25)" };
-const TOPIC_STYLE     = { bg: "rgba(124,58,237,.1)",  color: "#8966AB", border: "rgba(124,58,237,.25)"  };
-const CSD_STYLE       = { bg: "rgba(124,58,237,.1)",  color: "#8966AB", border: "rgba(124,58,237,.25)"   };
+const TOPIC_STYLE     = { bg: "rgba(124,58,237,.1)",  color: "#8966AB", border: "rgba(124,58,237,.25)" };
+const CSD_STYLE       = { bg: "rgba(124,58,237,.1)",  color: "#8966AB", border: "rgba(124,58,237,.25)" };
 
 const AUDIENCE_CATS = new Set(["For Scientists", "For Clinicians"]);
 const CSD_CATS      = new Set(["CSDisseminate Resource"]);
@@ -38,8 +38,6 @@ function badgeStyle(cat) {
   if (AUDIENCE_CATS.has(cat)) return `background:${AUDIENCE_STYLE.bg};color:${AUDIENCE_STYLE.color};border-color:${AUDIENCE_STYLE.border}`;
   return `background:${TOPIC_STYLE.bg};color:${TOPIC_STYLE.color};border-color:${TOPIC_STYLE.border}`;
 }
-
-const allCats = [...new Set(items.flatMap(item => getCategories(item)))].sort();
 %>
 
 <style>
@@ -116,8 +114,10 @@ const allCats = [...new Set(items.flatMap(item => getCategories(item)))].sort();
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const bar  = document.getElementById("resource-filter-bar");
-  const list = document.getElementById("resource-list");
+  const bar    = document.getElementById("resource-filter-bar");
+  const list   = document.getElementById("resource-list");
+  const active = new Set(); // tracks currently selected filters
+
   // Build category list from card data attributes
   const allCats = [...new Set(
     Array.from(list.querySelectorAll(".resource-card"))
@@ -134,22 +134,46 @@ document.addEventListener("DOMContentLoaded", function() {
     bar.appendChild(btn);
   });
 
+  function applyFilters() {
+    const allBtn = bar.querySelector(".resource-filter-btn[data-cat='all']");
+    list.querySelectorAll(".resource-card").forEach(card => {
+      if (active.size === 0) {
+        card.classList.remove("hidden");
+      } else {
+        const cardCats = new Set((card.dataset.categories || "").split(",").map(s => s.trim()));
+        // AND logic: card must match ALL active filters
+        const matches = [...active].every(f => cardCats.has(f));
+        card.classList.toggle("hidden", !matches);
+      }
+    });
+    if (allBtn) allBtn.classList.toggle("active", active.size === 0);
+  }
+
   bar.addEventListener("click", function(e) {
     const btn = e.target.closest(".resource-filter-btn");
     if (!btn) return;
     const cat = btn.dataset.cat;
-    bar.querySelectorAll(".resource-filter-btn").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    list.querySelectorAll(".resource-card").forEach(card => {
-      if (cat === "all") {
-        card.classList.remove("hidden");
+
+    if (cat === "all") {
+      active.clear();
+      bar.querySelectorAll(".resource-filter-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    } else {
+      if (active.has(cat)) {
+        active.delete(cat);
+        btn.classList.remove("active");
       } else {
-        const cardCats = (card.dataset.categories || "").split(",").map(s => s.trim());
-        card.classList.toggle("hidden", !cardCats.includes(cat));
+        active.add(cat);
+        btn.classList.add("active");
       }
-    });
+      const allBtn = bar.querySelector(".resource-filter-btn[data-cat='all']");
+      if (allBtn) allBtn.classList.toggle("active", active.size === 0);
+    }
+
+    applyFilters();
   });
 
+  // Clicking a tag badge on a card toggles that filter
   list.addEventListener("click", function(e) {
     const tag = e.target.closest(".resource-tag");
     if (!tag) return;

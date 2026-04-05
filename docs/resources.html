@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-short-description','listing-resource-link','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-engines","listing-language","listing-title","listing-pagetitle","listing-date","listing-date-title","listing-author","listing-author-title","listing-short-description","listing-resource-link","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-resource-button","listing-listing","listing-aliases","listing-long-description","listing-draft","listing-audience"],
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-engines","listing-language","listing-title","listing-pagetitle","listing-date","listing-date-title","listing-author","listing-author-title","listing-short-description","listing-resource-link","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-resource-button","listing-listing","listing-draft"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -317,8 +317,10 @@ See a resource missing? Let us know!
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const bar  = document.getElementById("resource-filter-bar");
-  const list = document.getElementById("resource-list");
+  const bar    = document.getElementById("resource-filter-bar");
+  const list   = document.getElementById("resource-list");
+  const active = new Set(); // tracks currently selected filters
+
   // Build category list from card data attributes
   const allCats = [...new Set(
     Array.from(list.querySelectorAll(".resource-card"))
@@ -335,22 +337,46 @@ document.addEventListener("DOMContentLoaded", function() {
     bar.appendChild(btn);
   });
 
+  function applyFilters() {
+    const allBtn = bar.querySelector(".resource-filter-btn[data-cat='all']");
+    list.querySelectorAll(".resource-card").forEach(card => {
+      if (active.size === 0) {
+        card.classList.remove("hidden");
+      } else {
+        const cardCats = new Set((card.dataset.categories || "").split(",").map(s => s.trim()));
+        // AND logic: card must match ALL active filters
+        const matches = [...active].every(f => cardCats.has(f));
+        card.classList.toggle("hidden", !matches);
+      }
+    });
+    if (allBtn) allBtn.classList.toggle("active", active.size === 0);
+  }
+
   bar.addEventListener("click", function(e) {
     const btn = e.target.closest(".resource-filter-btn");
     if (!btn) return;
     const cat = btn.dataset.cat;
-    bar.querySelectorAll(".resource-filter-btn").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    list.querySelectorAll(".resource-card").forEach(card => {
-      if (cat === "all") {
-        card.classList.remove("hidden");
+
+    if (cat === "all") {
+      active.clear();
+      bar.querySelectorAll(".resource-filter-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    } else {
+      if (active.has(cat)) {
+        active.delete(cat);
+        btn.classList.remove("active");
       } else {
-        const cardCats = (card.dataset.categories || "").split(",").map(s => s.trim());
-        card.classList.toggle("hidden", !cardCats.includes(cat));
+        active.add(cat);
+        btn.classList.add("active");
       }
-    });
+      const allBtn = bar.querySelector(".resource-filter-btn[data-cat='all']");
+      if (allBtn) allBtn.classList.toggle("active", active.size === 0);
+    }
+
+    applyFilters();
   });
 
+  // Clicking a tag badge on a card toggles that filter
   list.addEventListener("click", function(e) {
     const tag = e.target.closest(".resource-tag");
     if (!tag) return;
@@ -362,7 +388,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-  <li class="resource-card" data-categories="Guide,Open Data" data-index="0" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1775419845055" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="Guide,Open Data,Free,For Scientists" data-index="0" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1775423202390" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://help.osf.io/article/597-data-management-and-sharing-plans-and-osf" target="_blank" rel="noopener noreferrer">
@@ -380,6 +406,10 @@ document.addEventListener("DOMContentLoaded", function() {
         
           <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
         
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
       </div>
     
     
@@ -387,7 +417,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="Guide,Open Data" data-index="1" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1775419845055" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="Guide,Open Data,Free,For Scientists" data-index="1" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1775423202390" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://help.osf.io/article/621-data-sharing-compliance-made-easy" target="_blank" rel="noopener noreferrer">
@@ -405,6 +435,10 @@ document.addEventListener("DOMContentLoaded", function() {
         
           <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
         
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
       </div>
     
     
@@ -412,7 +446,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="OS Tools,Open Data,Open Methods,For Scientists,Free" data-index="2" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1763166836946" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+  <li class="resource-card" data-categories="Free,OS Tools,For Scientists,Open Methods,Open Data" data-index="2" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1775423202391" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
@@ -426,15 +460,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
           <span class="resource-tag" data-cat="OS Tools" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">OS Tools</span>
-        
-          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
-        
-          <span class="resource-tag" data-cat="Open Methods" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Methods</span>
         
           <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <span class="resource-tag" data-cat="Open Methods" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Methods</span>
+        
+          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
         
       </div>
     
@@ -443,7 +477,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="Guide,Open Data" data-index="3" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1775419845048" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="Guide,Open Data,Free,For Scientists" data-index="3" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1775423202383" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://help.osf.io/article/217-how-to-make-a-data-dictionary" target="_blank" rel="noopener noreferrer">
@@ -461,6 +495,10 @@ document.addEventListener("DOMContentLoaded", function() {
         
           <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
         
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
       </div>
     
     
@@ -468,7 +506,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="For Scientists,For Clinicians,Open Access,Open Data,Open Peer Review,Preregistration,Open Educational Resources,Free" data-index="4" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747321687870" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+  <li class="resource-card" data-categories="For Scientists,Open Access,Open Data,Open Peer Review,Preregistration,Open Educational Resources,Free" data-index="4" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1775423202391" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://www.coursera.org/learn/a-starters-guide-to-open-science#about" target="_blank" rel="noopener noreferrer">
@@ -483,8 +521,6 @@ document.addEventListener("DOMContentLoaded", function() {
       <div class="resource-tags">
         
           <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
-        
-          <span class="resource-tag" data-cat="For Clinicians" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Clinicians</span>
         
           <span class="resource-tag" data-cat="Open Access" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Access</span>
         
@@ -505,7 +541,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="For Scientists,Preregistration,Free" data-index="5" data-listing-date-sort="1748926800000" data-listing-file-modified-sort="1748968509419" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+  <li class="resource-card" data-categories="For Scientists,Preregistration,Free" data-index="5" data-listing-date-sort="1748926800000" data-listing-file-modified-sort="1775423202392" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://osf.io/cp4x5" target="_blank" rel="noopener noreferrer">
@@ -532,7 +568,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="OS Tools,Open Data,Open Methods,For Scientists,Free" data-index="6" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747001091331" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+  <li class="resource-card" data-categories="OS Tools,Open Data,Open Methods,For Scientists,Free" data-index="6" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1775423202392" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
@@ -623,7 +659,40 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="For Scientists,For Clinicians,Open Access,Free" data-index="9" data-listing-date-sort="1747285200000" data-listing-file-modified-sort="1747321659007" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+  <li class="resource-card" data-categories="For Scientists,Free,Guide,Preregistration,Open Methods,Open Data" data-index="9" data-listing-date-sort="1775365200000" data-listing-file-modified-sort="1775423202393" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+    <h5 class="resource-title anchored" style="margin:0;">
+      <strong>
+        <a href="https://poldrack.github.io/psych-open-science-guide/README.html" target="_blank" rel="noopener noreferrer">
+          Stanford Pyschology Guide to Doing Open Science
+          
+            <i class="bi bi-box-arrow-up-right resource-external-icon" aria-label="External link"></i>
+          
+        </a>
+      </strong>
+    </h5>
+    
+      <div class="resource-tags">
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+          <span class="resource-tag" data-cat="Guide" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Guide</span>
+        
+          <span class="resource-tag" data-cat="Preregistration" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Preregistration</span>
+        
+          <span class="resource-tag" data-cat="Open Methods" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Methods</span>
+        
+          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+        
+      </div>
+    
+    
+      <p class="resource-desc">This guide was created by researchers in the Stanford Department of Psychology and covers open science-related topics, such as preregistration, sharind data, creating reproducible manuscripts and research.</p>
+    
+  </li>
+
+  <li class="resource-card" data-categories="For Scientists,For Clinicians,Open Access,Free" data-index="10" data-listing-date-sort="1747285200000" data-listing-file-modified-sort="1775423202392" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://unpaywall.org/" target="_blank" rel="noopener noreferrer">
@@ -652,7 +721,36 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="OS Tools,For Scientists,Free" data-index="10" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1747001102308" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+  <li class="resource-card" data-categories="For Scientists,Free,Guide,Open Data" data-index="11" data-listing-date-sort="1775365200000" data-listing-file-modified-sort="1775423202393" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+    <h5 class="resource-title anchored" style="margin:0;">
+      <strong>
+        <a href="https://www.tesl-ej.org/OSF-HowTo.pdf" target="_blank" rel="noopener noreferrer">
+          Using OSF to Share Data: A Step-by-Step Guide
+          
+            <i class="bi bi-box-arrow-up-right resource-external-icon" aria-label="External link"></i>
+          
+        </a>
+      </strong>
+    </h5>
+    
+      <div class="resource-tags">
+        
+          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+        
+          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+        
+          <span class="resource-tag" data-cat="Guide" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Guide</span>
+        
+          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+        
+      </div>
+    
+    
+      <p class="resource-desc">This paper serves as a tutorial for using OSF to meet the needs for sharing psychological data.</p>
+    
+  </li>
+
+  <li class="resource-card" data-categories="OS Tools,For Scientists,Free" data-index="12" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1775423202393" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://www.zotero.org/" target="_blank" rel="noopener noreferrer">

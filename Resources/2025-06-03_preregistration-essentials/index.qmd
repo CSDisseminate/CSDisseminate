@@ -1,0 +1,23 @@
+---
+title: "Preregistration Essentials: Enhancing Transparency in Research"
+pagetitle: "Preregistration Essentials: Enhancing Transparency in Research"
+date: "2025-06-03"
+date-title: "Date Added"
+author: "Danika Pfeiffer"
+author-title: "Contributor"
+short-description: "A practical guide to preregistration, this resource from the Center for Open Science outlines how researchers can enhance transparency and rigor by documenting study plans before data collection begins."
+resource-link: "https://osf.io/cp4x5"
+categories:
+ - For Scientists
+ - Preregistration
+ - Free
+editor: source
+---
+
+----
+## About this Resource
+{{< meta short-description >}}
+\
+
+[Visit Resource]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+

@@ -1,0 +1,24 @@
+---
+title: "Using OSF to Share Data: A Step-by-Step Guide"
+pagetitle: "Using OSF to Share Data: A Step-by-Step Guide"
+date: "2026-04-05"
+date-title: "Date Added"
+author: "James Borders"
+author-title: "Contributor"
+short-description: "This paper serves as a tutorial for using OSF to meet the needs for sharing psychological data."
+resource-link: "https://www.tesl-ej.org/OSF-HowTo.pdf"
+categories:
+ - For Scientists
+ - Free
+ - Guide
+ - Open Data
+editor: source
+---
+
+----
+## About this Resource
+{{< meta short-description >}}
+\
+
+[Visit Resource]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+

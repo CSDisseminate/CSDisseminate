@@ -1,0 +1,26 @@
+---
+title: "Stanford Pyschology Guide to Doing Open Science"
+pagetitle: "Stanford Pyschology Guide to Doing Open Science"
+date: "2026-04-05"
+date-title: "Date Added"
+author: "James Borders"
+author-title: "Contributor"
+short-description: "This guide was created by researchers in the Stanford Department of Psychology and covers open science-related topics, such as preregistration, sharind data, creating reproducible manuscripts and research."
+resource-link: "https://poldrack.github.io/psych-open-science-guide/README.html"
+categories:
+ - For Scientists
+ - Free
+ - Guide
+ - Preregistration
+ - Open Methods
+ - Open Data
+editor: source
+---
+
+----
+## About this Resource
+{{< meta short-description >}}
+\
+
+[Visit Resource]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+

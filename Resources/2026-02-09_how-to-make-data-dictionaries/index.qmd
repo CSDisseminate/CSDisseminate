@@ -10,6 +10,8 @@ resource-link: "https://help.osf.io/article/217-how-to-make-a-data-dictionary"
 categories:
  - Guide
  - Open Data
+ - Free
+ - For Scientists
 editor: source
 ---
 

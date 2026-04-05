@@ -1,0 +1,27 @@
+---
+title: "Learn about Open Science on Coursera"
+pagetitle: "Learn about Open Science on Coursera"
+date: "2025-01-04"
+date-title: "Date Added"
+author: "Austin Thompson"
+author-title: "Contributor"
+short-description: "This free Coursera course, *A Starter's Guide to Open Science*, offers a comprehensive introduction to open science practices"
+resource-link: "https://www.coursera.org/learn/a-starters-guide-to-open-science#about"
+categories:
+ - For Scientists
+ - Open Access
+ - Open Data
+ - Open Peer Review
+ - Preregistration
+ - Open Educational Resources
+ - Free
+editor: source
+---
+
+----
+## About this Resource
+{{< meta short-description >}}
+\
+
+[Visit Resource]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+

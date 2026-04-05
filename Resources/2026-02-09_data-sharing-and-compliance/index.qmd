@@ -10,6 +10,8 @@ resource-link: "https://help.osf.io/article/621-data-sharing-compliance-made-eas
 categories:
  - Guide
  - Open Data
+ - Free
+ - For Scientists
 editor: source
 ---
 

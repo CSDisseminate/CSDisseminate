@@ -1,14 +1,12 @@
 ---
 title: "Zotero"
 pagetitle: "Zotero"
-date: 01-04-2025
+date: "2025-01-04"
 date-title: "Date Added"
 author: "Austin Thompson"
 author-title: "Contributor"
 short-description: "Zotero is a free and open-source reference management software to manage bibliographic data and related research materials, such as PDF files."
-resource-link: https://www.zotero.org/
-resource-button: "Learn more About Zotero"
-audience: "Researchers"
+resource-link: "https://www.zotero.org/"
 categories:
  - OS Tools
  - For Scientists
@@ -16,9 +14,10 @@ categories:
 editor: source
 ---
 
-
+----
 ## About this Resource
 {{< meta short-description >}}
 \
 
-[{{< meta resource-button>}}]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+[Visit Resource]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+

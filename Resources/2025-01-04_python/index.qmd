@@ -1,13 +1,12 @@
 ---
 title: "Python"
 pagetitle: "Python"
-date: 01-04-2025
+date: "2025-01-04"
 date-title: "Date Added"
 author: "Austin Thompson"
 author-title: "Contributor"
 short-description: "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented, and functional programming."
-resource-link: https://www.python.org/
-resource-button: "Learn more About Python"
+resource-link: "https://www.python.org/"
 categories:
  - OS Tools
  - Open Data
@@ -22,4 +21,5 @@ editor: source
 {{< meta short-description >}}
 \
 
-[{{< meta resource-button>}}]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+[Visit Resource]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+
