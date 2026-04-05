@@ -16,7 +16,7 @@ categories:
 description-research: "Micah's research interests are in motor speech disorders, speech science, and metascience. Specifically, their interests are focused on better understanding the various perceptual and acoustic factors that impact speech perception and production for people with dysarthria. Their research interest also aims to increase the methodological rigor of measuring these factors in dysarthria research."
 description-os: "Micah believes that open science practices help increase the rigor of research in CSD by making the process and findings from more accessible, reproducible, and transparent."
 headshot: "../_headshots/Micah Hirsch.jpeg"
-lightbox: true
+lightbox: false
 draft: false
 layout: article
 title-block-categories: false
@@ -25,7 +25,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Micah Hirsch.jpeg)
 :::
 ::: {.column width="5%"}
 :::

@@ -18,7 +18,7 @@ description-os: "Dr. Long is an advocate of free and public access to scientific
 link: "http://caslabs.case.edu/commspeech/"
 website-button: "Visit Dr. Long's Lab Website!"
 headshot: "../_headshots/Helen Long.jpg"
-lightbox: true
+lightbox: false
 draft: false
 layout: article
 title-block-categories: false
@@ -27,7 +27,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Helen Long.jpg)
 :::
 ::: {.column width="5%"}
 :::

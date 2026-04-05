@@ -19,7 +19,7 @@ description-os: "Austin is passionate about supporting researchers to embrace op
 link: "https://speak-lab.com"
 website-button: "Visit the SPEAK Lab website!"
 headshot: "../_headshots/Austin Thompson.jpeg"
-lightbox: true
+lightbox: false
 draft: false
 layout: article
 title-block-categories: false
@@ -28,7 +28,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Austin Thompson.jpeg)
 :::
 ::: {.column width="5%"}
 :::

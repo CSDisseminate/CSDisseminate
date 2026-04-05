@@ -1,0 +1,22 @@
+---
+title: "How to Make a Data Dictionary"
+pagetitle: "How to Make a Data Dictionary"
+date: "2026-02-09"
+date-title: "Date Added"
+author: "Danika Pfeiffer"
+author-title: "Contributor"
+short-description: "This guide walks you through how to make data dictionaries to describe your datasets and make them easier to understand and reuse."
+resource-link: "https://help.osf.io/article/217-how-to-make-a-data-dictionary"
+categories:
+ - Guide
+ - Open Data
+editor: source
+---
+
+----
+## About this Resource
+{{< meta short-description >}}
+\
+
+[Visit Resource]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+

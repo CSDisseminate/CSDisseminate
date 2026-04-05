@@ -1,0 +1,22 @@
+---
+title: "Data Management and Sharing Plans"
+pagetitle: "Data Management and Sharing Plans"
+date: "2026-02-09"
+date-title: "Date Added"
+author: "Danika Pfeiffer"
+author-title: "Contributor"
+short-description: "This guide can help you create clear and compliant data management and sharing plans to meet funder requirements and policies."
+resource-link: "https://help.osf.io/article/597-data-management-and-sharing-plans-and-osf"
+categories:
+ - Guide
+ - Open Data
+editor: source
+---
+
+----
+## About this Resource
+{{< meta short-description >}}
+\
+
+[Visit Resource]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+

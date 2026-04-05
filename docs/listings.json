@@ -2,7 +2,10 @@
   {
     "listing": "/resources.html",
     "items": [
+      "/Resources/2026-02-09_data-management-and-sharing/index.html",
+      "/Resources/2026-02-09_data-sharing-and-compliance/index.html",
       "/Resources/GitHub/index.html",
+      "/Resources/2026-02-09_how-to-make-data-dictionaries/index.html",
       "/Resources/OS-Coursera/index.html",
       "/Resources/Preregistration-Essentials/index.html",
       "/Resources/Python/index.html",
@@ -33,7 +36,7 @@
       "/Resources/CSD-Open-Data/Data/FluencyBank.html",
       "/Resources/CSD-Open-Data/Data/Battal-et-al-2020.html",
       "/Resources/CSD-Open-Data/Data/HomeBank.html",
-      "/Resources/CSD-Open-Data/Data/Novotný-et-al-2016.html",
+      "/Resources/CSD-Open-Data/Data/Novotný-et-al-2016.html",
       "/Resources/CSD-Open-Data/Data/Curtis-et-al-2023.html",
       "/Resources/CSD-Open-Data/Data/PERCEPT.html",
       "/Resources/CSD-Open-Data/Data/PhonBank.html",
@@ -49,10 +52,10 @@
     ]
   },
   {
-    "listing": "/featured-scientists.html",
+    "listing": "/events.html",
     "items": [
-      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
-      "/Featured-Scientists/CLaSS-Lab/index.html"
+      "/Events/2025-06-03-Open-Data-Workshop/index.html",
+      "/Events/2025-05-18-Forward-Focus/index.html"
     ]
   },
   {
@@ -71,10 +74,10 @@
     ]
   },
   {
-    "listing": "/events.html",
+    "listing": "/featured-scientists.html",
     "items": [
-      "/Events/2025-06-03-Open-Data-Workshop/index.html",
-      "/Events/2025-05-18-Forward-Focus/index.html"
+      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
+      "/Featured-Scientists/CLaSS-Lab/index.html"
     ]
   },
   {

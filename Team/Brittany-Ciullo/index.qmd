@@ -14,7 +14,7 @@ categories:
   - "Collaborator"
 description-research: "Brittany Ciullo is a PhD student in the Department of Speech, Language, and Hearing Sciences at the University of Massachusetts Amherst. She is interested in all things language and literacy. Brittany’s current research focuses on the implementation of participation-based approaches with children with communication disorders in schools. A former school-based speech-language pathologist, she is passionate about increasing accessibility and transparency in all parts of the research process to maximize clinical outcomes."
 headshot: "../_headshots/Brittany Ciullo.png"
-lightbox: true
+lightbox: false
 draft: false
 layout: article
 title-block-categories: false
@@ -23,7 +23,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Brittany Ciullo.png)
 :::
 ::: {.column width="5%"}
 :::

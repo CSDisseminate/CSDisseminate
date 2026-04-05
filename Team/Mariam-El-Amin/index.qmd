@@ -18,7 +18,7 @@ description-os: "As a clinician from the global south, Mariam is interested in i
 link: "https://www.mariamelamin.com/"
 website-button: "Visit Dr. El Amin's Website!"
 headshot: "../_headshots/Mariam El Amin.jpg"
-lightbox: true
+lightbox: false
 draft: false
 layout: article
 title-block-categories: false
@@ -27,7 +27,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Mariam El Amin.jpg)
 :::
 ::: {.column width="5%"}
 :::

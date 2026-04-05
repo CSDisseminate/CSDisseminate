@@ -15,7 +15,7 @@ categories:
   - "Social Media Team Lead"
 description-research: "Jennifer Magnuson, PhD, CCC-SLP is a Postdoctoral Research Fellow in the Language, Experience, and Development (LEAD) lab at the University of Maryland, College Park. Her broad interests include language development, early language experiences, caregiver-infant interactions, caregiver stress, and interventions to support infants who are at increased likelihood for neurodevelopmental conditions. Jennifer is passionate about increasing awareness of open science practices and is thrilled to be on the CSDisseminate team!"
 headshot: "../_headshots/Jennifer Markfeld.jpg"
-lightbox: true
+lightbox: false
 draft: false
 layout: article
 title-block-categories: false
@@ -26,7 +26,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Jennifer Markfeld.jpg)
 :::
 ::: {.column width="5%"}
 :::

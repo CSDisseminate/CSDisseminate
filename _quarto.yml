@@ -4,6 +4,7 @@ project:
   pre-render: 
     - _data/generate_publications.R
     - _data/generate_team.R
+    - _data/generate_resources.R
 
 website:
   title: "CSDisseminate"

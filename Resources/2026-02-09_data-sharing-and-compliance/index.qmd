@@ -1,0 +1,22 @@
+---
+title: "Data Sharing Compliance Made Easy"
+pagetitle: "Data Sharing Compliance Made Easy"
+date: "2026-02-09"
+date-title: "Date Added"
+author: "Danika Pfeiffer"
+author-title: "Contributor"
+short-description: "This guide provides step-by-step instructions for ensuring your shared datasets fulfill funder accessibility requirements."
+resource-link: "https://help.osf.io/article/621-data-sharing-compliance-made-easy"
+categories:
+ - Guide
+ - Open Data
+editor: source
+---
+
+----
+## About this Resource
+{{< meta short-description >}}
+\
+
+[Visit Resource]({{< meta resource-link >}}){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
+

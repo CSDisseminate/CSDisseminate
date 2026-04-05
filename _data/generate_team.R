@@ -134,7 +134,7 @@ build_frontmatter <- function(member, draft = FALSE) {
     opt_field("link",                 member$website_link),
     opt_field("website-button",       member$website_button_text),
     headshot_line,
-    'lightbox: true\n',
+    'lightbox: false\n',
     'draft: ', tolower(as.character(draft)), '\n',
     'layout: article\n',
     'title-block-categories: false\n',
@@ -169,7 +169,7 @@ build_body <- function(member) {
     paste0(
       ':::::: columns\n',
       '::: {.column width="30%"}\n',
-      '![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})\n',
+      paste0('![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](', HEADSHOTS_DIR, '/', member$headshot_file, ')\n'),
       ':::\n',
       '::: {.column width="5%"}\n',
       ':::\n',

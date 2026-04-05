@@ -15,7 +15,7 @@ categories:
 description-research: "Alisa Baron, PhD, CCC-SLP is a multilingual speech language pathologist and Assistant Professor at the University of Rhode Island. Her research focuses on how children process speech and language and how this may differ in monolingual and bilingual children with and without developmental disorders (developmental language disorder (DLD), autism spectrum disorders (ASD), and attention-deficit/hyperactivity disorder (ADHD)). Alisa uses behavioral measures, along with eye tracking, electroencephalography (EEG), and functional near infrared spectroscopy (fNIRS) technologies to identify differences that may not be detectable behaviorally."
 description-os: "Alisa is eager to support academics at any stage of their journey in learning and implementing open science practices."
 headshot: "../_headshots/Alisa Baron.png"
-lightbox: true
+lightbox: false
 draft: false
 layout: article
 title-block-categories: false
@@ -24,7 +24,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}]({{< meta headshot >}})
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Alisa Baron.png)
 :::
 ::: {.column width="5%"}
 :::
