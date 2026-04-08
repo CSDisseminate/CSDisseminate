@@ -53,7 +53,7 @@
     "href": "Team/alisa-baron/index.html",
     "title": "Alisa Baron",
     "section": "",
-    "text": "Alisa Baron, PhD, CCC-SLPAssistant ProfessorUniversity of Rhode Island\n\n\n\n\n\nAlisa Baron, PhD, CCC-SLP is a multilingual speech language pathologist and Assistant Professor at the University of Rhode Island. Her research focuses on how children process speech and language and how this may differ in monolingual and bilingual children with and without developmental disorders (developmental language disorder (DLD), autism spectrum disorders (ASD), and attention-deficit/hyperactivity disorder (ADHD)). Alisa uses behavioral measures, along with eye tracking, electroencephalography (EEG), and functional near infrared spectroscopy (fNIRS) technologies to identify differences that may not be detectable behaviorally.\nAlisa is eager to support academics at any stage of their journey in learning and implementing open science practices.\n\n\n\n\n\n Back to top"
+    "text": "Alisa Baron, PhD, CCC-SLP✨ Associate Professor ✨University of Rhode Island\n\n\n\n\n\nAlisa Baron, PhD, CCC-SLP is a multilingual speech language pathologist and Associate Professor at the University of Rhode Island. Her research focuses on how children process speech and language and how this may differ in monolingual and bilingual children with and without developmental disorders (developmental language disorder (DLD), autism spectrum disorders (ASD), and attention-deficit/hyperactivity disorder (ADHD)). Alisa uses behavioral measures, along with eye tracking, electroencephalography (EEG), and functional near infrared spectroscopy (fNIRS) technologies to identify differences that may not be detectable behaviorally.\nAlisa is eager to support academics at any stage of their journey in learning and implementing open science practices.\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "Team/anne-c-reed/index.html",
@@ -196,8 +196,8 @@
     "text": "This OSF page contains open datasets needed to replicate the primary outcomes for the study “Vowel Acoustics as Predictors of Speech Intelligibility in Dysarthria”.\n\n\n\n Back to top"
   },
   {
-    "objectID": "Resources/CSD-Open-Data/Data/Novotný-et-al-2016.html",
-    "href": "Resources/CSD-Open-Data/Data/Novotný-et-al-2016.html",
+    "objectID": "Resources/CSD-Open-Data/Data/Novotný-et-al-2016.html",
+    "href": "Resources/CSD-Open-Data/Data/Novotný-et-al-2016.html",
     "title": "Hypernasality associated with basal ganglia dysfunction: evidence from Parkinson’s disease and Huntington’s disease",
     "section": "",
     "text": "This page contains open datasets needed to replicate the primary outcomes for the study “Hypernasality associated with basal ganglia dysfunction: evidence from Parkinson’s disease and Huntington’s disease”.\n\n\n\n Back to top"
@@ -308,6 +308,13 @@
     "text": "Research produced by the CSDisseminate team and collaborators."
   },
   {
+    "objectID": "Research/index.html#preprints",
+    "href": "Research/index.html#preprints",
+    "title": "Research",
+    "section": "Preprints",
+    "text": "Preprints\n\n\n\n  \n  A Review of Replications Over 88 Years of the American Speech-Language Hearing Association Journal Publications\n    Andrea Ford, Jessica S. Riccardi, Austin Thompson, Helen L. Long, James Borders, Scott Schroeder, Alisa Baron, Mariam El Amin, Danika L. Pfeiffer\n    PsyArXiv\n    (Preprint)\n    \n      \n        Details\n      \n      \n      \n      \n      \n      \n      \n         Preprint\n      \n      \n      \n      \n      \n    \n  \n\n\n\nNo matching items"
+  },
+  {
     "objectID": "Research/index.html#peer-reviewed-publications",
     "href": "Research/index.html#peer-reviewed-publications",
     "title": "Research",
@@ -343,18 +350,11 @@
     "text": "Important Links\n DOI\n Postprint\n Materials\n Preregistration"
   },
   {
-    "objectID": "Research/Publications/2025-11-04_stark-and-gaeta/index.html#important-links",
-    "href": "Research/Publications/2025-11-04_stark-and-gaeta/index.html#important-links",
-    "title": "Evidence Synthesis and Open Science: A Tutorial for Systematic Reviews and Beyond in Audiology Research",
+    "objectID": "Research/Publications/2022-09-19_pfieffer-et-al/index.html#important-links",
+    "href": "Research/Publications/2022-09-19_pfieffer-et-al/index.html#important-links",
+    "title": "Access research beyond the paywall: Five strategies to read what you need",
     "section": "Important Links",
-    "text": "Important Links\n DOI"
-  },
-  {
-    "objectID": "Research/Publications/2025-12-29_rountrey-et-al/index.html#important-links",
-    "href": "Research/Publications/2025-12-29_rountrey-et-al/index.html#important-links",
-    "title": "Introducing Open Science in Higher Education Settings: A Case Example from a College of AlliedHealth Sciences",
-    "section": "Important Links",
-    "text": "Important Links\n DOI\n Preprint\n Materials"
+    "text": "Important Links\n DOI\n Open Access"
   },
   {
     "objectID": "Research/Publications/2022-01-15_gaeta-et-al/index.html#important-links",
@@ -364,11 +364,25 @@
     "text": "Important Links\n DOI\n Postprint"
   },
   {
-    "objectID": "Research/Publications/2022-09-19_pfieffer-et-al/index.html#important-links",
-    "href": "Research/Publications/2022-09-19_pfieffer-et-al/index.html#important-links",
-    "title": "Access research beyond the paywall: Five strategies to read what you need",
+    "objectID": "Research/Publications/2025-12-29_rountrey-et-al/index.html#important-links",
+    "href": "Research/Publications/2025-12-29_rountrey-et-al/index.html#important-links",
+    "title": "Introducing Open Science in Higher Education Settings: A Case Example from a College of AlliedHealth Sciences",
     "section": "Important Links",
-    "text": "Important Links\n DOI\n Open Access"
+    "text": "Important Links\n DOI\n Preprint\n Materials"
+  },
+  {
+    "objectID": "Research/Publications/2025-11-04_stark-and-gaeta/index.html#important-links",
+    "href": "Research/Publications/2025-11-04_stark-and-gaeta/index.html#important-links",
+    "title": "Evidence Synthesis and Open Science: A Tutorial for Systematic Reviews and Beyond in Audiology Research",
+    "section": "Important Links",
+    "text": "Important Links\n DOI"
+  },
+  {
+    "objectID": "Research/Publications/Preprint_ford-et-al/index.html#important-links",
+    "href": "Research/Publications/Preprint_ford-et-al/index.html#important-links",
+    "title": "A Review of Replications Over 88 Years of the American Speech-Language Hearing Association Journal Publications",
+    "section": "Important Links",
+    "text": "Important Links\n Preprint"
   },
   {
     "objectID": "Research/Publications/2025-01-02_pfieffer-et-al/index.html#important-links",

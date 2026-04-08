@@ -1,0 +1,73 @@
+---
+title: "A Review of Replications Over 88 Years of the American Speech-Language Hearing Association Journal Publications"
+publication: "PsyArXiv"
+date: "2026-04-07"
+year: "Preprint"
+author:
+  - name: Andrea Ford
+    orcid: 0000-0003-0213-526X
+    affiliations:
+      - University of Cincinnati
+  - name: Jessica S. Riccardi
+  - name: Austin Thompson
+    orcid: 0000-0002-4224-4850
+    affiliations:
+      - University of Houston
+  - name: Helen L. Long
+  - name: James Borders
+    orcid: 0000-0002-0291-4266
+    affiliations:
+      - Boston University
+  - name: Scott Schroeder
+    orcid: 0000-0003-0616-3276
+    affiliations:
+      - Hofstra University
+  - name: Alisa Baron
+    orcid: 0000-0002-6627-945X
+    affiliations:
+      - University of Rhode Island
+  - name: Mariam El Amin
+    orcid: 0000-0001-7150-4271
+    affiliations:
+      - University of South Carolina
+  - name: Danika L. Pfeiffer
+categories:
+  - "Preprint"
+  - "Open Science"
+links:
+  doi:
+    show: false
+    link: ""
+  pubmed:
+    show: false
+    link: ""
+  postprint:
+    show: false
+    link: ""
+  preprint:
+    show: true
+    link: "https://doi.org/10.31234/osf.io/jsgqh_v1"
+  oa:
+    show: false
+    link: ""
+  materials:
+    show: false
+    link: ""
+  preregistration:
+    show: false
+    link: ""
+abstract: "**Purpose:** This review aimed to determine the prevalence of replication studies in the field of Communication Sciences and Disorders and examine longitudinal changes in this prevalence across American Speech-Language-Hearing Association (ASHA) journals from 1936 to 2024. It is a conceptual replication of Cook and colleagues’ review of replications in special education journals.<br>
+**Method:** Our data source comprised 17,843 journal articles published in seven ASHA peer-reviewed journals between 1936 and 2024. We identified 3,903 articles, excluding duplicates, that had at least one instance of replicat*. Two research team members screened articles independently, and then one research team member coded each article, with reliability checks conducted on 20% of articles.<br>
+**Results:** Of 17,843 total published studies, there was a 0.86% replication rate (n = 154) within ASHA journals. Most replications were conceptual and successfully replicated the previous study’s results. They involved a range of research designs, with experimental/quasi-experimental being the most prevalent.Replication studies were published more frequently over time.<br>
+**Conclusions:** As the first study to investigate replication rates in CSD, our findings suggest a low replication rate, consistent with findings in other fields. To continue building a cumulative and rigorous evidence base in the field of CSD, researchers should consider sharing their data and materials and completing reporting tools and checklists, to clearly detail their methods and analysis processes in a transparent way, enabling future replication. A more extensive investigation is needed to identify replication studies published in other CSD-related journals and to explore whether additional studies that use broader definitions of replication should be considered.<br>"
+title-block-banner: true
+editor: source
+---
+
+\
+\
+
+## Important Links
+
+{{< include ../../../_includes/pub-buttons.qmd >}}
+
