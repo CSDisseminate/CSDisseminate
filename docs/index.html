@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>CSDisseminate</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -35,15 +38,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d027b86c2d66da614f2812c88e5ef83f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-2a2a554421d9a7f76e284e83f44fa785.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d027b86c2d66da614f2812c88e5ef83f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,9 +115,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-collections','listing-format','listing-editor','listing-language','listing-freeze','listing-title-block-banner','listing-title','listing-pagetitle','listing-pi','listing-headshot','listing-categories','listing-lightbox','listing-draft','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-collections','listing-format','listing-editor','listing-engines','listing-language','listing-freeze','listing-title-block-banner','listing-title','listing-pagetitle','listing-pi','listing-headshot','listing-categories','listing-lightbox','listing-draft','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-freeze","listing-title-block-banner","listing-title","listing-pagetitle","listing-pi","listing-headshot","listing-categories","listing-lightbox","listing-draft","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-engines","listing-language","listing-freeze","listing-title-block-banner","listing-title","listing-pagetitle","listing-pi","listing-headshot","listing-categories","listing-lightbox","listing-draft","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -130,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -162,15 +168,175 @@ window.Quarto = {
 <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title"><img src="./Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
     </a>
@@ -223,6 +389,7 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -253,14 +420,15 @@ window.Quarto = {
 
 
 
+
 <div style="text-align: center; padding-top: 2em; padding-bottom: 2em;">
-<p><img src="Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" alt="CSDisseminate Logo" style="width: 400px;"></p>
+<p><img src="Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" alt="CSDisseminate Logo" style="width: 260px;"></p>
 <div style="font-size: 2em; font-weight: 700; margin-top: 1em;">
 <p>CSDisseminate</p>
 </div>
-<p style="max-width: 600px; margin: 1em auto; font-size: 1.1em;">
-</p><p>Disseminating knowledge and resources about open science practices to researchers and clinicians in the field of Communication Sciences and Disorders (CSD).</p>
-<p></p>
+<div style="text-align: center;  margin: 1em auto; max-width: 350px;">
+<p>Disseminating knowledge and resources about open science practices to researchers and clinicians in the field of Communication Sciences and Disorders (CSD).</p>
+</div>
 </div>
 <hr>
 <section id="learn-about" class="level2">
@@ -301,7 +469,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="announcements">Announcements</h2>
 <div id="listing-recent-announcements" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1761800400000" data-listing-file-modified-sort="1761938377395" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
+<div class="quarto-post image-right" data-index="0" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1761800400000" data-listing-file-modified-sort="1761938377000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
 <div class="thumbnail"><a href="./Announcements/2025_10_30_cos-blog-post/index.html" class="no-external">
 
 <img loading="lazy" src="https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(10).png" class="thumbnail-image">
@@ -323,10 +491,10 @@ Austin Thompson
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1746939600000" data-listing-file-modified-sort="1761938476934" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
+<div class="quarto-post image-right" data-index="1" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1746939600000" data-listing-file-modified-sort="1761938476000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
 <div class="thumbnail"><a href="./Announcements/2025_05_11_forward-focus-journal-club/index.html" class="no-external">
 
-<p class="card-img-top"><img src="Announcements/2025_05_11_forward-focus-journal-club/Forward-Focus-Flyer.png" alt="Flyer for the Forward Focus Journal Club promoting a discussion titled “1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders. Speakers are Dr. Danika Pfeiffer and Dr. Austin Thompson. The event is scheduled for Sunday, May 18, 2025, at 10 AM PT / 12 PM CT / 1 PM ET. Contact email for interest: forwardfocusonvoice@gmail.com. The flyer includes circular photos of the two speakers and features a purple and cream wave design background."  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img loading='lazy' src="Announcements/2025_05_11_forward-focus-journal-club/Forward-Focus-Flyer.png" alt="Flyer for the Forward Focus Journal Club promoting a discussion titled “1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders. Speakers are Dr. Danika Pfeiffer and Dr. Austin Thompson. The event is scheduled for Sunday, May 18, 2025, at 10 AM PT / 12 PM CT / 1 PM ET. Contact email for interest: forwardfocusonvoice@gmail.com. The flyer includes circular photos of the two speakers and features a purple and cream wave design background."  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
@@ -348,7 +516,7 @@ Austin Thompson, Danika Pfeiffer
 <div class="quarto-post image-right" data-index="2" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1746162000000" data-listing-file-modified-sort="1761938384000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
 <div class="thumbnail"><a href="./Announcements/2025_05_02_Open-Data-Webinar/index.html" class="no-external">
 
-<p class="card-img-top"><img src="Announcements/2025_05_02_Open-Data-Webinar/open-data-webinar-flyer.png" alt="Flyer for a webinar titled “Open Data 101: A Guide for Researchers,” hosted by CSDisseminate. The design features a large black circle with white text and a bar graph icon, and the event is scheduled for Tuesday, June 3, 2025, at 4:00 PM EST. Wavy black lines border the image, with purple accents and a lightbulb logo representing CSDisseminate at the top."  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img loading='lazy' src="Announcements/2025_05_02_Open-Data-Webinar/open-data-webinar-flyer.png" alt="Flyer for a webinar titled “Open Data 101: A Guide for Researchers,” hosted by CSDisseminate. The design features a large black circle with white text and a bar graph icon, and the event is scheduled for Tuesday, June 3, 2025, at 4:00 PM EST. Wavy black lines border the image, with purple accents and a lightbulb logo representing CSDisseminate at the top."  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
@@ -409,19 +577,21 @@ Danika Pfeiffer, Helen Long
   margin-top: 1rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+
 @media (min-width: 640px) { .featured-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1024px) { .featured-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
 /* ---- Card ---- */
 .featured-list .card {
-  background: #fff;
-  border: 1px solid #e5e5e5;
+  background: var(--bs-card-bg);
+  border: 1px solid var(--bs-border-color);
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   text-align: left;
 }
+
 .featured-list .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
@@ -456,9 +626,10 @@ Danika Pfeiffer, Helen Long
 }
 .featured-list .pi {
   font-size: 0.9em;
-  color: #555;
+  color: var(--bs-secondary-color);
   line-height: 1.4;
 }
+
 </style>
 
   <li class="card" data-index="0" data-categories="RmVhdHVyZWQlMjBTY2llbnRpc3Rz" data-listing-file-modified-sort="1759855203000" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
@@ -475,7 +646,7 @@ Danika Pfeiffer, Helen Long
     </a>
   </li>
 
-  <li class="card" data-index="1" data-categories="RmVhdHVyZWQlMjBTY2llbnRpc3Rz" data-listing-file-modified-sort="1759855167779" data-listing-reading-time-sort="1" data-listing-word-count-sort="137">
+  <li class="card" data-index="1" data-categories="RmVhdHVyZWQlMjBTY2llbnRpc3Rz" data-listing-file-modified-sort="1759855167000" data-listing-reading-time-sort="1" data-listing-word-count-sort="137">
     <a href="./Featured-Scientists/CLaSS-Lab/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">
@@ -497,7 +668,7 @@ Danika Pfeiffer, Helen Long
 </section>
 <section id="contact" class="level2">
 <h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<div style="background-color: #e4e4e4; border-radius: 20px; padding: 2em; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+<div style="background-color: var(--darken($body-bg, 20%)); color: var(--bs-body-color); border-radius: 20px; padding: 2em; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
 <div style="flex: 1; min-width: 300px; padding-right: 2em; font-size: 1em;">
 <p>We’d love your feedback as we continue to develop this site.</p>
 <p>After all, it is a site to help <em>you</em>!</p>
@@ -531,6 +702,19 @@ Danika Pfeiffer, Helen Long
 </footer>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

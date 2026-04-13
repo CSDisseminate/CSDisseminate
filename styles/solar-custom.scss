@@ -1,0 +1,49 @@
+/*-- scss:defaults --*/
+
+/* Colors */
+$primary: #8960A8;
+$secondary: rgba(167, 139, 250, 0.18);
+$success: #8960A8;
+
+/* Main page background */
+$body-bg: darken($primary, 40%);   
+
+/* Text color */
+$body-color: lighten(#F9F9F7, 20%);
+
+/* Optional: tweak hover color */
+$link-hover-color: #B91F2B;
+
+/* Navbar background */
+$navbar-bg: darken($body-bg, 2%);
+
+/* Dark Nav bar text */
+body.quarto-dark .navbar,
+.navbar[data-bs-theme="dark"] {
+  --bs-navbar-color: var(--bs-body-color);
+  --bs-navbar-hover-color: var(--bs-body-color);
+  --bs-navbar-brand-color: var(--bs-body-color);
+  --bs-navbar-brand-hover-color: var(--bs-body-color);
+  --bs-navbar-active-color: var(--bs-body-color);
+}
+
+/* Dark Nav bar text */
+/* ---- Dark mode heading fix ---- */
+body.quarto-dark .title,
+body.quarto-dark h1,
+body.quarto-dark h2,
+body.quarto-dark h3,
+body.quarto-dark h4,
+body.quarto-dark h5,
+body.quarto-dark h6 {
+  color: var(--bs-body-color) !important;
+}
+
+/* ---- Dark mode: article tags ---- */
+/* Dark mode: manuscript category pills */
+body.quarto-dark .quarto-category {
+  background: rgba(167, 139, 250, 0.18) !important;
+  border: 1px solid rgba(167, 139, 250, 0.30) !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+}

@@ -70,7 +70,13 @@ collections:
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light:
+        - cosmo
+        - styles/cosmo-custom.scss
+      dark:
+        - solar
+        - styles/solar-custom.scss
     css: /styles.css
     toc: true
     metadata:

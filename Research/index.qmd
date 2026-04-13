@@ -70,12 +70,10 @@ Research produced by the CSDisseminate team and collaborators.
 
 ------------------------------------------------------------------------
 
-
 ## Preprints
 
 ::: {#preprints}
 :::
-
 
 ## Peer-Reviewed Publications
 

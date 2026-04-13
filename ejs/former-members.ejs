@@ -26,16 +26,21 @@ const sorted = [...items].sort((a, b) => {
   padding: .35rem 0;
   font-size: .95rem;
 }
+
 .former-list li:last-child {
   border-bottom: none;
 }
+
 .former-name {
   font-weight: 500;
   margin-right: .4rem;
 }
+
 .former-credentials {
-  color: #666;
+  color: var(--bs-secondary-color);
 }
+
+/* Founder badge: light mode */
 .founder-badge {
   display: inline-flex;
   align-items: center;
@@ -51,7 +56,26 @@ const sorted = [...items].sort((a, b) => {
   vertical-align: middle;
   margin-left: .2rem;
 }
-.founder-badge .bi { font-size: .85em; }
+
+.founder-badge .bi {
+  font-size: .85em;
+  color: inherit;
+}
+
+/* Founder badge: dark mode */
+body.quarto-dark .former-credentials {
+  color: var(--bs-secondary-color);
+}
+
+body.quarto-dark .founder-badge {
+  background: rgba(250, 204, 21, 0.18) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(250, 204, 21, 0.28) !important;
+}
+
+body.quarto-dark .founder-badge .bi {
+  color: inherit !important;
+}
 </style>
 
 <% for (const item of sorted) {

@@ -1,8 +1,8 @@
 ```{=html}
 <div id="resource-filter-bar" style="margin-bottom:1rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;">
-  <span style="font-size:.85rem;color:#6b7280;margin-right:.25rem;">Filter:</span>
+  <span style="font-size:.85rem;margin-right:.25rem;">Filter:</span>
   <button class="resource-filter-btn active" data-cat="all"
-    style="font-size:.78rem;padding:.25rem .7rem;border-radius:999px;border:1px solid #d1d5db;background:#f3f4f6;cursor:pointer;font-weight:500;">
+    style="font-size:.78rem;padding:.25rem .7rem;border-radius:999px;cursor:pointer;font-weight:500;">
     All
   </button>
 </div>
@@ -46,40 +46,49 @@ function badgeStyle(cat) {
   padding-left: 0;
   margin: 0;
 }
+
 .resource-card {
   padding: 1.1rem 0;
-  border-bottom: 1px solid var(--quarto-border-color, #e5e7eb);
+  border-bottom: 1px solid var(--bs-border-color);
 }
+
 .resource-card:last-child {
   border-bottom: none;
 }
+
 .resource-card.hidden {
   display: none;
 }
+
 .resource-title {
   font-size: 1.1rem;
   font-weight: 700;
   margin: 0 0 .4rem 0;
 }
+
 .resource-title a {
   text-decoration: none;
   color: inherit;
   font-weight: 700;
 }
+
 .resource-title a:hover {
   text-decoration: underline;
 }
+
 .resource-external-icon {
   font-size: .8em;
   margin-left: .25rem;
   opacity: .6;
 }
+
 .resource-tags {
   display: flex;
   flex-wrap: wrap;
   gap: .3rem;
   margin-bottom: .5rem;
 }
+
 .resource-tag {
   display: inline-flex;
   align-items: center;
@@ -92,23 +101,67 @@ function badgeStyle(cat) {
   cursor: pointer;
   transition: opacity .15s;
 }
+
 .resource-tag:hover {
   opacity: .75;
 }
+
 .resource-desc {
   font-size: .92rem;
-  color: var(--quarto-text-muted, #4b5563);
+  color: var(--bs-secondary-color);
   margin: 0;
   line-height: 1.5;
 }
+
+#resource-filter-bar span {
+  color: var(--bs-secondary-color) !important;
+}
+
 .resource-filter-btn {
   transition: all .15s;
+  background: var(--bs-secondary-bg) !important;
+  border: 1px solid var(--bs-border-color) !important;
+  color: var(--bs-body-color) !important;
 }
+
 .resource-filter-btn.active {
-  background: #8966AB !important;
+  background: var(--bs-primary) !important;
   color: #fff !important;
-  border-color: #8966AB !important;
+  border-color: var(--bs-primary) !important;
   font-weight: 700 !important;
+}
+
+/* Dark mode override */
+body.quarto-dark .resource-filter-btn {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  color: var(--bs-body-color) !important;
+}
+
+body.quarto-dark .resource-filter-btn.active {
+  background: var(--bs-primary) !important;
+  color: #fff !important;
+  border-color: var(--bs-primary) !important;
+  font-weight: 700 !important;
+}
+
+/* ---- Dark mode fixes ---- */
+body.quarto-dark .resource-card {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+body.quarto-dark .resource-external-icon {
+  opacity: 0.75;
+}
+
+body.quarto-dark .resource-tag {
+  color: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+}
+
+/* Indigo-based tags */
+body.quarto-dark .resource-tag[style*="124,58,237"] {
+  background: rgba(167, 139, 250, 0.18) !important;
 }
 </style>
 
@@ -130,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btn.className = "resource-filter-btn";
     btn.dataset.cat = cat;
     btn.textContent = cat;
-    btn.style.cssText = "font-size:.78rem;padding:.25rem .7rem;border-radius:999px;border:1px solid #d1d5db;background:#f3f4f6;cursor:pointer;font-weight:500;";
+    btn.style.cssText = "font-size:.78rem;padding:.25rem .7rem;border-radius:999px;cursor:pointer;font-weight:500;";
     bar.appendChild(btn);
   });
 

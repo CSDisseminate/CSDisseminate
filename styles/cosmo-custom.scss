@@ -1,0 +1,67 @@
+/*-- scss:defaults --*/
+
+/* Change primary color (this controls links, buttons, etc.) */
+$primary: #8960A8;
+$secondary: rgba(167, 139, 250, 0.18);
+
+/* Main page background */
+$body-bg: lighten($primary, 47%);   // ← change this to whatever you want
+
+/* Text color */
+$body-color: #2f2f2f;
+:root {
+  --light-body-color: #2f2f2f; // or whatever your light mode body text is
+}
+
+
+/* Optional: tweak hover color */
+$link-hover-color: #4397C6;
+
+/* Navbar background */
+$navbar-bg: darken($body-bg, 2%);   // or your color
+
+/* Navbar text */
+$navbar-light-color: #4397C6;
+
+/* Navbar brand (site title) */
+$navbar-light-brand-color: #4397C6;
+$navbar-light-brand-hover-color: darken($navbar-light-brand-color, 10%);
+
+footer.custom-footer {
+  background: var(--bs-body-bg) !important;
+  color: var(--bs-body-color) !important;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--bs-border-color);
+}
+
+footer.custom-footer p {
+  max-width: 800px;
+  margin: 0 auto 1rem auto;
+}
+
+footer.custom-footer a {
+  color: var(--bs-link-color) !important;
+}
+
+footer.custom-footer a:hover {
+  color: var(--bs-link-hover-color) !important;
+}
+
+/* Cards */
+.card {
+  border-radius: 20px;
+}
+
+/* Soft purple pills */
+.btn.btn-secondary {
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.24);
+  color: #8966AB !important;
+}
+
+.btn.btn-secondary:hover {
+  background: rgba(124, 58, 237, 0.18);
+  border-color: rgba(124, 58, 237, 0.32);
+  color: #8966AB !important;
+}
