@@ -1,6 +1,5 @@
 /* css styles */
 
-
 /* Make sure the back-to-top button is always on top */
 div.#quarto-back-to-top {
   z-index: 1000 !important;
