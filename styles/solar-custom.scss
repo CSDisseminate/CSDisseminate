@@ -47,3 +47,17 @@ body.quarto-dark .quarto-category {
   color: #ffffff !important;
   opacity: 1 !important;
 }
+
+
+/* Soft purple pills */
+.btn.btn-secondary {
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.24);
+  color: #ffffff !important;
+}
+
+.btn.btn-secondary:hover {
+  background: rgba(124, 58, 237, 0.18);
+  border-color: rgba(124, 58, 237, 0.32);
+  color: #ffffff !important;
+}
