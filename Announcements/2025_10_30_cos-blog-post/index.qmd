@@ -1,5 +1,5 @@
 ---
-title: "CSDisseminate Featured by the Center for Open Science"
+title: "Preprints in Action: Advancing Open Science Across Communication Sciences and Disorders | CSDisseminate Featured by the Center for Open Science"
 pagetitle: "Announcements"
 date: "2025-10-30"
 author:

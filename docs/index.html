@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>CSDisseminate</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -38,18 +35,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-af483390d2142a3ceee2736fcb718d05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1dd7b61f0fac3578cc670d23cdda9247.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-af483390d2142a3ceee2736fcb718d05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-50e6b6deb028d109f2c2aa921bf63357.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-538411a2dadfd6a4837310a6633540de.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-50e6b6deb028d109f2c2aa921bf63357.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -115,9 +113,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-collections','listing-format','listing-editor','listing-engines','listing-language','listing-freeze','listing-title-block-banner','listing-title','listing-pagetitle','listing-pi','listing-headshot','listing-categories','listing-lightbox','listing-draft','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-collections','listing-format','listing-editor','listing-language','listing-freeze','listing-title-block-banner','listing-title','listing-pagetitle','listing-pi','listing-headshot','listing-categories','listing-lightbox','listing-draft','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-engines","listing-language","listing-freeze","listing-title-block-banner","listing-title","listing-pagetitle","listing-pi","listing-headshot","listing-categories","listing-lightbox","listing-draft","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-language","listing-freeze","listing-title-block-banner","listing-title","listing-pagetitle","listing-pi","listing-headshot","listing-categories","listing-lightbox","listing-draft","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -136,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -337,6 +335,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title"><img src="./Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
     </a>
@@ -469,7 +469,29 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="announcements">Announcements</h2>
 <div id="listing-recent-announcements" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1761800400000" data-listing-file-modified-sort="1761938377000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
+<div class="quarto-post image-right" data-index="0" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1770184800000" data-listing-file-modified-sort="1776093593422" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="83">
+<div class="thumbnail"><a href="./Announcements/2026_02_04_cos-interview/index.html" class="no-external">
+
+<img loading="lazy" src="https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(12).png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Announcements/2026_02_04_cos-interview/index.html" class="no-external">Researcher Q&amp;A: Introducing Open Science in a College of Allied Health Sciences | CSDisseminate featured by the Center for Open Science</a>
+</h3>
+</div>
+<div class="metadata">
+<a href="./Announcements/2026_02_04_cos-interview/index.html" class="no-external">
+<div class="listing-date">
+Feb 4, 2026
+</div>
+<div class="listing-author">
+Austin Thompson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1761800400000" data-listing-file-modified-sort="1776093637843" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
 <div class="thumbnail"><a href="./Announcements/2025_10_30_cos-blog-post/index.html" class="no-external">
 
 <img loading="lazy" src="https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(10).png" class="thumbnail-image">
@@ -477,7 +499,7 @@ window.Quarto = {
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./Announcements/2025_10_30_cos-blog-post/index.html" class="no-external">CSDisseminate Featured by the Center for Open Science</a>
+<a href="./Announcements/2025_10_30_cos-blog-post/index.html" class="no-external">Preprints in Action: Advancing Open Science Across Communication Sciences and Disorders | CSDisseminate Featured by the Center for Open Science</a>
 </h3>
 </div>
 <div class="metadata">
@@ -491,10 +513,10 @@ Austin Thompson
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1746939600000" data-listing-file-modified-sort="1761938476000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
+<div class="quarto-post image-right" data-index="2" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1746939600000" data-listing-file-modified-sort="1761938476934" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
 <div class="thumbnail"><a href="./Announcements/2025_05_11_forward-focus-journal-club/index.html" class="no-external">
 
-<p class="card-img-top"><img loading='lazy' src="Announcements/2025_05_11_forward-focus-journal-club/Forward-Focus-Flyer.png" alt="Flyer for the Forward Focus Journal Club promoting a discussion titled “1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders. Speakers are Dr. Danika Pfeiffer and Dr. Austin Thompson. The event is scheduled for Sunday, May 18, 2025, at 10 AM PT / 12 PM CT / 1 PM ET. Contact email for interest: forwardfocusonvoice@gmail.com. The flyer includes circular photos of the two speakers and features a purple and cream wave design background."  class="thumbnail-image card-img"/></p>
+<p class="card-img-top"><img src="Announcements/2025_05_11_forward-focus-journal-club/Forward-Focus-Flyer.png" alt="Flyer for the Forward Focus Journal Club promoting a discussion titled “1-800-Help-Me-With-Open-Science-Stuff”: A Qualitative Examination of Open Science Practices in Communication Sciences and Disorders. Speakers are Dr. Danika Pfeiffer and Dr. Austin Thompson. The event is scheduled for Sunday, May 18, 2025, at 10 AM PT / 12 PM CT / 1 PM ET. Contact email for interest: forwardfocusonvoice@gmail.com. The flyer includes circular photos of the two speakers and features a purple and cream wave design background."  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
@@ -509,28 +531,6 @@ May 11, 2025
 </div>
 <div class="listing-author">
 Austin Thompson, Danika Pfeiffer
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="QW5ub3VuY2VtZW50" data-listing-date-sort="1746162000000" data-listing-file-modified-sort="1761938384000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
-<div class="thumbnail"><a href="./Announcements/2025_05_02_Open-Data-Webinar/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="Announcements/2025_05_02_Open-Data-Webinar/open-data-webinar-flyer.png" alt="Flyer for a webinar titled “Open Data 101: A Guide for Researchers,” hosted by CSDisseminate. The design features a large black circle with white text and a bar graph icon, and the event is scheduled for Tuesday, June 3, 2025, at 4:00 PM EST. Wavy black lines border the image, with purple accents and a lightbulb logo representing CSDisseminate at the top."  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./Announcements/2025_05_02_Open-Data-Webinar/index.html" class="no-external">Attend our upcoming webinar: Open Data 101 - A Guide for Researchers</a>
-</h3>
-</div>
-<div class="metadata">
-<a href="./Announcements/2025_05_02_Open-Data-Webinar/index.html" class="no-external">
-<div class="listing-date">
-May 2, 2025
-</div>
-<div class="listing-author">
-Danika Pfeiffer, Helen Long
 </div>
 </a>
 </div>
@@ -646,7 +646,7 @@ Danika Pfeiffer, Helen Long
     </a>
   </li>
 
-  <li class="card" data-index="1" data-categories="RmVhdHVyZWQlMjBTY2llbnRpc3Rz" data-listing-file-modified-sort="1759855167000" data-listing-reading-time-sort="1" data-listing-word-count-sort="137">
+  <li class="card" data-index="1" data-categories="RmVhdHVyZWQlMjBTY2llbnRpc3Rz" data-listing-file-modified-sort="1759855167779" data-listing-reading-time-sort="1" data-listing-word-count-sort="137">
     <a href="./Featured-Scientists/CLaSS-Lab/index.html" style="text-decoration:none;color:inherit;">
       
         <div class="card-img-top">

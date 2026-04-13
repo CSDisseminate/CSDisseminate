@@ -1,0 +1,21 @@
+---
+title: "Researcher Q&A: Introducing Open Science in a College of Allied Health Sciences | CSDisseminate featured by the Center for Open Science"
+pagetitle: "Announcements"
+date: "2026-02-04"
+author:
+  - Austin Thompson
+categories:
+ - Announcement
+image: https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(12).png
+lightbox: true
+draft: false
+title-block-banner: true
+---
+
+On February 2, 2026, [Carrie Rountrey](https://www.csdisseminate.com/Team/carrie-rountrey/) and [Andrea Ford](https://www.csdisseminate.com/Team/andrea-ford/) were featured in a [Center for Open Science](https://www.cos.io/) blog post highlighting their recent article, ["Introducing Open Science in higher education settings: a case example from a college of allied health sciences"](https://www.tandfonline.com/doi/full/10.1080/17489539.2025.2588200), published in Evidence-Based Communication Assessment and Intervention.
+
+In the interview, they discuss their findings: a case example of introducing open science in a College of Allied Health Sciences.
+
+[Click here to read the blog post!](https://www.cos.io/blog/researcher-qa-introducing-open-science-in-a-college-of-allied-health-sciences)
+
+[![The image from the Center for Open Science blog post.](https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(12).png){fig-align="left" width="587"}](https://www.cos.io/blog/preprints-in-action-advancing-open-science-across-communication-sciences-and-disorders)
