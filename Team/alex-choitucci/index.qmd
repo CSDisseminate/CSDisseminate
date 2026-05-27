@@ -1,0 +1,35 @@
+---
+title: "Alex Choi-Tucci"
+pagetitle: "Alex Choi-Tucci"
+first-name: "Alex"
+last-name: "Choi-Tucci"
+credentials: "PhD, CCC-SLP"
+position: "Postdoctoral Scholar"
+affiliation: "University of California, Irvine"
+pronouns: "he/him"
+orcid: "0000-0002-4329-0832"
+date-joined: "2026-04-06"
+order: 8
+categories:
+  - "Collaborator"
+description-research: "Alex Choi-Tucci (he/him) is currently a postdoctoral scholar at the University of California, Irvine. His primary research interests are assessment development, written language, and developmental language disorder across the lifespan. His current work is focused on the use of item response theory and other advanced statistical methodology to optimize and improve assessment methods for multilingual populations."
+headshot: "../_headshots/alexander_choi_tucci.jpeg"
+lightbox: false
+draft: false
+layout: article
+title-block-categories: false
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/alexander_choi_tucci.jpeg)
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+:::
+::::::
+

@@ -8,7 +8,7 @@ position: "Chair"
 affiliation: "Xavier University"
 pronouns: "she/her"
 orcid: "0000-0002-1599-8681"
-date-joined: "NA"
+date-joined: "2025-01-01"
 order: 8
 categories:
   - "Collaborator"
@@ -16,7 +16,7 @@ description-research: "Carrie Rountrey, Ph.D., CCC-SLP, is the inaugural chair o
 
 Dr. Rountrey’s research focuses on speech production, perception, and intelligibility, with particular emphasis on Parkinson’s disease and other motor speech disorders. Her aim is to to better understand and measure communication in naturalistic contexts."
 description-os: "She is interested in applying principles of open and collaborative science to accelerate the translation of research into clinical practice. Through growing interdisciplinary partnerships with the new program at Xavier, she aims to position clinicians as implementation scientists and patients as active contributors to the research process."
-headshot: "../_headshots/Carrie Rountrey.png"
+headshot: "../_headshots/carrie_rountrey.png"
 lightbox: false
 draft: false
 layout: article
@@ -26,7 +26,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Carrie Rountrey.png)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/carrie_rountrey.png)
 :::
 ::: {.column width="5%"}
 :::

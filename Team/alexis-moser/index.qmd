@@ -1,0 +1,35 @@
+---
+title: "Alexis Moser"
+pagetitle: "Alexis Moser"
+first-name: "Alexis"
+last-name: "Moser"
+credentials: "MS, CCC-SLP"
+position: "PhD Student"
+affiliation: "Florida State University"
+orcid: "0009-0005-4249-9967"
+date-joined: "2026-04-06"
+order: 8
+categories:
+  - "Collaborator"
+description-research: "Alexis Moser is a pediatric speech-language pathologist and doctoral student in the Children’s Literacy and Speech Sound (CLaSS) lab at Florida State University. Her research interests include holistic assessment practices as well as the communication attitudes and communicative participation of children with speech sound disorders."
+link: "www.alexismoser.com"
+headshot: "../_headshots/alexis_moser.jpeg"
+lightbox: false
+draft: false
+layout: article
+title-block-categories: false
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/alexis_moser.jpeg)
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+:::
+::::::
+

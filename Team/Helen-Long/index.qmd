@@ -13,11 +13,11 @@ order: 2
 categories:
   - "Collaborator"
   - "Vice-Chair & Secretary"
-description-research: "Dr. Helen Long's programmatic research examines early communication development in children with cerebral palsy to advance early identification and intervention of speech, language and communication impairments in this population."
+description-research: "Helen Long is a speech-language pathologist and Assistant Professor at Case Western Reserve University. Her research aims to improve care pathways targeting early identification and intervention of communication disabilities in infants and toddlers with motor disorders like cerebral palsy to support early interaction with caregivers and long-term participation."
 description-os: "Dr. Long is an advocate of free and public access to scientific manuscripts for clinicians and scientists, and is dedicated to advancing knowledge on how to share and access research."
 link: "http://caslabs.case.edu/commspeech/"
 website-button: "Visit Dr. Long's Lab Website!"
-headshot: "../_headshots/Helen Long.jpg"
+headshot: "../_headshots/helen_long.jpg"
 lightbox: false
 draft: false
 layout: article
@@ -27,7 +27,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Helen Long.jpg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/helen_long.jpg)
 :::
 ::: {.column width="5%"}
 :::

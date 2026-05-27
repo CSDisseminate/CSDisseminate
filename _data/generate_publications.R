@@ -19,7 +19,7 @@ publications_dir <- "Research/Publications"
 # ── Authenticate ─────────────────────────────────────────────────────────────
 # On first run this will open a browser to authenticate.
 # Subsequent runs will use the cached token.
-#gs4_auth()
+gs4_auth()
 
 # ──Read sheets ──────────────────────────────────────────────────────────────
 publications <- read_sheet(publications_sheet_id, sheet = "Publications") %>%

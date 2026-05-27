@@ -1,8 +1,8 @@
 ---
 title: "Laura Gaeta"
 last-name: "Gaeta"
+credentials: "PhD"
 categories:
-  - "Coauthor"
   - "Former Collaborator"
 draft: false
 robots: "noindex"

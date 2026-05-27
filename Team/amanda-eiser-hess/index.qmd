@@ -1,0 +1,35 @@
+---
+title: "Amanda Eiser Hess"
+pagetitle: "Amanda Eiser Hess"
+first-name: "Amanda"
+last-name: "Eiser Hess"
+credentials: "MS, CCC-SLP"
+position: "PhD Student"
+affiliation: "University of Virginia"
+pronouns: "she/her"
+orcid: "0009-0008-9527-0893"
+date-joined: "2026-02-09"
+order: 8
+categories:
+  - "Collaborator"
+description-research: "Amanda Eiser Hess is a PhD student in the Special Education program at the University of Virginia. Her research focuses on two areas: 1) caregiver coaching to support multimodal communicative participation for young children with disabilities, and 2) metascience focused on improving accessibility and replicability through open science. She previously worked as a preschool speech-language pathologist, specializing in augmentative and alternative communication for children with cerebral palsy."
+headshot: "../_headshots/amanda_eiser_hess.jpeg"
+lightbox: false
+draft: false
+layout: article
+title-block-categories: false
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/amanda_eiser_hess.jpeg)
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+:::
+::::::
+

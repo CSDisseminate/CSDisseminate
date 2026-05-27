@@ -79,6 +79,13 @@ build_categories <- function(categories_str) {
   paste0('  - "', cats, '"', collapse = "\n")
 }
 
+team <- team |>
+  mutate(
+    order = map_int(categories, get_sort_order),
+    date_joined = as.Date(date_joined)
+  ) |>
+  arrange(order, date_joined)
+
 # ── Remove folders for anyone moved to Former Collaborator ───────────────────
 former_slugs <- map_chr(former$full_name, make_slug)
 active_slugs <- tolower(map_chr(team$full_name, make_slug))

@@ -18,7 +18,7 @@ description-research: "Austin Thompson, Ph.D., CCC-SLP, is a speech-language pat
 description-os: "Austin is passionate about supporting researchers to embrace open-science practices to improve their work’s scientific rigor, reproducibility, and accessibility."
 link: "https://speak-lab.com"
 website-button: "Visit the SPEAK Lab website!"
-headshot: "../_headshots/Austin Thompson.jpeg"
+headshot: "../_headshots/austin_thompson.jpeg"
 lightbox: false
 draft: false
 layout: article
@@ -28,7 +28,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Austin Thompson.jpeg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/austin_thompson.jpeg)
 :::
 ::: {.column width="5%"}
 :::

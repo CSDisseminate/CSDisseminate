@@ -28,6 +28,7 @@ listing:
       categories: "Collaborator"
     sort:
       - order
+      - date-joined
     sort-ui: false
     filter-ui: false
   - id: former-collaborators
@@ -37,6 +38,7 @@ listing:
     fields:
       - title
       - credentials
+      - last_name
     include:
       categories: "Former Collaborator"
     sort-ui: false

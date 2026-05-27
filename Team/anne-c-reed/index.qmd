@@ -15,7 +15,7 @@ categories:
 description-research: "Anne Reed, Ph.D., CCC-SLP is an Assistant Professor in Communication Disorders at Texas State University in Round Rock, TX. Anne's research interests include using an implementation science framework to study the effectiveness of services provided by SLPs in addressing the challenges faced by students with speech-language and reading difficulties. Drawing from her extensive professional background, which encompasses over 20 years of experience as a school-based SLP, as well as roles within private clinics and a specialized school for students with dyslexia, Anne brings a wealth of practical insight to her research, academic, and clinical pursuits."
 link: "https://sites.google.com/view/annecreed/home"
 website-button: "Visit Dr. Reed's Website"
-headshot: "../_headshots/Anne C. Reed.jpg"
+headshot: "../_headshots/anne_c_reed.jpg"
 lightbox: false
 draft: false
 layout: article
@@ -27,7 +27,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Anne C. Reed.jpg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/anne_c_reed.jpg)
 :::
 ::: {.column width="5%"}
 :::

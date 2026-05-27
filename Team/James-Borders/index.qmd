@@ -13,7 +13,7 @@ order: 8
 categories:
   - "Collaborator"
 description-research: "James Borders, PhD, CCC-SLP is a speech pathologist and Postdoctoral Research Fellow in the Upper Airway Dysfunction Lab at Teachers College, Columbia University. His clinical research focuses on the rehabilitation of voice and swallowing dysfunction in neurodegenerative disease. James is also passionate about meta-science, statistics, and how these practices affect the transparency, rigor, and replicability of science."
-headshot: "../_headshots/James Borders.png"
+headshot: "../_headshots/james_borders.png"
 lightbox: false
 draft: false
 layout: article
@@ -23,7 +23,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/James Borders.png)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/james_borders.png)
 :::
 ::: {.column width="5%"}
 :::

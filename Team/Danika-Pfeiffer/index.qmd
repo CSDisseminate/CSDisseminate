@@ -17,7 +17,7 @@ description-research: "Danika’s primary research interest is in enhancing youn
 description-os: "Danika is passionate about improving accessibility of research and using open science as a means to promote collaborations that enhance the research process."
 link: "https://www.danikapfeiffer.com"
 website-button: "Visit Dr. Pfeiffer's Website"
-headshot: "../_headshots/Danika Pfeiffer.jpeg"
+headshot: "../_headshots/danika_pfeiffer.jpeg"
 lightbox: false
 draft: false
 layout: article
@@ -27,7 +27,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/Danika Pfeiffer.jpeg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/danika_pfeiffer.jpeg)
 :::
 ::: {.column width="5%"}
 :::
