@@ -18,80 +18,6 @@
     ]
   },
   {
-    "listing": "/index.html",
-    "items": [
-      "/Announcements/2026_02_04_cos-interview/index.html",
-      "/Announcements/2025_10_30_cos-blog-post/index.html",
-      "/Announcements/2025_05_11_forward-focus-journal-club/index.html",
-      "/Announcements/2025_05_02_Open-Data-Webinar/index.html",
-      "/Announcements/2025_04_18_csdisseminate & opencsd/index.html",
-      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
-      "/Featured-Scientists/CLaSS-Lab/index.html"
-    ]
-  },
-  {
-    "listing": "/team.html",
-    "items": [
-      "/Team/danika-pfeiffer/index.html",
-      "/Team/helen-long/index.html",
-      "/Team/austin-thompson/index.html",
-      "/Team/mariam-el-amin/index.html",
-      "/Team/micah-hirsch/index.html",
-      "/Team/andrea-ford/index.html",
-      "/Team/jennifer-magnuson/index.html",
-      "/Team/jessica-salley-riccardi/index.html",
-      "/Team/james-borders/index.html",
-      "/Team/brittany-ciullo/index.html",
-      "/Team/anne-c-reed/index.html",
-      "/Team/carrie-rountrey/index.html",
-      "/Team/alisa-baron/index.html",
-      "/Team/collin-brice/index.html",
-      "/Team/amanda-eiser-hess/index.html",
-      "/Team/paige-distefano/index.html",
-      "/Team/alexis-moser/index.html",
-      "/Team/alex-choitucci/index.html",
-      "/Team/elaine-kearney/index.html",
-      "/Team/kristin-szymanek/index.html",
-      "/Team/laura-gaeta/index.html",
-      "/Team/lee-drown/index.html",
-      "/Team/mary-alice-keller/index.html",
-      "/Team/megan-parsons/index.html",
-      "/Team/meredith-harold/index.html",
-      "/Team/meredith-spratford/index.html",
-      "/Team/terlenda-lassiter/index.html"
-    ]
-  },
-  {
-    "listing": "/featured-scientists.html",
-    "items": [
-      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
-      "/Featured-Scientists/CLaSS-Lab/index.html"
-    ]
-  },
-  {
-    "listing": "/Research/index.html",
-    "items": [
-      "/Research/Publications/2026-03-10_pfieffer-et-al/index.html",
-      "/Research/Publications/2025-12-29_rountrey-et-al/index.html",
-      "/Research/Publications/2025-11-10_borders-et-al/index.html",
-      "/Research/Publications/2025-11-04_stark-and-gaeta/index.html",
-      "/Research/Publications/2025-01-02_pfieffer-et-al/index.html",
-      "/Research/Publications/2023-06-20_el-amin-et-al/index.html",
-      "/Research/Publications/2023-06-20_schroeder-et-al/index.html",
-      "/Research/Publications/2023-06-20_long-et-al/index.html",
-      "/Research/Publications/Preprint_ford-et-al/index.html",
-      "/Research/Publications/2022-09-19_pfieffer-et-al/index.html",
-      "/Research/Publications/2022-01-15_gaeta-et-al/index.html"
-    ]
-  },
-  {
-    "listing": "/events.html",
-    "items": [
-      "/Events/2025-06-03-Open-Data-Workshop/index.html",
-      "/Events/2025-05-18-Forward-Focus/index.html"
-    ]
-  },
-  {
     "listing": "/Resources/CSD-Open-Data/index.html",
     "items": [
       "/Resources/CSD-Open-Data/Data/ASDBank.html",
@@ -114,6 +40,81 @@
       "/Resources/CSD-Open-Data/Data/UA-Speech.html",
       "/Resources/CSD-Open-Data/Data/UltraSuite.html",
       "/Resources/CSD-Open-Data/Data/Thompson-et-al-2023.html"
+    ]
+  },
+  {
+    "listing": "/events.html",
+    "items": [
+      "/Events/2025-06-03-Open-Data-Workshop/index.html",
+      "/Events/2025-05-18-Forward-Focus/index.html"
+    ]
+  },
+  {
+    "listing": "/Research/index.html",
+    "items": [
+      "/Research/Publications/2026-03-10_pfieffer-et-al/index.html",
+      "/Research/Publications/2025-12-29_rountrey-et-al/index.html",
+      "/Research/Publications/2025-11-10_borders-et-al/index.html",
+      "/Research/Publications/2025-11-04_stark-and-gaeta/index.html",
+      "/Research/Publications/2025-01-02_pfieffer-et-al/index.html",
+      "/Research/Publications/2023-06-20_el-amin-et-al/index.html",
+      "/Research/Publications/2023-06-20_schroeder-et-al/index.html",
+      "/Research/Publications/2023-06-20_long-et-al/index.html",
+      "/Research/Publications/Preprint_ford-et-al/index.html",
+      "/Research/Publications/2022-09-19_pfieffer-et-al/index.html",
+      "/Research/Publications/2022-01-15_gaeta-et-al/index.html"
+    ]
+  },
+  {
+    "listing": "/featured-scientists.html",
+    "items": [
+      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
+      "/Featured-Scientists/CLaSS-Lab/index.html"
+    ]
+  },
+  {
+    "listing": "/team.html",
+    "items": [
+      "/Team/danika-pfeiffer/index.html",
+      "/Team/helen-long/index.html",
+      "/Team/austin-thompson/index.html",
+      "/Team/mariam-el-amin/index.html",
+      "/Team/micah-hirsch/index.html",
+      "/Team/andrea-ford/index.html",
+      "/Team/jennifer-magnuson/index.html",
+      "/Team/jessica-salley-riccardi/index.html",
+      "/Team/james-borders/index.html",
+      "/Team/brittany-ciullo/index.html",
+      "/Team/anne-c-reed/index.html",
+      "/Team/carrie-rountrey/index.html",
+      "/Team/alisa-baron/index.html",
+      "/Team/collin-brice/index.html",
+      "/Team/amanda-eiser-hess/index.html",
+      "/Team/scott-schroeder/index.html",
+      "/Team/paige-distefano/index.html",
+      "/Team/alexis-moser/index.html",
+      "/Team/alex-choitucci/index.html",
+      "/Team/elaine-kearney/index.html",
+      "/Team/kristin-szymanek/index.html",
+      "/Team/laura-gaeta/index.html",
+      "/Team/lee-drown/index.html",
+      "/Team/mary-alice-keller/index.html",
+      "/Team/megan-parsons/index.html",
+      "/Team/meredith-harold/index.html",
+      "/Team/meredith-spratford/index.html",
+      "/Team/terlenda-lassiter/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/Announcements/2026_02_04_cos-interview/index.html",
+      "/Announcements/2025_10_30_cos-blog-post/index.html",
+      "/Announcements/2025_05_11_forward-focus-journal-club/index.html",
+      "/Announcements/2025_05_02_Open-Data-Webinar/index.html",
+      "/Announcements/2025_04_18_csdisseminate & opencsd/index.html",
+      "/Featured-Scientists/Audibility-Perception-and-Cognition-Lab/index.html",
+      "/Featured-Scientists/CLaSS-Lab/index.html"
     ]
   }
 ]

@@ -1,0 +1,35 @@
+---
+title: "Scott Schroeder"
+pagetitle: "Scott Schroeder"
+first-name: "Scott"
+last-name: "Schroeder"
+credentials: "PhD"
+position: "Associate Professor"
+affiliation: "Hofstra University"
+pronouns: "he/him"
+orcid: "0000-0003-0616-3276"
+date-joined: "2026-04-06"
+order: 8
+categories:
+  - "Collaborator"
+description-research: "Scott R. Schroeder, Ph.D., is an Associate Professor in Speech-Language-Hearing Sciences at Hofstra University. His research is mainly in the field of psycholinguistics (i.e., psychology of language) and examines how language relates to cognitive, social, and emotional functioning. He is also interested in how to make research more accurate, reliable, and useful. He received his Ph.D. and M.A. in Communication Sciences and Disorders from Northwestern University and his B.A. in Psychology from Indiana University."
+headshot: "../_headshots/scott_schroeder.jpg"
+lightbox: false
+draft: false
+layout: article
+title-block-categories: false
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/scott_schroeder.jpg)
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+:::
+::::::
+
