@@ -1,0 +1,35 @@
+---
+title: "Paige (DiStefano) Darien"
+pagetitle: "Paige (DiStefano) Darien"
+first-name: "Paige"
+last-name: "(DiStefano) Darien"
+credentials: "MS, CCC-SLP"
+position: "PhD Candidate"
+affiliation: "McMaster University"
+pronouns: "she/her"
+orcid: "0009-0005-9497-8193"
+date-joined: "2026-04-06"
+order: 8
+categories:
+  - "Collaborator"
+description-research: "Paige (DiStefano) Darien, MS, CCC-SLP, is a speech-language pathologist and PhD candidate in the Aging Swallow Research Lab at McMaster University. Her research examines swallowing difficulties in people living with dementia, with a focus on caregiver experiences and health inequities. She aims to identify who is most at risk of heightened caregiver burden and where swallowing care systems fall short to support the development of equitable knowledge translation resources."
+headshot: "../_headshots/paige_distefano.jpg"
+lightbox: false
+draft: false
+layout: article
+title-block-categories: false
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/paige_distefano.jpg)
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+:::
+::::::
+

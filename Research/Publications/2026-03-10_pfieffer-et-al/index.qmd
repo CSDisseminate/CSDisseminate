@@ -47,8 +47,8 @@ links:
     show: false
     link: ""
   postprint:
-    show: false
-    link: ""
+    show: true
+    link: "https://osf.io/preprints/edarxiv/ygfhp_v2"
   preprint:
     show: true
     link: "https://osf.io/preprints/edarxiv/ygfhp_v1"

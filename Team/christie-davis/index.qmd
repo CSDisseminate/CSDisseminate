@@ -1,0 +1,35 @@
+---
+title: "Christie Davis"
+pagetitle: "Christie Davis"
+first-name: "Christie"
+last-name: "Davis"
+credentials: "MS, CCC-SLP"
+position: "PhD Student"
+affiliation: "MGH Institute of Health Professions"
+pronouns: "she/her"
+orcid: "0009-0004-5629-5108"
+date-joined: "NA"
+order: 8
+categories:
+  - "Collaborator"
+description-research: "Christie Davis is a bilingual (English/Spanish) speech-language pathologist and doctoral student in the Rehabilitation Sciences program. Her research focuses on adolescent language and literacy development in multilingual populations, with particular interest in developmental language disorder (DLD), dyslexia, and their intersection during adolescence. She also studies implementation science to improve school-based service delivery for adolescents with DLD. Christie aims to advance research that improves language and literacy outcomes for adolescents with DLD and dyslexia."
+headshot: "../_headshots/christie_davis.JPG"
+lightbox: false
+draft: false
+layout: article
+title-block-categories: false
+editor: source
+---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/christie_davis.JPG)
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+:::
+::::::
+
