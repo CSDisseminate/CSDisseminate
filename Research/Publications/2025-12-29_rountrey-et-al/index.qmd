@@ -15,7 +15,7 @@ author:
   - name: Collin Brice
     orcid: 0009-0002-4554-8945
     affiliations:
-      - University of Cincinnati
+      - University of Scranton
   - name: Lynn Warner
     orcid: 0009-0008-6789-413X
     affiliations:

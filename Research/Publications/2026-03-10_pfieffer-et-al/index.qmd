@@ -19,7 +19,7 @@ author:
   - name: Collin Brice
     orcid: 0009-0002-4554-8945
     affiliations:
-      - University of Cincinnati
+      - University of Scranton
   - name: Brittany Ciullo
     orcid: 0000-0002-1261-0258
     affiliations:
