@@ -1,11 +1,35 @@
 ---
 title: "Laura Gaeta"
+pagetitle: "Laura Gaeta"
+first-name: "Laura"
 last-name: "Gaeta"
 credentials: "PhD"
+position: "Associate Professor"
+affiliation: "California State University, Sacramento"
+pronouns: "she/her"
+orcid: "0000-0001-5493-9636"
+date-joined: "NA"
+order: 8
 categories:
-  - "Former Collaborator"
+  - "Collaborator"
+description-research: "Laura Gaeta, PhD, is an associate professor in the Department of Communication Sciences and Disorders at California State University, Sacramento. Her research focuses on aural rehabilitation with older adults and improving access to hearing healthcare services for underserved populations."
+headshot: "../_headshots/laura_gaeta.jpg"
+lightbox: false
 draft: false
-robots: "noindex"
+layout: article
+title-block-categories: false
 editor: source
 ---
+
+:::::: columns
+::: {.column width="30%"}
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/laura_gaeta.jpg)
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="65%"}
+{{< meta description-research >}}
+
+:::
+::::::
 

@@ -11,7 +11,7 @@ author:
   - name: Laura Gaeta
     orcid: 0000-0001-5493-9636
     affiliations:
-      - California State University
+      - California State University, Sacramento
   - name: Mariam El Amin
     orcid: 0000-0001-7150-4271
     affiliations:

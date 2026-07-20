@@ -7,7 +7,7 @@ author:
   - name: Laura Gaeta
     orcid: 0000-0001-5493-9636
     affiliations:
-      - California State University
+      - California State University, Sacramento
   - name: Danika Pfeiffer
     orcid: 0000-0003-1080-4961
     affiliations:
