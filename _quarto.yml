@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: docs
-  pre-render: 
+  pre-render:
     - _data/generate_publications.R
     - _data/generate_team.R
     - _data/generate_resources.R
@@ -9,15 +9,9 @@ project:
 website:
   title: "CSDisseminate"
   favicon: /Images/favicon-96x96.png
-  #announcement: 
-  #  icon: info-circle
-  #  dismissable: true
-  #  content: "Register today for CSDisseminate's Open Data Workshop on June 3rd, 2025! [Click here to learn more!](https://www.csdisseminate.com/Announcements/2025_05_02_Open-Data-Webinar/)"
-  #  type: info
-  #  position: below-navbar
   navbar:
-    title: " 
-  ![](/Images/CSDisseminate Logo_White Logo_Purple Background Circle.png){width=45}
+    title: "
+  ![](/Images/CSDisseminate Logo_White Logo_Purple Background Circle.png){width=45 fig-alt=\"\"}
   \\ \\
   CSDisseminate"
     right:
@@ -39,34 +33,17 @@ website:
         href: events.qmd
       - text: "Support"
         href: support.qmd
-      #- text: "Resources"
-      #  href: resources.qmd
-      #- text: "Events"
-      #  href: events.qmd
   back-to-top-navigation: true
   page-footer:
-    left: 
-      - icon: github
-        href: https://github.com/
-      - icon: instagram 
+    left:
+      # These were icon-only links with no accessible name (screen readers announced
+      # just "link"). Quarto's footer renderer ignores `aria-label`, and supplying
+      # `text` replaces `icon` — so the icon is written out here by hand, marked
+      # decorative, alongside a visually-hidden label that names the link.
+      - text: "<i class='bi bi-github' aria-hidden='true'></i><span class='visually-hidden'>CSDisseminate on GitHub</span>"
+        href: https://github.com/CSDisseminate
+      - text: "<i class='bi bi-instagram' aria-hidden='true'></i><span class='visually-hidden'>CSDisseminate on Instagram</span>"
         href: https://www.instagram.com/csdisseminate
-  
-        
-        
-# Define a collection named "Posts"
-collections:
-  Posts:
-    title: "Announcements"
-    # The pattern must match the folder and file extension
-    pattern: "Announcements/*.qmd"
-    sort: "date desc"
-  Team:
-    title: "Team"
-    pattern: "Team/*/*.qmd"
-  FeaturedScientists:
-    title: "Featured Scientists"
-    pattern: "FeaturedScientists/*.qmd"
-    sort: "date desc"
 
 format:
   html:
@@ -82,8 +59,6 @@ format:
     metadata:
       pagetitle: "CSDisseminate"
     include-after-body: custom-footer.html
-    resources:
-      - cards/custom-card.ejs
 
 editor: visual
 

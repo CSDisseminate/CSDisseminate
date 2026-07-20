@@ -27,7 +27,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/helen_long.jpg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/helen_long.jpg){fig-alt="Headshot of Helen Long"}
 :::
 ::: {.column width="5%"}
 :::

@@ -23,7 +23,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/scott_schroeder.jpg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/scott_schroeder.jpg){fig-alt="Headshot of Scott Schroeder"}
 :::
 ::: {.column width="5%"}
 :::

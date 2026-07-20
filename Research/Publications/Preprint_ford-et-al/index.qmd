@@ -8,12 +8,18 @@ author:
     orcid: 0000-0003-0213-526X
     affiliations:
       - University of Cincinnati
-  - name: Jessica S. Riccardi
+  - name: Jessica Salley Riccardi
+    orcid: 0000-0002-3102-3358
+    affiliations:
+      - University of Maine
   - name: Austin Thompson
     orcid: 0000-0002-4224-4850
     affiliations:
       - University of Houston
-  - name: Helen L. Long
+  - name: Helen Long
+    orcid: 0000-0001-6406-1222
+    affiliations:
+      - Case Western Reserve University
   - name: James Borders
     orcid: 0000-0002-0291-4266
     affiliations:

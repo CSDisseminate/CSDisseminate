@@ -40,7 +40,8 @@ const sorted = [...items].sort((a, b) => {
   color: var(--bs-secondary-color);
 }
 
-/* Founder badge: light mode */
+/* Founder badge — uses the shared gold token, which is theme-aware, so the
+   dark-mode override block that used to sit below is no longer needed. */
 .founder-badge {
   display: inline-flex;
   align-items: center;
@@ -48,10 +49,10 @@ const sorted = [...items].sort((a, b) => {
   font-size: .72rem;
   line-height: 1;
   padding: .2rem .55rem;
-  border-radius: 999px;
-  border: 1px solid rgba(251,191,36,.35);
-  background: rgba(251,191,36,.12);
-  color: #78350f;
+  border-radius: var(--csd-radius-pill);
+  border: 1px solid var(--csd-badge-gold-border);
+  background: var(--csd-badge-gold-bg);
+  color: var(--csd-badge-gold-text);
   font-weight: 500;
   vertical-align: middle;
   margin-left: .2rem;
@@ -60,21 +61,6 @@ const sorted = [...items].sort((a, b) => {
 .founder-badge .bi {
   font-size: .85em;
   color: inherit;
-}
-
-/* Founder badge: dark mode */
-body.quarto-dark .former-credentials {
-  color: var(--bs-secondary-color);
-}
-
-body.quarto-dark .founder-badge {
-  background: rgba(250, 204, 21, 0.18) !important;
-  color: rgba(255, 255, 255, 0.92) !important;
-  border-color: rgba(250, 204, 21, 0.28) !important;
-}
-
-body.quarto-dark .founder-badge .bi {
-  color: inherit !important;
 }
 </style>
 

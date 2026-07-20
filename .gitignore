@@ -54,3 +54,10 @@ Backup[ ]of[ ]*.numbers/
 /.quarto/
 
 **/*.quarto_ipynb
+
+# Quarto render artifacts left in the source tree (not in docs/, which is published)
+/Team/index_files/
+/Research/index_files/
+/Resources/index_files/
+/Events/index_files/
+/Announcements/index_files/

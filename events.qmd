@@ -14,7 +14,6 @@ listing:
     categories: false
     sort-ui: false
     filter-ui: false
-    max-items: 3
 ---
 
 Stay up to date on upcoming webinars, workshops, and community events.
@@ -23,5 +22,5 @@ Stay up to date on upcoming webinars, workshops, and community events.
 
 ## Past Events
 
-::: {#recent-events}
+::: {#all-events}
 :::

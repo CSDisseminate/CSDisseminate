@@ -90,7 +90,7 @@ Your article is *black open access* when it is shared online (e.g., via Sci-Hub)
 
 ...throughout the publication process
 
-![](manuscript%20versions.png)
+![](manuscript%20versions.png){fig-alt="Timeline of the three manuscript versions across the publication process. Submitted version (preprint): has not undergone peer review. Accepted version (postprint): peer-reviewed and accepted for publication, but not yet formatted by the publisher. Published version (offprint): peer-reviewed, formatted by the publisher, and available on the journal website."}
 
 #### Submitted Version → Preprints
 

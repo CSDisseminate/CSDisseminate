@@ -32,14 +32,14 @@ function resolveImg(item) {
   border: 1px solid var(--bs-border-color);
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: var(--csd-shadow-card);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   text-align: left;
 }
 
 .featured-list .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: var(--csd-shadow-card-hover);
 }
 
 /* ---- Image ---- */

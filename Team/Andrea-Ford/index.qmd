@@ -26,7 +26,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/andrea_ford.jpg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/andrea_ford.jpg){fig-alt="Headshot of Andrea Ford"}
 :::
 ::: {.column width="5%"}
 :::

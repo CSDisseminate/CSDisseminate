@@ -7,6 +7,7 @@ author:
 categories:
  - Announcement
 image: https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(10).png
+image-alt: "Center for Open Science “Researcher Q&A” graphic titled “Preprints in Action: Advancing Open Science Across Communication Sciences and Disorders,” with headshots of the eight featured authors."
 lightbox: true
 draft: false
 title-block-banner: true
@@ -18,4 +19,4 @@ The post showcases how preprints are helping advance transparency and collaborat
 
 [Click here to read the blog post!](https://www.cos.io/blog/preprints-in-action-advancing-open-science-across-communication-sciences-and-disorders){.btn .btn-outline-primary .btn role="button" data-toggle="button"}
 
-[![The image from the Center for Open Science blog post.](https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(10).png){fig-align="left" width="600"}](https://www.cos.io/blog/preprints-in-action-advancing-open-science-across-communication-sciences-and-disorders)
+[![The image from the Center for Open Science blog post.](https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(10).png){fig-align="left" width="600" fig-alt="Center for Open Science “Researcher Q&A” graphic titled “Preprints in Action: Advancing Open Science Across Communication Sciences and Disorders,” with headshots of the eight featured authors."}](https://www.cos.io/blog/preprints-in-action-advancing-open-science-across-communication-sciences-and-disorders)

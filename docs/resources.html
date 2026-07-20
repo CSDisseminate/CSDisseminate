@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-af483390d2142a3ceee2736fcb718d05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1dd7b61f0fac3578cc670d23cdda9247.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-af483390d2142a3ceee2736fcb718d05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2fbe77ff07a95e851480b2e7c0a54fd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-6d6bdc1db3e88ef2ef89a6ac15df8255.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2fbe77ff07a95e851480b2e7c0a54fd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-short-description','listing-resource-link','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-engines","listing-language","listing-title","listing-pagetitle","listing-date","listing-date-title","listing-author","listing-author-title","listing-short-description","listing-resource-link","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-resource-button","listing-listing","listing-draft"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-engines","listing-language","listing-title","listing-pagetitle","listing-date","listing-date-title","listing-author","listing-author-title","listing-short-description","listing-resource-link","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-resource-button","listing-listing","listing-draft"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -310,7 +310,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title"><img src="./Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
+    <span class="navbar-title"><img src="./Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" alt="" width="45"> &nbsp;&nbsp;CSDisseminate</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -403,16 +403,13 @@ window.Quarto = {
 
 
 <p>Explore our curated database of resources designed to help scientists and clinicians embrace open science practices in Communication Sciences and Disorders.</p>
-<!--# ::: {.callout-tip appearance="minimal"}
-See a resource missing? Let us know!
-::: -->
 <hr>
 <section id="filter-by-topic" class="level3">
 <h3 class="anchored" data-anchor-id="filter-by-topic">Filter by Topic</h3>
 <div id="listing-resources-all" class="quarto-listing quarto-listing-container-custom">
 <div id="resource-filter-bar" style="margin-bottom:1rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;">
   <span style="font-size:.85rem;margin-right:.25rem;">Filter:</span>
-  <button class="resource-filter-btn active" data-cat="all" style="font-size:.78rem;padding:.25rem .7rem;border-radius:999px;cursor:pointer;font-weight:500;">
+  <button class="resource-filter-btn active" data-cat="all" style="font-size:.78rem;padding:.25rem .7rem;border-radius:var(--csd-radius-pill);cursor:pointer;font-weight:500;">
     All
   </button>
 </div>
@@ -428,7 +425,7 @@ See a resource missing? Let us know!
 
 .resource-card {
   padding: 1.1rem 0;
-  border-bottom: 1px solid var(--bs-border-color);
+  border-bottom: 1px solid var(--csd-divider);
 }
 
 .resource-card:last-child {
@@ -474,11 +471,15 @@ See a resource missing? Let us know!
   font-size: .72rem;
   line-height: 1;
   padding: .18rem .5rem;
-  border-radius: 999px;
+  border-radius: var(--csd-radius-pill);
   border: 1px solid transparent;
   font-weight: 500;
   cursor: pointer;
   transition: opacity .15s;
+  /* reset <button> UA styles so the pill looks identical to the old <span> */
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .resource-tag:hover {
@@ -487,20 +488,20 @@ See a resource missing? Let us know!
 
 .resource-desc {
   font-size: .92rem;
-  color: var(--bs-secondary-color);
+  color: var(--csd-text-muted);
   margin: 0;
   line-height: 1.5;
 }
 
 #resource-filter-bar span {
-  color: var(--bs-secondary-color) !important;
+  color: var(--csd-text-muted) !important;
 }
 
 .resource-filter-btn {
   transition: all .15s;
-  background: var(--bs-secondary-bg) !important;
-  border: 1px solid var(--bs-border-color) !important;
-  color: var(--bs-body-color) !important;
+  background: var(--csd-filter-bg) !important;
+  border: 1px solid var(--csd-filter-border) !important;
+  color: var(--csd-filter-text) !important;
 }
 
 .resource-filter-btn.active {
@@ -510,37 +511,13 @@ See a resource missing? Let us know!
   font-weight: 700 !important;
 }
 
-/* Dark mode override */
-body.quarto-dark .resource-filter-btn {
-  background: rgba(255,255,255,0.06) !important;
-  border: 1px solid rgba(255,255,255,0.12) !important;
-  color: var(--bs-body-color) !important;
-}
-
-body.quarto-dark .resource-filter-btn.active {
-  background: var(--bs-primary) !important;
-  color: #fff !important;
-  border-color: var(--bs-primary) !important;
-  font-weight: 700 !important;
-}
-
-/* ---- Dark mode fixes ---- */
-body.quarto-dark .resource-card {
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
+/* ---- Dark mode ----
+   The filter buttons, tag pills and card dividers all come from theme-aware
+   tokens now, so the per-property dark overrides that used to live here are
+   gone — including `.resource-tag[style*="124,58,237"]`, which matched on a
+   substring of the inline style and broke the moment that literal changed. */
 body.quarto-dark .resource-external-icon {
   opacity: 0.75;
-}
-
-body.quarto-dark .resource-tag {
-  color: rgba(255, 255, 255, 0.92) !important;
-  border-color: rgba(255, 255, 255, 0.16) !important;
-}
-
-/* Indigo-based tags */
-body.quarto-dark .resource-tag[style*="124,58,237"] {
-  background: rgba(167, 139, 250, 0.18) !important;
 }
 </style>
 
@@ -562,7 +539,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btn.className = "resource-filter-btn";
     btn.dataset.cat = cat;
     btn.textContent = cat;
-    btn.style.cssText = "font-size:.78rem;padding:.25rem .7rem;border-radius:999px;cursor:pointer;font-weight:500;";
+    btn.style.cssText = "font-size:.78rem;padding:.25rem .7rem;border-radius:var(--csd-radius-pill);cursor:pointer;font-weight:500;";
     bar.appendChild(btn);
   });
 
@@ -617,7 +594,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-  <li class="resource-card" data-categories="Guide,Open Data,Free,For Scientists" data-index="0" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1784570667712" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="Guide,Open Data,Free,For Scientists" data-index="0" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1784576441610" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://help.osf.io/article/597-data-management-and-sharing-plans-and-osf" target="_blank" rel="noopener noreferrer">
@@ -631,13 +608,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="Guide" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Guide</span>
+          <button type="button" class="resource-tag" data-cat="Guide" aria-label="Filter by Guide" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Guide</button>
         
-          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+          <button type="button" class="resource-tag" data-cat="Open Data" aria-label="Filter by Open Data" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Data</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
       </div>
     
@@ -646,7 +623,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="Guide,Open Data,Free,For Scientists" data-index="1" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1784570667713" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="Guide,Open Data,Free,For Scientists" data-index="1" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1784576441610" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://help.osf.io/article/621-data-sharing-compliance-made-easy" target="_blank" rel="noopener noreferrer">
@@ -660,13 +637,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="Guide" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Guide</span>
+          <button type="button" class="resource-tag" data-cat="Guide" aria-label="Filter by Guide" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Guide</button>
         
-          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+          <button type="button" class="resource-tag" data-cat="Open Data" aria-label="Filter by Open Data" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Data</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
       </div>
     
@@ -675,7 +652,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="Free,OS Tools,For Scientists,Open Methods,Open Data" data-index="2" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1784570667713" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="Free,OS Tools,For Scientists,Open Methods,Open Data" data-index="2" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1784576441611" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
@@ -689,15 +666,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
-          <span class="resource-tag" data-cat="OS Tools" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">OS Tools</span>
+          <button type="button" class="resource-tag" data-cat="OS Tools" aria-label="Filter by OS Tools" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">OS Tools</button>
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
-          <span class="resource-tag" data-cat="Open Methods" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Methods</span>
+          <button type="button" class="resource-tag" data-cat="Open Methods" aria-label="Filter by Open Methods" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Methods</button>
         
-          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+          <button type="button" class="resource-tag" data-cat="Open Data" aria-label="Filter by Open Data" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Data</button>
         
       </div>
     
@@ -706,7 +683,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="Guide,Open Data,Free,For Scientists" data-index="3" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1784570667706" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="Guide,Open Data,Free,For Scientists" data-index="3" data-listing-date-sort="1770616800000" data-listing-file-modified-sort="1784576441603" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://help.osf.io/article/217-how-to-make-a-data-dictionary" target="_blank" rel="noopener noreferrer">
@@ -720,13 +697,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="Guide" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Guide</span>
+          <button type="button" class="resource-tag" data-cat="Guide" aria-label="Filter by Guide" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Guide</button>
         
-          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+          <button type="button" class="resource-tag" data-cat="Open Data" aria-label="Filter by Open Data" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Data</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
       </div>
     
@@ -735,7 +712,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="For Scientists,Open Access,Open Data,Open Peer Review,Preregistration,Open Educational Resources,Free" data-index="4" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1784570667714" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="For Scientists,Open Access,Open Data,Open Peer Review,Preregistration,Open Educational Resources,Free" data-index="4" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1784576441611" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://www.coursera.org/learn/a-starters-guide-to-open-science#about" target="_blank" rel="noopener noreferrer">
@@ -749,19 +726,19 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
-          <span class="resource-tag" data-cat="Open Access" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Access</span>
+          <button type="button" class="resource-tag" data-cat="Open Access" aria-label="Filter by Open Access" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Access</button>
         
-          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+          <button type="button" class="resource-tag" data-cat="Open Data" aria-label="Filter by Open Data" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Data</button>
         
-          <span class="resource-tag" data-cat="Open Peer Review" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Peer Review</span>
+          <button type="button" class="resource-tag" data-cat="Open Peer Review" aria-label="Filter by Open Peer Review" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Peer Review</button>
         
-          <span class="resource-tag" data-cat="Preregistration" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Preregistration</span>
+          <button type="button" class="resource-tag" data-cat="Preregistration" aria-label="Filter by Preregistration" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Preregistration</button>
         
-          <span class="resource-tag" data-cat="Open Educational Resources" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Educational Resources</span>
+          <button type="button" class="resource-tag" data-cat="Open Educational Resources" aria-label="Filter by Open Educational Resources" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Educational Resources</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
       </div>
     
@@ -770,7 +747,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="For Scientists,Preregistration,Free" data-index="5" data-listing-date-sort="1748926800000" data-listing-file-modified-sort="1784570667714" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="For Scientists,Preregistration,Free" data-index="5" data-listing-date-sort="1748926800000" data-listing-file-modified-sort="1784576441611" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://osf.io/cp4x5" target="_blank" rel="noopener noreferrer">
@@ -784,11 +761,11 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
-          <span class="resource-tag" data-cat="Preregistration" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Preregistration</span>
+          <button type="button" class="resource-tag" data-cat="Preregistration" aria-label="Filter by Preregistration" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Preregistration</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
       </div>
     
@@ -797,7 +774,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="OS Tools,Open Data,Open Methods,For Scientists,Free" data-index="6" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1784570667714" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="OS Tools,Open Data,Open Methods,For Scientists,Free" data-index="6" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1784576441611" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
@@ -811,15 +788,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="OS Tools" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">OS Tools</span>
+          <button type="button" class="resource-tag" data-cat="OS Tools" aria-label="Filter by OS Tools" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">OS Tools</button>
         
-          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+          <button type="button" class="resource-tag" data-cat="Open Data" aria-label="Filter by Open Data" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Data</button>
         
-          <span class="resource-tag" data-cat="Open Methods" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Methods</span>
+          <button type="button" class="resource-tag" data-cat="Open Methods" aria-label="Filter by Open Methods" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Methods</button>
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
       </div>
     
@@ -840,15 +817,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="OS Tools" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">OS Tools</span>
+          <button type="button" class="resource-tag" data-cat="OS Tools" aria-label="Filter by OS Tools" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">OS Tools</button>
         
-          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+          <button type="button" class="resource-tag" data-cat="Open Data" aria-label="Filter by Open Data" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Data</button>
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
-          <span class="resource-tag" data-cat="CSDisseminate Resource" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">CSDisseminate Resource</span>
+          <button type="button" class="resource-tag" data-cat="CSDisseminate Resource" aria-label="Filter by CSDisseminate Resource" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">CSDisseminate Resource</button>
         
       </div>
     
@@ -857,7 +834,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="CSDisseminate Resource,Self-Archiving,Open Access,For Scientists,Guide,Free" data-index="8" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1767910830867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2130">
+  <li class="resource-card" data-categories="CSDisseminate Resource,Self-Archiving,Open Access,For Scientists,Guide,Free" data-index="8" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1784573951502" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2176">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="./Resources/Self-Archiving-101/index.html">
@@ -869,17 +846,17 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="CSDisseminate Resource" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">CSDisseminate Resource</span>
+          <button type="button" class="resource-tag" data-cat="CSDisseminate Resource" aria-label="Filter by CSDisseminate Resource" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">CSDisseminate Resource</button>
         
-          <span class="resource-tag" data-cat="Self-Archiving" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Self-Archiving</span>
+          <button type="button" class="resource-tag" data-cat="Self-Archiving" aria-label="Filter by Self-Archiving" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Self-Archiving</button>
         
-          <span class="resource-tag" data-cat="Open Access" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Access</span>
+          <button type="button" class="resource-tag" data-cat="Open Access" aria-label="Filter by Open Access" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Access</button>
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
-          <span class="resource-tag" data-cat="Guide" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Guide</span>
+          <button type="button" class="resource-tag" data-cat="Guide" aria-label="Filter by Guide" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Guide</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
       </div>
     
@@ -888,7 +865,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="For Scientists,Free,Guide,Preregistration,Open Methods,Open Data" data-index="9" data-listing-date-sort="1775365200000" data-listing-file-modified-sort="1784570667715" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="For Scientists,Free,Guide,Preregistration,Open Methods,Open Data" data-index="9" data-listing-date-sort="1775365200000" data-listing-file-modified-sort="1784576441612" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://poldrack.github.io/psych-open-science-guide/README.html" target="_blank" rel="noopener noreferrer">
@@ -902,17 +879,17 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
-          <span class="resource-tag" data-cat="Guide" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Guide</span>
+          <button type="button" class="resource-tag" data-cat="Guide" aria-label="Filter by Guide" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Guide</button>
         
-          <span class="resource-tag" data-cat="Preregistration" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Preregistration</span>
+          <button type="button" class="resource-tag" data-cat="Preregistration" aria-label="Filter by Preregistration" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Preregistration</button>
         
-          <span class="resource-tag" data-cat="Open Methods" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Methods</span>
+          <button type="button" class="resource-tag" data-cat="Open Methods" aria-label="Filter by Open Methods" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Methods</button>
         
-          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+          <button type="button" class="resource-tag" data-cat="Open Data" aria-label="Filter by Open Data" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Data</button>
         
       </div>
     
@@ -921,7 +898,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="For Scientists,For Clinicians,Open Access,Free" data-index="10" data-listing-date-sort="1747285200000" data-listing-file-modified-sort="1784570667715" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="For Scientists,For Clinicians,Open Access,Free" data-index="10" data-listing-date-sort="1747285200000" data-listing-file-modified-sort="1784576441612" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://unpaywall.org/" target="_blank" rel="noopener noreferrer">
@@ -935,13 +912,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
-          <span class="resource-tag" data-cat="For Clinicians" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Clinicians</span>
+          <button type="button" class="resource-tag" data-cat="For Clinicians" aria-label="Filter by For Clinicians" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Clinicians</button>
         
-          <span class="resource-tag" data-cat="Open Access" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Access</span>
+          <button type="button" class="resource-tag" data-cat="Open Access" aria-label="Filter by Open Access" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Access</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
       </div>
     
@@ -950,7 +927,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="For Scientists,Free,Guide,Open Data" data-index="11" data-listing-date-sort="1775365200000" data-listing-file-modified-sort="1784570667716" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="For Scientists,Free,Guide,Open Data" data-index="11" data-listing-date-sort="1775365200000" data-listing-file-modified-sort="1784576441612" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://www.tesl-ej.org/OSF-HowTo.pdf" target="_blank" rel="noopener noreferrer">
@@ -964,13 +941,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
-          <span class="resource-tag" data-cat="Guide" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Guide</span>
+          <button type="button" class="resource-tag" data-cat="Guide" aria-label="Filter by Guide" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Guide</button>
         
-          <span class="resource-tag" data-cat="Open Data" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Open Data</span>
+          <button type="button" class="resource-tag" data-cat="Open Data" aria-label="Filter by Open Data" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Open Data</button>
         
       </div>
     
@@ -979,7 +956,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
   </li>
 
-  <li class="resource-card" data-categories="OS Tools,For Scientists,Free" data-index="12" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1784570667715" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+  <li class="resource-card" data-categories="OS Tools,For Scientists,Free" data-index="12" data-listing-date-sort="1735970400000" data-listing-file-modified-sort="1784576441612" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
     <h5 class="resource-title anchored" style="margin:0;">
       <strong>
         <a href="https://www.zotero.org/" target="_blank" rel="noopener noreferrer">
@@ -993,11 +970,11 @@ document.addEventListener("DOMContentLoaded", function() {
     
       <div class="resource-tags">
         
-          <span class="resource-tag" data-cat="OS Tools" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">OS Tools</span>
+          <button type="button" class="resource-tag" data-cat="OS Tools" aria-label="Filter by OS Tools" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">OS Tools</button>
         
-          <span class="resource-tag" data-cat="For Scientists" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">For Scientists</span>
+          <button type="button" class="resource-tag" data-cat="For Scientists" aria-label="Filter by For Scientists" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">For Scientists</button>
         
-          <span class="resource-tag" data-cat="Free" style="background:rgba(124,58,237,.1);color:#8966AB;border-color:rgba(124,58,237,.25)">Free</span>
+          <button type="button" class="resource-tag" data-cat="Free" aria-label="Filter by Free" style="background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)">Free</button>
         
       </div>
     
@@ -1446,17 +1423,15 @@ document.addEventListener("DOMContentLoaded", function() {
   <div class="nav-footer">
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/CSDisseminate">
+<p><i class="bi bi-github" aria-hidden="true"></i><span class="visually-hidden">CSDisseminate on GitHub</span></p>
+</a>
   </li>  
-    <li class="nav-item compact">
+    <li class="nav-item">
     <a class="nav-link" href="https://www.instagram.com/csdisseminate">
-      <i class="bi bi-instagram" role="img">
-</i> 
-    </a>
+<p><i class="bi bi-instagram" aria-hidden="true"></i><span class="visually-hidden">CSDisseminate on Instagram</span></p>
+</a>
   </li>  
 </ul>
     </div>   

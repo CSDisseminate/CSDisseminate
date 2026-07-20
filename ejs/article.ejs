@@ -8,7 +8,7 @@
 
 .pub-list li {
   padding: 1.1rem 0;
-  border-bottom: 1px solid var(--bs-border-color);
+  border-bottom: 1px solid var(--csd-divider);
 }
 
 .pub-list li:last-child {
@@ -24,14 +24,14 @@
 
 /* Base button cleanup */
 .pub-buttons .btn {
-  border-radius: 999px;
+  border-radius: var(--csd-radius-pill);
   font-weight: 500;
   padding: 0.38rem 0.8rem;
   line-height: 1.2;
   box-shadow: none;
 }
 
-/* Primary button: keep stronger */
+/* Tier 1 — primary: solid, carries the most weight */
 .pub-buttons .btn-primary {
   background: var(--bs-primary);
   border-color: var(--bs-primary);
@@ -42,25 +42,25 @@
   filter: brightness(1.05);
 }
 
-/* Soft purple pills */
+/* Tier 2 — soft purple pills */
 .pub-buttons .btn-secondary {
-  background: rgba(124, 58, 237, 0.12);
-  border: 1px solid rgba(124, 58, 237, 0.24);
-  color: #8966AB;
+  background: var(--csd-pill-bg);
+  border: 1px solid var(--csd-pill-border);
+  color: var(--csd-pill-text);
 }
 
 .pub-buttons .btn-secondary:hover {
-  background: rgba(124, 58, 237, 0.18);
-  border-color: rgba(124, 58, 237, 0.32);
-  color: #8966AB;
+  background: var(--csd-pill-bg-hover);
+  border-color: var(--csd-pill-border-hover);
+  color: var(--csd-pill-text-hover);
 }
 
-/* TEXT-ONLY buttons (this is the key change) */
+/* Tier 3 — text-only, deliberately quiet */
 .pub-buttons .btn-tertiary {
   background: transparent;
   border: none;
   padding: 0.38rem 0.4rem; /* tighter so it feels like text */
-  color: var(--bs-secondary-color);
+  color: var(--csd-text-muted);
 }
 
 .pub-buttons .btn-tertiary:hover {
@@ -68,38 +68,9 @@
   text-decoration: underline;
 }
 
-/* Dark mode adjustments */
-body.quarto-dark .pub-list li {
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-body.quarto-dark .pub-buttons .btn-secondary {
-  background: rgba(167, 139, 250, 0.18);
-  border-color: rgba(167, 139, 250, 0.30);
-  color: rgba(255, 255, 255, 0.92);
-}
-
-body.quarto-dark .pub-buttons .btn-secondary:hover {
-  background: rgba(167, 139, 250, 0.24);
-  border-color: rgba(167, 139, 250, 0.38);
-  color: rgba(255, 255, 255, 0.96);
-}
-
-body.quarto-dark .pub-buttons .btn-tertiary {
-  background: transparent;
-  border: none;
-  padding: 0.38rem 0.4rem; /* tighter so it feels like text */
-  color: var(--bs-secondary-color);
-}
-
-body.quarto-dark .pub-buttons .btn-tertiary:hover {
-  color: var(--bs-body-color);
-  text-decoration: underline;
-}
-
-body.quarto-dark .pub-buttons .btn-primary {
-  color: #fff;
-}
+/* Dark mode needs no rules here — every value above resolves through a
+   theme-aware token. The five overrides that used to live here were
+   byte-identical to the dark token values. */
 </style>
 
 <ul class="pub-list list">

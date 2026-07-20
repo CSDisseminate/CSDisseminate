@@ -13,6 +13,73 @@ $body-bg: darken($primary, 40%);
 /* Text color */
 $body-color: lighten(#F9F9F7, 20%);
 
+/* ==========================================================================
+   DESIGN TOKENS — DARK THEME
+   Mirrors every token name defined in cosmo-custom.scss. Theme-invariant
+   tokens (brand, radius, elevation) live in /styles.css and are not repeated.
+   ========================================================================== */
+:root {
+  --csd-panel-bg: #{lighten($body-bg, 6%)};
+
+  /* --- Soft pill (buttons, publication links) ------------------------- */
+  --csd-pill-bg: rgba(167, 139, 250, 0.18);
+  --csd-pill-bg-hover: rgba(167, 139, 250, 0.24);
+  --csd-pill-border: rgba(167, 139, 250, 0.30);
+  --csd-pill-border-hover: rgba(167, 139, 250, 0.38);
+  --csd-pill-text: rgba(255, 255, 255, 0.92);
+  --csd-pill-text-hover: rgba(255, 255, 255, 0.96);
+
+  /* --- Tag pill (resource categories) --------------------------------- */
+  --csd-tag-bg: rgba(167, 139, 250, 0.18);
+  --csd-tag-border: rgba(255, 255, 255, 0.16);
+  --csd-tag-text: rgba(255, 255, 255, 0.92);
+
+  /* --- Filter bar ------------------------------------------------------ */
+  --csd-filter-bg: rgba(255, 255, 255, 0.06);
+  --csd-filter-border: rgba(255, 255, 255, 0.12);
+  --csd-filter-text: var(--bs-body-color);
+
+  /* --- Badge palette ---------------------------------------------------
+     Lighter -400 hues at higher alpha so the chip reads against the dark
+     background, with a near-white label. Text and border are uniform across
+     hues; only the surface carries the semantic colour. */
+  --csd-badge-violet-bg: rgba(167, 139, 250, 0.18);
+  --csd-badge-violet-text: rgba(255, 255, 255, 0.92);
+  --csd-badge-violet-border: rgba(255, 255, 255, 0.16);
+
+  --csd-badge-indigo-bg: rgba(129, 140, 248, 0.18);
+  --csd-badge-indigo-text: rgba(255, 255, 255, 0.92);
+  --csd-badge-indigo-border: rgba(255, 255, 255, 0.16);
+
+  --csd-badge-emerald-bg: rgba(52, 211, 153, 0.18);
+  --csd-badge-emerald-text: rgba(255, 255, 255, 0.92);
+  --csd-badge-emerald-border: rgba(255, 255, 255, 0.16);
+
+  --csd-badge-blue-bg: rgba(96, 165, 250, 0.18);
+  --csd-badge-blue-text: rgba(255, 255, 255, 0.92);
+  --csd-badge-blue-border: rgba(255, 255, 255, 0.16);
+
+  --csd-badge-amber-bg: rgba(250, 204, 21, 0.18);
+  --csd-badge-amber-text: rgba(255, 255, 255, 0.92);
+  --csd-badge-amber-border: rgba(255, 255, 255, 0.16);
+
+  --csd-badge-red-bg: rgba(248, 113, 113, 0.18);
+  --csd-badge-red-text: rgba(255, 255, 255, 0.92);
+  --csd-badge-red-border: rgba(255, 255, 255, 0.16);
+
+  --csd-badge-pink-bg: rgba(244, 114, 182, 0.18);
+  --csd-badge-pink-text: rgba(255, 255, 255, 0.92);
+  --csd-badge-pink-border: rgba(255, 255, 255, 0.16);
+
+  --csd-badge-gold-bg: rgba(250, 204, 21, 0.18);
+  --csd-badge-gold-text: rgba(255, 255, 255, 0.92);
+  --csd-badge-gold-border: rgba(250, 204, 21, 0.28);
+
+  /* --- Muted surfaces -------------------------------------------------- */
+  --csd-divider: rgba(255, 255, 255, 0.08);
+  --csd-text-muted: var(--bs-secondary-color);
+}
+
 /* Optional: tweak hover color */
 $link-hover-color: #B91F2B;
 
@@ -44,22 +111,22 @@ body.quarto-dark h6 {
 /* ---- Dark mode: article tags ---- */
 /* Dark mode: manuscript category pills */
 body.quarto-dark .quarto-category {
-  background: rgba(167, 139, 250, 0.18) !important;
-  border: 1px solid rgba(167, 139, 250, 0.30) !important;
-  color: #ffffff !important;
+  background: var(--csd-pill-bg) !important;
+  border: 1px solid var(--csd-pill-border) !important;
+  color: var(--csd-pill-text) !important;
   opacity: 1 !important;
 }
 
 
 /* Soft purple pills */
 .btn.btn-secondary {
-  background: rgba(124, 58, 237, 0.12);
-  border: 1px solid rgba(124, 58, 237, 0.24);
-  color: #ffffff !important;
+  background: var(--csd-pill-bg);
+  border: 1px solid var(--csd-pill-border);
+  color: var(--csd-pill-text) !important;
 }
 
 .btn.btn-secondary:hover {
-  background: rgba(124, 58, 237, 0.18);
-  border-color: rgba(124, 58, 237, 0.32);
-  color: #ffffff !important;
+  background: var(--csd-pill-bg-hover);
+  border-color: var(--csd-pill-border-hover);
+  color: var(--csd-pill-text-hover) !important;
 }

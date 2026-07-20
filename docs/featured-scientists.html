@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-af483390d2142a3ceee2736fcb718d05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1dd7b61f0fac3578cc670d23cdda9247.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-af483390d2142a3ceee2736fcb718d05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2fbe77ff07a95e851480b2e7c0a54fd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-6d6bdc1db3e88ef2ef89a6ac15df8255.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2fbe77ff07a95e851480b2e7c0a54fd4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,20 +80,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-featured-scientists .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-collections','listing-format','listing-editor','listing-engines','listing-language','listing-freeze','listing-title-block-banner','listing-title','listing-pagetitle','listing-pi','listing-headshot','listing-categories','listing-lightbox','listing-draft','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-engines','listing-language','listing-freeze','listing-title-block-banner','listing-title','listing-pagetitle','listing-pi','listing-headshot','listing-categories','listing-lightbox','listing-draft','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-collections","listing-format","listing-editor","listing-engines","listing-language","listing-freeze","listing-title-block-banner","listing-title","listing-pagetitle","listing-pi","listing-headshot","listing-categories","listing-lightbox","listing-draft","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-engines","listing-language","listing-freeze","listing-title-block-banner","listing-title","listing-pagetitle","listing-pi","listing-headshot","listing-categories","listing-lightbox","listing-draft","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-featured-scientists'] = new List('listing-featured-scientists', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -310,7 +310,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title"><img src="./Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" width="45"> &nbsp;&nbsp;CSDisseminate</span>
+    <span class="navbar-title"><img src="./Images/CSDisseminate Logo_White Logo_Purple Background Circle.png" class="img-fluid" alt="" width="45"> &nbsp;&nbsp;CSDisseminate</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -399,14 +399,7 @@ window.Quarto = {
 <p>Check out the websites of these rockstar researchers to see what self-archiving and open science looks like in action!<br>
 <br>
 </p>
-<div data-collections="featured-scientists">
-
-</div>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div id="listing-featured-scientists" class="quarto-listing quarto-listing-container-custom">
 
 <ul class="featured-list list">
 
@@ -430,14 +423,14 @@ window.Quarto = {
   border: 1px solid var(--bs-border-color);
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: var(--csd-shadow-card);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   text-align: left;
 }
 
 .featured-list .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: var(--csd-shadow-card-hover);
 }
 
 /* ---- Image ---- */
@@ -506,7 +499,12 @@ window.Quarto = {
 </ul>
 
 <div class="listing-no-matching d-none">No matching items</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</div>
+
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <footer class="custom-footer">
 <p>
   <strong>CSDisseminate</strong> is a volunteer-run community project. We do not pay ourselves; donations help cover operating costs and sustain our work.
@@ -938,17 +936,15 @@ window.Quarto = {
   <div class="nav-footer">
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/CSDisseminate">
+<p><i class="bi bi-github" aria-hidden="true"></i><span class="visually-hidden">CSDisseminate on GitHub</span></p>
+</a>
   </li>  
-    <li class="nav-item compact">
+    <li class="nav-item">
     <a class="nav-link" href="https://www.instagram.com/csdisseminate">
-      <i class="bi bi-instagram" role="img">
-</i> 
-    </a>
+<p><i class="bi bi-instagram" aria-hidden="true"></i><span class="visually-hidden">CSDisseminate on Instagram</span></p>
+</a>
   </li>  
 </ul>
     </div>   

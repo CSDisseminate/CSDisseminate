@@ -26,7 +26,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/jessica_riccardi.jpg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/jessica_riccardi.jpg){fig-alt="Headshot of Jessica Salley Riccardi"}
 :::
 ::: {.column width="5%"}
 :::

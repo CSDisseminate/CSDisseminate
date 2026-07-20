@@ -23,7 +23,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/christie_davis.JPG)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/christie_davis.JPG){fig-alt="Headshot of Christie Davis"}
 :::
 ::: {.column width="5%"}
 :::

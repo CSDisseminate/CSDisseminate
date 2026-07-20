@@ -23,7 +23,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/amanda_eiser_hess.jpeg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/amanda_eiser_hess.jpeg){fig-alt="Headshot of Amanda Eiser Hess"}
 :::
 ::: {.column width="5%"}
 :::

@@ -26,7 +26,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/carrie_rountrey.png)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/carrie_rountrey.png){fig-alt="Headshot of Carrie Rountrey"}
 :::
 ::: {.column width="5%"}
 :::

@@ -11,50 +11,18 @@ function resolveImg(item) {
   return base + enc;
 }
 
-/* Role badge config — label, icon, colors */
+/* Role badge config — label, icon, and which hue from the shared badge
+   palette to use. The palette itself is defined per theme in
+   styles/cosmo-custom.scss and styles/solar-custom.scss, so dark mode needs
+   no overrides here. To recolour a role, change `hue` (or the token). */
 const ROLE_BADGES = {
-  "Chair": {
-    icon: "bi-star-fill",
-    bg: "rgba(124,58,237,.12)",
-    color: "#4c1d95",
-    border: "rgba(124,58,237,.25)"
-  },
-  "Vice-Chair & Secretary": {
-    icon: "bi-bookmark-star-fill",
-    bg: "rgba(79,70,229,.12)",
-    color: "#1e1b4b",
-    border: "rgba(79,70,229,.25)"
-  },
-  "Treasurer": {
-    icon: "bi-cash-stack",
-    bg: "rgba(16,185,129,.12)",
-    color: "#065f46",
-    border: "rgba(16,185,129,.25)"
-  },
-  "Board Member": {
-    icon: "bi-people-fill",
-    bg: "rgba(59,130,246,.12)",
-    color: "#1e3a8a",
-    border: "rgba(59,130,246,.25)"
-  },
-  "Website Team Lead": {
-    icon: "bi-code-slash",
-    bg: "rgba(234,179,8,.12)",
-    color: "#713f12",
-    border: "rgba(234,179,8,.25)"
-  },
-  "Ambassador Team Lead": {
-    icon: "bi-megaphone-fill",
-    bg: "rgba(239,68,68,.12)",
-    color: "#7f1d1d",
-    border: "rgba(239,68,68,.25)"
-  },
-  "Social Media Team Lead": {
-    icon: "bi-chat-heart-fill",
-    bg: "rgba(236,72,153,.12)",
-    color: "#831843",
-    border: "rgba(236,72,153,.25)"
-  }
+  "Chair":                  { icon: "bi-star-fill",          hue: "violet"  },
+  "Vice-Chair & Secretary": { icon: "bi-bookmark-star-fill", hue: "indigo"  },
+  "Treasurer":              { icon: "bi-cash-stack",         hue: "emerald" },
+  "Board Member":           { icon: "bi-people-fill",        hue: "blue"    },
+  "Website Team Lead":      { icon: "bi-code-slash",         hue: "amber"   },
+  "Ambassador Team Lead":   { icon: "bi-megaphone-fill",     hue: "red"     },
+  "Social Media Team Lead": { icon: "bi-chat-heart-fill",    hue: "pink"    }
 };
 
 /* Get role badges for an item, skipping "Collaborator" */
@@ -89,16 +57,17 @@ function getRoleBadges(item) {
 .people-list .card {
   background: var(--bs-card-bg);
   border: 1px solid var(--bs-border-color);
-  border-radius: 1rem;
+  border-radius: var(--csd-radius-card);
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: var(--csd-shadow-card);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   text-align: left;
   max-width: 340px;
 }
+
 .people-list .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: var(--csd-shadow-card-hover);
 }
 
 /* ---- Square image ---- */
@@ -107,7 +76,7 @@ function getRoleBadges(item) {
   width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: var(--csd-radius-card) var(--csd-radius-card) 0 0;
 }
 .people-list .card-img-top img {
   position: absolute; inset: 0;
@@ -116,28 +85,6 @@ function getRoleBadges(item) {
 }
 
 /* ---- Text ---- */
-.people-list .card-body { padding: 1em; }
-.people-list .card-title { font-weight: 600; margin-bottom: .25em; font-size: 1.05em; line-height: 1.3; }
-.people-list .card {
-  background: var(--bs-card-bg);
-  border: 1px solid var(--bs-border-color);
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  text-align: left;
-  max-width: 340px;
-}
-
-.people-list .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-[data-bs-theme="dark"] .people-list .card:hover {
-  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
-}
-
 .people-list .card-body {
   padding: 1em;
 }
@@ -151,19 +98,15 @@ function getRoleBadges(item) {
 
 .people-list .credentials {
   font-size: .9em;
-  color: var(--bs-secondary-color);
+  color: var(--csd-text-muted);
   margin-bottom: .25em;
 }
 
 .people-list .affiliation {
   font-size: .9em;
-  color: var(--bs-secondary-color);
+  color: var(--csd-text-muted);
   line-height: 1.3;
   margin-bottom: .5em;
-}
-
-[data-bs-theme="dark"] .people-list .card {
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
 
 
@@ -176,48 +119,17 @@ function getRoleBadges(item) {
   font-size: .72rem;
   line-height: 1;
   padding: .2rem .55rem;
-  border-radius: 999px;
+  border-radius: var(--csd-radius-pill);
   border: 1px solid transparent;
   font-weight: 500;
 }
-.role-badge .bi { font-size: .85em; }
+.role-badge .bi { font-size: .85em; color: inherit; }
 
-body.quarto-dark .people-list .role-badge {
-  color: rgba(255, 255, 255, 0.92) !important;
-  border-color: rgba(255, 255, 255, 0.16) !important;
-}
-
-body.quarto-dark .people-list .role-badge .bi {
-  color: inherit !important;
-}
-
-body.quarto-dark .people-list .role-badge[style*="124,58,237"] {
-  background: rgba(167, 139, 250, 0.18) !important;
-}
-
-body.quarto-dark .people-list .role-badge[style*="79,70,229"] {
-  background: rgba(129, 140, 248, 0.18) !important;
-}
-
-body.quarto-dark .people-list .role-badge[style*="16,185,129"] {
-  background: rgba(52, 211, 153, 0.18) !important;
-}
-
-body.quarto-dark .people-list .role-badge[style*="59,130,246"] {
-  background: rgba(96, 165, 250, 0.18) !important;
-}
-
-body.quarto-dark .people-list .role-badge[style*="234,179,8"] {
-  background: rgba(250, 204, 21, 0.18) !important;
-}
-
-body.quarto-dark .people-list .role-badge[style*="239,68,68"] {
-  background: rgba(248, 113, 113, 0.18) !important;
-}
-
-body.quarto-dark .people-list .role-badge[style*="236,72,153"] {
-  background: rgba(244, 114, 182, 0.18) !important;
-}
+/* Dark mode needs no rules here: the badge tokens above resolve to their
+   dark values from solar-custom.scss. This replaced seven selectors that
+   matched on substrings of the inline style attribute
+   (e.g. `.role-badge[style*="124,58,237"]`) and broke whenever a colour
+   literal changed. */
 </style>
 
 <% for (const item of items) {
@@ -238,7 +150,7 @@ body.quarto-dark .people-list .role-badge[style*="236,72,153"] {
         <% if (badges.length > 0) { %>
           <div class="role-badges">
             <% for (const b of badges) { %>
-              <span class="role-badge" style="background:<%= b.bg %>;color:<%= b.color %>;border-color:<%= b.border %>">
+              <span class="role-badge" style="background:var(--csd-badge-<%= b.hue %>-bg);color:var(--csd-badge-<%= b.hue %>-text);border-color:var(--csd-badge-<%= b.hue %>-border)">
                 <i class="bi <%= b.icon %>" aria-hidden="true"></i>
                 <%= b.label %>
               </span>

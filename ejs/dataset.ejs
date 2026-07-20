@@ -78,33 +78,37 @@
   font-size: .75rem;
   line-height: 1;
   padding: .18rem .5rem;
-  border-radius: 999px;
+  border-radius: var(--csd-radius-pill);
   border: 1px solid transparent;
 }
 .access-badge .bi {
   font-size: .85em;
 }
 
-/* Color theming */
+/* Colour theming — uses the shared badge palette (same tokens as the team
+   role badges, which previously duplicated these four recipes verbatim).
+   The palette is theme-aware, so these badges now stay legible in dark mode;
+   the hard-coded dark text below used to sit at ~1.6:1 against the dark
+   background. */
 .access-open {
-  background: rgba(16,185,129,.12);   /* teal-green background */
-  color: #065f46;                     /* dark green text */
-  border-color: rgba(16,185,129,.25);
+  background: var(--csd-badge-emerald-bg);
+  color: var(--csd-badge-emerald-text);
+  border-color: var(--csd-badge-emerald-border);
 }
 .access-restricted {
-  background: rgba(234,179,8,.12);    /* yellow background */
-  color: #713f12;                     /* dark golden-brown text */
-  border-color: rgba(234,179,8,.25);
+  background: var(--csd-badge-amber-bg);
+  color: var(--csd-badge-amber-text);
+  border-color: var(--csd-badge-amber-border);
 }
 .access-mixed {
-  background: rgba(59,130,246,.12);   /* blue background */
-  color: #1e3a8a;
-  border-color: rgba(59,130,246,.25);
+  background: var(--csd-badge-blue-bg);
+  color: var(--csd-badge-blue-text);
+  border-color: var(--csd-badge-blue-border);
 }
 .access-embargoed {
-  background: rgba(239,68,68,.12);    /* reddish background */
-  color: #7f1d1d;
-  border-color: rgba(239,68,68,.25);
+  background: var(--csd-badge-red-bg);
+  color: var(--csd-badge-red-text);
+  border-color: var(--csd-badge-red-border);
 }
 
 @media (max-width: 720px){

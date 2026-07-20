@@ -27,7 +27,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/danika_pfeiffer.jpeg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/danika_pfeiffer.jpeg){fig-alt="Headshot of Danika Pfeiffer"}
 :::
 ::: {.column width="5%"}
 :::

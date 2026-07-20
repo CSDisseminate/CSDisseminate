@@ -38,7 +38,7 @@ listing:
     fields:
       - title
       - credentials
-      - last_name
+      - last-name
     include:
       categories: "Former Collaborator"
     sort-ui: false
@@ -46,7 +46,6 @@ listing:
 title-block-banner: false
 lightbox: true
 freeze: true
-embed-resource: true
 ---
 
 We are a working group of researchers and clinicians dedicated to disseminating knowledge about open science practices to clinicians and researchers in Communication Sciences and Disorders (CSD) and beyond.

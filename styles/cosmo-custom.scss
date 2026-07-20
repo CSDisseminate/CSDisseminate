@@ -11,8 +11,72 @@ $body-bg: lighten($primary, 47%);   // ← change this to whatever you want
 
 /* Text color */
 $body-color: #2f2f2f;
+/* ==========================================================================
+   DESIGN TOKENS — LIGHT THEME
+   Theme-invariant tokens (brand, radius, elevation) live in /styles.css.
+   Every token below is redefined with dark values in solar-custom.scss, so
+   components reference one name and get the right value automatically.
+   ========================================================================== */
 :root {
   --light-body-color: #2f2f2f; // or whatever your light mode body text is
+  --csd-panel-bg: #{darken($body-bg, 8%)};
+
+  /* --- Soft pill (buttons, publication links) ------------------------- */
+  --csd-pill-bg: rgba(124, 58, 237, 0.12);
+  --csd-pill-bg-hover: rgba(124, 58, 237, 0.18);
+  --csd-pill-border: rgba(124, 58, 237, 0.24);
+  --csd-pill-border-hover: rgba(124, 58, 237, 0.32);
+  --csd-pill-text: #8966AB;
+  --csd-pill-text-hover: #8966AB;
+
+  /* --- Tag pill (resource categories) --------------------------------- */
+  --csd-tag-bg: rgba(124, 58, 237, 0.1);
+  --csd-tag-border: rgba(124, 58, 237, 0.25);
+  --csd-tag-text: #8966AB;
+
+  /* --- Filter bar ------------------------------------------------------ */
+  --csd-filter-bg: var(--bs-secondary-bg);
+  --csd-filter-border: var(--bs-border-color);
+  --csd-filter-text: var(--bs-body-color);
+
+  /* --- Badge palette ---------------------------------------------------
+     Shared by team role badges (team-cards-with-buttons.ejs) and dataset
+     access badges (dataset.ejs), which previously defined these twice. */
+  --csd-badge-violet-bg: rgba(124, 58, 237, 0.12);
+  --csd-badge-violet-text: #4c1d95;
+  --csd-badge-violet-border: rgba(124, 58, 237, 0.25);
+
+  --csd-badge-indigo-bg: rgba(79, 70, 229, 0.12);
+  --csd-badge-indigo-text: #1e1b4b;
+  --csd-badge-indigo-border: rgba(79, 70, 229, 0.25);
+
+  --csd-badge-emerald-bg: rgba(16, 185, 129, 0.12);
+  --csd-badge-emerald-text: #065f46;
+  --csd-badge-emerald-border: rgba(16, 185, 129, 0.25);
+
+  --csd-badge-blue-bg: rgba(59, 130, 246, 0.12);
+  --csd-badge-blue-text: #1e3a8a;
+  --csd-badge-blue-border: rgba(59, 130, 246, 0.25);
+
+  --csd-badge-amber-bg: rgba(234, 179, 8, 0.12);
+  --csd-badge-amber-text: #713f12;
+  --csd-badge-amber-border: rgba(234, 179, 8, 0.25);
+
+  --csd-badge-red-bg: rgba(239, 68, 68, 0.12);
+  --csd-badge-red-text: #7f1d1d;
+  --csd-badge-red-border: rgba(239, 68, 68, 0.25);
+
+  --csd-badge-pink-bg: rgba(236, 72, 153, 0.12);
+  --csd-badge-pink-text: #831843;
+  --csd-badge-pink-border: rgba(236, 72, 153, 0.25);
+
+  --csd-badge-gold-bg: rgba(251, 191, 36, 0.12);
+  --csd-badge-gold-text: #78350f;
+  --csd-badge-gold-border: rgba(251, 191, 36, 0.35);
+
+  /* --- Muted surfaces -------------------------------------------------- */
+  --csd-divider: var(--bs-border-color);
+  --csd-text-muted: var(--bs-secondary-color);
 }
 
 
@@ -52,18 +116,18 @@ footer.custom-footer a:hover {
 
 /* Cards */
 .card {
-  border-radius: 20px;
+  border-radius: var(--csd-radius-panel);
 }
 
 /* Soft purple pills */
 .btn.btn-secondary {
-  background: rgba(124, 58, 237, 0.12);
-  border: 1px solid rgba(124, 58, 237, 0.24);
-  color: #8966AB !important;
+  background: var(--csd-pill-bg);
+  border: 1px solid var(--csd-pill-border);
+  color: var(--csd-pill-text) !important;
 }
 
 .btn.btn-secondary:hover {
-  background: rgba(124, 58, 237, 0.18);
-  border-color: rgba(124, 58, 237, 0.32);
-  color: #8966AB !important;
+  background: var(--csd-pill-bg-hover);
+  border-color: var(--csd-pill-border-hover);
+  color: var(--csd-pill-text-hover) !important;
 }

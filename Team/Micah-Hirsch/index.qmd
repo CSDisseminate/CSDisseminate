@@ -25,7 +25,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/micah_hirsch.jpeg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/micah_hirsch.jpeg){fig-alt="Headshot of Micah Hirsch"}
 :::
 ::: {.column width="5%"}
 :::

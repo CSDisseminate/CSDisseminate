@@ -23,7 +23,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/collin_brice.JPEG)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/collin_brice.JPEG){fig-alt="Headshot of Collin Brice"}
 :::
 ::: {.column width="5%"}
 :::

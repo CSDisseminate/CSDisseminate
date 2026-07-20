@@ -1,37 +1,99 @@
 /* css styles */
 
+/* ==========================================================================
+   DESIGN TOKENS — theme-invariant
+   --------------------------------------------------------------------------
+   Values that are the same in light and dark live here. Theme-dependent
+   values (badge surfaces, pill colours) are defined per theme in
+   styles/cosmo-custom.scss and styles/solar-custom.scss under the same
+   token names, so nothing needs to be redefined at the point of use.
+
+   Rule of thumb: no component should contain a raw colour or radius.
+   If you need a new one, add a token here (or in the two theme files)
+   and reference it with var().
+   ========================================================================== */
+:root {
+  /* --- Brand ------------------------------------------------------------ */
+  /* $primary in both theme files. --csd-purple-alt is a second, near-identical
+     purple that predates this token layer; the two are 6/255 apart and should
+     eventually collapse into --csd-purple. */
+  --csd-purple: #8960A8;
+  --csd-purple-alt: #8966AB;
+  --csd-purple-hover: #7a58a0;
+
+  /* --- Radius ----------------------------------------------------------- */
+  /* Six steps today. Three would be plenty: pill / card / image. */
+  --csd-radius-pill: 999px;
+  --csd-radius-card: 1rem;
+  --csd-radius-btn: 1.5rem;
+  --csd-radius-panel: 20px;
+  --csd-radius-img: 15px;
+  --csd-radius-sm: 8px;
+
+  /* --- Elevation -------------------------------------------------------- */
+  --csd-shadow-card: 0 2px 6px rgba(0, 0, 0, 0.05);
+  --csd-shadow-card-hover: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
 /* Make sure the back-to-top button is always on top */
-div.#quarto-back-to-top {
+#quarto-back-to-top {
   z-index: 1000 !important;
   position: relative;
 }
 
 /* Updating the button colors */
 .btn-primary {
-  background-color: #8966AB;
-  border-color: #8966AB;
+  background-color: var(--csd-purple-alt);
+  border-color: var(--csd-purple-alt);
 }
 
 .btn-primary:hover {
-  background-color: #7a58a0;
-  border-color: #7a58a0;
+  background-color: var(--csd-purple-hover);
+  border-color: var(--csd-purple-hover);
 }
 
 
-/* Clean footer matching Quarto content width */
+/* Clean footer matching Quarto content width.
+   Colour, background and border-top are owned by `footer.custom-footer`
+   in the two theme .scss files, which win on specificity. */
 .custom-footer {
   max-width: var(--content-max-width, 800px); /* fallback to 800px if variable isn't defined */
   margin: 2em auto;
   padding: 1em 2em;
   font-size: 0.90em;
   line-height: 1.6;
-  color: #666;
-  border-top: 1px solid #ddd;
-  background-color: #ffffff;
   text-align: left;
   box-sizing: border-box;
 }
 
+
+/* Contact panel on the home page */
+.contact-panel {
+  background-color: var(--csd-panel-bg, var(--bs-secondary-bg));
+  color: var(--bs-body-color);
+  border-radius: var(--csd-radius-panel);
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-panel-text {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 2em;
+}
+
+.contact-panel-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-panel-image img {
+  width: 100%;
+  border-radius: var(--csd-radius-img);
+}
 
 /* Limit image size in the recent-announcements listing */
 [data-categories="Announcement"] img {
@@ -39,7 +101,7 @@ div.#quarto-back-to-top {
   height: auto;
   width: auto;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: var(--csd-radius-sm);
 }
 
 hr {
@@ -55,13 +117,12 @@ hr {
 
 .pub-list {
   list-style-type: none;
-  padding-left: .5;
+  padding-left: .5rem;
 }
 
 .btn,
 .btn-primary,
 .btn-secondary,
 .btn-tertiary {
-  border-radius: 1.5rem;
+  border-radius: var(--csd-radius-btn);
 }
-

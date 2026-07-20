@@ -79,6 +79,18 @@ build_categories <- function(categories_str) {
   paste0('  - "', cats, '"', collapse = "\n")
 }
 
+# ── Helper: split a comma-separated alias cell into individual folder names ──
+# The sheet may hold several old folder names in one cell ("Old-Name, old-name").
+# Each must become its own alias so every previous URL redirects.
+split_aliases <- function(alias_str) {
+  alias_str <- as.character(alias_str)
+  if (length(alias_str) == 0 || is.na(alias_str) || alias_str %in% c("", "NA")) {
+    return(character(0))
+  }
+  aliases <- str_split(alias_str, ",")[[1]] |> trimws()
+  aliases[aliases != ""]
+}
+
 team <- team |>
   mutate(
     order = map_int(categories, get_sort_order),
@@ -99,6 +111,23 @@ for (slug in former_slugs) {
   }
 }
 
+# ── Remove folders left behind when a member was renamed ─────────────────────
+# A renamed member gets a new slug, so their old folder would otherwise linger
+# and render as a second, duplicate person. The old name lives in `alias`.
+old_slugs <- unlist(lapply(all_members$alias, split_aliases))
+
+for (old_slug in old_slugs) {
+  if (tolower(old_slug) %in% active_slugs) {
+    message("Skipping alias folder (matches active member): ", old_slug)
+    next
+  }
+  old_path <- file.path(TEAM_DIR, old_slug)
+  if (dir.exists(old_path)) {
+    unlink(old_path, recursive = TRUE)
+    message("Removed renamed member's old folder: ", old_path)
+  }
+}
+
 # ── Build frontmatter for active team member ─────────────────────────────────
 build_frontmatter <- function(member, draft = FALSE) {
   
@@ -116,8 +145,9 @@ build_frontmatter <- function(member, draft = FALSE) {
     ""
   }
   
-  alias_line <- if (!is.na(member$alias) && member$alias != "" && member$alias != "NA") {
-    paste0('aliases:\n  - /Team/', member$alias, '/\n')
+  aliases <- split_aliases(member$alias)
+  alias_line <- if (length(aliases) > 0) {
+    paste0('aliases:\n', paste0('  - /Team/', aliases, '/', collapse = "\n"), '\n')
   } else {
     ""
   }
@@ -172,11 +202,17 @@ build_body <- function(member) {
   headshot_val <- as.character(member$headshot_file)
   has_headshot <- !is.na(headshot_val) && headshot_val != "" && headshot_val != "NA"
   
+  # The bracket text becomes a visible <figcaption>, which leaves the <img> with no
+  # alt attribute — screen readers then read out the image filename. `fig-alt` adds
+  # a short alt that complements, rather than repeats, the caption.
+  alt_text <- paste0("Headshot of ", gsub('"', "'", as.character(member$full_name), fixed = TRUE))
+
   if (has_headshot) {
     paste0(
       ':::::: columns\n',
       '::: {.column width="30%"}\n',
-      paste0('![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](', HEADSHOTS_DIR, '/', member$headshot_file, ')\n'),
+      paste0('![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](',
+             HEADSHOTS_DIR, '/', member$headshot_file, '){fig-alt="', alt_text, '"}\n'),
       ':::\n',
       '::: {.column width="5%"}\n',
       ':::\n',

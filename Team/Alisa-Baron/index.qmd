@@ -24,7 +24,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/alisa_baron.png)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/alisa_baron.png){fig-alt="Headshot of Alisa Baron"}
 :::
 ::: {.column width="5%"}
 :::

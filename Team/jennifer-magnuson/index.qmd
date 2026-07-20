@@ -20,13 +20,14 @@ draft: false
 layout: article
 title-block-categories: false
 aliases:
-  - /Team/Jennifer-Markfeld, jennifer-markfeld/
+  - /Team/Jennifer-Markfeld/
+  - /Team/jennifer-markfeld/
 editor: source
 ---
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/jennifer_markfeld.jpg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/jennifer_markfeld.jpg){fig-alt="Headshot of Jennifer Magnuson"}
 :::
 ::: {.column width="5%"}
 :::

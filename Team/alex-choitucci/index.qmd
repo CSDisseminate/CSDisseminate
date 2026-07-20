@@ -23,7 +23,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/alexander_choi_tucci.jpeg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/alexander_choi_tucci.jpeg){fig-alt="Headshot of Alex Choi-Tucci"}
 :::
 ::: {.column width="5%"}
 :::

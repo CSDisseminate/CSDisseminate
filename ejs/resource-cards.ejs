@@ -2,7 +2,7 @@
 <div id="resource-filter-bar" style="margin-bottom:1rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;">
   <span style="font-size:.85rem;margin-right:.25rem;">Filter:</span>
   <button class="resource-filter-btn active" data-cat="all"
-    style="font-size:.78rem;padding:.25rem .7rem;border-radius:999px;cursor:pointer;font-weight:500;">
+    style="font-size:.78rem;padding:.25rem .7rem;border-radius:var(--csd-radius-pill);cursor:pointer;font-weight:500;">
     All
   </button>
 </div>
@@ -25,18 +25,13 @@ function getCategories(item) {
   return String(cats).split(",").map(c => c.trim()).filter(Boolean);
 }
 
-/* Three-shade indigo system */
-const AUDIENCE_STYLE  = { bg: "rgba(124,58,237,.1)",  color: "#8966AB", border: "rgba(124,58,237,.25)" };
-const TOPIC_STYLE     = { bg: "rgba(124,58,237,.1)",  color: "#8966AB", border: "rgba(124,58,237,.25)" };
-const CSD_STYLE       = { bg: "rgba(124,58,237,.1)",  color: "#8966AB", border: "rgba(124,58,237,.25)" };
-
-const AUDIENCE_CATS = new Set(["For Scientists", "For Clinicians"]);
-const CSD_CATS      = new Set(["CSDisseminate Resource"]);
-
+/* Tag pill styling.
+   This was three constants — AUDIENCE_STYLE / TOPIC_STYLE / CSD_STYLE — that
+   held byte-identical values, so the "three-shade" distinction never rendered.
+   Collapsed to the shared tag tokens. To reintroduce a real distinction,
+   branch on the category here and add matching tokens to the theme files. */
 function badgeStyle(cat) {
-  if (CSD_CATS.has(cat))      return `background:${CSD_STYLE.bg};color:${CSD_STYLE.color};border-color:${CSD_STYLE.border}`;
-  if (AUDIENCE_CATS.has(cat)) return `background:${AUDIENCE_STYLE.bg};color:${AUDIENCE_STYLE.color};border-color:${AUDIENCE_STYLE.border}`;
-  return `background:${TOPIC_STYLE.bg};color:${TOPIC_STYLE.color};border-color:${TOPIC_STYLE.border}`;
+  return "background:var(--csd-tag-bg);color:var(--csd-tag-text);border-color:var(--csd-tag-border)";
 }
 %>
 
@@ -49,7 +44,7 @@ function badgeStyle(cat) {
 
 .resource-card {
   padding: 1.1rem 0;
-  border-bottom: 1px solid var(--bs-border-color);
+  border-bottom: 1px solid var(--csd-divider);
 }
 
 .resource-card:last-child {
@@ -95,11 +90,15 @@ function badgeStyle(cat) {
   font-size: .72rem;
   line-height: 1;
   padding: .18rem .5rem;
-  border-radius: 999px;
+  border-radius: var(--csd-radius-pill);
   border: 1px solid transparent;
   font-weight: 500;
   cursor: pointer;
   transition: opacity .15s;
+  /* reset <button> UA styles so the pill looks identical to the old <span> */
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .resource-tag:hover {
@@ -108,20 +107,20 @@ function badgeStyle(cat) {
 
 .resource-desc {
   font-size: .92rem;
-  color: var(--bs-secondary-color);
+  color: var(--csd-text-muted);
   margin: 0;
   line-height: 1.5;
 }
 
 #resource-filter-bar span {
-  color: var(--bs-secondary-color) !important;
+  color: var(--csd-text-muted) !important;
 }
 
 .resource-filter-btn {
   transition: all .15s;
-  background: var(--bs-secondary-bg) !important;
-  border: 1px solid var(--bs-border-color) !important;
-  color: var(--bs-body-color) !important;
+  background: var(--csd-filter-bg) !important;
+  border: 1px solid var(--csd-filter-border) !important;
+  color: var(--csd-filter-text) !important;
 }
 
 .resource-filter-btn.active {
@@ -131,37 +130,13 @@ function badgeStyle(cat) {
   font-weight: 700 !important;
 }
 
-/* Dark mode override */
-body.quarto-dark .resource-filter-btn {
-  background: rgba(255,255,255,0.06) !important;
-  border: 1px solid rgba(255,255,255,0.12) !important;
-  color: var(--bs-body-color) !important;
-}
-
-body.quarto-dark .resource-filter-btn.active {
-  background: var(--bs-primary) !important;
-  color: #fff !important;
-  border-color: var(--bs-primary) !important;
-  font-weight: 700 !important;
-}
-
-/* ---- Dark mode fixes ---- */
-body.quarto-dark .resource-card {
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
+/* ---- Dark mode ----
+   The filter buttons, tag pills and card dividers all come from theme-aware
+   tokens now, so the per-property dark overrides that used to live here are
+   gone — including `.resource-tag[style*="124,58,237"]`, which matched on a
+   substring of the inline style and broke the moment that literal changed. */
 body.quarto-dark .resource-external-icon {
   opacity: 0.75;
-}
-
-body.quarto-dark .resource-tag {
-  color: rgba(255, 255, 255, 0.92) !important;
-  border-color: rgba(255, 255, 255, 0.16) !important;
-}
-
-/* Indigo-based tags */
-body.quarto-dark .resource-tag[style*="124,58,237"] {
-  background: rgba(167, 139, 250, 0.18) !important;
 }
 </style>
 
@@ -183,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btn.className = "resource-filter-btn";
     btn.dataset.cat = cat;
     btn.textContent = cat;
-    btn.style.cssText = "font-size:.78rem;padding:.25rem .7rem;border-radius:999px;cursor:pointer;font-weight:500;";
+    btn.style.cssText = "font-size:.78rem;padding:.25rem .7rem;border-radius:var(--csd-radius-pill);cursor:pointer;font-weight:500;";
     bar.appendChild(btn);
   });
 
@@ -259,7 +234,8 @@ document.addEventListener("DOMContentLoaded", function() {
     <% if (cats.length > 0) { %>
       <div class="resource-tags">
         <% for (const cat of cats) { %>
-          <span class="resource-tag" data-cat="<%= cat %>" style="<%= badgeStyle(cat) %>"><%= cat %></span>
+          <button type="button" class="resource-tag" data-cat="<%= cat %>"
+                  aria-label="Filter by <%= cat %>" style="<%= badgeStyle(cat) %>"><%= cat %></button>
         <% } %>
       </div>
     <% } %>

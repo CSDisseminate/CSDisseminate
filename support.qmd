@@ -1,6 +1,6 @@
 ---
 title: "Support CSDisseminate"
-pagetitle: "Support CSDissmeninate"
+pagetitle: "Support CSDisseminate"
 ---
 
 We are currently fundraising to cover basic operating costs for 2026-2029, enabling our work to remain free and publicly available.
@@ -31,22 +31,14 @@ No funds are used to pay ourselves. CSDisseminate is entirely volunteer-driven. 
 
 ::: {.column width="45%"}
 ```{=html}
+<!-- Loaded once; both widgets below are driven by this single script. -->
 <script
   async
   src="https://widgets.givebutter.com/latest.umd.cjs?acct=kpNykZthZpD0PANx&p=other"
 ></script>
 
-<!-- Put the actual widget embed snippet here -->
 <givebutter-widget id="LyXqAj"></givebutter-widget>
-```
 
-```{=html}
-<script
-  async
-  src="https://widgets.givebutter.com/latest.umd.cjs?acct=kpNykZthZpD0PANx&p=other"
-></script>
-
-<!-- Put the actual widget embed snippet here -->
 <givebutter-widget id="j9Zw6L"></givebutter-widget>
 ```
 :::

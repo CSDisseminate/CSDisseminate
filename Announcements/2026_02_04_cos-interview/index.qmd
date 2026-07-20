@@ -7,6 +7,7 @@ author:
 categories:
  - Announcement
 image: https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(12).png
+image-alt: "Center for Open Science “Researcher Q&A” graphic titled “Introducing Open Science in a College of Allied Health Sciences,” with headshots of Carrie Rountrey, Andrea Ford, and Amy Koshoffer."
 lightbox: true
 draft: false
 title-block-banner: true
@@ -18,4 +19,4 @@ In the interview, they discuss their findings: a case example of introducing ope
 
 [Click here to read the blog post!](https://www.cos.io/blog/researcher-qa-introducing-open-science-in-a-college-of-allied-health-sciences)
 
-[![The image from the Center for Open Science blog post.](https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(12).png){fig-align="left" width="587"}](https://www.cos.io/blog/preprints-in-action-advancing-open-science-across-communication-sciences-and-disorders)
+[![The image from the Center for Open Science blog post.](https://www.cos.io/hubfs/Blog%20Post%20%20Q%26A%20(12).png){fig-align="left" width="587" fig-alt="Center for Open Science “Researcher Q&A” graphic titled “Introducing Open Science in a College of Allied Health Sciences,” with headshots of Carrie Rountrey, Andrea Ford, and Amy Koshoffer."}](https://www.cos.io/blog/preprints-in-action-advancing-open-science-across-communication-sciences-and-disorders)

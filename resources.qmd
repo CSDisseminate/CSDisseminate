@@ -16,18 +16,16 @@ listing:
       - short-description
       - resource-link
       - categories
-    sort-ui: FALSE
-    filter-ui: FALSE
-    #sort: "date desc"
+    sort-ui: false
+    filter-ui: false
 editor: source
 ---
 
 Explore our curated database of resources designed to help scientists and clinicians embrace open science practices in Communication Sciences and Disorders.
 
-<!--# ::: {.callout-tip appearance="minimal"}
-See a resource missing? Let us know!
-::: -->
----
+----
+
 ### Filter by Topic
+
 ::: {#resources-all}
 :::

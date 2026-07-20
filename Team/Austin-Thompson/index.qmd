@@ -28,7 +28,7 @@ editor: source
 
 :::::: columns
 ::: {.column width="30%"}
-![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/austin_thompson.jpeg)
+![{{< meta title >}}, {{< meta credentials >}}<br>{{< meta position >}}<br>{{< meta affiliation >}}](../_headshots/austin_thompson.jpeg){fig-alt="Headshot of Austin Thompson"}
 :::
 ::: {.column width="5%"}
 :::

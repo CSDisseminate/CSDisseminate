@@ -24,7 +24,6 @@ listing:
     max-items: 2
 page-layout: article
 title-block-banner: false
-embed-resource: true
 ---
 
 ::::: {style="text-align: center; padding-top: 2em; padding-bottom: 2em;"}
@@ -122,8 +121,8 @@ Check out the websites of these rockstar researchers to see what self-archiving 
 
 ## Contact
 
-::::: {style="background-color: var(--darken($body-bg, 20%)); color: var(--bs-body-color); border-radius: 20px; padding: 2em; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;"}
-::: {style="flex: 1; min-width: 300px; padding-right: 2em; font-size: 1em;"}
+::::: {.contact-panel}
+::: {.contact-panel-text}
 We'd love your feedback as we continue to develop this site.
 
 After all, it is a site to help *you*!
@@ -133,8 +132,8 @@ Connect with us on social media or reach out to us here:
 [CSDisseminate\@gmail.com](mailto:CSDisseminate@gmail.com)
 :::
 
-::: {style="flex: 1; min-width: 300px;"}
-<img src="Images/Typing on Laptop.jpg" alt="Typing on laptop" style="width: 100%; border-radius: 15px;"/>
+::: {.contact-panel-image}
+<img src="Images/Typing on Laptop.jpg" alt="Typing on laptop"/>
 :::
 :::::
 
