@@ -1,0 +1,105 @@
+```{=html}
+<%
+/* Format → icon + palette hue.
+   Hues come from the shared badge palette defined in the two theme .scss
+   files, so the rail is theme-aware for free. To add a format, add a row
+   here; to recolour one, change its hue. */
+const FORMATS = {
+  "Journal Article": { icon: "bi-journal-text",             hue: "violet"  },
+  "Preprint":        { icon: "bi-file-earmark-text",        hue: "indigo"  },
+  "Blog Post":       { icon: "bi-pencil-square",            hue: "amber"   },
+  "News":            { icon: "bi-newspaper",                hue: "blue"    },
+  "Report":          { icon: "bi-file-earmark-bar-graph",   hue: "emerald" },
+  "Podcast":         { icon: "bi-headphones",               hue: "pink"    },
+  "Video":           { icon: "bi-play-btn",                 hue: "red"     }
+};
+const FORMAT_FALLBACK = { icon: "bi-link-45deg", hue: "violet" };
+
+function format(item) {
+  const t = item.type ? String(item.type).trim() : "";
+  return FORMATS[t] || FORMAT_FALLBACK;
+}
+function cats(item) {
+  const c = item.categories;
+  if (!c) return [];
+  return Array.isArray(c) ? c.map(x => String(x).trim())
+                          : String(c).split(",").map(x => x.trim()).filter(Boolean);
+}
+function meta(item) {
+  // "Format · Authors · Source · Shared by X · Added <date>" — existing parts only
+  const bits = [];
+  if (item.type) bits.push({ text: item.type });
+  if (item.authors) bits.push({ text: item.authors });
+  if (item.source) bits.push({ text: item.source, em: true });
+  if (item["shared-by"]) bits.push({ text: "Shared by " + item["shared-by"], href: item["shared-by-url"] });
+  if (item.date) bits.push({ text: item.date });
+  return bits;
+}
+%>
+
+<ul class="reading-list list">
+<% if (!items || items.length === 0) { %>
+  <li class="reading-empty">
+    Nothing here yet — the first readings will appear once they are added to the sheet.
+  </li>
+<% } %>
+<% for (const item of items) {
+     const topics = cats(item);
+     const fmt    = format(item);
+     const oa     = item["open-access"] === true || String(item["open-access"]).toLowerCase() === "true";
+     const oaUrl  = item["oa-url"];
+%>
+  <li class="reading-item" <%= metadataAttrs(item) %>>
+    <div class="reading-rail">
+      <span class="reading-icon"
+            role="img"
+            aria-label="<%= item.type || 'Link' %>"
+            style="background:var(--csd-badge-<%= fmt.hue %>-bg);color:var(--csd-badge-<%= fmt.hue %>-text);border-color:var(--csd-badge-<%= fmt.hue %>-border)">
+        <i class="bi <%= fmt.icon %>" aria-hidden="true"></i>
+      </span>
+    </div>
+
+    <div class="reading-body">
+      <h3 class="reading-title">
+        <a href="<%- item.url || item.path %>" target="_blank" rel="noopener noreferrer">
+          <%= item.title %><i class="bi bi-box-arrow-up-right reading-external-icon" aria-hidden="true"></i>
+        </a>
+      </h3>
+
+      <div class="reading-chips">
+        <% if (oa) { %>
+          <span class="reading-chip reading-chip-oa">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>Open Access
+          </span>
+        <% } else if (oaUrl) { %>
+          <a class="reading-chip reading-chip-oa-alt" href="<%- oaUrl %>"
+             target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-unlock-fill" aria-hidden="true"></i>Free version
+          </a>
+        <% } else { %>
+          <span class="reading-chip reading-chip-closed">
+            <i class="bi bi-lock-fill" aria-hidden="true"></i>Paywalled
+          </span>
+        <% } %>
+        <% for (const t of topics) { %>
+          <span class="reading-chip reading-chip-topic"><%= t %></span>
+        <% } %>
+      </div>
+
+      <p class="reading-meta">
+        <% meta(item).forEach(function(bit, i) { %>
+          <% if (i > 0) { %><span class="reading-meta-sep" aria-hidden="true">·</span><% } %>
+          <% if (bit.href) { %><a href="<%- bit.href %>"><%= bit.text %></a>
+          <% } else if (bit.em) { %><em><%= bit.text %></em>
+          <% } else { %><%= bit.text %><% } %>
+        <% }); %>
+      </p>
+
+      <% if (item.note) { %>
+        <p class="reading-note"><%= item.note %></p>
+      <% } %>
+    </div>
+  </li>
+<% } %>
+</ul>
+```

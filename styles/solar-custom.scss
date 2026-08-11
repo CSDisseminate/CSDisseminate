@@ -78,6 +78,19 @@ $body-color: lighten(#F9F9F7, 20%);
   /* --- Muted surfaces -------------------------------------------------- */
   --csd-divider: rgba(255, 255, 255, 0.08);
   --csd-text-muted: var(--bs-secondary-color);
+
+  /* --- Raised card surface ---------------------------------------------
+     Bootstrap's --bs-card-bg here is solarized base2 at 12.5% alpha, which
+     composites to a desaturated grey-brown that reads as muddy against the
+     purple page rather than as a lifted surface. Lightening the page colour
+     itself keeps the card in the same hue family and separates cleanly. */
+  --csd-surface: #{lighten($body-bg, 10%)};
+  --csd-surface-border: rgba(255, 255, 255, 0.13);
+
+  /* --- Floating elements (back-to-top) ---------------------------------
+     Deeper than the light shadow: on a dark page a faint shadow reads as
+     nothing, so the float needs real depth to separate from the background. */
+  --csd-shadow-float: 0 4px 14px rgba(0, 0, 0, 0.55);
 }
 
 /* Optional: tweak hover color */

@@ -35,11 +35,9 @@
       "/Team/danika-pfeiffer/index.html",
       "/Team/helen-long/index.html",
       "/Team/austin-thompson/index.html",
-      "/Team/mariam-el-amin/index.html",
       "/Team/micah-hirsch/index.html",
       "/Team/andrea-ford/index.html",
       "/Team/jennifer-magnuson/index.html",
-      "/Team/jessica-salley-riccardi/index.html",
       "/Team/james-borders/index.html",
       "/Team/brittany-ciullo/index.html",
       "/Team/anne-c-reed/index.html",
@@ -54,8 +52,10 @@
       "/Team/christie-davis/index.html",
       "/Team/laura-gaeta/index.html",
       "/Team/elaine-kearney/index.html",
+      "/Team/jessica-salley-riccardi/index.html",
       "/Team/kristin-szymanek/index.html",
       "/Team/lee-drown/index.html",
+      "/Team/mariam-el-amin/index.html",
       "/Team/mary-alice-keller/index.html",
       "/Team/megan-parsons/index.html",
       "/Team/meredith-harold/index.html",
@@ -85,6 +85,10 @@
       "/Research/Publications/2022-09-19_pfieffer-et-al/index.html",
       "/Research/Publications/2022-01-15_gaeta-et-al/index.html"
     ]
+  },
+  {
+    "listing": "/readings.html",
+    "items": []
   },
   {
     "listing": "/events.html",

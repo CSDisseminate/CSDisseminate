@@ -29,10 +29,13 @@ $body-color: #2f2f2f;
   --csd-pill-text: #8966AB;
   --csd-pill-text-hover: #8966AB;
 
-  /* --- Tag pill (resource categories) --------------------------------- */
+  /* --- Tag pill (resource categories) ---------------------------------
+     Text is the deep violet from the badge palette rather than the mid-tone
+     brand purple: #8966AB on this pale fill measured 3.86:1, below the 4.5:1
+     WCAG AA minimum for small text. */
   --csd-tag-bg: rgba(124, 58, 237, 0.1);
   --csd-tag-border: rgba(124, 58, 237, 0.25);
-  --csd-tag-text: #8966AB;
+  --csd-tag-text: #4c1d95;
 
   /* --- Filter bar ------------------------------------------------------ */
   --csd-filter-bg: var(--bs-secondary-bg);
@@ -77,6 +80,15 @@ $body-color: #2f2f2f;
   /* --- Muted surfaces -------------------------------------------------- */
   --csd-divider: var(--bs-border-color);
   --csd-text-muted: var(--bs-secondary-color);
+
+  /* --- Raised card surface ---------------------------------------------
+     Light mode already separates well (near-white card on a tinted page),
+     so this keeps Bootstrap's value. The dark theme overrides it. */
+  --csd-surface: var(--bs-card-bg);
+  --csd-surface-border: var(--bs-border-color);
+
+  /* --- Floating elements (back-to-top) --------------------------------- */
+  --csd-shadow-float: 0 4px 14px rgba(0, 0, 0, 0.18);
 }
 
 

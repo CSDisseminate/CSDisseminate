@@ -12,7 +12,8 @@ date-joined: "2025-02-01"
 order: 8
 categories:
   - "Collaborator"
-description-research: "Collin (he/him) is a researcher in speech-language pathology with interests in mixed methods, gender perception in voice, and neuroimaging using fNIRS. His work explores how listeners experience individuals' speech. He is also passionate about pedagogy and advancing diversity, equity, and inclusion (DE&I) practices in education and research, with a strong commitment to open science and inclusive methodologies."
+description-research: "Collin Brice, Ph.D., CCC-SLP is a speech-language pathologist and Assistant Professor at the University of Scranton. His research focuses on speech-gender perception and incorporating mixed methods research methods into speech and voice research. He is also interested in using and refining alternative grading methods in CSD courses."
+description-os: "He was originally drawn to open science as a means to achieving more equity and accessibility within science. As he steps into his own research, he has found open science practices to be a way to increase the rigor of his own work, find more collaborators, and circumvent some of the barriers keeping research out of the hands of the general public."
 headshot: "../_headshots/collin_brice.JPEG"
 lightbox: false
 draft: false
@@ -29,6 +30,8 @@ editor: source
 :::
 ::: {.column width="65%"}
 {{< meta description-research >}}
+
+{{< meta description-os >}}
 
 :::
 ::::::
