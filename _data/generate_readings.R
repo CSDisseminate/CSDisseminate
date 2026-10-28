@@ -111,7 +111,10 @@ items <- pmap(readings, function(...) {
     title       = as.character(r$title),
     # `date` drives sorting and is rendered by Quarto's date formatter
     date        = opt(r$date_added),
-    categories  = split_list(r$categories)
+    # as.list() forces a YAML sequence. write_yaml() writes a length-1
+    # character vector as a plain string, and Quarto's listing code calls
+    # .join() on categories, so a single category would break the render.
+    categories  = as.list(split_list(r$categories))
   )
 
   item$source         <- opt(r$source)
@@ -132,5 +135,7 @@ items <- pmap(readings, function(...) {
 dates <- map_chr(items, function(i) if (is.null(i$date)) "" else i$date)
 items <- items[order(dates, decreasing = TRUE)]
 
-write_yaml(items, OUTPUT_FILE)
+# verbatim_logical writes true/false. The default writes yes/no, which
+# Quarto's YAML 1.2 parser reads as strings, not booleans.
+write_yaml(items, OUTPUT_FILE, handlers = list(logical = verbatim_logical))
 message("Done. ", length(items), " reading(s) written to ", OUTPUT_FILE, ".")

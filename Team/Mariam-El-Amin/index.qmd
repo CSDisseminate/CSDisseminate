@@ -4,6 +4,7 @@ last-name: "El Amin"
 credentials: "PhD"
 categories:
   - "Former Collaborator"
+  - "Founder"
 draft: false
 robots: "noindex"
 editor: source
