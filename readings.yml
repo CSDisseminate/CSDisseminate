@@ -7,9 +7,25 @@
   source: The 20% Statistician
   authors: Daniel Lakens
   date-published: '2026-10-28'
-  type: Blog
+  type: Blog Post
   note: OSF no longer supports hosting data using OSF Projects. So what alternatives
     do we have? This blog posts discusses viable alternatives.
+  open-access: true
+- path: https://www.cos.io/osf-changes
+  url: https://www.cos.io/osf-changes
+  title: Open Science Framework (OSF) Projects Are Being Discontinued
+  date: '2026-08-11'
+  categories:
+  - For Scientists
+  - For Clinicians
+  - Open Access
+  - Open Data
+  authors: Center for Open Science (COS)
+  date-published: '2026-08-11'
+  type: News
+  note: The COS is phasing out OSF Projects, which currently serves as a storage workspace,
+    and will focus on study planning and preregistration, community-run preprint services,
+    and linking research records across systems.
   open-access: true
 - path: https://journals.sagepub.com/doi/10.1177/08912432261466293
   url: https://journals.sagepub.com/doi/10.1177/08912432261466293
